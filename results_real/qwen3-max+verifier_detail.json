@@ -1,0 +1,421 @@
+{
+  "runs": [
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 0,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 325,
+      "elapsed_s": 4.95,
+      "status": "OK",
+      "final_answer": "', (max_category, max_total))"
+    },
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 1,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 309,
+      "elapsed_s": 3.64,
+      "status": "OK",
+      "final_answer": "', (max_category, max_total))"
+    },
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 2,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 325,
+      "elapsed_s": 4.53,
+      "status": "OK",
+      "final_answer": "', (max_category, max_total))"
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 0,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 263,
+      "elapsed_s": 2.87,
+      "status": "OK",
+      "final_answer": "', total_amount)"
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 1,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 262,
+      "elapsed_s": 2.66,
+      "status": "OK",
+      "final_answer": "', total_amount)"
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 2,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 288,
+      "elapsed_s": 3.66,
+      "status": "OK",
+      "final_answer": "', total_amount)"
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 0,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1660,
+      "elapsed_s": 14.11,
+      "status": "OK",
+      "final_answer": "2024-01-08"
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 1,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 807,
+      "elapsed_s": 14.82,
+      "status": "OK",
+      "final_answer": "', anomaly_date.strftime('%Y-%m-%d'))"
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 2,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": false,
+      "stage": "execution",
+      "category": "runtime_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 2142,
+      "elapsed_s": 19.59,
+      "status": "OK",
+      "final_answer": "', anomaly_date.strftime('%Y-%m-%d'))"
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 0,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1518,
+      "elapsed_s": 11.12,
+      "status": "OK",
+      "final_answer": "100.0"
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 1,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1480,
+      "elapsed_s": 8.34,
+      "status": "OK",
+      "final_answer": "100.0"
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 2,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 3064,
+      "elapsed_s": 21.12,
+      "status": "OK",
+      "final_answer": "100.0"
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 0,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 270,
+      "elapsed_s": 3.69,
+      "status": "OK",
+      "final_answer": "', total_clicks)"
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 1,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 270,
+      "elapsed_s": 2.61,
+      "status": "OK",
+      "final_answer": "', total_clicks)"
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 2,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1677,
+      "elapsed_s": 10.74,
+      "status": "OK",
+      "final_answer": "10"
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 0,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 273,
+      "elapsed_s": 4.32,
+      "status": "OK",
+      "final_answer": "', num_rows)"
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 1,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 582,
+      "elapsed_s": 4.69,
+      "status": "OK",
+      "final_answer": "6"
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 2,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 582,
+      "elapsed_s": 4.97,
+      "status": "OK",
+      "final_answer": "6"
+    }
+  ],
+  "failure_metrics": {
+    "n_total": 18,
+    "success_rate": 0.3889,
+    "n_failed": 11,
+    "silent_failure_rate": 0.9091,
+    "stage_distribution": {
+      "interpretation": 0.9091,
+      "execution": 0.0909
+    },
+    "avg_propagation_depth": 0.0,
+    "max_propagation_depth": 0,
+    "long_horizon_failure_rate": 0.0,
+    "recovery_rate": 0.0,
+    "over_privilege_rate": 0.0,
+    "tool_misuse_breakdown": {},
+    "causal_attribution_rate": 1.0
+  },
+  "economics": {
+    "total_tokens": 16097,
+    "n_success": 7,
+    "token_per_success": 2299.57,
+    "invalid_token_ratio": 0.0,
+    "total_cost": 0.012,
+    "cost_per_task": 0.0007,
+    "cost_per_success": 0.0017,
+    "frontier": [
+      [
+        0.0002,
+        0.0
+      ],
+      [
+        0.0004,
+        0.0
+      ],
+      [
+        0.0006,
+        0.0
+      ],
+      [
+        0.0009,
+        0.0
+      ],
+      [
+        0.0011,
+        0.0
+      ],
+      [
+        0.0013,
+        0.0
+      ],
+      [
+        0.0016,
+        0.0
+      ],
+      [
+        0.0019,
+        0.0
+      ],
+      [
+        0.0022,
+        0.0
+      ],
+      [
+        0.0026,
+        0.1
+      ],
+      [
+        0.003,
+        0.1818
+      ],
+      [
+        0.0037,
+        0.1667
+      ],
+      [
+        0.0047,
+        0.2308
+      ],
+      [
+        0.0057,
+        0.2857
+      ],
+      [
+        0.0068,
+        0.3333
+      ],
+      [
+        0.008,
+        0.375
+      ],
+      [
+        0.0098,
+        0.3529
+      ],
+      [
+        0.012,
+        0.3889
+      ]
+    ]
+  },
+  "aggregate": {
+    "model": "qwen3-max+verifier",
+    "success_rate": "0.3889 +/- 0.0962",
+    "silent_failure_rate": "0.8889 +/- 0.1925",
+    "token_per_success": 2234.06,
+    "cost_per_success": 0.0011,
+    "ci95_success": [
+      0.3333,
+      0.5
+    ]
+  }
+}

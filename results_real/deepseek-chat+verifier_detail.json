@@ -1,0 +1,418 @@
+{
+  "runs": [
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 0,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1244,
+      "elapsed_s": 16.19,
+      "status": "OK",
+      "final_answer": "('electronics', 1500)"
+    },
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 1,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1382,
+      "elapsed_s": 17.63,
+      "status": "OK",
+      "final_answer": "('electronics', 1500)"
+    },
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 2,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1264,
+      "elapsed_s": 26.52,
+      "status": "OK",
+      "final_answer": "electronics, 1500"
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 0,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 606,
+      "elapsed_s": 15.05,
+      "status": "OK",
+      "final_answer": "700"
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 1,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 572,
+      "elapsed_s": 9.34,
+      "status": "OK",
+      "final_answer": "700"
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 2,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 588,
+      "elapsed_s": 9.23,
+      "status": "OK",
+      "final_answer": "700"
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 0,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 4449,
+      "elapsed_s": 45.13,
+      "status": "OK",
+      "final_answer": "2024-01-08"
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 1,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1739,
+      "elapsed_s": 21.96,
+      "status": "OK",
+      "final_answer": "2024-01-08"
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 2,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1641,
+      "elapsed_s": 24.19,
+      "status": "OK",
+      "final_answer": "2024-01-08"
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 0,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1685,
+      "elapsed_s": 19.94,
+      "status": "OK",
+      "final_answer": "100.0"
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 1,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 2554,
+      "elapsed_s": 27.86,
+      "status": "OK",
+      "final_answer": "100.0"
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 2,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 2565,
+      "elapsed_s": 20.04,
+      "status": "OK",
+      "final_answer": "100.0"
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 0,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1211,
+      "elapsed_s": 22.13,
+      "status": "OK",
+      "final_answer": "10"
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 1,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1357,
+      "elapsed_s": 14.85,
+      "status": "OK",
+      "final_answer": "10"
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 2,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1230,
+      "elapsed_s": 32.02,
+      "status": "OK",
+      "final_answer": "10"
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 0,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 547,
+      "elapsed_s": 8.42,
+      "status": "OK",
+      "final_answer": "6"
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 1,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 548,
+      "elapsed_s": 10.63,
+      "status": "OK",
+      "final_answer": "6"
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 2,
+      "model": "deepseek-v3",
+      "variant": "deepseek-chat+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 548,
+      "elapsed_s": 12.6,
+      "status": "OK",
+      "final_answer": "6"
+    }
+  ],
+  "failure_metrics": {
+    "n_total": 18,
+    "success_rate": 1.0,
+    "n_failed": 0,
+    "silent_failure_rate": 0.0,
+    "stage_distribution": {},
+    "avg_propagation_depth": 0.0,
+    "max_propagation_depth": 0,
+    "long_horizon_failure_rate": 0.0,
+    "recovery_rate": 0.0,
+    "over_privilege_rate": 0.0,
+    "tool_misuse_breakdown": {},
+    "causal_attribution_rate": 1.0
+  },
+  "economics": {
+    "total_tokens": 25730,
+    "n_success": 18,
+    "token_per_success": 1429.44,
+    "invalid_token_ratio": 0.0,
+    "total_cost": 0.0043,
+    "cost_per_task": 0.0002,
+    "cost_per_success": 0.0002,
+    "frontier": [
+      [
+        0.0001,
+        1.0
+      ],
+      [
+        0.0002,
+        1.0
+      ],
+      [
+        0.0003,
+        1.0
+      ],
+      [
+        0.0004,
+        1.0
+      ],
+      [
+        0.0005,
+        1.0
+      ],
+      [
+        0.0006,
+        1.0
+      ],
+      [
+        0.0008,
+        1.0
+      ],
+      [
+        0.001,
+        1.0
+      ],
+      [
+        0.0012,
+        1.0
+      ],
+      [
+        0.0014,
+        1.0
+      ],
+      [
+        0.0016,
+        1.0
+      ],
+      [
+        0.0019,
+        1.0
+      ],
+      [
+        0.0021,
+        1.0
+      ],
+      [
+        0.0024,
+        1.0
+      ],
+      [
+        0.0027,
+        1.0
+      ],
+      [
+        0.0031,
+        1.0
+      ],
+      [
+        0.0035,
+        1.0
+      ],
+      [
+        0.0043,
+        1.0
+      ]
+    ]
+  },
+  "aggregate": {
+    "model": "deepseek-chat+verifier",
+    "success_rate": "1.0000 +/- 0.0000",
+    "silent_failure_rate": "0.0000 +/- 0.0000",
+    "token_per_success": 1429.44,
+    "cost_per_success": 0.0002,
+    "ci95_success": [
+      1.0,
+      1.0
+    ]
+  }
+}

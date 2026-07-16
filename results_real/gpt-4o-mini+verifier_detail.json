@@ -1,0 +1,420 @@
+{
+  "runs": [
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 0,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "misread_output",
+      "is_silent": true,
+      "propagation_depth": 4,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 3445,
+      "elapsed_s": 10.53,
+      "status": "OK",
+      "final_answer": "1500"
+    },
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 1,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "misread_output",
+      "is_silent": true,
+      "propagation_depth": 4,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 3214,
+      "elapsed_s": 9.73,
+      "status": "OK",
+      "final_answer": "1500"
+    },
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 2,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "misread_output",
+      "is_silent": true,
+      "propagation_depth": 4,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 3468,
+      "elapsed_s": 9.23,
+      "status": "OK",
+      "final_answer": "1500"
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 0,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 558,
+      "elapsed_s": 2.45,
+      "status": "OK",
+      "final_answer": "700"
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 1,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 558,
+      "elapsed_s": 2.81,
+      "status": "OK",
+      "final_answer": "700"
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 2,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 558,
+      "elapsed_s": 2.56,
+      "status": "OK",
+      "final_answer": "700"
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 0,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 3555,
+      "elapsed_s": 9.76,
+      "status": "OK",
+      "final_answer": "2024-01-08"
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 1,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 3577,
+      "elapsed_s": 9.94,
+      "status": "OK",
+      "final_answer": "2024-01-08"
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 2,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 3594,
+      "elapsed_s": 10.38,
+      "status": "OK",
+      "final_answer": "2024-01-08"
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 0,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 3473,
+      "elapsed_s": 10.45,
+      "status": "OK",
+      "final_answer": "100.0"
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 1,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1862,
+      "elapsed_s": 6.71,
+      "status": "OK",
+      "final_answer": "100.0"
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 2,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1841,
+      "elapsed_s": 7.46,
+      "status": "OK",
+      "final_answer": "100.0"
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 0,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1632,
+      "elapsed_s": 6.45,
+      "status": "OK",
+      "final_answer": "10"
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 1,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 3171,
+      "elapsed_s": 10.39,
+      "status": "OK",
+      "final_answer": "10"
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 2,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 3167,
+      "elapsed_s": 9.29,
+      "status": "OK",
+      "final_answer": "10"
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 0,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 526,
+      "elapsed_s": 2.62,
+      "status": "OK",
+      "final_answer": "6"
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 1,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 526,
+      "elapsed_s": 2.79,
+      "status": "OK",
+      "final_answer": "6"
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 2,
+      "model": "gpt-4o-mini",
+      "variant": "gpt-4o-mini+verifier",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 526,
+      "elapsed_s": 2.38,
+      "status": "OK",
+      "final_answer": "6"
+    }
+  ],
+  "failure_metrics": {
+    "n_total": 18,
+    "success_rate": 0.8333,
+    "n_failed": 3,
+    "silent_failure_rate": 1.0,
+    "stage_distribution": {
+      "interpretation": 1.0
+    },
+    "avg_propagation_depth": 0.6667,
+    "max_propagation_depth": 4,
+    "long_horizon_failure_rate": 1.0,
+    "recovery_rate": 0.0,
+    "over_privilege_rate": 0.0,
+    "tool_misuse_breakdown": {},
+    "causal_attribution_rate": 1.0
+  },
+  "economics": {
+    "total_tokens": 39251,
+    "n_success": 15,
+    "token_per_success": 2616.73,
+    "invalid_token_ratio": 0.0,
+    "total_cost": 0.0081,
+    "cost_per_task": 0.0005,
+    "cost_per_success": 0.0005,
+    "frontier": [
+      [
+        0.0001,
+        1.0
+      ],
+      [
+        0.0002,
+        1.0
+      ],
+      [
+        0.0003,
+        1.0
+      ],
+      [
+        0.0005,
+        1.0
+      ],
+      [
+        0.0006,
+        1.0
+      ],
+      [
+        0.0007,
+        1.0
+      ],
+      [
+        0.0011,
+        1.0
+      ],
+      [
+        0.0015,
+        1.0
+      ],
+      [
+        0.0019,
+        1.0
+      ],
+      [
+        0.0025,
+        1.0
+      ],
+      [
+        0.0031,
+        1.0
+      ],
+      [
+        0.0038,
+        0.9167
+      ],
+      [
+        0.0045,
+        0.8462
+      ],
+      [
+        0.0052,
+        0.7857
+      ],
+      [
+        0.0059,
+        0.8
+      ],
+      [
+        0.0067,
+        0.8125
+      ],
+      [
+        0.0074,
+        0.8235
+      ],
+      [
+        0.0081,
+        0.8333
+      ]
+    ]
+  },
+  "aggregate": {
+    "model": "gpt-4o-mini+verifier",
+    "success_rate": "0.8333 +/- 0.0000",
+    "silent_failure_rate": "1.0000 +/- 0.0000",
+    "token_per_success": 2616.73,
+    "cost_per_success": 0.0004,
+    "ci95_success": [
+      0.8333,
+      0.8333
+    ]
+  }
+}

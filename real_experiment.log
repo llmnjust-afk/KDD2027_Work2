@@ -1,0 +1,186 @@
+
+============================================================
+Running: gpt-4o-mini (gpt-4o-mini)
+============================================================
+  [~] tabular_groupby_sum r0 | stage=interpretation silent=True tok=2544 10.5s
+  [~] tabular_groupby_sum r1 | stage=interpretation silent=True tok=3406 11.0s
+  [~] tabular_groupby_sum r2 | stage=interpretation silent=True tok=3158 8.6s
+  [+] tabular_type_confusion r0 | stage=interpretation silent=False tok=558 2.8s
+  [+] tabular_type_confusion r1 | stage=interpretation silent=False tok=558 5.2s
+  [+] tabular_type_confusion r2 | stage=interpretation silent=False tok=558 3.1s
+  [+] timeseries_anomaly r0 | stage=interpretation silent=False tok=3545 10.3s
+  [+] timeseries_anomaly r1 | stage=interpretation silent=False tok=3594 9.9s
+  [+] timeseries_anomaly r2 | stage=interpretation silent=False tok=3510 9.8s
+  [+] timeseries_forecast_leakage r0 | stage=interpretation silent=False tok=1855 8.0s
+  [+] timeseries_forecast_leakage r1 | stage=interpretation silent=False tok=1857 7.1s
+  [+] timeseries_forecast_leakage r2 | stage=interpretation silent=False tok=3468 11.5s
+  [+] recommendation_target_leakage r0 | stage=interpretation silent=False tok=1741 5.4s
+  [x] recommendation_target_leakage r1 | stage=execution silent=False tok=2846 10.8s
+  [+] recommendation_target_leakage r2 | stage=interpretation silent=False tok=1674 6.5s
+  [+] tabular_row_count r0 | stage=interpretation silent=False tok=526 2.6s
+  [+] tabular_row_count r1 | stage=interpretation silent=False tok=502 2.3s
+  [+] tabular_row_count r2 | stage=interpretation silent=False tok=526 2.7s
+
+  --- gpt-4o-mini summary ---
+  success_rate: 0.7778 +/- 0.0962
+  silent_fail:  0.8333
+  tok/success:  2641
+  $/success:    0.0004
+
+============================================================
+Running: gpt-4o-mini+verifier (gpt-4o-mini)
+============================================================
+  [~] tabular_groupby_sum r0 | stage=interpretation silent=True tok=3445 10.5s
+  [~] tabular_groupby_sum r1 | stage=interpretation silent=True tok=3214 9.7s
+  [~] tabular_groupby_sum r2 | stage=interpretation silent=True tok=3468 9.2s
+  [+] tabular_type_confusion r0 | stage=interpretation silent=False tok=558 2.5s
+  [+] tabular_type_confusion r1 | stage=interpretation silent=False tok=558 2.8s
+  [+] tabular_type_confusion r2 | stage=interpretation silent=False tok=558 2.6s
+  [+] timeseries_anomaly r0 | stage=interpretation silent=False tok=3555 9.8s
+  [+] timeseries_anomaly r1 | stage=interpretation silent=False tok=3577 9.9s
+  [+] timeseries_anomaly r2 | stage=interpretation silent=False tok=3594 10.4s
+  [+] timeseries_forecast_leakage r0 | stage=interpretation silent=False tok=3473 10.5s
+  [+] timeseries_forecast_leakage r1 | stage=interpretation silent=False tok=1862 6.7s
+  [+] timeseries_forecast_leakage r2 | stage=interpretation silent=False tok=1841 7.5s
+  [+] recommendation_target_leakage r0 | stage=interpretation silent=False tok=1632 6.4s
+  [+] recommendation_target_leakage r1 | stage=interpretation silent=False tok=3171 10.4s
+  [+] recommendation_target_leakage r2 | stage=interpretation silent=False tok=3167 9.3s
+  [+] tabular_row_count r0 | stage=interpretation silent=False tok=526 2.6s
+  [+] tabular_row_count r1 | stage=interpretation silent=False tok=526 2.8s
+  [+] tabular_row_count r2 | stage=interpretation silent=False tok=526 2.4s
+
+  --- gpt-4o-mini+verifier summary ---
+  success_rate: 0.8333 +/- 0.0000
+  silent_fail:  1.0000
+  tok/success:  2617
+  $/success:    0.0004
+
+============================================================
+Running: deepseek-chat (deepseek-v3)
+============================================================
+  [+] tabular_groupby_sum r0 | stage=interpretation silent=False tok=1584 25.1s
+  [+] tabular_groupby_sum r1 | stage=interpretation silent=False tok=1351 14.8s
+  [+] tabular_groupby_sum r2 | stage=interpretation silent=False tok=1364 18.7s
+  [+] tabular_type_confusion r0 | stage=interpretation silent=False tok=589 8.4s
+  [+] tabular_type_confusion r1 | stage=interpretation silent=False tok=601 11.0s
+  [+] tabular_type_confusion r2 | stage=interpretation silent=False tok=583 8.6s
+  [+] timeseries_anomaly r0 | stage=interpretation silent=False tok=1725 24.4s
+  [+] timeseries_anomaly r1 | stage=interpretation silent=False tok=2036 34.0s
+  [+] timeseries_anomaly r2 | stage=interpretation silent=False tok=1658 20.9s
+  [+] timeseries_forecast_leakage r0 | stage=interpretation silent=False tok=2697 28.1s
+  [+] timeseries_forecast_leakage r1 | stage=interpretation silent=False tok=1816 30.2s
+  [+] timeseries_forecast_leakage r2 | stage=interpretation silent=False tok=1635 27.2s
+  [+] recommendation_target_leakage r0 | stage=interpretation silent=False tok=1673 27.2s
+  [+] recommendation_target_leakage r1 | stage=interpretation silent=False tok=1342 14.9s
+  [+] recommendation_target_leakage r2 | stage=interpretation silent=False tok=1000 19.4s
+  [+] tabular_row_count r0 | stage=interpretation silent=False tok=538 7.2s
+  [+] tabular_row_count r1 | stage=interpretation silent=False tok=535 7.6s
+  [+] tabular_row_count r2 | stage=interpretation silent=False tok=535 16.8s
+
+  --- deepseek-chat summary ---
+  success_rate: 1.0000 +/- 0.0000
+  silent_fail:  0.0000
+  tok/success:  1292
+  $/success:    0.0002
+
+============================================================
+Running: deepseek-chat+verifier (deepseek-v3)
+============================================================
+  [+] tabular_groupby_sum r0 | stage=interpretation silent=False tok=1244 16.2s
+  [+] tabular_groupby_sum r1 | stage=interpretation silent=False tok=1382 17.6s
+  [+] tabular_groupby_sum r2 | stage=interpretation silent=False tok=1264 26.5s
+  [+] tabular_type_confusion r0 | stage=interpretation silent=False tok=606 15.0s
+  [+] tabular_type_confusion r1 | stage=interpretation silent=False tok=572 9.3s
+  [+] tabular_type_confusion r2 | stage=interpretation silent=False tok=588 9.2s
+  [+] timeseries_anomaly r0 | stage=interpretation silent=False tok=4449 45.1s
+  [+] timeseries_anomaly r1 | stage=interpretation silent=False tok=1739 22.0s
+  [+] timeseries_anomaly r2 | stage=interpretation silent=False tok=1641 24.2s
+  [+] timeseries_forecast_leakage r0 | stage=interpretation silent=False tok=1685 19.9s
+  [+] timeseries_forecast_leakage r1 | stage=interpretation silent=False tok=2554 27.9s
+  [+] timeseries_forecast_leakage r2 | stage=interpretation silent=False tok=2565 20.0s
+  [+] recommendation_target_leakage r0 | stage=interpretation silent=False tok=1211 22.1s
+  [+] recommendation_target_leakage r1 | stage=interpretation silent=False tok=1357 14.9s
+  [+] recommendation_target_leakage r2 | stage=interpretation silent=False tok=1230 32.0s
+  [+] tabular_row_count r0 | stage=interpretation silent=False tok=547 8.4s
+  [+] tabular_row_count r1 | stage=interpretation silent=False tok=548 10.6s
+  [+] tabular_row_count r2 | stage=interpretation silent=False tok=548 12.6s
+
+  --- deepseek-chat+verifier summary ---
+  success_rate: 1.0000 +/- 0.0000
+  silent_fail:  0.0000
+  tok/success:  1429
+  $/success:    0.0002
+
+============================================================
+Running: qwen3-max (qwen3-max-2026)
+============================================================
+  [~] tabular_groupby_sum r0 | stage=interpretation silent=True tok=325 4.7s
+  [+] tabular_groupby_sum r1 | stage=interpretation silent=False tok=713 5.5s
+  [~] tabular_groupby_sum r2 | stage=interpretation silent=True tok=309 3.3s
+  [~] tabular_type_confusion r0 | stage=interpretation silent=True tok=263 2.9s
+  [~] tabular_type_confusion r1 | stage=interpretation silent=True tok=263 3.1s
+  [~] tabular_type_confusion r2 | stage=interpretation silent=True tok=264 2.6s
+  [+] timeseries_anomaly r0 | stage=interpretation silent=False tok=1679 12.1s
+  [~] timeseries_anomaly r1 | stage=interpretation silent=True tok=916 10.7s
+  [~] timeseries_anomaly r2 | stage=interpretation silent=True tok=876 10.1s
+  [+] timeseries_forecast_leakage r0 | stage=interpretation silent=False tok=1524 9.7s
+  [+] timeseries_forecast_leakage r1 | stage=interpretation silent=False tok=2223 15.3s
+  [+] timeseries_forecast_leakage r2 | stage=interpretation silent=False tok=1941 11.2s
+  [~] recommendation_target_leakage r0 | stage=interpretation silent=True tok=266 8.0s
+  [~] recommendation_target_leakage r1 | stage=interpretation silent=True tok=270 3.5s
+  [~] recommendation_target_leakage r2 | stage=interpretation silent=True tok=270 2.7s
+  [+] tabular_row_count r0 | stage=interpretation silent=False tok=580 5.7s
+  [~] tabular_row_count r1 | stage=interpretation silent=True tok=268 3.1s
+  [+] tabular_row_count r2 | stage=interpretation silent=False tok=580 6.0s
+
+  --- qwen3-max summary ---
+  success_rate: 0.3889 +/- 0.0962
+  silent_fail:  1.0000
+  tok/success:  1997
+  $/success:    0.0010
+
+============================================================
+Running: qwen3-max+verifier (qwen3-max-2026)
+============================================================
+  [~] tabular_groupby_sum r0 | stage=interpretation silent=True tok=325 4.9s
+  [~] tabular_groupby_sum r1 | stage=interpretation silent=True tok=309 3.6s
+  [~] tabular_groupby_sum r2 | stage=interpretation silent=True tok=325 4.5s
+  [~] tabular_type_confusion r0 | stage=interpretation silent=True tok=263 2.9s
+  [~] tabular_type_confusion r1 | stage=interpretation silent=True tok=262 2.7s
+  [~] tabular_type_confusion r2 | stage=interpretation silent=True tok=288 3.7s
+  [+] timeseries_anomaly r0 | stage=interpretation silent=False tok=1660 14.1s
+  [~] timeseries_anomaly r1 | stage=interpretation silent=True tok=807 14.8s
+  [x] timeseries_anomaly r2 | stage=execution silent=False tok=2142 19.6s
+  [+] timeseries_forecast_leakage r0 | stage=interpretation silent=False tok=1518 11.1s
+  [+] timeseries_forecast_leakage r1 | stage=interpretation silent=False tok=1480 8.3s
+  [+] timeseries_forecast_leakage r2 | stage=interpretation silent=False tok=3064 21.1s
+  [~] recommendation_target_leakage r0 | stage=interpretation silent=True tok=270 3.7s
+  [~] recommendation_target_leakage r1 | stage=interpretation silent=True tok=270 2.6s
+  [+] recommendation_target_leakage r2 | stage=interpretation silent=False tok=1677 10.7s
+  [~] tabular_row_count r0 | stage=interpretation silent=True tok=273 4.3s
+  [+] tabular_row_count r1 | stage=interpretation silent=False tok=582 4.7s
+  [+] tabular_row_count r2 | stage=interpretation silent=False tok=582 5.0s
+
+  --- qwen3-max+verifier summary ---
+  success_rate: 0.3889 +/- 0.0962
+  silent_fail:  0.8889
+  tok/success:  2234
+  $/success:    0.0011
+
+============================================================
+EXPERIMENT COMPLETE
+============================================================
+  gpt-4o-mini: SR=0.7778 SFR=0.8333 tok/s=2641
+  gpt-4o-mini+verifier: SR=0.8333 SFR=1.0000 tok/s=2617
+  deepseek-chat: SR=1.0000 SFR=0.0000 tok/s=1292
+  deepseek-chat+verifier: SR=1.0000 SFR=0.0000 tok/s=1429
+  qwen3-max: SR=0.3889 SFR=1.0000 tok/s=1997
+  qwen3-max+verifier: SR=0.3889 SFR=0.8889 tok/s=2234
+
+  Paired (baseline vs verifier):
+    gpt-4o-mini_vs_gpt-4o-mini+verifier: delta=+0.0556 p=0.317311 d=-0.4082
+    deepseek-chat_vs_deepseek-chat+verifier: delta=+0.0000 p=1.0 d=0.0
+    qwen3-max_vs_qwen3-max+verifier: delta=+0.0000 p=1.0 d=0.0
+
+=== Auto-pushing results to GitHub ===
+GitHub push failed (exit 1), results saved locally.

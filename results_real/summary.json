@@ -1,0 +1,102 @@
+{
+  "experiment": "real_models",
+  "config": {
+    "n_repeats": 3,
+    "max_steps": 6,
+    "n_tasks": 6,
+    "models": [
+      "gpt-4o-mini",
+      "deepseek-chat",
+      "qwen3-max"
+    ],
+    "endpoint": "https://api.chatanywhere.tech/v1"
+  },
+  "aggregate": {
+    "gpt-4o-mini": {
+      "model": "gpt-4o-mini",
+      "success_rate": "0.7778 +/- 0.0962",
+      "silent_failure_rate": "0.8333 +/- 0.2887",
+      "token_per_success": 2641.12,
+      "cost_per_success": 0.0004,
+      "ci95_success": [
+        0.6667,
+        0.8333
+      ]
+    },
+    "gpt-4o-mini+verifier": {
+      "model": "gpt-4o-mini+verifier",
+      "success_rate": "0.8333 +/- 0.0000",
+      "silent_failure_rate": "1.0000 +/- 0.0000",
+      "token_per_success": 2616.73,
+      "cost_per_success": 0.0004,
+      "ci95_success": [
+        0.8333,
+        0.8333
+      ]
+    },
+    "deepseek-chat": {
+      "model": "deepseek-chat",
+      "success_rate": "1.0000 +/- 0.0000",
+      "silent_failure_rate": "0.0000 +/- 0.0000",
+      "token_per_success": 1292.33,
+      "cost_per_success": 0.0002,
+      "ci95_success": [
+        1.0,
+        1.0
+      ]
+    },
+    "deepseek-chat+verifier": {
+      "model": "deepseek-chat+verifier",
+      "success_rate": "1.0000 +/- 0.0000",
+      "silent_failure_rate": "0.0000 +/- 0.0000",
+      "token_per_success": 1429.44,
+      "cost_per_success": 0.0002,
+      "ci95_success": [
+        1.0,
+        1.0
+      ]
+    },
+    "qwen3-max": {
+      "model": "qwen3-max",
+      "success_rate": "0.3889 +/- 0.0962",
+      "silent_failure_rate": "1.0000 +/- 0.0000",
+      "token_per_success": 1997.39,
+      "cost_per_success": 0.001,
+      "ci95_success": [
+        0.3333,
+        0.5
+      ]
+    },
+    "qwen3-max+verifier": {
+      "model": "qwen3-max+verifier",
+      "success_rate": "0.3889 +/- 0.0962",
+      "silent_failure_rate": "0.8889 +/- 0.1925",
+      "token_per_success": 2234.06,
+      "cost_per_success": 0.0011,
+      "ci95_success": [
+        0.3333,
+        0.5
+      ]
+    }
+  },
+  "comparisons": {
+    "gpt-4o-mini_vs_gpt-4o-mini+verifier": {
+      "delta_success_rate": 0.05555555555555566,
+      "t_stat": -1.0,
+      "p_value": 0.317311,
+      "cohens_d": -0.4082
+    },
+    "deepseek-chat_vs_deepseek-chat+verifier": {
+      "delta_success_rate": 0.0,
+      "t_stat": 0.0,
+      "p_value": 1.0,
+      "cohens_d": 0.0
+    },
+    "qwen3-max_vs_qwen3-max+verifier": {
+      "delta_success_rate": 0.0,
+      "t_stat": 0.0,
+      "p_value": 1.0,
+      "cohens_d": 0.0
+    }
+  }
+}

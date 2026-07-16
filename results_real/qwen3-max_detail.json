@@ -1,0 +1,420 @@
+{
+  "runs": [
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 0,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 325,
+      "elapsed_s": 4.71,
+      "status": "OK",
+      "final_answer": "', (max_category, max_total))"
+    },
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 1,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 713,
+      "elapsed_s": 5.46,
+      "status": "OK",
+      "final_answer": "('electronics', 1500)"
+    },
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 2,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 309,
+      "elapsed_s": 3.29,
+      "status": "OK",
+      "final_answer": "', (max_category, max_total))"
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 0,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 263,
+      "elapsed_s": 2.94,
+      "status": "OK",
+      "final_answer": "', total_amount)"
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 1,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 263,
+      "elapsed_s": 3.08,
+      "status": "OK",
+      "final_answer": "', total_amount)"
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 2,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 264,
+      "elapsed_s": 2.6,
+      "status": "OK",
+      "final_answer": "', total_amount)"
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 0,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1679,
+      "elapsed_s": 12.11,
+      "status": "OK",
+      "final_answer": "2024-01-08"
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 1,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 916,
+      "elapsed_s": 10.74,
+      "status": "OK",
+      "final_answer": "', max_dev_row['date'].strftime('%Y-%m-%d'))"
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 2,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 876,
+      "elapsed_s": 10.12,
+      "status": "OK",
+      "final_answer": "', result_date)"
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 0,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1524,
+      "elapsed_s": 9.75,
+      "status": "OK",
+      "final_answer": "100.0"
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 1,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 2223,
+      "elapsed_s": 15.3,
+      "status": "OK",
+      "final_answer": "100.0"
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 2,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 1941,
+      "elapsed_s": 11.17,
+      "status": "OK",
+      "final_answer": "100.0"
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 0,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 266,
+      "elapsed_s": 7.97,
+      "status": "OK",
+      "final_answer": "', total_clicks)"
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 1,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 270,
+      "elapsed_s": 3.5,
+      "status": "OK",
+      "final_answer": "', total_clicks)"
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 2,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 270,
+      "elapsed_s": 2.74,
+      "status": "OK",
+      "final_answer": "', total_clicks)"
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 0,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 580,
+      "elapsed_s": 5.73,
+      "status": "OK",
+      "final_answer": "6"
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 1,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 268,
+      "elapsed_s": 3.09,
+      "status": "OK",
+      "final_answer": "', num_rows)"
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 2,
+      "model": "qwen3-max-2026",
+      "variant": "qwen3-max",
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 580,
+      "elapsed_s": 6.04,
+      "status": "OK",
+      "final_answer": "6"
+    }
+  ],
+  "failure_metrics": {
+    "n_total": 18,
+    "success_rate": 0.3889,
+    "n_failed": 11,
+    "silent_failure_rate": 1.0,
+    "stage_distribution": {
+      "interpretation": 1.0
+    },
+    "avg_propagation_depth": 0.0,
+    "max_propagation_depth": 0,
+    "long_horizon_failure_rate": 0.0,
+    "recovery_rate": 0.0,
+    "over_privilege_rate": 0.0,
+    "tool_misuse_breakdown": {},
+    "causal_attribution_rate": 1.0
+  },
+  "economics": {
+    "total_tokens": 13530,
+    "n_success": 7,
+    "token_per_success": 1932.86,
+    "invalid_token_ratio": 0.0,
+    "total_cost": 0.0104,
+    "cost_per_task": 0.0006,
+    "cost_per_success": 0.0015,
+    "frontier": [
+      [
+        0.0002,
+        0.0
+      ],
+      [
+        0.0004,
+        0.0
+      ],
+      [
+        0.0006,
+        0.0
+      ],
+      [
+        0.0009,
+        0.0
+      ],
+      [
+        0.0011,
+        0.0
+      ],
+      [
+        0.0013,
+        0.0
+      ],
+      [
+        0.0015,
+        0.0
+      ],
+      [
+        0.0018,
+        0.0
+      ],
+      [
+        0.0021,
+        0.0
+      ],
+      [
+        0.0025,
+        0.1
+      ],
+      [
+        0.0029,
+        0.1818
+      ],
+      [
+        0.0034,
+        0.25
+      ],
+      [
+        0.0042,
+        0.2308
+      ],
+      [
+        0.005,
+        0.2143
+      ],
+      [
+        0.0061,
+        0.2667
+      ],
+      [
+        0.0072,
+        0.3125
+      ],
+      [
+        0.0087,
+        0.3529
+      ],
+      [
+        0.0104,
+        0.3889
+      ]
+    ]
+  },
+  "aggregate": {
+    "model": "qwen3-max",
+    "success_rate": "0.3889 +/- 0.0962",
+    "silent_failure_rate": "1.0000 +/- 0.0000",
+    "token_per_success": 1997.39,
+    "cost_per_success": 0.001,
+    "ci95_success": [
+      0.3333,
+      0.5
+    ]
+  }
+}
