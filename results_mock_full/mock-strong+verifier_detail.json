@@ -1,0 +1,523 @@
+{
+  "runs": [
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 0,
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 282
+    },
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 1,
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 282
+    },
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 2,
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 282
+    },
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 3,
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 282
+    },
+    {
+      "task_id": "tabular_groupby_sum",
+      "rep": 4,
+      "correct": true,
+      "stage": "interpretation",
+      "category": "none",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": true,
+      "causal_attributed": true,
+      "tokens": 282
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 0,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 1390
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 1,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 1390
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 2,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 1390
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 3,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 1390
+    },
+    {
+      "task_id": "tabular_type_confusion",
+      "rep": 4,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 1390
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 0,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 975
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 1,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 975
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 2,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 975
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 3,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 975
+    },
+    {
+      "task_id": "timeseries_anomaly",
+      "rep": 4,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 975
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 0,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 973
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 1,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 973
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 2,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 973
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 3,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 973
+    },
+    {
+      "task_id": "timeseries_forecast_leakage",
+      "rep": 4,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 973
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 0,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 1393
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 1,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 1393
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 2,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 1393
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 3,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 1393
+    },
+    {
+      "task_id": "recommendation_target_leakage",
+      "rep": 4,
+      "correct": false,
+      "stage": "execution",
+      "category": "key_error",
+      "is_silent": false,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 1393
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 0,
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 273
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 1,
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 273
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 2,
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 273
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 3,
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 273
+    },
+    {
+      "task_id": "tabular_row_count",
+      "rep": 4,
+      "correct": false,
+      "stage": "interpretation",
+      "category": "hallucinated_answer",
+      "is_silent": true,
+      "propagation_depth": 0,
+      "recovered": false,
+      "causal_attributed": true,
+      "tokens": 273
+    }
+  ],
+  "failure_metrics": {
+    "n_total": 30,
+    "success_rate": 0.1667,
+    "n_failed": 25,
+    "silent_failure_rate": 0.2,
+    "stage_distribution": {
+      "execution": 0.8,
+      "interpretation": 0.2
+    },
+    "avg_propagation_depth": 0.0,
+    "max_propagation_depth": 0,
+    "long_horizon_failure_rate": 0.0,
+    "recovery_rate": 0.0,
+    "over_privilege_rate": 0.0,
+    "tool_misuse_breakdown": {},
+    "causal_attribution_rate": 1.0
+  },
+  "economics": {
+    "total_tokens": 26430,
+    "n_success": 5,
+    "token_per_success": 5286.0,
+    "invalid_token_ratio": 0.0,
+    "total_cost": 0.1585,
+    "cost_per_task": 0.0053,
+    "cost_per_success": 0.0317,
+    "frontier": [
+      [
+        0.0015,
+        0.0
+      ],
+      [
+        0.0031,
+        0.0
+      ],
+      [
+        0.0046,
+        0.0
+      ],
+      [
+        0.0061,
+        0.0
+      ],
+      [
+        0.0076,
+        0.0
+      ],
+      [
+        0.0092,
+        0.1667
+      ],
+      [
+        0.0108,
+        0.2857
+      ],
+      [
+        0.0123,
+        0.375
+      ],
+      [
+        0.0139,
+        0.4444
+      ],
+      [
+        0.0154,
+        0.5
+      ],
+      [
+        0.0212,
+        0.4545
+      ],
+      [
+        0.027,
+        0.4167
+      ],
+      [
+        0.0328,
+        0.3846
+      ],
+      [
+        0.0386,
+        0.3571
+      ],
+      [
+        0.0444,
+        0.3333
+      ],
+      [
+        0.0502,
+        0.3125
+      ],
+      [
+        0.056,
+        0.2941
+      ],
+      [
+        0.0618,
+        0.2778
+      ],
+      [
+        0.0676,
+        0.2632
+      ],
+      [
+        0.0734,
+        0.25
+      ],
+      [
+        0.0819,
+        0.2381
+      ],
+      [
+        0.0904,
+        0.2273
+      ],
+      [
+        0.0989,
+        0.2174
+      ],
+      [
+        0.1074,
+        0.2083
+      ],
+      [
+        0.1159,
+        0.2
+      ],
+      [
+        0.1244,
+        0.1923
+      ],
+      [
+        0.1329,
+        0.1852
+      ],
+      [
+        0.1414,
+        0.1786
+      ],
+      [
+        0.15,
+        0.1724
+      ],
+      [
+        0.1585,
+        0.1667
+      ]
+    ]
+  },
+  "aggregate": {
+    "model": "mock-strong+verifier",
+    "success_rate": "0.1667 +/- 0.0000",
+    "silent_failure_rate": "0.2000 +/- 0.0000",
+    "token_per_success": 5286.0,
+    "cost_per_success": 0.0132,
+    "ci95_success": [
+      0.1667,
+      0.1667
+    ]
+  }
+}

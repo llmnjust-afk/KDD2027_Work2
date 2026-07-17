@@ -31,7 +31,9 @@ from pathlib import Path
 # ensure project root is on path
 sys.path.insert(0, str(Path(__file__).parent))
 
-from agentfail.benchmark.tasks import build_default_benchmark
+from agentfail.benchmark.tasks import build_default_benchmark, TaskSet
+from agentfail.benchmark.task_generators import build_full_benchmark
+from agentfail.benchmark.dsbench_adapter import build_dsbench_mc_subset
 from agentfail.agent.sandbox import CodeSandbox
 from agentfail.agent.react_agent import ReActAgent, AgentTrace
 from agentfail.diagnosis.classifier import FailureClassifier, ClassifiedTrace
@@ -48,7 +50,9 @@ import tempfile
 # Model configs: (api_name, display_name, price_in, price_out)
 MODEL_CONFIGS = {
     "gpt-4o-mini": ("gpt-4o-mini", "gpt-4o-mini", 0.15, 0.60),
+    "gpt-4o": ("gpt-4o", "gpt-4o", 2.5, 10.0),
     "deepseek-chat": ("deepseek-chat", "deepseek-v3", 0.14, 0.28),
+    "deepseek-r1": ("deepseek-reasoner", "deepseek-r1", 0.55, 2.19),
     "qwen3-max": ("qwen3-max-2026-01-23", "qwen3-max-2026", 0.5, 1.5),
 }
 
@@ -92,8 +96,14 @@ def main():
     ap.add_argument("--repeats", type=int, default=3)
     ap.add_argument("--max-steps", type=int, default=6)
     ap.add_argument("--models", nargs="*",
-                    default=["gpt-4o-mini", "deepseek-chat", "qwen3-max"])
+                    default=["gpt-4o-mini", "gpt-4o", "deepseek-chat",
+                             "deepseek-r1", "qwen3-max"])
     ap.add_argument("--output", default="results_real")
+    ap.add_argument("--n-per-domain", type=int, default=16,
+                    help="tasks per domain (16 -> 80 total)")
+    ap.add_argument("--dsbench", action="store_true", default=True,
+                    help="include DSBench MC comparison subset")
+    ap.add_argument("--no-dsbench", dest="dsbench", action="store_false")
     ap.add_argument("--no-push", action="store_true",
                     help="skip GitHub push on completion")
     args = ap.parse_args()
@@ -104,7 +114,17 @@ def main():
         return 1
 
     os.makedirs(args.output, exist_ok=True)
-    taskset = build_default_benchmark()
+    # build full benchmark: 80 generated tasks + 15 DSBench MC
+    taskset = build_full_benchmark(n_per_domain=args.n_per_domain)
+    n_main = len(taskset)
+    if args.dsbench:
+        dsbench_tasks = build_dsbench_mc_subset(
+            dsbench_data_path="/data/lab/DSBench/data_analysis/data.json",
+            n_questions=15,
+        )
+        taskset = TaskSet(tasks=list(taskset.tasks) + list(dsbench_tasks.tasks))
+    n_total = len(taskset)
+    print(f"Benchmark: {n_main} generated + {n_total - n_main} DSBench MC = {n_total} tasks")
     all_variants = []
     for m in args.models:
         all_variants.append(m)

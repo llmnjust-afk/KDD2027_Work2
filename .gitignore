@@ -4,4 +4,3 @@ results/
 .env
 *.egg-info/
 .pytest_cache/
-results/

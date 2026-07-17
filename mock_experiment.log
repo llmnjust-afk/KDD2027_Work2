@@ -1,0 +1,61 @@
+======================================================================
+AgentFail: Failure-Diagnosis Benchmark for Data-Science Agents
+======================================================================
+Models: ['mock-weak', 'mock-medium', 'mock-strong', 'mock-medium+verifier', 'mock-strong+verifier']
+Repeats: 5 | Max steps: 8
+----------------------------------------------------------------------
+
+### AGGREGATE RESULTS ###
+
+[mock-weak]
+  success_rate      : 0.1667 +/- 0.0000
+  silent_failure    : 0.0000 +/- 0.0000
+  token_per_success : 4898.0
+  cost_per_success  : 0.0007
+  CI95 (success)    : [0.1667, 0.1667]
+
+[mock-medium]
+  success_rate      : 0.1667 +/- 0.0000
+  silent_failure    : 0.2000 +/- 0.0000
+  token_per_success : 5347.0
+  cost_per_success  : 0.0027
+  CI95 (success)    : [0.1667, 0.1667]
+
+[mock-strong]
+  success_rate      : 0.1667 +/- 0.0000
+  silent_failure    : 0.2000 +/- 0.0000
+  token_per_success : 5286.0
+  cost_per_success  : 0.0132
+  CI95 (success)    : [0.1667, 0.1667]
+
+[mock-medium+verifier]
+  success_rate      : 0.1667 +/- 0.0000
+  silent_failure    : 0.2000 +/- 0.0000
+  token_per_success : 5347.0
+  cost_per_success  : 0.0027
+  CI95 (success)    : [0.1667, 0.1667]
+
+[mock-strong+verifier]
+  success_rate      : 0.1667 +/- 0.0000
+  silent_failure    : 0.2000 +/- 0.0000
+  token_per_success : 5286.0
+  cost_per_success  : 0.0132
+  CI95 (success)    : [0.1667, 0.1667]
+
+### PAIRED COMPARISONS (baseline vs +verifier) ###
+
+  mock-medium_vs_mock-medium+verifier
+    delta_success_rate : +0.0000
+    t_stat             : 0.0
+    p_value            : 1.0
+    cohen's_d          : 0.0
+
+  mock-strong_vs_mock-strong+verifier
+    delta_success_rate : +0.0000
+    t_stat             : 0.0
+    p_value            : 1.0
+    cohen's_d          : 0.0
+
+======================================================================
+Full results written to results_mock_full/summary.json
+======================================================================

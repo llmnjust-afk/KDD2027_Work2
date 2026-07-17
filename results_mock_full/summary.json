@@ -1,0 +1,78 @@
+{
+  "config": {
+    "n_repeats": 5,
+    "max_steps": 8,
+    "n_tasks": 6
+  },
+  "aggregate": {
+    "mock-weak": {
+      "model": "mock-weak",
+      "success_rate": "0.1667 +/- 0.0000",
+      "silent_failure_rate": "0.0000 +/- 0.0000",
+      "token_per_success": 4898.0,
+      "cost_per_success": 0.0007,
+      "ci95_success": [
+        0.1667,
+        0.1667
+      ]
+    },
+    "mock-medium": {
+      "model": "mock-medium",
+      "success_rate": "0.1667 +/- 0.0000",
+      "silent_failure_rate": "0.2000 +/- 0.0000",
+      "token_per_success": 5347.0,
+      "cost_per_success": 0.0027,
+      "ci95_success": [
+        0.1667,
+        0.1667
+      ]
+    },
+    "mock-strong": {
+      "model": "mock-strong",
+      "success_rate": "0.1667 +/- 0.0000",
+      "silent_failure_rate": "0.2000 +/- 0.0000",
+      "token_per_success": 5286.0,
+      "cost_per_success": 0.0132,
+      "ci95_success": [
+        0.1667,
+        0.1667
+      ]
+    },
+    "mock-medium+verifier": {
+      "model": "mock-medium+verifier",
+      "success_rate": "0.1667 +/- 0.0000",
+      "silent_failure_rate": "0.2000 +/- 0.0000",
+      "token_per_success": 5347.0,
+      "cost_per_success": 0.0027,
+      "ci95_success": [
+        0.1667,
+        0.1667
+      ]
+    },
+    "mock-strong+verifier": {
+      "model": "mock-strong+verifier",
+      "success_rate": "0.1667 +/- 0.0000",
+      "silent_failure_rate": "0.2000 +/- 0.0000",
+      "token_per_success": 5286.0,
+      "cost_per_success": 0.0132,
+      "ci95_success": [
+        0.1667,
+        0.1667
+      ]
+    }
+  },
+  "comparisons": {
+    "mock-medium_vs_mock-medium+verifier": {
+      "delta_success_rate": 0.0,
+      "t_stat": 0.0,
+      "p_value": 1.0,
+      "cohens_d": 0.0
+    },
+    "mock-strong_vs_mock-strong+verifier": {
+      "delta_success_rate": 0.0,
+      "t_stat": 0.0,
+      "p_value": 1.0,
+      "cohens_d": 0.0
+    }
+  }
+}

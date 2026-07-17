@@ -83,10 +83,13 @@ class ReActAgent:
     """
 
     SYSTEM_PROMPT = (
-        "You are a data-science agent. Solve the task step by step.\n"
-        "Each step: emit 'Thought: <reasoning>' then 'Action:' with a "
-        "python code block, OR emit 'ANSWER: <final answer>' when done.\n"
-        "Always print results as 'ANSWER: <value>' inside the code."
+        "You are a data-science agent. Solve the task by writing and executing Python code.\n"
+        "The data file is available at 'data.csv' in the current working directory.\n"
+        "ALWAYS read it with pandas: df = pd.read_csv('data.csv')\n"
+        "Each step: emit 'Thought: <reasoning>' then 'Action:' with a python code block.\n"
+        "Your code MUST print the final result using exactly: print('ANSWER:', <value>)\n"
+        "When you see the answer in the output, emit 'ANSWER: <final answer>' to finish.\n"
+        "Do NOT use hypothetical data. Use the real data.csv file."
     )
 
     def __init__(
@@ -117,7 +120,12 @@ class ReActAgent:
 
     def _build_messages(self, task: str, history: List[Dict[str, str]]) -> List[Dict[str, str]]:
         messages = [{"role": "system", "content": self.SYSTEM_PROMPT}]
-        messages.append({"role": "user", "content": f"Task: {task}"})
+        messages.append({"role": "user", "content": (
+            f"Task: {task}\n\n"
+            "The data file 'data.csv' is in the working directory. "
+            "Write Python code to load and analyze it. "
+            "Print your final result as: print('ANSWER:', value)"
+        )})
         messages.extend(history)
         return messages
 
@@ -165,7 +173,7 @@ class ReActAgent:
                         history.append({
                             "role": "user",
                             "content": (
-                                f"Observation: {exec_res.stdout}\n"
+                                f"Observation:\n{(exec_res.stdout or '')[:2000]}\n"
                                 f"Verifier flagged a possible issue: {verdict.reason}. "
                                 f"Please revise your approach."
                             ),
@@ -200,9 +208,15 @@ class ReActAgent:
                     break
 
                 # no answer yet: feed observation back
-                obs = exec_res.stdout if exec_res.success else f"ERROR: {exec_res.error_type}: {exec_res.error_message}"
-                history.append({"role": "assistant", "content": resp.text})
-                history.append({"role": "user", "content": f"Observation: {obs}"})
+                if exec_res.success:
+                    raw_out = exec_res.stdout or ""
+                    obs = raw_out[:2000] if raw_out else "(no output printed)"
+                    if raw_out and "ANSWER:" not in raw_out:
+                        obs += "\n\nNOTE: You did not print 'ANSWER: <value>'. Print your result explicitly."
+                else:
+                    obs = f"ERROR: {exec_res.error_type}: {exec_res.error_message[:500]}"
+                history.append({"role": "assistant", "content": resp.text[:3000]})
+                history.append({"role": "user", "content": f"Observation:\n{obs}"})
 
                 # if execution failed, mark this as a recovery attempt opportunity
                 if not exec_res.success:
