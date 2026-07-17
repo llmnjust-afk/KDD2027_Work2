@@ -1,0 +1,160 @@
+{
+  "experiment": "real_models",
+  "config": {
+    "n_repeats": 3,
+    "max_steps": 6,
+    "n_tasks": 95,
+    "models": [
+      "gpt-4o-mini",
+      "gpt-4o",
+      "deepseek-chat",
+      "deepseek-r1",
+      "qwen3-max"
+    ],
+    "endpoint": "https://api.chatanywhere.tech/v1"
+  },
+  "aggregate": {
+    "gpt-4o-mini": {
+      "model": "gpt-4o-mini",
+      "success_rate": "0.7789 +/- 0.0105",
+      "silent_failure_rate": "0.8584 +/- 0.0409",
+      "token_per_success": 2821.8,
+      "cost_per_success": 0.0004,
+      "ci95_success": [
+        0.7684,
+        0.7895
+      ]
+    },
+    "gpt-4o-mini+verifier": {
+      "model": "gpt-4o-mini+verifier",
+      "success_rate": "0.7263 +/- 0.0105",
+      "silent_failure_rate": "0.8440 +/- 0.1087",
+      "token_per_success": 3242.06,
+      "cost_per_success": 0.0005,
+      "ci95_success": [
+        0.7158,
+        0.7368
+      ]
+    },
+    "gpt-4o": {
+      "model": "gpt-4o",
+      "success_rate": "0.8140 +/- 0.0061",
+      "silent_failure_rate": "1.0000 +/- 0.0000",
+      "token_per_success": 1404.65,
+      "cost_per_success": 0.0035,
+      "ci95_success": [
+        0.8105,
+        0.8211
+      ]
+    },
+    "gpt-4o+verifier": {
+      "model": "gpt-4o+verifier",
+      "success_rate": "0.8105 +/- 0.0182",
+      "silent_failure_rate": "1.0000 +/- 0.0000",
+      "token_per_success": 1472.57,
+      "cost_per_success": 0.0037,
+      "ci95_success": [
+        0.7895,
+        0.8211
+      ]
+    },
+    "deepseek-chat": {
+      "model": "deepseek-chat",
+      "success_rate": "0.8842 +/- 0.0105",
+      "silent_failure_rate": "1.0000 +/- 0.0000",
+      "token_per_success": 1942.59,
+      "cost_per_success": 0.0003,
+      "ci95_success": [
+        0.8737,
+        0.8947
+      ]
+    },
+    "deepseek-chat+verifier": {
+      "model": "deepseek-chat+verifier",
+      "success_rate": "0.8772 +/- 0.0370",
+      "silent_failure_rate": "0.9778 +/- 0.0385",
+      "token_per_success": 2133.49,
+      "cost_per_success": 0.0003,
+      "ci95_success": [
+        0.8421,
+        0.9158
+      ]
+    },
+    "deepseek-r1": {
+      "model": "deepseek-r1",
+      "success_rate": "0.0000 +/- 0.0000",
+      "silent_failure_rate": "0.9895 +/- 0.0000",
+      "token_per_success": Infinity,
+      "cost_per_success": Infinity,
+      "ci95_success": [
+        0.0,
+        0.0
+      ]
+    },
+    "deepseek-r1+verifier": {
+      "model": "deepseek-r1+verifier",
+      "success_rate": "0.0000 +/- 0.0000",
+      "silent_failure_rate": "0.9895 +/- 0.0000",
+      "token_per_success": Infinity,
+      "cost_per_success": Infinity,
+      "ci95_success": [
+        0.0,
+        0.0
+      ]
+    },
+    "qwen3-max": {
+      "model": "qwen3-max",
+      "success_rate": "0.1825 +/- 0.0061",
+      "silent_failure_rate": "1.0000 +/- 0.0000",
+      "token_per_success": 1052.32,
+      "cost_per_success": 0.0005,
+      "ci95_success": [
+        0.1789,
+        0.1895
+      ]
+    },
+    "qwen3-max+verifier": {
+      "model": "qwen3-max+verifier",
+      "success_rate": "0.4316 +/- 0.0380",
+      "silent_failure_rate": "0.9933 +/- 0.0115",
+      "token_per_success": 1715.4,
+      "cost_per_success": 0.0009,
+      "ci95_success": [
+        0.4,
+        0.4737
+      ]
+    }
+  },
+  "comparisons": {
+    "gpt-4o-mini_vs_gpt-4o-mini+verifier": {
+      "delta_success_rate": -0.05263157894736842,
+      "t_stat": 2.612,
+      "p_value": 0.009001,
+      "cohens_d": 0.268
+    },
+    "gpt-4o_vs_gpt-4o+verifier": {
+      "delta_success_rate": -0.003508771929824661,
+      "t_stat": 0.4453,
+      "p_value": 0.656087,
+      "cohens_d": 0.0457
+    },
+    "deepseek-chat_vs_deepseek-chat+verifier": {
+      "delta_success_rate": -0.007017543859649172,
+      "t_stat": 0.5753,
+      "p_value": 0.565079,
+      "cohens_d": 0.059
+    },
+    "deepseek-r1_vs_deepseek-r1+verifier": {
+      "delta_success_rate": 0.0,
+      "t_stat": 0.0,
+      "p_value": 1.0,
+      "cohens_d": 0.0
+    },
+    "qwen3-max_vs_qwen3-max+verifier": {
+      "delta_success_rate": 0.24912280701754388,
+      "t_stat": -7.0648,
+      "p_value": 0.0,
+      "cohens_d": -0.7248
+    }
+  }
+}
