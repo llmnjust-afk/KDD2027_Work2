@@ -1,0 +1,421 @@
+B3 Experiment: 95 tasks, 2 models, 3 repeats
+Loaded baselines for: ['gpt-4o-mini', 'gpt-4o']
+
+============================================================
+Running B3: gpt-4o-mini+consistency (gpt-4o-mini)
+============================================================
+  [x|?] tabular_eda_00 r0 | tok=2640 11.7s 
+  [~|?] tabular_eda_00 r1 | tok=2717 8.3s 
+  [+|=] tabular_eda_00 r2 | tok=6750 18.0s 
+  [+|=] tabular_eda_01 r0 | tok=1152 5.3s 
+  [+|=] tabular_eda_01 r1 | tok=1150 5.3s 
+  [+|=] tabular_eda_01 r2 | tok=1154 5.5s 
+  [+|=] tabular_eda_02 r0 | tok=5454 14.9s 
+  [+|=] tabular_eda_02 r1 | tok=2720 11.8s 
+  [+|=] tabular_eda_02 r2 | tok=4437 12.9s 
+  [+|=] tabular_eda_03 r0 | tok=3721 14.3s 
+  [+|=] tabular_eda_03 r1 | tok=3631 14.8s 
+  [+|=] tabular_eda_03 r2 | tok=4705 15.8s 
+  [+|=] tabular_eda_04 r0 | tok=4951 15.2s 
+  [~|?] tabular_eda_04 r1 | tok=2872 8.5s 
+  [+|R] tabular_eda_04 r2 | tok=10139 27.4s (reconciled)
+  [+|=] tabular_eda_05 r0 | tok=1148 6.2s 
+  [+|=] tabular_eda_05 r1 | tok=1148 4.8s 
+  [+|=] tabular_eda_05 r2 | tok=1148 5.2s 
+  [+|=] tabular_eda_06 r0 | tok=3646 12.9s 
+  [+|=] tabular_eda_06 r1 | tok=2755 10.1s 
+  [+|=] tabular_eda_06 r2 | tok=5542 15.7s 
+  [+|=] tabular_eda_07 r0 | tok=3602 12.0s 
+  [+|=] tabular_eda_07 r1 | tok=3793 12.4s 
+  [+|=] tabular_eda_07 r2 | tok=3784 13.5s 
+  [+|=] tabular_eda_08 r0 | tok=5548 18.1s 
+  [x|?] tabular_eda_08 r1 | tok=2796 9.1s 
+  [x|?] tabular_eda_08 r2 | tok=2756 9.6s 
+  [+|=] tabular_eda_09 r0 | tok=1148 6.3s 
+  [+|=] tabular_eda_09 r1 | tok=1152 5.0s 
+  [+|=] tabular_eda_09 r2 | tok=1148 5.1s 
+  [+|=] tabular_eda_10 r0 | tok=5629 21.5s 
+  [+|=] tabular_eda_10 r1 | tok=6318 20.5s 
+  [+|=] tabular_eda_10 r2 | tok=5602 18.8s 
+  [+|=] tabular_eda_11 r0 | tok=5791 21.8s 
+  [+|=] tabular_eda_11 r1 | tok=3817 12.3s 
+  [+|=] tabular_eda_11 r2 | tok=3653 13.9s 
+  [~|?] tabular_eda_12 r0 | tok=2655 8.6s 
+  [+|R] tabular_eda_12 r1 | tok=8202 25.3s (reconciled)
+  [+|R] tabular_eda_12 r2 | tok=9618 26.2s (reconciled)
+  [+|=] tabular_eda_13 r0 | tok=1148 5.3s 
+  [+|=] tabular_eda_13 r1 | tok=1144 4.8s 
+  [+|=] tabular_eda_13 r2 | tok=1148 5.5s 
+  [+|R] tabular_eda_14 r0 | tok=6190 20.4s (reconciled)
+  [+|=] tabular_eda_14 r1 | tok=6660 17.9s 
+  [+|=] tabular_eda_14 r2 | tok=3801 12.2s 
+  [~|=] tabular_eda_15 r0 | tok=3770 12.6s 
+  [~|=] tabular_eda_15 r1 | tok=4374 14.4s 
+  [~|R] tabular_eda_15 r2 | tok=8130 25.9s (reconciled)
+  [+|=] time_series_00 r0 | tok=5652 18.6s 
+  [+|=] time_series_00 r1 | tok=5406 17.7s 
+  [+|R] time_series_00 r2 | tok=7186 29.3s (reconciled)
+  [+|=] time_series_01 r0 | tok=3626 15.0s 
+  [+|=] time_series_01 r1 | tok=3593 12.5s 
+  [+|=] time_series_01 r2 | tok=3702 14.1s 
+  [+|R] time_series_02 r0 | tok=7665 22.5s (reconciled)
+  [+|=] time_series_02 r1 | tok=3899 14.5s 
+  [~|R] time_series_02 r2 | tok=7498 25.1s (reconciled)
+  [+|=] time_series_03 r0 | tok=3363 11.8s 
+  [+|=] time_series_03 r1 | tok=4802 16.7s 
+  [+|=] time_series_03 r2 | tok=3964 13.6s 
+  [+|=] time_series_04 r0 | tok=6398 18.3s 
+  [+|=] time_series_04 r1 | tok=4192 15.1s 
+  [+|R] time_series_04 r2 | tok=8805 24.7s (reconciled)
+  [+|=] time_series_05 r0 | tok=3753 13.8s 
+  [+|=] time_series_05 r1 | tok=3620 13.4s 
+  [+|=] time_series_05 r2 | tok=3678 12.5s 
+  [+|=] time_series_06 r0 | tok=3890 13.6s 
+  [+|=] time_series_06 r1 | tok=3884 15.5s 
+  [+|=] time_series_06 r2 | tok=3888 15.6s 
+  [+|=] time_series_07 r0 | tok=3317 14.0s 
+  [+|=] time_series_07 r1 | tok=4064 16.2s 
+  [+|=] time_series_07 r2 | tok=5098 16.8s 
+  [+|=] time_series_08 r0 | tok=3895 14.9s 
+  [+|=] time_series_08 r1 | tok=5646 19.3s 
+  [+|=] time_series_08 r2 | tok=6132 17.9s 
+  [+|=] time_series_09 r0 | tok=3617 16.8s 
+  [+|=] time_series_09 r1 | tok=3748 12.5s 
+  [+|=] time_series_09 r2 | tok=3678 13.7s 
+  [+|=] time_series_10 r0 | tok=3893 16.6s 
+  [+|R] time_series_10 r1 | tok=6909 23.4s (reconciled)
+  [+|=] time_series_10 r2 | tok=4023 14.9s 
+  [+|=] time_series_11 r0 | tok=3626 14.7s 
+  [+|=] time_series_11 r1 | tok=3369 10.7s 
+  [+|=] time_series_11 r2 | tok=3414 12.3s 
+  [+|=] time_series_12 r0 | tok=4749 14.8s 
+  [+|=] time_series_12 r1 | tok=6538 17.6s 
+  [+|=] time_series_12 r2 | tok=4388 13.9s 
+  [+|=] time_series_13 r0 | tok=3664 13.8s 
+  [+|=] time_series_13 r1 | tok=3721 14.7s 
+  [+|=] time_series_13 r2 | tok=3588 12.8s 
+  [+|=] time_series_14 r0 | tok=3988 17.3s 
+  [+|=] time_series_14 r1 | tok=3847 17.8s 
+  [+|R] time_series_14 r2 | tok=6029 20.7s (reconciled)
+  [+|=] time_series_15 r0 | tok=3003 11.6s 
+  [+|=] time_series_15 r1 | tok=5837 20.6s 
+  [+|=] time_series_15 r2 | tok=3886 18.2s 
+  [~|?] recommendation_00 r0 | tok=2960 9.1s 
+  [+|=] recommendation_00 r1 | tok=3866 14.0s 
+  [+|=] recommendation_00 r2 | tok=3926 13.4s 
+  [+|=] recommendation_01 r0 | tok=4965 14.0s 
+  [+|=] recommendation_01 r1 | tok=6064 16.5s 
+  [+|=] recommendation_01 r2 | tok=5006 14.7s 
+  [+|=] recommendation_02 r0 | tok=4589 15.4s 
+  [+|=] recommendation_02 r1 | tok=4506 17.2s 
+  [+|=] recommendation_02 r2 | tok=4434 14.5s 
+  [+|R] recommendation_03 r0 | tok=5552 18.7s (reconciled)
+  [+|=] recommendation_03 r1 | tok=3699 11.9s 
+  [+|=] recommendation_03 r2 | tok=3810 13.0s 
+  [+|=] recommendation_04 r0 | tok=4849 16.1s 
+  [+|=] recommendation_04 r1 | tok=5303 14.8s 
+  [+|=] recommendation_04 r2 | tok=4964 12.1s 
+  [+|R] recommendation_05 r0 | tok=6831 19.3s (reconciled)
+  [+|=] recommendation_05 r1 | tok=7493 18.4s 
+  [+|R] recommendation_05 r2 | tok=8264 23.1s (reconciled)
+  [+|R] recommendation_06 r0 | tok=7971 26.2s (reconciled)
+  [+|=] recommendation_06 r1 | tok=5444 16.9s 
+  [x|?] recommendation_06 r2 | tok=3365 10.6s 
+  [+|=] recommendation_07 r0 | tok=6135 15.6s 
+  [+|=] recommendation_07 r1 | tok=5460 14.8s 
+  [+|=] recommendation_07 r2 | tok=6712 15.6s 
+  [+|R] recommendation_08 r0 | tok=7677 22.1s (reconciled)
+  [+|=] recommendation_08 r1 | tok=3845 12.5s 
+  [+|R] recommendation_08 r2 | tok=7926 25.1s (reconciled)
+  [+|=] recommendation_09 r0 | tok=4279 11.3s 
+  [x|?] recommendation_09 r1 | tok=2966 11.2s 
+  [+|=] recommendation_09 r2 | tok=4599 16.6s 
+  [+|=] recommendation_10 r0 | tok=7400 21.9s 
+  [+|=] recommendation_10 r1 | tok=4603 16.0s 
+  [+|=] recommendation_10 r2 | tok=4666 18.0s 
+  [+|=] recommendation_11 r0 | tok=5153 14.4s 
+  [+|=] recommendation_11 r1 | tok=5113 14.4s 
+  [+|=] recommendation_11 r2 | tok=5211 14.7s 
+  [+|=] recommendation_12 r0 | tok=4018 13.1s 
+  [+|=] recommendation_12 r1 | tok=6926 15.2s 
+  [+|=] recommendation_12 r2 | tok=5800 16.2s 
+  [+|=] recommendation_13 r0 | tok=5150 15.5s 
+  [+|=] recommendation_13 r1 | tok=5060 14.2s 
+  [+|=] recommendation_13 r2 | tok=6733 19.4s 
+  [+|=] recommendation_14 r0 | tok=5388 18.4s 
+  [x|?] recommendation_14 r1 | tok=3385 13.5s 
+  [x|?] recommendation_14 r2 | tok=3372 12.1s 
+  [+|=] recommendation_15 r0 | tok=5846 17.4s 
+  [+|=] recommendation_15 r1 | tok=5070 17.1s 
+  [+|R] recommendation_15 r2 | tok=8666 25.8s (reconciled)
+  [+|=] statistical_00 r0 | tok=1196 6.7s 
+  [+|=] statistical_00 r1 | tok=2234 8.8s 
+  [+|=] statistical_00 r2 | tok=2335 8.3s 
+  [~|R] statistical_01 r0 | tok=3422 12.2s (reconciled)
+  [~|R] statistical_01 r1 | tok=4702 21.3s (reconciled)
+  [~|=] statistical_01 r2 | tok=1481 7.7s 
+  [~|=] statistical_02 r0 | tok=3271 11.8s 
+  [+|R] statistical_02 r1 | tok=8082 32.1s (reconciled)
+  [+|=] statistical_02 r2 | tok=5261 18.6s 
+  [~|=] statistical_03 r0 | tok=2701 10.5s 
+  [~|R] statistical_03 r1 | tok=7801 28.5s (reconciled)
+  [~|=] statistical_03 r2 | tok=2123 11.1s 
+  [+|=] statistical_04 r0 | tok=1196 5.1s 
+  [+|=] statistical_04 r1 | tok=1196 4.7s 
+  [+|=] statistical_04 r2 | tok=1200 6.4s 
+  [~|R] statistical_05 r0 | tok=3339 14.5s (reconciled)
+  [~|R] statistical_05 r1 | tok=4060 17.1s (reconciled)
+  [~|=] statistical_05 r2 | tok=1492 9.3s 
+  [~|R] statistical_06 r0 | tok=6239 18.4s (reconciled)
+  [+|R] statistical_06 r1 | tok=8643 26.0s (reconciled)
+  [+|R] statistical_06 r2 | tok=7172 22.2s (reconciled)
+  [~|=] statistical_07 r0 | tok=2644 10.3s 
+  [~|=] statistical_07 r1 | tok=2097 8.6s 
+  [~|=] statistical_07 r2 | tok=5113 15.9s 
+  [+|=] statistical_08 r0 | tok=1196 4.7s 
+  [+|=] statistical_08 r1 | tok=1196 5.3s 
+  [+|=] statistical_08 r2 | tok=1196 4.9s 
+  [~|=] statistical_09 r0 | tok=1470 7.4s 
+  [~|R] statistical_09 r1 | tok=4778 19.1s (reconciled)
+  [~|R] statistical_09 r2 | tok=3953 15.8s (reconciled)
+  [~|=] statistical_10 r0 | tok=4549 16.1s 
+  [~|R] statistical_10 r1 | tok=8381 27.3s (reconciled)
+  [~|?] statistical_10 r2 | tok=2788 8.5s 
+  [~|=] statistical_11 r0 | tok=2780 9.6s 
+  [~|=] statistical_11 r1 | tok=2697 10.8s 
+  [~|=] statistical_11 r2 | tok=4386 15.6s 
+  [+|=] statistical_12 r0 | tok=2215 8.7s 
+  [+|=] statistical_12 r1 | tok=2255 8.7s 
+  [+|=] statistical_12 r2 | tok=1196 5.3s 
+  [~|R] statistical_13 r0 | tok=3881 15.7s (reconciled)
+  [~|=] statistical_13 r1 | tok=1467 7.4s 
+  [~|=] statistical_13 r2 | tok=2716 12.1s 
+  [+|R] statistical_14 r0 | tok=5865 23.4s (reconciled)
+  [+|=] statistical_14 r1 | tok=5221 17.3s 
+  [+|=] statistical_14 r2 | tok=3731 13.6s 
+  [~|=] statistical_15 r0 | tok=2689 11.9s 
+  [~|=] statistical_15 r1 | tok=3918 15.3s 
+  [~|=] statistical_15 r2 | tok=5441 21.6s 
+  [+|R] text_log_00 r0 | tok=7323 27.3s (reconciled)
+  [+|=] text_log_00 r1 | tok=4619 17.7s 
+  [x|?] text_log_00 r2 | tok=3160 12.0s 
+  [+|=] text_log_01 r0 | tok=6131 19.7s 
+  [x|?] text_log_01 r1 | tok=2897 10.1s 
+  [x|?] text_log_01 r2 | tok=2722 10.5s 
+  [+|=] text_log_02 r0 | tok=5722 18.8s 
+  [+|R] text_log_02 r1 | tok=7366 26.5s (reconciled)
+  [+|=] text_log_02 r2 | tok=5965 22.0s 
+  [~|R] text_log_03 r0 | tok=8187 26.3s (reconciled)
+  [~|=] text_log_03 r1 | tok=6317 21.0s 
+  [~|=] text_log_03 r2 | tok=7149 19.4s 
+  [+|=] text_log_04 r0 | tok=3434 14.2s 
+  [+|=] text_log_04 r1 | tok=4240 16.0s 
+  [+|=] text_log_04 r2 | tok=3991 16.4s 
+  [+|=] text_log_05 r0 | tok=6118 19.4s 
+  [+|R] text_log_05 r1 | tok=7741 24.6s (reconciled)
+  [+|=] text_log_05 r2 | tok=4099 13.6s 
+  [+|=] text_log_06 r0 | tok=3359 13.7s 
+  [+|=] text_log_06 r1 | tok=4586 17.6s 
+  [+|=] text_log_06 r2 | tok=5870 21.1s 
+  [~|=] text_log_07 r0 | tok=8318 21.8s 
+  [~|?] text_log_07 r1 | tok=2933 11.2s 
+  [~|=] text_log_07 r2 | tok=6258 20.1s 
+  [x|?] text_log_08 r0 | tok=3159 13.0s 
+  [+|=] text_log_08 r1 | tok=4052 15.7s 
+  [+|=] text_log_08 r2 | tok=3979 16.0s 
+  [+|=] text_log_09 r0 | tok=3487 12.1s 
+  [~|?] text_log_09 r1 | tok=2758 11.2s 
+  [+|=] text_log_09 r2 | tok=4814 15.2s 
+  [+|=] text_log_10 r0 | tok=5231 17.8s 
+  [+|=] text_log_10 r1 | tok=6498 19.2s 
+  [+|=] text_log_10 r2 | tok=4067 14.3s 
+  [~|R] text_log_11 r0 | tok=10013 32.0s (reconciled)
+  [~|?] text_log_11 r1 | tok=2806 11.2s 
+  [~|?] text_log_11 r2 | tok=2938 11.3s 
+  [+|=] text_log_12 r0 | tok=4008 16.4s 
+  [+|=] text_log_12 r1 | tok=3341 15.5s 
+  [+|=] text_log_12 r2 | tok=4002 17.3s 
+  [+|=] text_log_13 r0 | tok=4848 15.7s 
+  [+|=] text_log_13 r1 | tok=4304 16.7s 
+  [+|=] text_log_13 r2 | tok=4697 15.9s 
+  [+|=] text_log_14 r0 | tok=5235 18.9s 
+  [+|=] text_log_14 r1 | tok=2496 12.3s 
+  [+|=] text_log_14 r2 | tok=3660 15.5s 
+  [x|?] text_log_15 r0 | tok=2989 13.7s 
+  [~|?] text_log_15 r1 | tok=2897 14.6s 
+  [~|=] text_log_15 r2 | tok=7479 23.4s 
+  [+|=] dsbench_00000001_question6 r0 | tok=5961 20.0s 
+  [+|=] dsbench_00000001_question6 r1 | tok=5908 16.7s 
+  [+|=] dsbench_00000001_question6 r2 | tok=4996 17.5s 
+  [+|=] dsbench_00000001_question7 r0 | tok=8241 22.3s 
+  [+|=] dsbench_00000001_question7 r1 | tok=4288 12.5s 
+  [x|R] dsbench_00000001_question7 r2 | tok=10762 31.1s (reconciled)
+  [+|=] dsbench_00000001_question9 r0 | tok=3329 13.1s 
+  [+|=] dsbench_00000001_question9 r1 | tok=5323 15.3s 
+  [+|=] dsbench_00000001_question9 r2 | tok=6138 20.6s 
+  [+|=] dsbench_00000001_question11 r0 | tok=4334 14.2s 
+  [+|=] dsbench_00000001_question11 r1 | tok=3296 11.7s 
+  [+|=] dsbench_00000001_question11 r2 | tok=4079 13.6s 
+  [+|=] dsbench_00000001_question12 r0 | tok=6250 16.1s 
+  [+|=] dsbench_00000001_question12 r1 | tok=5937 17.0s 
+  [+|?] dsbench_00000001_question12 r2 | tok=3534 9.9s 
+  [+|=] dsbench_00000001_question14 r0 | tok=7930 23.5s 
+  [x|?] dsbench_00000001_question14 r1 | tok=3505 11.4s 
+  [+|=] dsbench_00000001_question14 r2 | tok=6644 20.7s 
+  [+|=] dsbench_00000001_question15 r0 | tok=6570 20.2s 
+  [+|=] dsbench_00000001_question15 r1 | tok=8773 25.2s 
+  [+|=] dsbench_00000001_question15 r2 | tok=3342 12.0s 
+  [+|=] dsbench_00000002_question1 r0 | tok=3456 12.9s 
+  [+|=] dsbench_00000002_question1 r1 | tok=3419 11.8s 
+  [+|=] dsbench_00000002_question1 r2 | tok=4578 15.6s 
+  [+|=] dsbench_00000002_question2 r0 | tok=3425 12.2s 
+  [+|=] dsbench_00000002_question2 r1 | tok=5637 16.2s 
+  [+|=] dsbench_00000002_question2 r2 | tok=6083 18.1s 
+  [+|=] dsbench_00000002_question3 r0 | tok=3440 11.9s 
+  [+|=] dsbench_00000002_question3 r1 | tok=4266 13.7s 
+  [+|=] dsbench_00000002_question3 r2 | tok=5145 17.9s 
+  [+|=] dsbench_00000002_question4 r0 | tok=5145 14.3s 
+  [+|=] dsbench_00000002_question4 r1 | tok=3559 12.1s 
+  [+|=] dsbench_00000002_question4 r2 | tok=4141 17.1s 
+  [+|=] dsbench_00000002_question5 r0 | tok=5206 15.5s 
+  [+|=] dsbench_00000002_question5 r1 | tok=3493 12.3s 
+  [+|=] dsbench_00000002_question5 r2 | tok=6082 18.9s 
+  [+|=] dsbench_00000002_question6 r0 | tok=6995 16.8s 
+  [+|=] dsbench_00000002_question6 r1 | tok=5214 12.9s 
+  [+|R] dsbench_00000002_question6 r2 | tok=9528 26.9s (reconciled)
+  [+|=] dsbench_00000002_question7 r0 | tok=5423 21.7s 
+  [+|R] dsbench_00000002_question7 r1 | tok=10221 30.1s (reconciled)
+  [+|=] dsbench_00000002_question7 r2 | tok=4482 14.2s 
+  [+|=] dsbench_00000002_question8 r0 | tok=3415 11.1s 
+  [+|=] dsbench_00000002_question8 r1 | tok=5243 14.0s 
+  [+|=] dsbench_00000002_question8 r2 | tok=4402 12.7s 
+
+  --- gpt-4o-mini+consistency summary ---
+  success_rate: 0.7789 +/- 0.0105
+  silent_fail:  0.7790
+  tok/success:  5876
+  consistent: 221/285 | reconciled: 40/285
+
+============================================================
+Running B3: gpt-4o+consistency (gpt-4o)
+============================================================
+  [+|=] tabular_eda_00 r0 | tok=1390 7.4s 
+  [+|=] tabular_eda_00 r1 | tok=1384 6.5s 
+  [+|=] tabular_eda_00 r2 | tok=1372 6.7s 
+  [+|=] tabular_eda_01 r0 | tok=1146 5.3s 
+  [+|=] tabular_eda_01 r1 | tok=1411 7.2s 
+  [+|=] tabular_eda_01 r2 | tok=1474 9.3s 
+  [+|=] tabular_eda_02 r0 | tok=1560 6.8s 
+  [+|=] tabular_eda_02 r1 | tok=1538 7.5s 
+  [+|=] tabular_eda_02 r2 | tok=1520 9.7s 
+  [+|=] tabular_eda_03 r0 | tok=1518 6.2s 
+  [+|=] tabular_eda_03 r1 | tok=1532 6.7s 
+  [+|=] tabular_eda_03 r2 | tok=1496 7.0s 
+  [+|=] tabular_eda_04 r0 | tok=1380 6.6s 
+  [+|=] tabular_eda_04 r1 | tok=1398 6.5s 
+  [+|=] tabular_eda_04 r2 | tok=1396 7.2s 
+  [+|=] tabular_eda_05 r0 | tok=1412 6.9s 
+  [+|=] tabular_eda_05 r1 | tok=1413 8.5s 
+  [+|=] tabular_eda_05 r2 | tok=1414 7.3s 
+  [+|=] tabular_eda_06 r0 | tok=1514 8.6s 
+  [+|=] tabular_eda_06 r1 | tok=2173 10.5s 
+  [+|=] tabular_eda_06 r2 | tok=1510 6.5s 
+  [+|=] tabular_eda_07 r0 | tok=1480 7.1s 
+  [+|=] tabular_eda_07 r1 | tok=1498 8.0s 
+  [+|=] tabular_eda_07 r2 | tok=1510 7.4s 
+  [+|=] tabular_eda_08 r0 | tok=1372 6.5s 
+  [+|=] tabular_eda_08 r1 | tok=1380 7.4s 
+  [+|=] tabular_eda_08 r2 | tok=1364 6.0s 
+  [+|=] tabular_eda_09 r0 | tok=1146 7.0s 
+  [+|=] tabular_eda_09 r1 | tok=1148 6.7s 
+  [+|=] tabular_eda_09 r2 | tok=1148 6.3s 
+  [+|=] tabular_eda_10 r0 | tok=1510 7.3s 
+  [+|=] tabular_eda_10 r1 | tok=1476 8.1s 
+  [+|=] tabular_eda_10 r2 | tok=1534 8.1s 
+  [+|=] tabular_eda_11 r0 | tok=1502 6.8s 
+  [+|=] tabular_eda_11 r1 | tok=1534 7.3s 
+  [+|=] tabular_eda_11 r2 | tok=1498 7.6s 
+  [+|=] tabular_eda_12 r0 | tok=1954 10.3s 
+  [+|=] tabular_eda_12 r1 | tok=1398 7.9s 
+  [+|=] tabular_eda_12 r2 | tok=1394 7.6s 
+  [+|=] tabular_eda_13 r0 | tok=1414 8.2s 
+  [+|=] tabular_eda_13 r1 | tok=1146 7.4s 
+  [+|=] tabular_eda_13 r2 | tok=1146 6.9s 
+  [+|=] tabular_eda_14 r0 | tok=1486 8.4s 
+  [+|=] tabular_eda_14 r1 | tok=1532 6.6s 
+  [+|=] tabular_eda_14 r2 | tok=1827 9.7s 
+  [+|=] tabular_eda_15 r0 | tok=1506 8.5s 
+  [+|=] tabular_eda_15 r1 | tok=1528 8.8s 
+  [+|R] tabular_eda_15 r2 | tok=2338 10.8s (reconciled)
+  [+|=] time_series_00 r0 | tok=2905 12.0s 
+  [+|=] time_series_00 r1 | tok=2866 13.2s 
+  [+|=] time_series_00 r2 | tok=3016 12.6s 
+  [+|=] time_series_01 r0 | tok=2636 11.2s 
+  [+|=] time_series_01 r1 | tok=2787 10.0s 
+  [+|=] time_series_01 r2 | tok=2525 10.7s 
+  [+|=] time_series_02 r0 | tok=3235 12.5s 
+  [+|=] time_series_02 r1 | tok=4372 14.7s 
+  [+|=] time_series_02 r2 | tok=3214 12.0s 
+  [+|=] time_series_03 r0 | tok=1284 7.1s 
+  [+|=] time_series_03 r1 | tok=1903 8.5s 
+  [+|=] time_series_03 r2 | tok=1282 7.3s 
+  [+|=] time_series_04 r0 | tok=3027 11.1s 
+  [+|=] time_series_04 r1 | tok=3033 10.5s 
+  [+|=] time_series_04 r2 | tok=2870 11.8s 
+  [+|=] time_series_05 r0 | tok=2467 10.2s 
+  [+|=] time_series_05 r1 | tok=2525 10.2s 
+  [+|=] time_series_05 r2 | tok=2740 12.1s 
+  [+|=] time_series_06 r0 | tok=3121 12.1s 
+  [+|=] time_series_06 r1 | tok=3129 13.6s 
+  [+|=] time_series_06 r2 | tok=3279 12.0s 
+  [+|=] time_series_07 r0 | tok=1563 8.0s 
+  [+|=] time_series_07 r1 | tok=1230 8.0s 
+  [+|=] time_series_07 r2 | tok=1264 7.7s 
+  [+|=] time_series_08 r0 | tok=3106 14.8s 
+  [+|=] time_series_08 r1 | tok=3019 11.7s 
+  [+|=] time_series_08 r2 | tok=2949 10.8s 
+  [+|=] time_series_09 r0 | tok=2529 13.0s 
+  [+|=] time_series_09 r1 | tok=2472 10.8s 
+  [+|R] time_series_09 r2 | tok=6194 23.5s (reconciled)
+  [+|=] time_series_10 r0 | tok=3182 14.9s 
+  [+|=] time_series_10 r1 | tok=3139 22.1s 
+  [+|R] time_series_10 r2 | tok=4483 19.1s (reconciled)
+  [+|=] time_series_11 r0 | tok=1478 9.0s 
+  [+|=] time_series_11 r1 | tok=1901 11.0s 
+<sandbox>:10: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  [+|=] time_series_11 r2 | tok=1537 8.3s 
+  [+|=] time_series_12 r0 | tok=2829 13.8s 
+  [+|=] time_series_12 r1 | tok=2963 11.2s 
+  [+|=] time_series_12 r2 | tok=2875 13.7s 
+  [+|=] time_series_13 r0 | tok=2057 9.4s 
+  [+|=] time_series_13 r1 | tok=2013 8.9s 
+  [+|=] time_series_13 r2 | tok=2541 11.8s 
+  [+|=] time_series_14 r0 | tok=3203 13.8s 
+  [+|=] time_series_14 r1 | tok=3005 12.7s 
+  [+|=] time_series_14 r2 | tok=3173 12.6s 
+  [+|=] time_series_15 r0 | tok=1502 7.9s 
+  [+|=] time_series_15 r1 | tok=1190 6.1s 
+  [+|=] time_series_15 r2 | tok=1246 6.6s 
+  [+|=] recommendation_00 r0 | tok=3280 14.0s 
+  [+|=] recommendation_00 r1 | tok=2917 10.6s 
+  [+|=] recommendation_00 r2 | tok=2858 12.2s 
+  [+|=] recommendation_01 r0 | tok=5972 21.9s 
+  [+|=] recommendation_01 r1 | tok=5425 21.6s 
+  [+|=] recommendation_01 r2 | tok=4014 16.1s 
+  [+|=] recommendation_02 r0 | tok=4850 17.1s 
+  [+|=] recommendation_02 r1 | tok=3375 14.6s 
+  [+|=] recommendation_02 r2 | tok=2646 11.9s 
+  [+|R] recommendation_03 r0 | tok=5278 20.0s (reconciled)
+  [~|=] recommendation_03 r1 | tok=1348 7.3s 
+  [~|R] recommendation_03 r2 | tok=3963 16.8s (reconciled)
+  [+|=] recommendation_04 r0 | tok=3466 13.8s 
+  [+|=] recommendation_04 r1 | tok=2801 14.2s 
+  [+|=] recommendation_04 r2 | tok=3402 16.3s 
+  [~|R] recommendation_05 r0 | tok=5530 25.9s (reconciled)
+  [+|=] recommendation_05 r1 | tok=4478 18.4s 
+  [~|R] recommendation_05 r2 | tok=5547 22.7s (reconciled)
+  [+|=] recommendation_06 r0 | tok=3121 15.3s 
+  [+|=] recommendation_06 r1 | tok=3311 16.3s 
+  [+|=] recommendation_06 r2 | tok=4873 16.6s 
+  [+|=] recommendation_07 r0 | tok=3976 15.2s 
+  [~|=] recommendation_07 r1 | tok=1334 7.7s 
