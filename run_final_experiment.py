@@ -94,7 +94,13 @@ def main():
 
     # build task set: synthetic + real DSBench
     synth = build_full_benchmark(n_per_domain=args.n_synthetic)
-    real = build_dsbench_real_subset("/data/lab/DSBench", n_questions=args.n_real)
+    real = build_dsbench_real_subset(
+        "/data/lab/DSBench", n_questions=args.n_real,
+        preferred_task_ids=[
+            "00000043", "00000033", "00000038", "00000010", "00000035",
+            "00000030", "00000016", "00000005", "00000006", "00000007",
+        ],
+    )
     taskset = TaskSet(tasks=list(synth.tasks) + list(real.tasks))
     n_synth = len(synth)
     n_real = len(real)

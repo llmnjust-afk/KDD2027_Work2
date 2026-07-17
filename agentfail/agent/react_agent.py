@@ -84,12 +84,15 @@ class ReActAgent:
 
     SYSTEM_PROMPT = (
         "You are a data-science agent. Solve the task by writing and executing Python code.\n"
-        "The data file is available at 'data.csv' in the current working directory.\n"
-        "ALWAYS read it with pandas: df = pd.read_csv('data.csv')\n"
+        "The data file is in the current working directory. It may be 'data.csv' (CSV) "
+        "or 'data.xlsx' (Excel with multiple sheets). Check which file exists first.\n"
+        "For CSV: df = pd.read_csv('data.csv')\n"
+        "For Excel: sheets = pd.read_excel('data.xlsx', sheet_name=None) "
+        "to get all sheets, then inspect sheet names and columns.\n"
         "Each step: emit 'Thought: <reasoning>' then 'Action:' with a python code block.\n"
         "Your code MUST print the final result using exactly: print('ANSWER:', <value>)\n"
         "When you see the answer in the output, emit 'ANSWER: <final answer>' to finish.\n"
-        "Do NOT use hypothetical data. Use the real data.csv file."
+        "Do NOT use hypothetical data. Use the real data file."
     )
 
     def __init__(
