@@ -109,6 +109,8 @@ def _make_checker(answer: str):
     # MC: single letter
     if ans_upper in "ABCDEFGHIJ":
         def _mc(pred, _gold, _a=ans_upper):
+            if pred is None:
+                return False
             return _a in str(pred).strip().upper()[:5]
         return _mc
 
@@ -116,16 +118,20 @@ def _make_checker(answer: str):
     try:
         ans_float = float(ans_str)
         def _num(pred, _gold, _a=ans_float):
+            if pred is None:
+                return False
             try:
                 return abs(float(pred) - _a) <= abs(_a) * 0.02 + 1  # 2% tolerance
             except (ValueError, TypeError):
-                return _a in str(pred).replace(",", "")
+                return str(_a) in str(pred).replace(",", "")
         return _num
     except ValueError:
         pass
 
     # text: substring match
     def _text(pred, _gold, _a=ans_str.lower()):
+        if pred is None:
+            return False
         return _a in str(pred).lower()
     return _text
 
