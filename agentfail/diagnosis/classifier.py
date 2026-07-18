@@ -55,9 +55,9 @@ class FailureClassifier:
         code = step.code.lower()
         thought = step.thought.lower()
         if "mean" in code and ("sum" in " ".join(task.gt_path).lower()) and "groupby" not in code:
-            return FailureCategory.WRONG_OPERATION
+            return FailureCategory.WRONG_OPERATION_PLAN
         if "average" in thought and "sum" in " ".join(task.gt_path).lower():
-            return FailureCategory.WRONG_OPERATION
+            return FailureCategory.WRONG_OPERATION_PLAN
         # leakage signals
         if "linearregression" in code and "leak" not in code:
             for trap in task.traps:
@@ -70,7 +70,7 @@ class FailureClassifier:
         code = step.code.lower()
         if "sklearn" in code or "linearregression" in code:
             # ML tool where aggregation suffices
-            return FailureCategory.WRONG_TOOL
+            return FailureCategory.WRONG_TOOL_CODE
         return None
 
     @staticmethod
@@ -79,19 +79,19 @@ class FailureClassifier:
             return None
         et = step.execution.error_type or ""
         if et == "KeyError":
-            return FailureCategory.KEY_ERROR
+            return FailureCategory.KEY_ERROR_RUNTIME
         if et in ("TypeError", "ValueError"):
-            return FailureCategory.TYPE_ERROR
+            return FailureCategory.TYPE_CONFUSION_CODE
         if et == "SecurityError":
-            return FailureCategory.SECURITY_BLOCK
-        return FailureCategory.RUNTIME_ERROR
+            return FailureCategory.SECURITY_BLOCK_RUNTIME
+        return FailureCategory.RUNTIME_EXCEPTION
 
     @staticmethod
     def _detect_interpretation(step: TraceStep, task: Task, final_answer) -> Optional[FailureCategory]:
         code = step.code.lower()
         # wrong aggregation: count instead of sum
         if ".count(" in code and "sum" in " ".join(task.gt_path).lower():
-            return FailureCategory.WRONG_AGGREGATION
+            return FailureCategory.WRONG_AGGREGATION_CODE
         # answer not present in stdout (hallucinated)
         if final_answer and step.execution and step.execution.success:
             if str(final_answer) not in step.execution.stdout:
@@ -109,7 +109,7 @@ class FailureClassifier:
             return ClassifiedTrace(
                 trace=trace,
                 classification=FailureClassification(
-                    stage=FailureStage.INTERPRETATION,
+                    stage=FailureStage.OUTPUT_MISMATCH,
                     category=FailureCategory.NONE,
                     step_index=-1,
                     is_silent=False,
@@ -127,7 +127,7 @@ class FailureClassifier:
             cat = self._detect_execution(step)
             if cat is not None:
                 fc = FailureClassification(
-                    stage=FailureStage.EXECUTION,
+                    stage=FailureStage.RUNTIME,
                     category=cat,
                     step_index=i,
                     is_silent=False,
@@ -141,7 +141,7 @@ class FailureClassifier:
             if cat is not None:
                 silent = cat in SILENT_CATEGORIES
                 fc = FailureClassification(
-                    stage=FailureStage.PLANNING,
+                    stage=FailureStage.ANALYTICAL_PLAN,
                     category=cat,
                     step_index=i,
                     is_silent=silent,
@@ -154,7 +154,7 @@ class FailureClassifier:
             cat = self._detect_tool_use(step)
             if cat is not None:
                 fc = FailureClassification(
-                    stage=FailureStage.TOOL_USE,
+                    stage=FailureStage.CODE_GENERATION,
                     category=cat,
                     step_index=i,
                     is_silent=cat in SILENT_CATEGORIES,
@@ -167,7 +167,7 @@ class FailureClassifier:
             cat = self._detect_interpretation(step, task, final_answer)
             if cat is not None:
                 fc = FailureClassification(
-                    stage=FailureStage.INTERPRETATION,
+                    stage=FailureStage.OUTPUT_MISMATCH,
                     category=cat,
                     step_index=i,
                     is_silent=True,
@@ -184,8 +184,8 @@ class FailureClassifier:
         if final_answer is None or (isinstance(final_answer, str) and not final_answer.strip()):
             # no answer produced = code crashed or never printed ANSWER -> loud failure
             fc = FailureClassification(
-                stage=FailureStage.EXECUTION,
-                category=FailureCategory.RUNTIME_ERROR,
+                stage=FailureStage.RUNTIME,
+                category=FailureCategory.RUNTIME_EXCEPTION,
                 step_index=last_step.step_index if last_step else 0,
                 is_silent=False,
                 evidence="no answer produced (code crashed or never printed ANSWER:)",
@@ -193,7 +193,7 @@ class FailureClassifier:
         else:
             # answer produced but wrong -> genuinely silent interpretation failure
             fc = FailureClassification(
-                stage=FailureStage.INTERPRETATION,
+                stage=FailureStage.OUTPUT_MISMATCH,
                 category=FailureCategory.HALLUCINATED_ANSWER,
                 step_index=last_step.step_index if last_step else 0,
                 is_silent=True,
