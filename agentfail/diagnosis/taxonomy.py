@@ -1,20 +1,39 @@
-"""The 4-stage failure taxonomy.
+"""The 5-stage failure taxonomy (v2, revised per reviewer feedback).
 
-This taxonomy is the conceptual core of the benchmark. It decomposes every
-agent failure into *which stage of the agent loop it originated in*:
+FIX per review: The original 4-stage taxonomy had overlapping categories:
+Planning's `wrong_operation` (mean instead of sum) and Interpretation's
+`wrong_aggregation` (count instead of sum) could describe the same error.
+The reviewer correctly noted this created circular classification.
 
-  PLANNING      -- the agent chose the wrong approach / operation
-  TOOL_USE      -- the agent selected or parameterised a tool incorrectly
-  EXECUTION     -- the generated code raised an exception (loud failure)
-  INTERPRETATION-- the code ran but the agent extracted/understood the wrong
-                   answer (silent failure)
+v2 redesign: stages are now defined by WHERE the error is detectable in the
+agent loop, not by what the error conceptually is. This makes stages mutually
+exclusive by construction:
 
-The EXECUTION/INTERPRETATION split is what operationalises the "silent failure"
-concept from Tree-Notebook (Qiu 2026) and Wu (2026): a loud failure is visible
-to the agent (it can retry), a silent failure is not (it propagates undetected).
+  ANALYTICAL_PLAN   -- the agent's stated plan (Thought) is wrong BEFORE any
+                        code is written. Detectable from the thought text alone.
+  CODE_GENERATION   -- the plan is correct but the generated code does not
+                        implement it. Detectable by comparing thought to code.
+  RUNTIME           -- the code raises an exception. Detectable from the
+                        traceback. (loud failure)
+  OUTPUT_MISMATCH   -- the code runs without error but the printed answer does
+                        not match the computed result. Detectable by comparing
+                        stdout to the final ANSWER. (silent, agent's fault)
+  ANSWER_ERROR      -- the code runs, the output is internally consistent, but
+                        the answer is wrong because the approach itself was
+                        flawed (e.g., correct code for the wrong question).
+                        Detectable only by external checking. (silent, approach's fault)
 
-Each category carries structured fields so the classifier output is machine-
-readable and the metrics layer can aggregate without re-parsing free text.
+Key change: ANALYTICAL_PLAN vs ANSWER_ERROR are now distinguished by WHETHER
+the agent's Thought reveals the error. If the thought says "compute the mean"
+but the task asks for sum, that's ANALYTICAL_PLAN (visible in thought). If the
+thought says "compute the sum" and the code computes the sum but the answer is
+still wrong (because the data needs filtering first), that's ANSWER_ERROR
+(invisible without external ground truth).
+
+This removes the overlap: a count-vs-sum error is classified by looking at the
+Thought. If the Thought says "count the items" (wrong plan), it's
+ANALYTICAL_PLAN. If the Thought says "sum the values" but the code uses
+.count() (code doesn't match plan), it's CODE_GENERATION.
 """
 
 from __future__ import annotations
@@ -25,60 +44,69 @@ from typing import List, Optional
 
 
 class FailureStage(Enum):
-    PLANNING = "planning"
-    TOOL_USE = "tool_use"
-    EXECUTION = "execution"
-    INTERPRETATION = "interpretation"
+    """v2 stages, mutually exclusive by detection point."""
+    ANALYTICAL_PLAN = "analytical_plan"   # thought reveals wrong approach
+    CODE_GENERATION = "code_generation"   # code doesn't match correct thought
+    RUNTIME = "runtime"                   # code crashes (loud)
+    OUTPUT_MISMATCH = "output_mismatch"   # answer extracted wrong from output (silent)
+    ANSWER_ERROR = "answer_error"         # code runs, output consistent, answer wrong (silent)
+    NONE = "none"
 
     @classmethod
     def from_trap(cls, trap_stage: str) -> "FailureStage":
+        """Map old trap stages to new taxonomy for backward compatibility."""
         mapping = {
-            "planning": cls.PLANNING,
-            "tool_use": cls.TOOL_USE,
-            "execution": cls.EXECUTION,
-            "interpretation": cls.INTERPRETATION,
+            "planning": cls.ANALYTICAL_PLAN,
+            "tool_use": cls.CODE_GENERATION,
+            "execution": cls.RUNTIME,
+            "interpretation": cls.OUTPUT_MISMATCH,
         }
-        return mapping.get(trap_stage, cls.INTERPRETATION)
+        return mapping.get(trap_stage, cls.ANSWER_ERROR)
 
 
 class FailureCategory(Enum):
-    """Concrete failure sub-types within each stage."""
+    """Concrete failure sub-types within each stage (v2, mutually exclusive)."""
 
-    # planning
-    WRONG_OPERATION = "wrong_operation"        # mean instead of sum
-    WRONG_DECOMPOSITION = "wrong_decomposition"
-    TEMPORAL_LEAKAGE = "temporal_leakage"      # uses future/test data
-    DATA_LEAKAGE = "data_leakage"              # target as feature
+    # ANALYTICAL_PLAN: the Thought text reveals a wrong approach
+    WRONG_OPERATION_PLAN = "wrong_operation_plan"  # thought says mean, task needs sum
+    WRONG_FILTER_PLAN = "wrong_filter_plan"        # thought says filter X, should filter Y
+    LEAKAGE_PLAN = "leakage_plan"                  # thought reveals using future/target data
 
-    # tool_use
-    WRONG_TOOL = "wrong_tool"                  # ML model where pandas suffices
-    WRONG_PARAMS = "wrong_params"
-    OVER_PRIVILEGED = "over_privileged"        # higher-privilege tool than needed
+    # CODE_GENERATION: thought is correct but code doesn't implement it
+    WRONG_AGGREGATION_CODE = "wrong_aggregation_code"  # thought says sum, code uses count
+    WRONG_COLUMN_CODE = "wrong_column_code"            # thought says col A, code uses col B
+    TYPE_CONFUSION_CODE = "type_confusion_code"        # thought says numeric, code treats as string
+    WRONG_TOOL_CODE = "wrong_tool_code"                # thought says groupby, code uses sklearn
 
-    # execution
-    RUNTIME_ERROR = "runtime_error"
-    TYPE_ERROR = "type_error"
-    KEY_ERROR = "key_error"
-    SECURITY_BLOCK = "security_block"
+    # RUNTIME: code crashes (loud, immediately detectable)
+    RUNTIME_EXCEPTION = "runtime_exception"
+    KEY_ERROR_RUNTIME = "key_error_runtime"
+    SECURITY_BLOCK_RUNTIME = "security_block_runtime"
 
-    # interpretation
-    WRONG_AGGREGATION = "wrong_aggregation"    # count vs sum (silent)
-    WRONG_INDEX = "wrong_index"
-    MISREAD_OUTPUT = "misread_output"
-    HALLUCINATED_ANSWER = "hallucinated_answer"  # answer not in output
+    # OUTPUT_MISMATCH: code runs but agent extracts wrong answer from output (silent)
+    MISREAD_OUTPUT = "misread_output"              # output has answer but agent reports different
+    HALLUCINATED_ANSWER = "hallucinated_answer"    # answer not in output at all
+    NO_ANSWER_PRINTED = "no_answer_printed"        # code ran but never printed ANSWER:
 
-    NONE = "none"  # no failure
+    # ANSWER_ERROR: code runs, output is consistent, but approach was wrong (silent)
+    WRONG_RESULT = "wrong_result"                  # correct code execution, wrong final value
+    INCOMPLETE_ANALYSIS = "incomplete_analysis"    # missing a step (e.g., forgot to filter)
+
+    NONE = "none"
 
 
-# Which categories are "silent" (code runs, wrong answer)
+# Silent = code ran without error but answer is wrong
+SILENT_STAGES = {FailureStage.OUTPUT_MISMATCH, FailureStage.ANSWER_ERROR}
 SILENT_CATEGORIES = {
-    FailureCategory.WRONG_AGGREGATION,
-    FailureCategory.WRONG_INDEX,
     FailureCategory.MISREAD_OUTPUT,
     FailureCategory.HALLUCINATED_ANSWER,
-    FailureCategory.TEMPORAL_LEAKAGE,
-    FailureCategory.DATA_LEAKAGE,
-    FailureCategory.WRONG_OPERATION,  # wrong op may still run
+    FailureCategory.NO_ANSWER_PRINTED,
+    FailureCategory.WRONG_RESULT,
+    FailureCategory.INCOMPLETE_ANALYSIS,
+    # plan errors that produce running code are also silent
+    FailureCategory.WRONG_OPERATION_PLAN,
+    FailureCategory.WRONG_FILTER_PLAN,
+    FailureCategory.LEAKAGE_PLAN,
 }
 
 
@@ -88,12 +116,12 @@ class FailureClassification:
 
     stage: FailureStage
     category: FailureCategory
-    step_index: int                      # where the failure originated
+    step_index: int
     is_silent: bool
-    confidence: float = 1.0              # rule-based = 1.0; LLM-judge < 1.0
-    evidence: str = ""                   # why this classification
-    matched_trap: Optional[str] = None   # name of the task trap it matches
-    propagated_to: List[int] = field(default_factory=list)  # later steps affected
+    confidence: float = 1.0
+    evidence: str = ""
+    matched_trap: Optional[str] = None
+    propagated_to: List[int] = field(default_factory=list)
 
     @property
     def is_failure(self) -> bool:

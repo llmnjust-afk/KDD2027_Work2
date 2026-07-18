@@ -176,15 +176,29 @@ class FailureClassifier:
                 )
                 return ClassifiedTrace(trace=trace, classification=fc, task_correct=False)
 
-        # no rule fired but task wrong -> default to hallucinated interpretation
+        # no rule fired but task wrong
+        # FIX per review: if final_answer is None, the code never produced an
+        # answer -> this is a RUNTIME failure (loud), NOT a silent interpretation failure.
+        # The old code defaulted to INTERPRETATION + silent=True, which inflated SFR.
         last_step = trace.steps[-1] if trace.steps else None
-        fc = FailureClassification(
-            stage=FailureStage.INTERPRETATION,
-            category=FailureCategory.HALLUCINATED_ANSWER,
-            step_index=last_step.step_index if last_step else 0,
-            is_silent=True,
-            evidence="no rule-level signal but final answer incorrect",
-        )
+        if final_answer is None or (isinstance(final_answer, str) and not final_answer.strip()):
+            # no answer produced = code crashed or never printed ANSWER -> loud failure
+            fc = FailureClassification(
+                stage=FailureStage.EXECUTION,
+                category=FailureCategory.RUNTIME_ERROR,
+                step_index=last_step.step_index if last_step else 0,
+                is_silent=False,
+                evidence="no answer produced (code crashed or never printed ANSWER:)",
+            )
+        else:
+            # answer produced but wrong -> genuinely silent interpretation failure
+            fc = FailureClassification(
+                stage=FailureStage.INTERPRETATION,
+                category=FailureCategory.HALLUCINATED_ANSWER,
+                step_index=last_step.step_index if last_step else 0,
+                is_silent=True,
+                evidence="answer produced but incorrect (genuine silent failure)",
+            )
         return ClassifiedTrace(trace=trace, classification=fc, task_correct=False)
 
     @staticmethod

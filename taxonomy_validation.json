@@ -1,0 +1,1013 @@
+{
+  "n": 100,
+  "observed_agreement": 0.35,
+  "expected_agreement": 0.384,
+  "cohens_kappa": -0.05519480519480525,
+  "interpretation": "poor",
+  "rule_labels": [
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "output_mismatch",
+    "runtime",
+    "output_mismatch",
+    "runtime",
+    "output_mismatch",
+    "runtime",
+    "runtime",
+    "runtime",
+    "output_mismatch",
+    "runtime",
+    "output_mismatch",
+    "output_mismatch",
+    "runtime",
+    "output_mismatch",
+    "output_mismatch",
+    "runtime",
+    "output_mismatch",
+    "output_mismatch",
+    "runtime",
+    "runtime",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "runtime",
+    "output_mismatch",
+    "runtime",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "runtime",
+    "output_mismatch",
+    "runtime",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch"
+  ],
+  "llm_labels": [
+    "output_mismatch",
+    "answer_error",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "runtime",
+    "output_mismatch",
+    "runtime",
+    "output_mismatch",
+    "runtime",
+    "output_mismatch",
+    "output_mismatch",
+    "runtime",
+    "runtime",
+    "runtime",
+    "output_mismatch",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "output_mismatch",
+    "runtime",
+    "runtime",
+    "output_mismatch",
+    "runtime",
+    "output_mismatch",
+    "runtime",
+    "output_mismatch",
+    "runtime",
+    "runtime",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "runtime",
+    "runtime",
+    "output_mismatch",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "output_mismatch",
+    "runtime",
+    "answer_error",
+    "runtime",
+    "output_mismatch",
+    "runtime",
+    "analytical_plan",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "output_mismatch",
+    "analytical_plan",
+    "output_mismatch",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime",
+    "runtime"
+  ],
+  "per_trace": [
+    {
+      "task_id": "statistical_01",
+      "model": "deepseek-chat+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "41.37 nan"
+    },
+    {
+      "task_id": "time_series_10",
+      "model": "deepseek-chat",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "answer_error",
+      "is_silent": true,
+      "final_answer": "-1.0689865689865693e-05"
+    },
+    {
+      "task_id": "recommendation_14",
+      "model": "deepseek-r1+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "recommendation_09",
+      "model": "deepseek-r1+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "recommendation_06",
+      "model": "deepseek-r1+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "time_series_07",
+      "model": "deepseek-r1+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "time_series_01",
+      "model": "deepseek-r1+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "dsbench_00000002_question7",
+      "model": "deepseek-r1+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "tabular_eda_14",
+      "model": "deepseek-r1+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "text_log_08",
+      "model": "deepseek-r1+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "tabular_eda_05",
+      "model": "deepseek-r1+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "tabular_eda_05",
+      "model": "deepseek-r1+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "tabular_eda_15",
+      "model": "deepseek-r1",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "recommendation_05",
+      "model": "deepseek-r1",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "recommendation_07",
+      "model": "deepseek-r1",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "dsbench_00000001_question15",
+      "model": "deepseek-r1",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "uci_titanic_avg_fare",
+      "model": "deepseek-r1",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "tabular_eda_04",
+      "model": "deepseek-r1",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "uci_iris_avg_sepal",
+      "model": "deepseek-r1",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "recommendation_01",
+      "model": "deepseek-r1",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "uci_mpg_max_hp",
+      "model": "deepseek-r1",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_00000002_question7",
+      "model": "deepseek-r1",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "text_log_07",
+      "model": "deepseek-r1",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "recommendation_05",
+      "model": "deepseek-r1",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "statistical_07",
+      "model": "gpt-4o+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "92.91 0.0"
+    },
+    {
+      "task_id": "statistical_13",
+      "model": "gpt-4o+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "', mean_value, std_value)"
+    },
+    {
+      "task_id": "statistical_05",
+      "model": "gpt-4o-mini+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "', final_answer)"
+    },
+    {
+      "task_id": "tabular_eda_00",
+      "model": "gpt-4o-mini+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "recommendation_07",
+      "model": "gpt-4o-mini+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "', f\"{int(result[0])} {int(result[1])}\")"
+    },
+    {
+      "task_id": "dsbench_real_00000017_question34",
+      "model": "gpt-4o-mini",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000035_question6",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "output_mismatch",
+      "is_silent": false,
+      "final_answer": "', final_answer)"
+    },
+    {
+      "task_id": "dsbench_real_00000016_question4",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "runtime",
+      "is_silent": false,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000010_question3",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "output_mismatch",
+      "is_silent": false,
+      "final_answer": "', check_sum_values)"
+    },
+    {
+      "task_id": "dsbench_real_00000005_question23",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "output_mismatch",
+      "is_silent": false,
+      "final_answer": "128"
+    },
+    {
+      "task_id": "dsbench_real_00000007_question4",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "runtime",
+      "is_silent": false,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000016_question3",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "runtime",
+      "is_silent": false,
+      "final_answer": ""
+    },
+    {
+      "task_id": "recommendation_15",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "runtime",
+      "is_silent": false,
+      "final_answer": ""
+    },
+    {
+      "task_id": "recommendation_05",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "output_mismatch",
+      "is_silent": false,
+      "final_answer": "', final_answer)"
+    },
+    {
+      "task_id": "dsbench_real_00000030_question7",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "runtime",
+      "is_silent": false,
+      "final_answer": ""
+    },
+    {
+      "task_id": "recommendation_09",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "runtime",
+      "is_silent": false,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000016_question11",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "runtime",
+      "is_silent": false,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000016_question6",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "runtime",
+      "is_silent": false,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000011_question3",
+      "model": "gpt-4o-mini",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000007_question21",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "runtime",
+      "is_silent": false,
+      "final_answer": ""
+    },
+    {
+      "task_id": "statistical_14",
+      "model": "gpt-4o-mini",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "B 10"
+    },
+    {
+      "task_id": "dsbench_real_00000043_question5",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "runtime",
+      "is_silent": false,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000001_question17",
+      "model": "gpt-4o-mini",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "statistical_13",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "output_mismatch",
+      "is_silent": false,
+      "final_answer": "49.23 nan"
+    },
+    {
+      "task_id": "dsbench_real_00000030_question6",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "runtime",
+      "is_silent": false,
+      "final_answer": ""
+    },
+    {
+      "task_id": "tabular_eda_15",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "output_mismatch",
+      "is_silent": false,
+      "final_answer": "books 4"
+    },
+    {
+      "task_id": "dsbench_real_00000004_question44",
+      "model": "gpt-4o-mini",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000010_question8",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "output_mismatch",
+      "is_silent": false,
+      "final_answer": "788"
+    },
+    {
+      "task_id": "dsbench_real_00000012_question3",
+      "model": "gpt-4o-mini",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000011_question8",
+      "model": "gpt-4o-mini",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000016_question12",
+      "model": "gpt-4o-mini",
+      "rule_stage": "runtime",
+      "llm_stage": "output_mismatch",
+      "is_silent": false,
+      "final_answer": "9.036"
+    },
+    {
+      "task_id": "dsbench_real_00000001_question15",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "75"
+    },
+    {
+      "task_id": "text_log_07",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "0 1"
+    },
+    {
+      "task_id": "dsbench_real_00000013_question18",
+      "model": "gpt-4o",
+      "rule_stage": "runtime",
+      "llm_stage": "runtime",
+      "is_silent": false,
+      "final_answer": ""
+    },
+    {
+      "task_id": "tabular_eda_04",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "text_log_07",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "0 1"
+    },
+    {
+      "task_id": "dsbench_real_00000011_question7",
+      "model": "gpt-4o",
+      "rule_stage": "runtime",
+      "llm_stage": "runtime",
+      "is_silent": false,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000005_question29",
+      "model": "gpt-4o",
+      "rule_stage": "runtime",
+      "llm_stage": "runtime",
+      "is_silent": false,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000007_question11",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "tabular_eda_07",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000006_question18",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "tabular_eda_14",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000010_question20",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "Data not available in the provided file."
+    },
+    {
+      "task_id": "dsbench_real_00000007_question7",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000033_question7",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "answer_error",
+      "is_silent": true,
+      "final_answer": "77553.42"
+    },
+    {
+      "task_id": "dsbench_real_00000008_question32",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000010_question15",
+      "model": "gpt-4o",
+      "rule_stage": "runtime",
+      "llm_stage": "output_mismatch",
+      "is_silent": false,
+      "final_answer": "Data not available"
+    },
+    {
+      "task_id": "recommendation_03",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000010_question17",
+      "model": "gpt-4o",
+      "rule_stage": "runtime",
+      "llm_stage": "analytical_plan",
+      "is_silent": false,
+      "final_answer": "Data required for analysis is not available in the provided sheet."
+    },
+    {
+      "task_id": "dsbench_real_00000010_question12",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "Data required for analysis is missing in the provided file."
+    },
+    {
+      "task_id": "dsbench_real_00000005_question23",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "128"
+    },
+    {
+      "task_id": "dsbench_real_00000012_question2",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "', dividends_2016_rounded)"
+    },
+    {
+      "task_id": "dsbench_real_00000007_question4",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000013_question16",
+      "model": "gpt-4o",
+      "rule_stage": "runtime",
+      "llm_stage": "runtime",
+      "is_silent": false,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000012_question7",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000011_question3",
+      "model": "gpt-4o",
+      "rule_stage": "runtime",
+      "llm_stage": "runtime",
+      "is_silent": false,
+      "final_answer": ""
+    },
+    {
+      "task_id": "tabular_eda_04",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "dsbench_real_00000004_question48",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "statistical_05",
+      "model": "gpt-4o",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "54.96 nan"
+    },
+    {
+      "task_id": "text_log_03",
+      "model": "qwen3-max+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "0 1"
+    },
+    {
+      "task_id": "recommendation_03",
+      "model": "qwen3-max+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "', most_popular_item, max_clicks)"
+    },
+    {
+      "task_id": "time_series_02",
+      "model": "qwen3-max+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "', slope)"
+    },
+    {
+      "task_id": "statistical_11",
+      "model": "qwen3-max+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "96.41 0.0"
+    },
+    {
+      "task_id": "statistical_03",
+      "model": "qwen3-max+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "analytical_plan",
+      "is_silent": true,
+      "final_answer": "', median, iqr)"
+    },
+    {
+      "task_id": "recommendation_06",
+      "model": "qwen3-max+verifier",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "output_mismatch",
+      "is_silent": true,
+      "final_answer": "', average_click_rate)"
+    },
+    {
+      "task_id": "uci_mpg_common_cylinders",
+      "model": "qwen3-max",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": ""
+    },
+    {
+      "task_id": "recommendation_05",
+      "model": "qwen3-max",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "statistical_07",
+      "model": "qwen3-max",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "tabular_eda_09",
+      "model": "qwen3-max",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "recommendation_07",
+      "model": "qwen3-max",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "tabular_eda_05",
+      "model": "qwen3-max",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "statistical_05",
+      "model": "qwen3-max",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "text_log_04",
+      "model": "qwen3-max",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "recommendation_13",
+      "model": "qwen3-max",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "tabular_eda_11",
+      "model": "qwen3-max",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    },
+    {
+      "task_id": "recommendation_04",
+      "model": "qwen3-max",
+      "rule_stage": "output_mismatch",
+      "llm_stage": "runtime",
+      "is_silent": true,
+      "final_answer": "None"
+    }
+  ]
+}
