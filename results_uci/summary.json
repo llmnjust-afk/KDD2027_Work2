@@ -1,0 +1,72 @@
+{
+  "experiment": "uci_real",
+  "config": {
+    "n_repeats": 3,
+    "max_steps": 8,
+    "n_tasks": 23,
+    "models": [
+      "gpt-4o-mini",
+      "gpt-4o",
+      "deepseek-chat",
+      "deepseek-r1",
+      "qwen3-max"
+    ]
+  },
+  "aggregate": {
+    "gpt-4o-mini": {
+      "model": "gpt-4o-mini",
+      "success_rate": "0.8261 +/- 0.0435",
+      "silent_failure_rate": "0.0000 +/- 0.0000",
+      "token_per_success": 5662.62,
+      "cost_per_success": 0.0008,
+      "ci95_success": [
+        0.7826,
+        0.8696
+      ]
+    },
+    "gpt-4o": {
+      "model": "gpt-4o",
+      "success_rate": "0.9130 +/- 0.0000",
+      "silent_failure_rate": "1.0000 +/- 0.0000",
+      "token_per_success": 1689.65,
+      "cost_per_success": 0.0042,
+      "ci95_success": [
+        0.913,
+        0.913
+      ]
+    },
+    "deepseek-chat": {
+      "model": "deepseek-chat",
+      "success_rate": "0.9420 +/- 0.0251",
+      "silent_failure_rate": "0.0000 +/- 0.0000",
+      "token_per_success": 2561.97,
+      "cost_per_success": 0.0004,
+      "ci95_success": [
+        0.913,
+        0.9565
+      ]
+    },
+    "deepseek-r1": {
+      "model": "deepseek-r1",
+      "success_rate": "0.0000 +/- 0.0000",
+      "silent_failure_rate": "1.0000 +/- 0.0000",
+      "token_per_success": Infinity,
+      "cost_per_success": Infinity,
+      "ci95_success": [
+        0.0,
+        0.0
+      ]
+    },
+    "qwen3-max": {
+      "model": "qwen3-max",
+      "success_rate": "0.0000 +/- 0.0000",
+      "silent_failure_rate": "1.0000 +/- 0.0000",
+      "token_per_success": Infinity,
+      "cost_per_success": Infinity,
+      "ci95_success": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}
