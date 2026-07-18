@@ -1,0 +1,82 @@
+\section{The AgentFail Framework}
+\label{sec:method}
+
+AgentFail instruments a standard ReAct-style data-science agent with three diagnostic layers: (1) a four-stage failure taxonomy that classifies each failure by where it originates and whether it is silent; (2) a propagation-depth analyser that measures how far a failure spreads before detection; and (3) a counterfactual causal-replay module that attributes failures to specific steps. \Cref{fig:framework} summarises the architecture.
+
+\begin{figure}[t]
+\centering
+\begin{tabular}{c}
+\textbf{[Framework diagram: Task $\to$ ReAct Agent $\to$ Sandbox $\to$ Trace $\to$}\\
+\textbf{Classifier $\to$ Propagation $\to$ Causal Replay $\to$ Diagnostics]}
+\end{tabular}
+\caption{AgentFail framework. The agent produces a step-by-step trace; the classifier assigns each failure to one of four stages and marks it silent or loud; the propagation analyser computes how far the failure spread; causal replay replaces the originating step with the ground-truth action to test counterfactual dependence.}
+\label{fig:framework}
+\end{figure}
+
+\subsection{Agent Architecture and Trace Recording}
+\label{sec:agent}
+
+We use a ReAct-style agent that interleaves \emph{Thought}, \emph{Action} (a Python code block), and \emph{Observation} (execution output). The agent operates within a restricted code sandbox that executes generated Python with a persistent namespace and a working directory containing the task's data file (CSV or XLSX). We deliberately use a \emph{controlled, minimal} ReAct harness---without few-shot exemplars, code-interpreter scaffolding, or retrieval augmentation---to isolate the diagnostic signal from framework-specific confounds. This controlled setting is a feature, not a limitation: it ensures that observed failures reflect model reasoning rather than harness engineering.
+
+Every step is recorded in an \emph{AgentTrace}, the single source of truth for all downstream diagnosis. Each \texttt{TraceStep} stores the raw LLM output, the parsed thought, the generated code, the execution result (stdout, stderr, exception type, extracted answer), token usage, and a timestamp. Unlike DSBench~\citep{jing2024dsbench}, which retains only a final response, our trace records the full step-by-step trajectory, enabling stage-level localisation and propagation analysis.
+
+\subsection{Four-Stage Failure Taxonomy}
+\label{sec:taxonomy}
+
+We decompose every agent failure into one of four stages, reflecting where in the agent loop the failure originates:
+
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+\item \textbf{Planning.} The agent selects the wrong analytical approach: e.g., computing the overall mean when the task requires a per-group sum, or using future data in a time-series analysis (temporal leakage).
+\item \textbf{Tool-Use.} The agent selects or parameterises a tool incorrectly: e.g., training a regression model where a simple \texttt{groupby} suffices, or invoking a higher-privilege tool than necessary.
+\item \textbf{Execution (loud).} The generated code raises an exception: runtime errors, type errors, key errors, or sandbox security blocks. The failure is \emph{visible} to the agent, which can observe the traceback and retry.
+\item \textbf{Interpretation (silent).} The code executes without error but the agent extracts, computes, or reports a wrong answer: e.g., using \texttt{.count()} instead of \texttt{.sum()}, misreading the output, or hallucinating an answer not supported by the code output. The failure is \emph{invisible} to the agent.
+\end{itemize}
+
+The Execution/Interpretation split operationalises the silent/loud distinction. This is the conceptual core of the taxonomy: a loud failure is a \emph{detectable} error that the agent can in principle recover from, whereas a silent failure is an \emph{undetectable} error that propagates undetected. Each stage contains sub-categories (e.g., \texttt{wrong\_aggregation}, \texttt{type\_confusion}, \texttt{hallucinated\_answer}); \Cref{tab:taxonomy} lists the full hierarchy.
+
+\begin{table}[t]
+\centering
+\caption{Four-stage failure taxonomy with sub-categories and silence.}
+\label{tab:taxonomy}
+\small
+\begin{tabular}{@{}lll@{}}
+\toprule
+Stage & Sub-categories & Silent? \\
+\midrule
+Planning & wrong\_operation, temporal\_leakage, data\_leakage & often \\
+Tool-Use & wrong\_tool, wrong\_params, over\_privileged & varies \\
+Execution & runtime\_error, type\_error, key\_error, security\_block & No \\
+Interpretation & wrong\_aggregation, wrong\_index, misread\_output, hallucinated\_answer & Yes \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Failure Classification}
+\label{sec:classifier}
+
+The classifier walks an \texttt{AgentTrace} and assigns a \texttt{FailureClassification} (stage, sub-category, originating step, silence flag) to the first failed step. Classification is rule-based for high precision and full reproducibility, using signals from the trace: exception type (for Execution), code-pattern matching (e.g., presence of \texttt{.count()} when the ground-truth path requires \texttt{.sum()} for Interpretation), and answer-output mismatch. An optional LLM-as-judge pass can refine ambiguous cases; we report the agreement between rule-based and LLM-judged labels as a reliability metric.
+
+\subsection{Propagation Depth}
+\label{sec:propagation}
+
+Once a failure originates at step $i$, it may propagate to later steps. We define \emph{propagation depth} as the number of steps from the originating failure to the step where it is detected (or to the trace end if never detected). Loud failures have depth 0 (immediately visible); silent failures can have depth $\geq 1$, meaning the agent continues building on a wrong intermediate result. A propagation depth $\geq 2$ indicates a \emph{long-horizon} failure spread, the most dangerous regime because it wastes the most tokens and is hardest to recover from.
+
+\subsection{Counterfactual Causal Replay}
+\label{sec:causal}
+
+To attribute a failure to a specific step, we adapt the counterfactual principle~\citep{shah2026causal} to the data-science setting. Given a trace that failed, we synthesise a \emph{counterfactual} version of the originating step: the canonical ground-truth code derived from the task's reference solution path. We then replay execution from that point in a fresh sandbox. If the replayed trace now produces the correct answer, we have counterfactual evidence that the originating step caused the failure; if the replay still fails, the failure has a deeper root cause (e.g., a planning error that contaminated all downstream steps).
+
+Formally, let $T = (s_1, \dots, s_n)$ be a failed trace and $s_k$ the classified originating step. Let $s_k^*$ be the ground-truth action for step $k$. We construct the counterfactual trace $T' = (s_1, \dots, s_{k-1}, s_k^*, \dots)$ and execute it. The causal attribution is successful iff $T'$ yields the correct answer. The \emph{causal-attribution rate} is the proportion of failed traces for which attribution succeeds.
+
+\subsection{Diagnostic Metrics}
+\label{sec:metrics}
+
+We report three layers of metrics:
+
+\textbf{Layer 1 (task-level):} success rate (SR), code-execution success rate, and standard task-specific metrics (F1, RMSE).
+
+\textbf{Layer 2 (failure-diagnostic):} silent-failure rate (SFR = proportion of failures that are silent), stage distribution (proportion of failures in each of the four stages), average and maximum propagation depth, long-horizon failure rate (proportion with depth $\geq 2$), recovery rate (proportion of detected failures the agent subsequently corrects), over-privilege rate, and causal-attribution rate.
+
+\textbf{Layer 3 (token-economic):} tokens-per-success, cost-per-success, invalid-token ratio, and the cost--accuracy frontier. These metrics address the under-reporting of cost identified by~\citet{moghadasi2026what}.
+
+All experiments report mean $\pm$ standard deviation over $\geq 3$ repetitions, bootstrap 95\% confidence intervals, and paired $t$-tests with Cohen's $d$ for verifier comparisons.

@@ -1,0 +1,4 @@
+\section{Conclusion}
+\label{sec:conc}
+
+We presented AgentFail, a diagnostic framework that decomposes LLM-agent failures into four stages and distinguishes silent from loud failures. Across 4875 runs on five frontier models and three task suites, we discovered a failure bifurcation: strong models fail silently (SFR up to 100\%) while weak models fail loudly, and the silent regime dominates in the practically important middle-difficulty range. Agents never self-correct silent failures (recovery $=$ 0\%), and a rule-based verifier helps only the weakest models. Counterfactual causal replay attributes 79--88\% of failures to specific steps, providing actionable root-cause information. These findings suggest that the next frontier in agent reliability is not better code generation but better verification of interpretation-stage correctness. We release all code, data, and 4875 annotated traces to support reproducible failure diagnosis.

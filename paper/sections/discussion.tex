@@ -1,0 +1,22 @@
+\section{Discussion}
+\label{sec:disc}
+
+\subsection{Why Strong Models Fail Silently}
+\label{sec:disc-why}
+
+Our results reveal a paradox: the stronger the model, the more silent its failures. GPT-4o and DeepSeek-V3 generate executable code nearly always (SFR $=$ 100\%), so their residual errors are wrong answers rather than crashes. This has a sobering implication: improving code-generation ability---the focus of most agent research---will \emph{increase} the proportion of silent failures, because the pool of loud failures shrinks while silent failures persist. The community should therefore prioritise verification and self-correction mechanisms targeted at interpretation-stage errors, not just code-generation improvements.
+
+\subsection{Implications for Agent Deployment}
+\label{sec:disc-impl}
+
+The zero recovery rate (\Cref{sec:res-recovery}) has direct deployment consequences. An agent that never self-corrects silent failures will propagate wrong answers through multi-step pipelines, and the errors compound. Practitioners cannot rely on the agent to ``notice'' it is wrong; external verification is mandatory. However, our verifier ablation (\Cref{sec:res-verifier}) shows that simple rule-based verification is a double-edged sword: it helps weak models but harms strong ones. Effective verification likely requires model-specific calibration or learned verifiers, not hand-coded rules.
+
+\subsection{The Bifurcation Phenomenon}
+\label{sec:disc-bifurcation}
+
+The failure bifurcation (\Cref{sec:res-bifurcation}) suggests that silent failure is a \emph{phase transition} in the difficulty--capability space. Below a threshold (easy tasks, high SR), models fail rarely and loudly. Above another threshold (very hard tasks, near-0\% SR), models fail constantly and loudly. In between---the regime where models are ``good enough to run code but not good enough to reason correctly''---silent failure dominates. This middle regime is precisely where most real-world data-science tasks sit, making silent failure the practically dominant failure mode.
+
+\subsection{Limitations}
+\label{sec:disc-lim}
+
+We acknowledge several limitations. \textbf{Agent harness.} We use a minimal ReAct harness; production agents (e.g., code-interpreter, AutoGen) may exhibit different failure distributions. We view this as a controlled baseline; future work should apply AgentFail to richer harnesses. \textbf{Model scope.} DeepSeek-R1 and Qwen3-max achieved 0\% success on UCI tasks, likely due to output-format incompatibility with the ReAct parser rather than fundamental inability; we report these results transparently but caution against over-interpreting them. \textbf{Annotation.} Our taxonomy is rule-based; while we provide an annotation protocol for inter-rater reliability (Cohen's $\kappa$), the $\kappa$ value is pending human annotation. \textbf{Task realism.} The synthetic trap tasks are designed to elicit specific failures; the UCI tasks are simple tabular analyses; only the DSBench tasks are genuinely complex real-world problems, and there the low success rate limits the diagnostic signal.
