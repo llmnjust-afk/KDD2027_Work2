@@ -17,6 +17,24 @@
 
 \textbf{Cost.} Total API cost was approximately \$60 USD across all experiments, demonstrating that failure diagnosis is feasible on a modest budget.
 
+\begin{table}[t]
+\centering
+\caption{Task suite summary. Total: 303 tasks, 4{,}875 runs, 2{,}836 failures.}
+\label{tab:task-summary}
+\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Suite & Tasks & Domains & Runs & Failures \\
+\midrule
+Synthetic traps & 80 & 5 & 2{,}850 & 1{,}281 \\
+UCI real data & 23 & 6 & 345 & 160 \\
+DSBench real & 200 & 1 & 1{,}680 & 1{,}395 \\
+\midrule
+\textbf{Total} & \textbf{303} & \textbf{12} & \textbf{4{,}875} & \textbf{2{,}836} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \subsection{Result 1: Failure Bifurcation}
 \label{sec:res-bifurcation}
 
@@ -42,7 +60,45 @@
 \subsection{Result 2: Model Comparison}
 \label{sec:res-models}
 
-\Cref{fig:model-comparison} compares the four primary models on the 95-task main suite. DeepSeek-V3 achieves the highest success rate (88.4\%) and the lowest token cost per success (1943 tokens), while Qwen3-max performs poorly (18.3\%) due to format-incompatibility issues with the ReAct harness. On the synthetic trap tasks, the corrected SFR (accounting for the classifier fix described in \Cref{sec:res-stages}) is high: 86--100\% for all models, meaning that when agents fail on these tasks, the failure is almost always a wrong answer rather than a crash. However, on real UCI data the SFR drops to 3.7\%, and on DSBench to 18.5\%, indicating that the high SFR is specific to tasks designed to elicit silent failures, not a universal property of agent failures.
+\Cref{tab:main-results} presents the main results across all five models on the 95-task main suite. DeepSeek-V3 achieves the highest success rate (88.4\%) and the lowest token cost per success (1{,}943 tokens), while Qwen3-max performs poorly (18.3\%) due to format-incompatibility issues with the ReAct harness. On the synthetic trap tasks, the corrected SFR is high: 86--100\% for all models, meaning that when agents fail on these tasks, the failure is almost always a wrong answer rather than a crash. However, on real UCI data the SFR drops to 3.7\%, and on DSBench to 18.5\%, indicating that the high SFR is specific to tasks designed to elicit silent failures.
+
+\begin{table}[t]
+\centering
+\caption{Main results on 95 tasks (3 runs). SR = success rate, SFR = silent-failure rate (of failures), Tok/succ = tokens per successful task, \$/succ = cost per success. SFR is computed only on failed runs with the corrected classifier.}
+\label{tab:main-results}
+\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Model & SR (\%) & SFR (\%) & Tok/succ & \$/succ \\
+\midrule
+DeepSeek-V3 & \textbf{88.4}$\pm$1.0 & 100.0 & 1{,}943 & 0.0003 \\
+GPT-4o & 81.4$\pm$0.6 & 100.0 & 1{,}405 & 0.0035 \\
+GPT-4o-mini & 77.9$\pm$1.0 & 85.7 & 2{,}822 & 0.0004 \\
+Qwen3-max & 18.3$\pm$0.6 & 100.0 & 1{,}052 & 0.0005 \\
+DeepSeek-R1 & 0.0$\pm$0.0 & 100.0 & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Results on UCI real-data tasks (23 tasks, 3 runs). SFR computed with corrected classifier.}
+\label{tab:uci-results}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Model & SR (\%) & SFR (\%) & Tok/succ \\
+\midrule
+DeepSeek-V3 & \textbf{94.2}$\pm$2.5 & 0.0 & 2{,}562 \\
+GPT-4o & 91.3$\pm$0.0 & 100.0 & 1{,}690 \\
+GPT-4o-mini & 82.6$\pm$4.4 & 0.0 & 5{,}663 \\
+DeepSeek-R1 & 0.0 & 0.0 & --- \\
+Qwen3-max & 0.0 & 0.0 & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\Cref{fig:model-comparison} visualises the success-rate and SFR comparison. \Cref{tab:uci-results} shows that on real UCI data, the SFR pattern shifts: DeepSeek-V3 and GPT-4o-mini show SFR$=$0\% (all failures are loud execution errors), while GPT-4o shows SFR$=$100\% (its few failures are all silent). This model-dependent bifurcation on real data confirms that silent failure is not purely a synthetic-task artifact.
 
 \begin{figure}[t]
 \centering
@@ -68,10 +124,10 @@
 
 Across all 4875 runs and all five models, the \emph{recovery rate is 0\%}: no agent ever corrected a silent failure without external intervention. This is the strongest evidence that silent failures are qualitatively different from loud failures: a loud failure produces a traceback that the agent can observe and retry, but a silent failure produces no signal, so the agent commits to the wrong answer. Even when the agent is given a second independent run (in the B3 consistency-verifier experiment), the two runs frequently produce \emph{different} wrong answers, and the reconciliation step does not reliably pick the correct one. Silent failures are thus not merely hard to detect---they are hard to correct even when detected.
 
-\subsection{Result 5: Causal Attribution}
+\subsection{Result 5: Oracle-Guided Repair}
 \label{sec:res-causal}
 
-Counterfactual causal replay successfully attributes 79--88\% of failures to a specific originating step (\Cref{tab:causal}). The attribution rate tracks model strength: DeepSeek-V3 (88.4\%) and GPT-4o (81.4\%) have the highest attribution rates because their failures are concentrated in Interpretation, where replacing the originating step with the ground-truth code reliably fixes the outcome. GPT-4o-mini's attribution rate (79.3\%) is slightly lower because some of its failures originate in Execution (e.g., wrong column names) where a single-step counterfactual is insufficient.
+Oracle-guided counterfactual repair succeeds on 66.4\% of failed tasks where ground-truth code is available (\Cref{tab:causal}). The repair rate varies by model: GPT-4o-mini and DeepSeek-R1 show 74--76\% (their failures are often single-step fixable), while GPT-4o shows only 26.7\% on the main suite (its failures are more complex, requiring multi-step corrections). On the final experiment (including DSBench), GPT-4o recovers to 73.3\%, reflecting that some DSBench failures are simpler to repair.
 
 \begin{table}[t]
 \centering
@@ -99,7 +155,48 @@ Overall & 526 & 66.4\% \\
 \subsection{Result 6: Verifier Ablation}
 \label{sec:res-verifier}
 
-\Cref{fig:verifier} compares baseline against the failure-aware verifier. The verifier helps \emph{only} the weakest model: Qwen3-max improves by +24.9\% ($p<0.001$, Cohen's $d=-0.72$, large effect). For GPT-4o-mini the verifier is significantly harmful ($-$5.3\%, $p=0.009$), and for GPT-4o and DeepSeek-V3 it is neutral. This boundary condition reveals that the verifier's rule-based checks (e.g., detecting count-vs-sum mismatches) have high false positives on stronger models that produce correct-but-unconventional code paths, while they catch genuine errors on weaker models that produce structurally wrong code.
+\Cref{fig:verifier} compares baseline against the failure-aware verifier. The verifier helps \emph{only} the weakest model: Qwen3-max improves by +24.9\% ($p<0.001$, Cohen's $d=-0.72$, large effect). For GPT-4o-mini the verifier is significantly harmful ($-$5.3\%, $p=0.009$), and for GPT-4o and DeepSeek-V3 it is neutral. \Cref{tab:verifier} reports the full statistical comparison.
+
+\begin{table}[t]
+\centering
+\caption{Verifier ablation: paired comparison of baseline vs.\ +verifier. $\Delta$SR = change in success rate. Significance: ***$p<0.001$, **$p<0.01$, ns = not significant.}
+\label{tab:verifier}
+\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Model & $\Delta$SR (\%) & $t$-stat & $p$-value & Cohen's $d$ \\
+\midrule
+Qwen3-max & \textbf{+24.9} & --- & $<0.001$*** & $-$0.72 \\
+GPT-4o-mini & $-$5.3 & --- & 0.009** & +0.27 \\
+GPT-4o & $-$0.4 & --- & 0.66 ns & +0.05 \\
+DeepSeek-V3 & $-$0.7 & --- & 0.57 ns & +0.06 \\
+DeepSeek-R1 & 0.0 & --- & 1.0 ns & 0.00 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Bifurcation null-model analysis. $R^2$ between execution-success rate and SFR across all model$\times$suite combinations. $R^2=1$ would mean SFR is fully mechanical.}
+\label{tab:null-model}
+\small
+\begin{tabular}{@{}lc@{}}
+\toprule
+Metric & Value \\
+\midrule
+Correlation $r$ & 0.778 \\
+$R^2$ & 0.605 \\
+Interpretation & Partially mechanical \\
+\midrule
+\multicolumn{2}{l}{\textit{SFR by task suite (corrected):}} \\
+\quad Synthetic traps & 98.2\% \\
+\quad UCI real data & 3.7\% \\
+\quad DSBench real data & 18.5\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This boundary condition reveals that the verifier's rule-based checks (e.g., detecting count-vs-sum mismatches) have high false positives on stronger models that produce correct-but-unconventional code paths, while they catch genuine errors on weaker models that produce structurally wrong code.
 
 \begin{figure}[t]
 \centering
