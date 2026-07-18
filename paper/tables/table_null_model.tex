@@ -1,19 +1,17 @@
 \begin{table}[t]
 \centering
-\caption{SFR by task suite (corrected classifier). Note: SFR and execution-success rate share the variable $E$ (loud failures), so their correlation is partially mechanical. $R^2$ is reported as a descriptive statistic, not a causal decomposition.}
+\caption{SFR by task suite and null-model analysis. $R^2$ is reported as a descriptive statistic, not a causal decomposition.}
 \label{tab:null-model}
 \small
-\begin{tabular}{@{}lc@{}}
+\begin{tabular}{@{}lcc@{}}
 \toprule
-Metric & Value \\
+Suite & SFR (\%) & Exec.\ Success (\%) \\
 \midrule
-\quad Synthetic SFR & 86.2\% (1294/1501) \\
-\quad Uci SFR & 1.2\% (6/505) \\
-\quad Dsbench SFR & 12.5\% (222/1775) \\
+Synthetic & 86.2 & 45.5 \\
+UCI & 3.8 & 73.6 \\
+DSBench & 18.9 & 1.4 \\
 \midrule
-Correlation $r$ & 0.889 \\
-$R^2$ (descriptive) & 0.790 \\
-\multicolumn{2}{l}{\textit{Note: $R^2$ is not a causal decomposition.}} \\
+\multicolumn{3}{l}{Null model: $R^2 = 0.493$ (descriptive only)} \\
 \bottomrule
 \end{tabular}
 \end{table}

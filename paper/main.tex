@@ -5,6 +5,8 @@
 \usepackage{multirow}
 \usepackage{xcolor}
 \usepackage{placeins}
+\usepackage{graphicx}
+\usepackage{cleveref}
 
 % Workaround for missing binhex.tex in some TeX Live installations
 \ifdefined\inputbinhex\else\let\inputbinhex\relax\fi
@@ -45,6 +47,7 @@
 \bibliography{refs}
 
 \appendix
+\input{sections/datacard}
 \input{sections/appendix}
 
 \end{document}

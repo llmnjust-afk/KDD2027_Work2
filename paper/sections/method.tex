@@ -1,15 +1,12 @@
 \section{The AgentFail Framework}
 \label{sec:method}
 
-AgentFail instruments a standard ReAct-style data-science agent with three diagnostic layers: (1) a four-stage failure taxonomy that classifies each failure by where it originates and whether it is silent; (2) a propagation-depth analyser that measures how far a failure spreads before detection; and (3) a counterfactual causal-replay module that attributes failures to specific steps. \Cref{fig:framework} summarises the architecture.
+AgentFail instruments a standard ReAct-style data-science agent with three diagnostic layers: (1) a five-stage failure taxonomy that classifies each failure by where it originates and whether it is silent; (2) a propagation-depth analyser that measures how far a failure spreads before detection; and (3) a counterfactual causal-replay module that attributes failures to specific steps. \Cref{fig:framework} summarises the architecture.
 
 \begin{figure}[t]
 \centering
-\begin{tabular}{c}
-\textbf{[Framework diagram: Task $\to$ ReAct Agent $\to$ Sandbox $\to$ Trace $\to$}\\
-\textbf{Classifier $\to$ Propagation $\to$ Causal Replay $\to$ Diagnostics]}
-\end{tabular}
-\caption{AgentFail framework. The agent produces a step-by-step trace; the classifier assigns each failure to one of four stages and marks it silent or loud; the propagation analyser computes how far the failure spread; causal replay replaces the originating step with the ground-truth action to test counterfactual dependence.}
+\includegraphics[width=\linewidth]{figures/framework.pdf}
+\caption{AgentFail framework. The agent produces a step-by-step trace; the classifier assigns each failure to one of five stages and marks it silent or loud; the propagation analyser computes how far the failure spread; causal replay replaces the originating step with the ground-truth action to test counterfactual dependence.}
 \label{fig:framework}
 \end{figure}
 
@@ -20,33 +17,35 @@ We use a ReAct-style agent that interleaves \emph{Thought}, \emph{Action} (a Pyt
 
 Every step is recorded in an \emph{AgentTrace}, the single source of truth for all downstream diagnosis. Each \texttt{TraceStep} stores the raw LLM output, the parsed thought, the generated code, the execution result (stdout, stderr, exception type, extracted answer), token usage, and a timestamp. Unlike DSBench~\citep{jing2024dsbench}, which retains only a final response, our trace records the full step-by-step trajectory, enabling stage-level localisation and propagation analysis.
 
-\subsection{Four-Stage Failure Taxonomy}
+\subsection{Five-Stage Failure Taxonomy}
 \label{sec:taxonomy}
 
-We decompose every agent failure into one of four stages, reflecting where in the agent loop the failure originates:
+We decompose every agent failure into one of five stages, defined by \emph{where the error is detectable}, making the categories mutually exclusive:
 
 \begin{itemize}[leftmargin=*,itemsep=2pt]
-\item \textbf{Planning.} The agent selects the wrong analytical approach: e.g., computing the overall mean when the task requires a per-group sum, or using future data in a time-series analysis (temporal leakage).
-\item \textbf{Tool-Use.} The agent selects or parameterises a tool incorrectly: e.g., training a regression model where a simple \texttt{groupby} suffices, or invoking a higher-privilege tool than necessary.
-\item \textbf{Execution (loud).} The generated code raises an exception: runtime errors, type errors, key errors, or sandbox security blocks. The failure is \emph{visible} to the agent, which can observe the traceback and retry.
-\item \textbf{Interpretation (silent).} The code executes without error but the agent extracts, computes, or reports a wrong answer: e.g., using \texttt{.count()} instead of \texttt{.sum()}, misreading the output, or hallucinating an answer not supported by the code output. The failure is \emph{invisible} to the agent.
+\item \textbf{Analytical-Plan.} The agent selects the wrong analytical approach: e.g., computing the overall mean when the task requires a per-group sum, or using future data in a time-series analysis (temporal leakage). Often silent.
+\item \textbf{Code-Generation.} The agent writes code that embodies a wrong operation: e.g., using \texttt{.count()} where \texttt{.sum()} is needed, selecting the wrong column, or introducing type confusion. Silence varies.
+\item \textbf{Runtime (loud).} The generated code raises an exception: runtime errors, type errors, key errors, or sandbox security blocks. The failure is \emph{visible} to the agent, which can observe the traceback and retry.
+\item \textbf{Output-Mismatch (silent).} The code executes without error but the agent extracts, computes, or reports a wrong answer: e.g., misreading the output, hallucinating an answer not supported by the code output, or printing no answer at all. The failure is \emph{invisible} to the agent.
+\item \textbf{Answer-Error (silent).} The code runs and produces a result, but the result itself is wrong relative to the ground truth: e.g., a wrong aggregation result or an incomplete analysis. The failure is \emph{invisible} to the agent.
 \end{itemize}
 
-The Execution/Interpretation split operationalises the silent/loud distinction. This is the conceptual core of the taxonomy: a loud failure is a \emph{detectable} error that the agent can in principle recover from, whereas a silent failure is an \emph{undetectable} error that propagates undetected. Each stage contains sub-categories (e.g., \texttt{wrong\_aggregation}, \texttt{type\_confusion}, \texttt{hallucinated\_answer}); \Cref{tab:taxonomy} lists the full hierarchy.
+The Runtime vs.\ Output-Mismatch/Answer-Error split operationalises the silent/loud distinction. This is the conceptual core of the taxonomy: a loud failure (Runtime) is a \emph{detectable} error that the agent can in principle recover from, whereas a silent failure (Output-Mismatch or Answer-Error) is an \emph{undetectable} error that propagates undetected. \Cref{tab:taxonomy} lists the full hierarchy.
 
 \begin{table}[t]
 \centering
-\caption{Four-stage failure taxonomy with sub-categories and silence.}
+\caption{Five-stage failure taxonomy (v2). Stages are defined by \emph{where the error is detectable}, making them mutually exclusive.}
 \label{tab:taxonomy}
 \small
 \begin{tabular}{@{}lll@{}}
 \toprule
 Stage & Sub-categories & Silent? \\
 \midrule
-Planning & wrong\_operation, temporal\_leakage, data\_leakage & often \\
-Tool-Use & wrong\_tool, wrong\_params, over\_privileged & varies \\
-Execution & runtime\_error, type\_error, key\_error, security\_block & No \\
-Interpretation & wrong\_aggregation, wrong\_index, misread\_output, hallucinated\_answer & Yes \\
+Analytical-Plan & wrong\_operation\_plan, leakage\_plan & often \\
+Code-Generation & wrong\_aggregation\_code, wrong\_column, type\_confusion & varies \\
+Runtime & runtime\_exception, key\_error, security\_block & No \\
+Output-Mismatch & misread\_output, hallucinated\_answer, no\_answer\_printed & Yes \\
+Answer-Error & wrong\_result, incomplete\_analysis & Yes \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -59,7 +58,14 @@ The classifier walks an \texttt{AgentTrace} and assigns a \texttt{FailureClassif
 \subsection{Propagation Depth}
 \label{sec:propagation}
 
-Once a failure originates at step $i$, it may propagate to later steps. We define \emph{propagation depth} as the number of steps from the originating failure to the step where it is detected (or to the trace end if never detected). Loud failures have depth 0 (immediately visible); silent failures can have depth $\geq 1$, meaning the agent continues building on a wrong intermediate result. A propagation depth $\geq 2$ indicates a \emph{long-horizon} failure spread, the most dangerous regime because it wastes the most tokens and is hardest to recover from.
+Once a failure originates at step $i$, it may propagate to later steps. We define \emph{propagation depth} as the number of steps from the originating failure to the step where it is detected (or to the trace end if never detected). Loud failures have depth 0 (immediately visible); silent failures can have depth $\geq 1$, meaning the agent continues building on a wrong intermediate result. A propagation depth $\geq 2$ indicates a \emph{long-horizon} failure spread, the most dangerous regime because it wastes the most tokens and is hardest to recover from. Across all 3{,}781 failures in our experiments, the average propagation depth is 0.30 steps; 88.6\% of failures are detected immediately (depth 0), while 6.9\% propagate to depth $\geq 2$. \Cref{fig:propdepth} shows the full distribution.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.85\linewidth]{figures/propagation_depth.pdf}
+\caption{Propagation depth distribution across all 3{,}781 failures. The majority (88.6\%) are detected immediately (depth 0); 6.9\% propagate to depth $\geq 2$, indicating long-horizon failure spread.}
+\label{fig:propdepth}
+\end{figure}
 
 \subsection{Counterfactual Causal Replay}
 \label{sec:causal}
@@ -75,7 +81,7 @@ We report three layers of metrics:
 
 \textbf{Layer 1 (task-level):} success rate (SR), code-execution success rate, and standard task-specific metrics (F1, RMSE).
 
-\textbf{Layer 2 (failure-diagnostic):} silent-failure rate (SFR = proportion of failures that are silent), stage distribution (proportion of failures in each of the four stages), average and maximum propagation depth, long-horizon failure rate (proportion with depth $\geq 2$), recovery rate (proportion of detected failures the agent subsequently corrects), over-privilege rate, and causal-attribution rate.
+\textbf{Layer 2 (failure-diagnostic):} silent-failure rate (SFR = proportion of failures that are silent), stage distribution (proportion of failures in each of the five stages), average and maximum propagation depth, long-horizon failure rate (proportion with depth $\geq 2$), recovery rate (proportion of detected failures the agent subsequently corrects), over-privilege rate, and causal-attribution rate.
 
 \textbf{Layer 3 (token-economic):} tokens-per-success, cost-per-success, invalid-token ratio, and the cost--accuracy frontier. These metrics address the under-reporting of cost identified by~\citet{moghadasi2026what}.
 

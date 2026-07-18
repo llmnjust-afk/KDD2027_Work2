@@ -1,0 +1,64 @@
+\section{Data Card and Benchmark Documentation}
+\label{app:datacard}
+
+\subsection{Task Suite Descriptions}
+
+\textbf{Synthetic trap tasks (95 tasks).} Programmatically generated across 5 domains (tabular EDA, time-series, recommendation, statistical, text-log) with deterministic ground-truth answers. Each task includes designed failure traps (e.g., count-vs-sum ambiguity, temporal leakage, type confusion). Data is generated at runtime from fixed seeds, ensuring reproducibility without external data dependencies.
+
+\textbf{UCI real-data tasks (23 tasks).} Analytical questions on 6 public datasets (Iris, Titanic, Tips, MPG, Penguins, Flights) downloaded at runtime from public repositories. Answers are computed deterministically from the real data. Tasks cover groupby aggregation, correlation, counting, and filtering.
+
+\textbf{DSBench real tasks (200 tasks).} Real financial-analysis questions from ModelOff competitions~\citep{jing2024dsbench}, using original multi-sheet Excel workbooks. Answers are multiple-choice (A--I) or numeric. Tasks require understanding complex financial data structures.
+
+\subsection{Data Schema}
+
+Each run in the manifest (\texttt{manifest.csv}) contains the following fields:
+
+\begin{itemize}[leftmargin=*,itemsep=1pt]
+\item \texttt{task\_id}: unique task identifier (e.g., \texttt{tabular\_eda\_00})
+\item \texttt{suite}: \texttt{synthetic}, \texttt{uci}, or \texttt{dsbench}
+\item \texttt{model}: LLM identifier (e.g., \texttt{gpt-4o}, \texttt{deepseek-v3})
+\item \texttt{variant}: \texttt{baseline} or \texttt{verifier}
+\item \texttt{rep}: repetition index (0--2)
+\item \texttt{correct}: boolean, whether the final answer matches ground truth
+\item \texttt{failure\_stage}: \texttt{none}, \texttt{runtime}, or \texttt{silent}
+\item \texttt{is\_silent}: boolean, whether the failure is silent
+\item \texttt{tokens}: total tokens consumed
+\item \texttt{final\_answer}: agent's final answer (truncated to 200 chars)
+\item \texttt{causal\_attributed}: boolean, whether oracle repair succeeded
+\item \texttt{source\_file}: original detail JSON filename
+\end{itemize}
+
+\subsection{Provenance}
+
+All experiments use deterministic data generation (fixed seeds for synthetic tasks) and temperature-0 LLM calls. The framework includes a MockLLM backend that reproduces the full pipeline without API cost. Real-model experiments use the ChatAnywhere OpenAI-compatible endpoint. Total API cost: \$80.
+
+\subsection{Licensing and Maintenance}
+
+The code is released under an open-source license. The synthetic task generators are self-contained. UCI datasets are public domain. DSBench tasks are used under their original license~\citep{jing2024dsbench}. The benchmark can be extended with new tasks by implementing the \texttt{Task} interface.
+
+\subsection{Propagation Depth Analysis}
+
+\Cref{tab:propagation} reports the propagation depth distribution across all 3{,}781 failures. The average depth is 0.30 steps, meaning most failures are detected immediately. However, 262 failures (6.9\%) propagate to depth $\geq$ 2, indicating long-horizon failure spread where the agent continues building on a wrong intermediate result.
+
+\begin{table}[t]
+\centering
+\caption{Propagation depth distribution (all 3{,}781 failures).}
+\label{tab:propagation}
+\small
+\begin{tabular}{@{}ccc@{}}
+\toprule
+Depth & Failures & Percentage \\
+\midrule
+0 & 3{,}350 & 88.6\% \\
+1 & 169 & 4.5\% \\
+2 & 80 & 2.1\% \\
+3 & 39 & 1.0\% \\
+4 & 64 & 1.7\% \\
+5 & 45 & 1.2\% \\
+6 & 20 & 0.5\% \\
+7 & 14 & 0.4\% \\
+\midrule
+$\geq$ 2 (long-horizon) & 262 & 6.9\% \\
+\bottomrule
+\end{tabular}
+\end{table}

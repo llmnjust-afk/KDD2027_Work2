@@ -17,3 +17,10 @@ The zero recovery rate (\Cref{sec:res-recovery}) has direct deployment consequen
 The failure bifurcation (\Cref{sec:res-bifurcation}) is partially mechanical ($R^2 = 0.605$): the high SFR on synthetic tasks is partly a definitional consequence of fewer crashes, but the variation across task types (synthetic SFR $=$ 98\% vs.\ UCI SFR $=$ 4\%) cannot be explained by execution success alone. We therefore characterise the bifurcation as a task-dependent phenomenon: tasks that allow code to run (synthetic traps) produce silent failures, while tasks that trigger code crashes (real data with complex formats) produce loud failures. This is not a universal ``phase transition'' but a task-type effect, and we report it as such rather than claiming a general law.
 
 A detailed discussion of limitations and ethical considerations is provided in \Cref{sec:limits-ethics}.
+
+\subsection{Negative Control: Oracle Repair Revisited}
+\label{sec:disc-negative-control}
+
+To test whether the oracle repair rate (\Cref{sec:causal}) genuinely reflects step-specific causal attribution, we ran a negative control on 56 failed tasks. The \emph{no-op} intervention runs the ground-truth code independently in a fresh sandbox, without any step replacement. If oracle repair truly measures step-level causality, the no-op rate should be substantially lower. As \Cref{tab:negative-control} shows, the two rates are identical (64.3\%), and the conservative true-positive rate (oracle succeeds \emph{and} no-op fails) is 0.0\%. This confirms that the oracle repair rate measures whether the ground-truth code produces the correct answer, \emph{not} whether replacing the originating step has a step-specific causal effect. We therefore report oracle repair as an upper bound on reparability rather than as evidence of root-cause localisation, and we acknowledge this as a limitation of the current counterfactual design.
+
+\input{tables/table_negative_control}
