@@ -1,0 +1,38 @@
+{
+  "experiment": "final_benchmark",
+  "config": {
+    "n_repeats": 3,
+    "max_steps": 8,
+    "n_synthetic": 80,
+    "n_real": 200,
+    "n_total": 280,
+    "models": [
+      "gpt-4o-mini",
+      "gpt-4o"
+    ]
+  },
+  "aggregate": {
+    "gpt-4o-mini": {
+      "model": "gpt-4o-mini",
+      "success_rate": "0.2036 +/- 0.0071",
+      "silent_failure_rate": "0.3603 +/- 0.0056",
+      "token_per_success": 29260.15,
+      "cost_per_success": 0.0044,
+      "ci95_success": [
+        0.1964,
+        0.2107
+      ]
+    },
+    "gpt-4o": {
+      "model": "gpt-4o",
+      "success_rate": "0.1357 +/- 0.0071",
+      "silent_failure_rate": "0.8624 +/- 0.0290",
+      "token_per_success": 69114.54,
+      "cost_per_success": 0.1728,
+      "ci95_success": [
+        0.1286,
+        0.1429
+      ]
+    }
+  }
+}
