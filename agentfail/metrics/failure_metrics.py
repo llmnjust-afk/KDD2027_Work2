@@ -37,7 +37,7 @@ class FailureMetrics:
     recovery_rate: float = 0.0                # detected failures that were recovered
     over_privilege_rate: float = 0.0
     tool_misuse_breakdown: Dict[str, int] = field(default_factory=dict)
-    causal_attribution_rate: float = 0.0      # proportion of failures causally attributed
+    oracle_repair_rate: float = 0.0       # renamed from causal_attribution_rate (per review)
 
     @property
     def success_rate(self) -> float:
@@ -56,7 +56,7 @@ class FailureMetrics:
             "recovery_rate": round(self.recovery_rate, 4),
             "over_privilege_rate": round(self.over_privilege_rate, 4),
             "tool_misuse_breakdown": self.tool_misuse_breakdown,
-            "causal_attribution_rate": round(self.causal_attribution_rate, 4),
+            "oracle_repair_rate": round(self.oracle_repair_rate, 4),
         }
 
 
@@ -116,5 +116,11 @@ def compute_failure_metrics(
     m.over_privilege_rate = n_over_priv / m.n_failed if m.n_failed else 0.0
     m.tool_misuse_breakdown = dict(tool_misuse)
     if causal_attributions:
-        m.causal_attribution_rate = sum(1 for a in causal_attributions if a) / len(causal_attributions) if causal_attributions else 0.0
+        # FIX: only compute on FAILED traces (not successful ones)
+        # causal_attributions is a list of bools aligned with classified list
+        failed_causal = []
+        for c, ca in zip(classified, causal_attributions):
+            if not c.task_correct:
+                failed_causal.append(ca)
+        m.oracle_repair_rate = sum(1 for a in failed_causal if a) / len(failed_causal) if failed_causal else 0.0
     return m

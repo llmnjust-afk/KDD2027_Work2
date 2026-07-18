@@ -1,0 +1,133 @@
+{
+  "oracle_repair_rate": 0.6634980988593155,
+  "total_tested": 526,
+  "total_repaired": 349,
+  "per_experiment": {
+    "main": {
+      "deepseek-chat+verifier": {
+        "n_failed_runs": 35,
+        "n_unique_tasks_tested": 13,
+        "n_repaired": 7,
+        "n_no_gt_code": 4,
+        "oracle_repair_rate": 0.5385
+      },
+      "deepseek-chat": {
+        "n_failed_runs": 33,
+        "n_unique_tasks_tested": 11,
+        "n_repaired": 5,
+        "n_no_gt_code": 4,
+        "oracle_repair_rate": 0.4545
+      },
+      "deepseek-r1+verifier": {
+        "n_failed_runs": 285,
+        "n_unique_tasks_tested": 76,
+        "n_repaired": 58,
+        "n_no_gt_code": 4,
+        "oracle_repair_rate": 0.7632
+      },
+      "deepseek-r1": {
+        "n_failed_runs": 285,
+        "n_unique_tasks_tested": 76,
+        "n_repaired": 58,
+        "n_no_gt_code": 4,
+        "oracle_repair_rate": 0.7632
+      },
+      "gpt-4o+verifier": {
+        "n_failed_runs": 54,
+        "n_unique_tasks_tested": 17,
+        "n_repaired": 6,
+        "n_no_gt_code": 4,
+        "oracle_repair_rate": 0.3529
+      },
+      "gpt-4o-mini+verifier": {
+        "n_failed_runs": 78,
+        "n_unique_tasks_tested": 31,
+        "n_repaired": 23,
+        "n_no_gt_code": 4,
+        "oracle_repair_rate": 0.7419
+      },
+      "gpt-4o-mini": {
+        "n_failed_runs": 63,
+        "n_unique_tasks_tested": 23,
+        "n_repaired": 17,
+        "n_no_gt_code": 4,
+        "oracle_repair_rate": 0.7391
+      },
+      "gpt-4o": {
+        "n_failed_runs": 53,
+        "n_unique_tasks_tested": 15,
+        "n_repaired": 4,
+        "n_no_gt_code": 4,
+        "oracle_repair_rate": 0.2667
+      },
+      "qwen3-max+verifier": {
+        "n_failed_runs": 162,
+        "n_unique_tasks_tested": 65,
+        "n_repaired": 48,
+        "n_no_gt_code": 4,
+        "oracle_repair_rate": 0.7385
+      },
+      "qwen3-max": {
+        "n_failed_runs": 233,
+        "n_unique_tasks_tested": 75,
+        "n_repaired": 57,
+        "n_no_gt_code": 4,
+        "oracle_repair_rate": 0.76
+      }
+    },
+    "uci": {
+      "deepseek-chat": {
+        "n_failed_runs": 4,
+        "n_unique_tasks_tested": 1,
+        "n_repaired": 0,
+        "n_no_gt_code": 1,
+        "oracle_repair_rate": 0.0
+      },
+      "deepseek-r1": {
+        "n_failed_runs": 69,
+        "n_unique_tasks_tested": 18,
+        "n_repaired": 5,
+        "n_no_gt_code": 5,
+        "oracle_repair_rate": 0.2778
+      },
+      "gpt-4o-mini": {
+        "n_failed_runs": 12,
+        "n_unique_tasks_tested": 5,
+        "n_repaired": 2,
+        "n_no_gt_code": 2,
+        "oracle_repair_rate": 0.4
+      },
+      "gpt-4o": {
+        "n_failed_runs": 6,
+        "n_unique_tasks_tested": 2,
+        "n_repaired": 0,
+        "n_no_gt_code": 0,
+        "oracle_repair_rate": 0.0
+      },
+      "qwen3-max": {
+        "n_failed_runs": 69,
+        "n_unique_tasks_tested": 18,
+        "n_repaired": 5,
+        "n_no_gt_code": 5,
+        "oracle_repair_rate": 0.2778
+      }
+    },
+    "final": {
+      "gpt-4o-mini": {
+        "n_failed_runs": 669,
+        "n_unique_tasks_tested": 35,
+        "n_repaired": 21,
+        "n_no_gt_code": 204,
+        "oracle_repair_rate": 0.6
+      },
+      "gpt-4o": {
+        "n_failed_runs": 726,
+        "n_unique_tasks_tested": 45,
+        "n_repaired": 33,
+        "n_no_gt_code": 203,
+        "oracle_repair_rate": 0.7333
+      }
+    }
+  },
+  "note": "Recomputed with expanded GT library (27 signatures). Only on failed tasks. No API calls."
+}

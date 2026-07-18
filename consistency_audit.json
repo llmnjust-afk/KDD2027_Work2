@@ -1,0 +1,15 @@
+{
+  "grand_total": {
+    "n": 4875,
+    "ok": 2039,
+    "fail": 2836,
+    "silent": 2263,
+    "loud": 573,
+    "causal_num": 58,
+    "causal_denom": 2836
+  },
+  "grand_sfr": 0.7979548660084627,
+  "grand_causal_rate": 0.020451339915373765,
+  "total_failures": 2836,
+  "note": "causal_attribution_rate recomputed ONLY on failed runs (fixes the =success_rate bug)"
+}

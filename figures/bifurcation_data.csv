@@ -1,8 +1,15 @@
 task_type,model,success_rate,silent_failure_rate,n_runs,dominant_failure_mode
+dsbench_real,gpt-4o,0.0333,0.8276,600,silent
+dsbench_real,gpt-4o-mini,0.0083,0.405,600,execution
 synthetic,deepseek-chat,0.8842,1.0,285,silent
 synthetic,deepseek-r1,0.0,0.9895,285,silent
 synthetic,gpt-4o,0.814,1.0,285,silent
+synthetic,gpt-4o,0.3917,1.0,240,silent
 synthetic,gpt-4o-mini,0.7789,0.8571,285,silent
+synthetic,gpt-4o-mini,0.6917,0.0,240,execution
 synthetic,qwen3-max,0.1825,1.0,285,silent
+uci_real,deepseek-chat,0.942,0.0,69,execution
+uci_real,deepseek-r1,0.0,1.0,69,silent
 uci_real,gpt-4o,0.913,1.0,69,silent
 uci_real,gpt-4o-mini,0.8261,0.0,69,execution
+uci_real,qwen3-max,0.0,1.0,69,silent
