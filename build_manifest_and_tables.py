@@ -51,9 +51,22 @@ def load_all_runs():
                 else:
                     suite = suite_label
 
-                # Determine model (strip +verifier)
-                base_model = model.replace('+verifier', '').replace('+consistency', '')
-                variant = 'verifier' if '+verifier' in model else ('consistency' if '+consistency' in model else 'baseline')
+                # Determine model and variant
+                # For supplementary files, use run-level model/variant fields
+                run_model = r.get('model', '').replace('+verifier', '').replace('+consistency', '')
+                run_variant = r.get('variant', '')
+                if run_model and run_model != model:
+                    # Use run-level model (more accurate for supplementary files)
+                    base_model = run_model
+                    if '+verifier' in run_variant or '+verifier' in r.get('variant', ''):
+                        variant = 'verifier'
+                    elif '+consistency' in run_variant:
+                        variant = 'consistency'
+                    else:
+                        variant = 'baseline'
+                else:
+                    base_model = model.replace('+verifier', '').replace('+consistency', '').replace('dsbench_', '').replace('uci_', '')
+                    variant = 'verifier' if '+verifier' in model else ('consistency' if '+consistency' in model else 'baseline')
 
                 # Fixed reclassification
                 fa = r.get('final_answer')
@@ -214,10 +227,10 @@ def main():
 
     # ── TABLE 3: Main results (table*) ── #
     # For each model, compute SR and SFR per suite
-    models_order = ['gpt-4o-mini', 'gpt-4o', 'deepseek-chat', 'deepseek-r1', 'qwen3-max']
+    models_order = ['gpt-4o-mini', 'gpt-4o', 'deepseek-v3', 'deepseek-r1', 'qwen3-max-2026']
     model_display = {
         'gpt-4o-mini': 'GPT-4o-mini', 'gpt-4o': 'GPT-4o',
-        'deepseek-chat': 'DeepSeek-V3', 'deepseek-r1': 'DeepSeek-R1', 'qwen3-max': 'Qwen3-max',
+        'deepseek-v3': 'DeepSeek-V3', 'deepseek-r1': 'DeepSeek-R1', 'qwen3-max-2026': 'Qwen3-max',
     }
 
     table3_lines = [
