@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "trace_000",
+    "task_id": "statistical_05",
+    "model": "deepseek-v3",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "54.96 nan",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 867,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_001",
+    "task_id": "time_series_10",
+    "model": "deepseek-v3",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "0.3607692307692314",
+    "system_stage": "interpretation",
+    "system_category": "misread_output",
+    "system_is_silent": true,
+    "tokens": 5003,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_002",
+    "task_id": "tabular_eda_15",
+    "model": "deepseek-v3",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "books 4",
+    "system_stage": "interpretation",
+    "system_category": "misread_output",
+    "system_is_silent": true,
+    "tokens": 1487,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_003",
+    "task_id": "statistical_15",
+    "model": "deepseek-v3",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "91.89 0.0",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 820,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_004",
+    "task_id": "statistical_14",
+    "model": "deepseek-v3",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "B 51",
+    "system_stage": "interpretation",
+    "system_category": "misread_output",
+    "system_is_silent": true,
+    "tokens": 1730,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_005",
+    "task_id": "recommendation_15",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_006",
+    "task_id": "recommendation_02",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_007",
+    "task_id": "dsbench_00000002_question5",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_008",
+    "task_id": "time_series_13",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_009",
+    "task_id": "statistical_01",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_010",
+    "task_id": "tabular_eda_10",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_011",
+    "task_id": "tabular_eda_10",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_012",
+    "task_id": "time_series_15",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_013",
+    "task_id": "text_log_10",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_014",
+    "task_id": "text_log_15",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_015",
+    "task_id": "text_log_13",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_016",
+    "task_id": "tabular_eda_09",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_017",
+    "task_id": "text_log_03",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_018",
+    "task_id": "statistical_00",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_019",
+    "task_id": "text_log_11",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_020",
+    "task_id": "statistical_10",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_021",
+    "task_id": "dsbench_00000002_question8",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_022",
+    "task_id": "tabular_eda_02",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_023",
+    "task_id": "statistical_06",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_024",
+    "task_id": "time_series_05",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_025",
+    "task_id": "statistical_05",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_026",
+    "task_id": "text_log_09",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_027",
+    "task_id": "time_series_03",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_028",
+    "task_id": "time_series_15",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_029",
+    "task_id": "recommendation_02",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_030",
+    "task_id": "recommendation_01",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_031",
+    "task_id": "time_series_11",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_032",
+    "task_id": "time_series_06",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_033",
+    "task_id": "dsbench_00000002_question4",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_034",
+    "task_id": "tabular_eda_14",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_035",
+    "task_id": "statistical_13",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_036",
+    "task_id": "dsbench_00000002_question2",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_037",
+    "task_id": "recommendation_10",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_038",
+    "task_id": "recommendation_02",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_039",
+    "task_id": "time_series_10",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_040",
+    "task_id": "dsbench_00000002_question7",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_041",
+    "task_id": "tabular_eda_05",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_042",
+    "task_id": "time_series_12",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_043",
+    "task_id": "text_log_01",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_044",
+    "task_id": "time_series_07",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_045",
+    "task_id": "tabular_eda_15",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_046",
+    "task_id": "text_log_13",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_047",
+    "task_id": "tabular_eda_03",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_048",
+    "task_id": "time_series_11",
+    "model": "deepseek-r1",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_049",
+    "task_id": "uci_iris_avg_sepal",
+    "model": "gpt-4o",
+    "source": "results_uci",
+    "domain": "uci_real",
+    "final_answer": "virginica 6.587999999999999",
+    "system_stage": "interpretation",
+    "system_category": "misread_output",
+    "system_is_silent": true,
+    "tokens": 1647,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_050",
+    "task_id": "statistical_07",
+    "model": "gpt-4o",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "92.91 0.0",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 721,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_051",
+    "task_id": "uci_tips_avg_tip_by_day",
+    "model": "gpt-4o",
+    "source": "results_uci",
+    "domain": "uci_real",
+    "final_answer": "Sun 3.2551315789473683",
+    "system_stage": "interpretation",
+    "system_category": "misread_output",
+    "system_is_silent": true,
+    "tokens": 1533,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_052",
+    "task_id": "recommendation_09",
+    "model": "gpt-4o",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "0 5",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 706,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_053",
+    "task_id": "text_log_11",
+    "model": "gpt-4o",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "0 1",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 764,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_054",
+    "task_id": "statistical_11",
+    "model": "gpt-4o",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "96.41 0.0",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 752,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_055",
+    "task_id": "recommendation_03",
+    "model": "gpt-4o",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "0 9",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 668,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_056",
+    "task_id": "statistical_07",
+    "model": "gpt-4o",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "92.91 0.0",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 752,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_057",
+    "task_id": "text_log_15",
+    "model": "gpt-4o",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "0 1",
+    "system_stage": "interpretation",
+    "system_category": "misread_output",
+    "system_is_silent": true,
+    "tokens": 1455,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_058",
+    "task_id": "statistical_02",
+    "model": "gpt-4o-mini",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "A 10",
+    "system_stage": "interpretation",
+    "system_category": "misread_output",
+    "system_is_silent": true,
+    "tokens": 1699,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_059",
+    "task_id": "statistical_07",
+    "model": "gpt-4o-mini",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "92.91 0.0",
+    "system_stage": "interpretation",
+    "system_category": "misread_output",
+    "system_is_silent": true,
+    "tokens": 1376,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_060",
+    "task_id": "statistical_02",
+    "model": "gpt-4o-mini",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "A 10",
+    "system_stage": "interpretation",
+    "system_category": "misread_output",
+    "system_is_silent": true,
+    "tokens": 1669,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_061",
+    "task_id": "statistical_01",
+    "model": "gpt-4o-mini",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "', final_answer)",
+    "system_stage": "interpretation",
+    "system_category": "misread_output",
+    "system_is_silent": true,
+    "tokens": 744,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_062",
+    "task_id": "statistical_14",
+    "model": "gpt-4o-mini",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "B 10",
+    "system_stage": "interpretation",
+    "system_category": "misread_output",
+    "system_is_silent": true,
+    "tokens": 1689,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_063",
+    "task_id": "text_log_09",
+    "model": "gpt-4o-mini",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 3095,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_064",
+    "task_id": "recommendation_05",
+    "model": "gpt-4o-mini",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "', f\"{max_user} {max_clicks}\")",
+    "system_stage": "interpretation",
+    "system_category": "misread_output",
+    "system_is_silent": true,
+    "tokens": 2723,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_065",
+    "task_id": "statistical_09",
+    "model": "gpt-4o-mini",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "', final_answer)",
+    "system_stage": "interpretation",
+    "system_category": "misread_output",
+    "system_is_silent": true,
+    "tokens": 744,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_066",
+    "task_id": "text_log_11",
+    "model": "gpt-4o-mini",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 3065,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_067",
+    "task_id": "text_log_04",
+    "model": "gpt-4o-mini",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "execution",
+    "system_category": "key_error",
+    "system_is_silent": false,
+    "tokens": 3077,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_068",
+    "task_id": "statistical_13",
+    "model": "gpt-4o-mini",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "', final_answer)",
+    "system_stage": "interpretation",
+    "system_category": "misread_output",
+    "system_is_silent": true,
+    "tokens": 744,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_069",
+    "task_id": "statistical_03",
+    "model": "gpt-4o-mini",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "94.11 0.0",
+    "system_stage": "interpretation",
+    "system_category": "misread_output",
+    "system_is_silent": true,
+    "tokens": 1376,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_070",
+    "task_id": "text_log_05",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "', most_common_level, most_common_count)",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 324,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_071",
+    "task_id": "statistical_07",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_072",
+    "task_id": "statistical_15",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_073",
+    "task_id": "recommendation_09",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_074",
+    "task_id": "statistical_09",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "', mean_value, std_value)",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 308,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_075",
+    "task_id": "statistical_14",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_076",
+    "task_id": "tabular_eda_01",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_077",
+    "task_id": "text_log_15",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "0 1",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 778,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_078",
+    "task_id": "tabular_eda_11",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "', max_category, max_count)",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 356,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_079",
+    "task_id": "statistical_11",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "96.41 0.0",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 796,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_080",
+    "task_id": "tabular_eda_06",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "', max_category, max_total)",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 370,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_081",
+    "task_id": "text_log_15",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "0 1",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 806,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_082",
+    "task_id": "tabular_eda_14",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_083",
+    "task_id": "text_log_03",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "', max_hour, max_count)",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 369,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_084",
+    "task_id": "tabular_eda_13",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "', total_amount)",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 288,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_085",
+    "task_id": "statistical_08",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "', correlation)",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 301,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_086",
+    "task_id": "recommendation_10",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_087",
+    "task_id": "text_log_04",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_088",
+    "task_id": "statistical_09",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_089",
+    "task_id": "time_series_15",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_090",
+    "task_id": "tabular_eda_13",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_091",
+    "task_id": "statistical_07",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_092",
+    "task_id": "time_series_08",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_093",
+    "task_id": "recommendation_08",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "', total_clicks)",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 279,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_094",
+    "task_id": "text_log_03",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "0 1",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 766,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_095",
+    "task_id": "recommendation_07",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "', most_popular_item, max_clicks)",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 336,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_096",
+    "task_id": "statistical_14",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "', most_frequent_category, count)",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 337,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_097",
+    "task_id": "text_log_10",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "', most_active_user, most_active_count)",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 395,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_098",
+    "task_id": "recommendation_09",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trace_099",
+    "task_id": "recommendation_05",
+    "model": "qwen3-max-2026",
+    "source": "results_full",
+    "domain": "",
+    "final_answer": "None",
+    "system_stage": "interpretation",
+    "system_category": "hallucinated_answer",
+    "system_is_silent": true,
+    "tokens": 0,
+    "annotator_1": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    },
+    "annotator_2": {
+      "stage": "",
+      "category": "",
+      "is_silent": "",
+      "notes": ""
+    }
+  }
+]

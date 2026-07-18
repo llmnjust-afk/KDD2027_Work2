@@ -1,0 +1,8 @@
+task_type,model,success_rate,silent_failure_rate,n_runs,dominant_failure_mode
+synthetic,deepseek-chat,0.8842,1.0,285,silent
+synthetic,deepseek-r1,0.0,0.9895,285,silent
+synthetic,gpt-4o,0.814,1.0,285,silent
+synthetic,gpt-4o-mini,0.7789,0.8571,285,silent
+synthetic,qwen3-max,0.1825,1.0,285,silent
+uci_real,gpt-4o,0.913,1.0,69,silent
+uci_real,gpt-4o-mini,0.8261,0.0,69,execution

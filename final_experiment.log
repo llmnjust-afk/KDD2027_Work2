@@ -9,3 +9,660 @@ Running: gpt-4o-mini (gpt-4o-mini)
   [+|S] tabular_eda_00 r1 | stage=interpretation silent=False tok=6498 16.4s
   [x|S] tabular_eda_00 r2 | stage=execution silent=False tok=5139 14.1s
   [+|S] tabular_eda_01 r0 | stage=interpretation silent=False tok=3232 8.3s
+  [+|S] tabular_eda_01 r1 | stage=interpretation silent=False tok=3616 7.7s
+  [+|S] tabular_eda_01 r2 | stage=interpretation silent=False tok=4709 10.4s
+  [+|S] tabular_eda_02 r0 | stage=interpretation silent=False tok=2868 8.8s
+  [+|S] tabular_eda_02 r1 | stage=interpretation silent=False tok=5165 13.5s
+  [+|S] tabular_eda_02 r2 | stage=interpretation silent=False tok=6777 17.3s
+  [+|S] tabular_eda_03 r0 | stage=interpretation silent=False tok=4243 10.4s
+  [+|S] tabular_eda_03 r1 | stage=interpretation silent=False tok=5495 11.0s
+  [+|S] tabular_eda_03 r2 | stage=interpretation silent=False tok=4729 10.2s
+  [x|S] tabular_eda_04 r0 | stage=execution silent=False tok=4877 13.7s
+  [+|S] tabular_eda_04 r1 | stage=interpretation silent=False tok=4477 10.8s
+  [+|S] tabular_eda_04 r2 | stage=interpretation silent=False tok=4471 11.8s
+  [+|S] tabular_eda_05 r0 | stage=interpretation silent=False tok=5603 11.5s
+  [+|S] tabular_eda_05 r1 | stage=interpretation silent=False tok=4578 9.4s
+  [+|S] tabular_eda_05 r2 | stage=interpretation silent=False tok=5506 13.1s
+  [+|S] tabular_eda_06 r0 | stage=interpretation silent=False tok=4529 12.5s
+  [+|S] tabular_eda_06 r1 | stage=interpretation silent=False tok=5614 15.6s
+  [x|S] tabular_eda_06 r2 | stage=execution silent=False tok=5602 13.4s
+  [+|S] tabular_eda_07 r0 | stage=interpretation silent=False tok=7035 13.5s
+  [+|S] tabular_eda_07 r1 | stage=interpretation silent=False tok=4549 9.1s
+  [+|S] tabular_eda_07 r2 | stage=interpretation silent=False tok=5479 10.4s
+  [+|S] tabular_eda_08 r0 | stage=interpretation silent=False tok=3472 9.9s
+  [+|S] tabular_eda_08 r1 | stage=interpretation silent=False tok=4469 11.7s
+  [+|S] tabular_eda_08 r2 | stage=interpretation silent=False tok=5302 14.0s
+  [+|S] tabular_eda_09 r0 | stage=interpretation silent=False tok=5343 11.3s
+  [+|S] tabular_eda_09 r1 | stage=interpretation silent=False tok=4321 10.0s
+  [+|S] tabular_eda_09 r2 | stage=interpretation silent=False tok=5263 11.5s
+  [+|S] tabular_eda_10 r0 | stage=interpretation silent=False tok=4766 11.8s
+  [x|S] tabular_eda_10 r1 | stage=execution silent=False tok=5407 14.4s
+  [+|S] tabular_eda_10 r2 | stage=interpretation silent=False tok=3647 10.5s
+  [+|S] tabular_eda_11 r0 | stage=interpretation silent=False tok=3691 10.6s
+  [+|S] tabular_eda_11 r1 | stage=interpretation silent=False tok=4727 11.5s
+  [+|S] tabular_eda_11 r2 | stage=interpretation silent=False tok=4516 11.1s
+  [+|S] tabular_eda_12 r0 | stage=interpretation silent=False tok=4467 11.1s
+  [+|S] tabular_eda_12 r1 | stage=interpretation silent=False tok=5312 12.7s
+  [+|S] tabular_eda_12 r2 | stage=interpretation silent=False tok=5139 15.8s
+  [+|S] tabular_eda_13 r0 | stage=interpretation silent=False tok=4282 9.1s
+  [+|S] tabular_eda_13 r1 | stage=interpretation silent=False tok=3281 8.1s
+  [x|S] tabular_eda_13 r2 | stage=execution silent=False tok=4441 9.8s
+  [+|S] tabular_eda_14 r0 | stage=interpretation silent=False tok=4319 11.6s
+  [+|S] tabular_eda_14 r1 | stage=interpretation silent=False tok=5050 12.6s
+  [+|S] tabular_eda_14 r2 | stage=interpretation silent=False tok=3503 10.3s
+  [x|S] tabular_eda_15 r0 | stage=execution silent=False tok=6054 12.8s
+  [x|S] tabular_eda_15 r1 | stage=execution silent=False tok=5541 11.9s
+  [x|S] tabular_eda_15 r2 | stage=execution silent=False tok=3680 9.2s
+  [+|S] time_series_00 r0 | stage=interpretation silent=False tok=4630 11.7s
+  [+|S] time_series_00 r1 | stage=interpretation silent=False tok=4850 12.9s
+  [+|S] time_series_00 r2 | stage=interpretation silent=False tok=4660 11.8s
+  [+|S] time_series_01 r0 | stage=interpretation silent=False tok=4516 11.7s
+  [+|S] time_series_01 r1 | stage=interpretation silent=False tok=3788 10.9s
+  [+|S] time_series_01 r2 | stage=interpretation silent=False tok=3641 10.6s
+  [+|S] time_series_02 r0 | stage=interpretation silent=False tok=5886 13.0s
+  [+|S] time_series_02 r1 | stage=interpretation silent=False tok=3870 9.5s
+  [+|S] time_series_02 r2 | stage=interpretation silent=False tok=4896 12.7s
+  [+|S] time_series_03 r0 | stage=interpretation silent=False tok=3493 9.3s
+  [+|S] time_series_03 r1 | stage=interpretation silent=False tok=3168 9.9s
+  [+|S] time_series_03 r2 | stage=interpretation silent=False tok=4543 12.5s
+  [+|S] time_series_04 r0 | stage=interpretation silent=False tok=4690 12.8s
+  [+|S] time_series_04 r1 | stage=interpretation silent=False tok=4636 13.1s
+  [+|S] time_series_04 r2 | stage=interpretation silent=False tok=4896 13.7s
+  [+|S] time_series_05 r0 | stage=interpretation silent=False tok=4475 11.0s
+  [x|S] time_series_05 r1 | stage=execution silent=False tok=5136 12.7s
+  [+|S] time_series_05 r2 | stage=interpretation silent=False tok=5103 12.1s
+  [+|S] time_series_06 r0 | stage=interpretation silent=False tok=3626 8.3s
+  [+|S] time_series_06 r1 | stage=interpretation silent=False tok=5981 13.1s
+  [x|S] time_series_06 r2 | stage=execution silent=False tok=5700 11.8s
+  [+|S] time_series_07 r0 | stage=interpretation silent=False tok=4677 13.0s
+  [+|S] time_series_07 r1 | stage=interpretation silent=False tok=4629 12.6s
+  [+|S] time_series_07 r2 | stage=interpretation silent=False tok=4343 12.3s
+  [+|S] time_series_08 r0 | stage=interpretation silent=False tok=3862 12.5s
+  [+|S] time_series_08 r1 | stage=interpretation silent=False tok=4624 12.2s
+  [+|S] time_series_08 r2 | stage=interpretation silent=False tok=4502 12.4s
+  [+|S] time_series_09 r0 | stage=interpretation silent=False tok=4482 12.3s
+  [x|S] time_series_09 r1 | stage=execution silent=False tok=5649 15.9s
+  [+|S] time_series_09 r2 | stage=interpretation silent=False tok=4762 12.5s
+  [x|S] time_series_10 r0 | stage=execution silent=False tok=5716 12.1s
+  [+|S] time_series_10 r1 | stage=interpretation silent=False tok=5604 14.6s
+  [+|S] time_series_10 r2 | stage=interpretation silent=False tok=6211 14.4s
+  [+|S] time_series_11 r0 | stage=interpretation silent=False tok=4759 13.3s
+  [+|S] time_series_11 r1 | stage=interpretation silent=False tok=4690 13.1s
+  [+|S] time_series_11 r2 | stage=interpretation silent=False tok=4623 12.6s
+  [+|S] time_series_12 r0 | stage=interpretation silent=False tok=5473 13.6s
+  [+|S] time_series_12 r1 | stage=interpretation silent=False tok=4638 12.9s
+  [x|S] time_series_12 r2 | stage=execution silent=False tok=6572 15.7s
+  [+|S] time_series_13 r0 | stage=interpretation silent=False tok=4532 9.8s
+  [+|S] time_series_13 r1 | stage=interpretation silent=False tok=4540 9.7s
+  [+|S] time_series_13 r2 | stage=interpretation silent=False tok=4490 10.2s
+  [+|S] time_series_14 r0 | stage=interpretation silent=False tok=5553 10.4s
+  [+|S] time_series_14 r1 | stage=interpretation silent=False tok=5519 10.6s
+  [+|S] time_series_14 r2 | stage=interpretation silent=False tok=6885 15.4s
+  [+|S] time_series_15 r0 | stage=interpretation silent=False tok=4644 12.7s
+  [+|S] time_series_15 r1 | stage=interpretation silent=False tok=4575 12.8s
+  [+|S] time_series_15 r2 | stage=interpretation silent=False tok=3517 10.1s
+  [x|S] recommendation_00 r0 | stage=execution silent=False tok=5045 12.1s
+  [x|S] recommendation_00 r1 | stage=execution silent=False tok=4851 13.2s
+  [+|S] recommendation_00 r2 | stage=interpretation silent=False tok=3290 8.8s
+  [x|S] recommendation_01 r0 | stage=execution silent=False tok=5151 12.5s
+  [+|S] recommendation_01 r1 | stage=interpretation silent=False tok=4169 9.5s
+  [+|S] recommendation_01 r2 | stage=interpretation silent=False tok=3909 9.3s
+  [+|S] recommendation_02 r0 | stage=interpretation silent=False tok=4852 12.3s
+  [x|S] recommendation_02 r1 | stage=execution silent=False tok=5598 15.6s
+  [+|S] recommendation_02 r2 | stage=interpretation silent=False tok=3684 11.3s
+  [+|S] recommendation_03 r0 | stage=interpretation silent=False tok=4338 10.7s
+  [x|S] recommendation_03 r1 | stage=execution silent=False tok=5104 11.9s
+  [x|S] recommendation_03 r2 | stage=execution silent=False tok=5353 13.0s
+  [+|S] recommendation_04 r0 | stage=interpretation silent=False tok=6266 14.8s
+  [+|S] recommendation_04 r1 | stage=interpretation silent=False tok=6388 15.7s
+  [+|S] recommendation_04 r2 | stage=interpretation silent=False tok=6210 13.3s
+  [x|S] recommendation_05 r0 | stage=execution silent=False tok=4790 12.3s
+  [+|S] recommendation_05 r1 | stage=interpretation silent=False tok=4381 12.1s
+  [+|S] recommendation_05 r2 | stage=interpretation silent=False tok=6703 13.0s
+  [+|S] recommendation_06 r0 | stage=interpretation silent=False tok=3366 9.4s
+  [+|S] recommendation_06 r1 | stage=interpretation silent=False tok=5158 12.8s
+  [+|S] recommendation_06 r2 | stage=interpretation silent=False tok=5582 16.5s
+  [x|S] recommendation_07 r0 | stage=execution silent=False tok=5671 12.6s
+  [+|S] recommendation_07 r1 | stage=interpretation silent=False tok=3469 9.0s
+  [x|S] recommendation_07 r2 | stage=execution silent=False tok=5246 12.2s
+  [x|S] recommendation_08 r0 | stage=execution silent=False tok=4953 14.6s
+  [x|S] recommendation_08 r1 | stage=execution silent=False tok=5204 14.1s
+  [+|S] recommendation_08 r2 | stage=interpretation silent=False tok=3451 10.6s
+  [x|S] recommendation_09 r0 | stage=execution silent=False tok=5117 11.4s
+  [x|S] recommendation_09 r1 | stage=execution silent=False tok=5298 13.4s
+  [+|S] recommendation_09 r2 | stage=interpretation silent=False tok=6546 15.5s
+  [+|S] recommendation_10 r0 | stage=interpretation silent=False tok=4417 13.4s
+  [+|S] recommendation_10 r1 | stage=interpretation silent=False tok=3363 10.9s
+  [+|S] recommendation_10 r2 | stage=interpretation silent=False tok=4521 14.2s
+  [+|S] recommendation_11 r0 | stage=interpretation silent=False tok=4316 10.4s
+  [+|S] recommendation_11 r1 | stage=interpretation silent=False tok=4344 9.3s
+  [+|S] recommendation_11 r2 | stage=interpretation silent=False tok=4399 12.1s
+  [+|S] recommendation_12 r0 | stage=interpretation silent=False tok=4896 14.7s
+  [+|S] recommendation_12 r1 | stage=interpretation silent=False tok=6413 13.9s
+  [+|S] recommendation_12 r2 | stage=interpretation silent=False tok=3399 11.1s
+  [+|S] recommendation_13 r0 | stage=interpretation silent=False tok=3425 8.7s
+  [+|S] recommendation_13 r1 | stage=interpretation silent=False tok=5431 12.8s
+  [x|S] recommendation_13 r2 | stage=execution silent=False tok=4964 14.5s
+  [+|S] recommendation_14 r0 | stage=interpretation silent=False tok=6557 16.1s
+  [+|S] recommendation_14 r1 | stage=interpretation silent=False tok=3641 10.7s
+  [+|S] recommendation_14 r2 | stage=interpretation silent=False tok=7386 17.4s
+  [x|S] recommendation_15 r0 | stage=execution silent=False tok=4945 12.0s
+  [x|S] recommendation_15 r1 | stage=execution silent=False tok=5249 11.8s
+  [x|S] recommendation_15 r2 | stage=execution silent=False tok=5206 11.0s
+  [+|S] statistical_00 r0 | stage=interpretation silent=False tok=3407 9.8s
+  [+|S] statistical_00 r1 | stage=interpretation silent=False tok=3450 8.9s
+  [+|S] statistical_00 r2 | stage=interpretation silent=False tok=5224 13.1s
+  [x|S] statistical_01 r0 | stage=execution silent=False tok=2541 8.2s
+  [x|S] statistical_01 r1 | stage=execution silent=False tok=3429 10.5s
+  [x|S] statistical_01 r2 | stage=execution silent=False tok=2502 7.7s
+  [x|S] statistical_02 r0 | stage=execution silent=False tok=4986 12.0s
+  [+|S] statistical_02 r1 | stage=interpretation silent=False tok=4154 13.3s
+  [x|S] statistical_02 r2 | stage=execution silent=False tok=4314 10.3s
+  [x|S] statistical_03 r0 | stage=execution silent=False tok=3405 10.1s
+  [x|S] statistical_03 r1 | stage=execution silent=False tok=5360 11.4s
+  [x|S] statistical_03 r2 | stage=execution silent=False tok=3415 9.3s
+  [+|S] statistical_04 r0 | stage=interpretation silent=False tok=4714 11.5s
+  [x|S] statistical_04 r1 | stage=execution silent=False tok=5693 15.4s
+  [+|S] statistical_04 r2 | stage=interpretation silent=False tok=4722 10.6s
+  [x|S] statistical_05 r0 | stage=execution silent=False tok=3369 9.4s
+  [x|S] statistical_05 r1 | stage=execution silent=False tok=3299 10.7s
+  [x|S] statistical_05 r2 | stage=execution silent=False tok=3213 8.8s
+  [+|S] statistical_06 r0 | stage=interpretation silent=False tok=3170 10.8s
+  [+|S] statistical_06 r1 | stage=interpretation silent=False tok=3145 8.2s
+  [+|S] statistical_06 r2 | stage=interpretation silent=False tok=4394 10.3s
+  [x|S] statistical_07 r0 | stage=execution silent=False tok=3646 10.7s
+  [x|S] statistical_07 r1 | stage=execution silent=False tok=4684 11.3s
+  [x|S] statistical_07 r2 | stage=execution silent=False tok=4727 11.9s
+  [+|S] statistical_08 r0 | stage=interpretation silent=False tok=4554 11.6s
+  [+|S] statistical_08 r1 | stage=interpretation silent=False tok=3345 10.8s
+  [+|S] statistical_08 r2 | stage=interpretation silent=False tok=6113 13.5s
+  [x|S] statistical_09 r0 | stage=execution silent=False tok=4349 12.4s
+  [x|S] statistical_09 r1 | stage=execution silent=False tok=3208 8.5s
+  [x|S] statistical_09 r2 | stage=execution silent=False tok=4548 12.7s
+  [+|S] statistical_10 r0 | stage=interpretation silent=False tok=3308 8.4s
+  [x|S] statistical_10 r1 | stage=execution silent=False tok=5279 12.4s
+  [+|S] statistical_10 r2 | stage=interpretation silent=False tok=3463 9.2s
+  [x|S] statistical_11 r0 | stage=execution silent=False tok=3327 8.1s
+  [x|S] statistical_11 r1 | stage=execution silent=False tok=3327 9.1s
+  [x|S] statistical_11 r2 | stage=execution silent=False tok=3627 9.7s
+  [+|S] statistical_12 r0 | stage=interpretation silent=False tok=4299 11.5s
+  [+|S] statistical_12 r1 | stage=interpretation silent=False tok=3485 9.2s
+  [+|S] statistical_12 r2 | stage=interpretation silent=False tok=3357 10.3s
+  [x|S] statistical_13 r0 | stage=execution silent=False tok=3391 8.8s
+  [x|S] statistical_13 r1 | stage=execution silent=False tok=3208 7.9s
+  [x|S] statistical_13 r2 | stage=execution silent=False tok=6787 14.8s
+  [+|S] statistical_14 r0 | stage=interpretation silent=False tok=4185 10.6s
+  [+|S] statistical_14 r1 | stage=interpretation silent=False tok=3313 8.5s
+  [+|S] statistical_14 r2 | stage=interpretation silent=False tok=4086 10.5s
+  [x|S] statistical_15 r0 | stage=execution silent=False tok=3647 10.4s
+  [x|S] statistical_15 r1 | stage=execution silent=False tok=3651 8.5s
+  [x|S] statistical_15 r2 | stage=execution silent=False tok=3646 8.7s
+  [+|S] text_log_00 r0 | stage=interpretation silent=False tok=4315 9.5s
+  [+|S] text_log_00 r1 | stage=interpretation silent=False tok=5879 11.3s
+  [+|S] text_log_00 r2 | stage=interpretation silent=False tok=4326 10.3s
+  [x|S] text_log_01 r0 | stage=execution silent=False tok=5295 13.2s
+  [+|S] text_log_01 r1 | stage=interpretation silent=False tok=5662 12.1s
+  [x|S] text_log_01 r2 | stage=execution silent=False tok=5222 12.8s
+  [+|S] text_log_02 r0 | stage=interpretation silent=False tok=5058 12.3s
+  [+|S] text_log_02 r1 | stage=interpretation silent=False tok=5084 12.3s
+  [+|S] text_log_02 r2 | stage=interpretation silent=False tok=3040 9.2s
+  [x|S] text_log_03 r0 | stage=execution silent=False tok=5056 12.2s
+  [x|S] text_log_03 r1 | stage=execution silent=False tok=4732 12.0s
+  [x|S] text_log_03 r2 | stage=execution silent=False tok=4707 10.8s
+  [x|S] text_log_04 r0 | stage=execution silent=False tok=5007 11.6s
+  [+|S] text_log_04 r1 | stage=interpretation silent=False tok=4804 9.7s
+  [+|S] text_log_04 r2 | stage=interpretation silent=False tok=7043 12.2s
+  [+|S] text_log_05 r0 | stage=interpretation silent=False tok=6298 14.4s
+  [+|S] text_log_05 r1 | stage=interpretation silent=False tok=6468 14.2s
+  [+|S] text_log_05 r2 | stage=interpretation silent=False tok=6180 13.4s
+  [+|S] text_log_06 r0 | stage=interpretation silent=False tok=5065 13.0s
+  [+|S] text_log_06 r1 | stage=interpretation silent=False tok=3349 9.1s
+  [+|S] text_log_06 r2 | stage=interpretation silent=False tok=4708 13.1s
+  [x|S] text_log_07 r0 | stage=execution silent=False tok=6876 15.6s
+  [x|S] text_log_07 r1 | stage=execution silent=False tok=4576 12.9s
+  [x|S] text_log_07 r2 | stage=execution silent=False tok=4668 11.7s
+  [+|S] text_log_08 r0 | stage=interpretation silent=False tok=3933 7.6s
+  [+|S] text_log_08 r1 | stage=interpretation silent=False tok=5857 12.0s
+  [+|S] text_log_08 r2 | stage=interpretation silent=False tok=4663 10.5s
+  [+|S] text_log_09 r0 | stage=interpretation silent=False tok=6286 13.7s
+  [+|S] text_log_09 r1 | stage=interpretation silent=False tok=4557 10.3s
+  [+|S] text_log_09 r2 | stage=interpretation silent=False tok=6274 14.0s
+  [+|S] text_log_10 r0 | stage=interpretation silent=False tok=5054 12.4s
+  [+|S] text_log_10 r1 | stage=interpretation silent=False tok=3518 10.6s
+  [+|S] text_log_10 r2 | stage=interpretation silent=False tok=4653 12.7s
+  [x|S] text_log_11 r0 | stage=execution silent=False tok=5441 16.3s
+  [x|S] text_log_11 r1 | stage=execution silent=False tok=5969 13.1s
+  [x|S] text_log_11 r2 | stage=execution silent=False tok=4600 10.5s
+  [+|S] text_log_12 r0 | stage=interpretation silent=False tok=4321 9.8s
+  [+|S] text_log_12 r1 | stage=interpretation silent=False tok=4303 9.1s
+  [+|S] text_log_12 r2 | stage=interpretation silent=False tok=5133 11.8s
+  [+|S] text_log_13 r0 | stage=interpretation silent=False tok=5608 11.4s
+  [x|S] text_log_13 r1 | stage=execution silent=False tok=5079 11.5s
+  [+|S] text_log_13 r2 | stage=interpretation silent=False tok=5560 10.8s
+  [+|S] text_log_14 r0 | stage=interpretation silent=False tok=5033 13.3s
+  [+|S] text_log_14 r1 | stage=interpretation silent=False tok=3086 9.1s
+  [+|S] text_log_14 r2 | stage=interpretation silent=False tok=5046 12.8s
+  [x|S] text_log_15 r0 | stage=execution silent=False tok=5401 14.5s
+  [x|S] text_log_15 r1 | stage=execution silent=False tok=3466 9.4s
+  [x|S] text_log_15 r2 | stage=execution silent=False tok=5887 13.3s
+  [x|R] dsbench_real_00000005_question20 r0 | stage=execution silent=False tok=9567 15.7s
+  [x|R] dsbench_real_00000005_question20 r1 | stage=execution silent=False tok=11113 23.3s
+  [x|R] dsbench_real_00000005_question20 r2 | stage=execution silent=False tok=10687 17.3s
+  [x|R] dsbench_real_00000005_question21 r0 | stage=execution silent=False tok=9290 17.0s
+  [x|R] dsbench_real_00000005_question21 r1 | stage=execution silent=False tok=13501 19.0s
+  [x|R] dsbench_real_00000005_question21 r2 | stage=execution silent=False tok=9739 15.8s
+  [x|R] dsbench_real_00000005_question22 r0 | stage=execution silent=False tok=10893 19.5s
+  [x|R] dsbench_real_00000005_question22 r1 | stage=execution silent=False tok=11201 18.6s
+  [x|R] dsbench_real_00000005_question22 r2 | stage=execution silent=False tok=10045 17.6s
+  [x|R] dsbench_real_00000005_question23 r0 | stage=execution silent=False tok=9410 16.3s
+<sandbox>:10: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  [x|R] dsbench_real_00000005_question23 r1 | stage=execution silent=False tok=11324 20.7s
+  [x|R] dsbench_real_00000005_question23 r2 | stage=execution silent=False tok=10498 19.0s
+  [x|R] dsbench_real_00000005_question24 r0 | stage=execution silent=False tok=9881 16.6s
+  [x|R] dsbench_real_00000005_question24 r1 | stage=execution silent=False tok=14104 24.8s
+  [x|R] dsbench_real_00000005_question24 r2 | stage=execution silent=False tok=10926 21.5s
+  [x|R] dsbench_real_00000005_question25 r0 | stage=execution silent=False tok=11167 23.5s
+  [x|R] dsbench_real_00000005_question25 r1 | stage=execution silent=False tok=9736 18.2s
+  [x|R] dsbench_real_00000005_question25 r2 | stage=execution silent=False tok=10135 19.2s
+  [x|R] dsbench_real_00000005_question26 r0 | stage=execution silent=False tok=9184 20.2s
+  [x|R] dsbench_real_00000005_question26 r1 | stage=execution silent=False tok=11060 20.2s
+  [x|R] dsbench_real_00000005_question26 r2 | stage=execution silent=False tok=10214 16.8s
+  [x|R] dsbench_real_00000005_question27 r0 | stage=execution silent=False tok=9993 20.0s
+  [x|R] dsbench_real_00000005_question27 r1 | stage=execution silent=False tok=10985 18.5s
+  [x|R] dsbench_real_00000005_question27 r2 | stage=execution silent=False tok=11022 22.4s
+  [x|R] dsbench_real_00000005_question28 r0 | stage=execution silent=False tok=11000 21.4s
+  [x|R] dsbench_real_00000005_question28 r1 | stage=execution silent=False tok=13671 21.9s
+  [x|R] dsbench_real_00000005_question28 r2 | stage=execution silent=False tok=10013 17.1s
+  [x|R] dsbench_real_00000005_question29 r0 | stage=execution silent=False tok=9898 15.4s
+  [x|R] dsbench_real_00000005_question29 r1 | stage=execution silent=False tok=10277 16.8s
+  [x|R] dsbench_real_00000005_question29 r2 | stage=execution silent=False tok=5047 9.6s
+  [x|R] dsbench_real_00000006_question17 r0 | stage=execution silent=False tok=10658 16.8s
+  [x|R] dsbench_real_00000006_question17 r1 | stage=execution silent=False tok=11205 19.9s
+  [x|R] dsbench_real_00000006_question17 r2 | stage=execution silent=False tok=10836 18.5s
+  [x|R] dsbench_real_00000006_question18 r0 | stage=execution silent=False tok=10624 24.3s
+  [x|R] dsbench_real_00000006_question18 r1 | stage=execution silent=False tok=10646 17.3s
+  [x|R] dsbench_real_00000006_question18 r2 | stage=execution silent=False tok=9015 16.2s
+  [x|R] dsbench_real_00000006_question19 r0 | stage=execution silent=False tok=10925 17.7s
+  [x|R] dsbench_real_00000006_question19 r1 | stage=execution silent=False tok=9872 19.2s
+  [x|R] dsbench_real_00000006_question19 r2 | stage=execution silent=False tok=12782 18.2s
+  [x|R] dsbench_real_00000006_question20 r0 | stage=execution silent=False tok=11329 17.1s
+  [x|R] dsbench_real_00000006_question20 r1 | stage=execution silent=False tok=11127 17.8s
+  [x|R] dsbench_real_00000006_question20 r2 | stage=execution silent=False tok=10813 18.6s
+  [x|R] dsbench_real_00000006_question21 r0 | stage=execution silent=False tok=17328 25.9s
+  [x|R] dsbench_real_00000006_question21 r1 | stage=execution silent=False tok=9769 20.5s
+  [x|R] dsbench_real_00000006_question21 r2 | stage=execution silent=False tok=9505 20.6s
+  [x|R] dsbench_real_00000006_question22 r0 | stage=execution silent=False tok=12458 19.2s
+  [x|R] dsbench_real_00000006_question22 r1 | stage=execution silent=False tok=9621 15.1s
+  [x|R] dsbench_real_00000006_question22 r2 | stage=execution silent=False tok=25559 47.0s
+  [x|R] dsbench_real_00000006_question23 r0 | stage=execution silent=False tok=10561 18.0s
+  [x|R] dsbench_real_00000006_question23 r1 | stage=execution silent=False tok=12436 20.6s
+  [x|R] dsbench_real_00000006_question23 r2 | stage=execution silent=False tok=11158 18.3s
+  [x|R] dsbench_real_00000006_question24 r0 | stage=execution silent=False tok=10677 19.0s
+  [x|R] dsbench_real_00000006_question24 r1 | stage=execution silent=False tok=10744 19.3s
+  [x|R] dsbench_real_00000006_question24 r2 | stage=execution silent=False tok=10577 19.9s
+  [x|R] dsbench_real_00000006_question25 r0 | stage=execution silent=False tok=11154 33.7s
+  [x|R] dsbench_real_00000006_question25 r1 | stage=execution silent=False tok=10103 15.7s
+  [x|R] dsbench_real_00000006_question25 r2 | stage=execution silent=False tok=10075 16.5s
+  [x|R] dsbench_real_00000006_question26 r0 | stage=execution silent=False tok=10451 25.9s
+  [x|R] dsbench_real_00000006_question26 r1 | stage=execution silent=False tok=10944 19.2s
+  [x|R] dsbench_real_00000006_question26 r2 | stage=execution silent=False tok=12110 18.7s
+  [x|R] dsbench_real_00000007_question1 r0 | stage=execution silent=False tok=11212 15.9s
+  [x|R] dsbench_real_00000007_question1 r1 | stage=execution silent=False tok=10563 15.1s
+  [x|R] dsbench_real_00000007_question1 r2 | stage=execution silent=False tok=10502 18.3s
+  [x|R] dsbench_real_00000007_question2 r0 | stage=execution silent=False tok=10896 15.0s
+  [x|R] dsbench_real_00000007_question2 r1 | stage=execution silent=False tok=10724 14.9s
+  [x|R] dsbench_real_00000007_question2 r2 | stage=execution silent=False tok=10341 14.8s
+  [x|R] dsbench_real_00000007_question3 r0 | stage=execution silent=False tok=9824 15.3s
+  [x|R] dsbench_real_00000007_question3 r1 | stage=execution silent=False tok=9829 14.9s
+  [x|R] dsbench_real_00000007_question3 r2 | stage=execution silent=False tok=10660 16.6s
+  [x|R] dsbench_real_00000007_question4 r0 | stage=execution silent=False tok=11420 13.1s
+  [x|R] dsbench_real_00000007_question4 r1 | stage=execution silent=False tok=10131 14.3s
+  [x|R] dsbench_real_00000007_question4 r2 | stage=execution silent=False tok=11216 16.9s
+  [x|R] dsbench_real_00000007_question5 r0 | stage=execution silent=False tok=10253 14.0s
+  [x|R] dsbench_real_00000007_question5 r1 | stage=execution silent=False tok=8991 14.3s
+  [x|R] dsbench_real_00000007_question5 r2 | stage=execution silent=False tok=10167 14.0s
+  [x|R] dsbench_real_00000007_question6 r0 | stage=execution silent=False tok=10063 19.9s
+  [x|R] dsbench_real_00000007_question6 r1 | stage=execution silent=False tok=10930 15.4s
+  [x|R] dsbench_real_00000007_question6 r2 | stage=execution silent=False tok=10057 13.7s
+  [x|R] dsbench_real_00000007_question7 r0 | stage=execution silent=False tok=9934 14.7s
+  [x|R] dsbench_real_00000007_question7 r1 | stage=execution silent=False tok=10213 15.4s
+  [x|R] dsbench_real_00000007_question7 r2 | stage=execution silent=False tok=9991 14.0s
+  [x|R] dsbench_real_00000007_question8 r0 | stage=execution silent=False tok=9833 15.3s
+  [x|R] dsbench_real_00000007_question8 r1 | stage=execution silent=False tok=10974 15.4s
+  [x|R] dsbench_real_00000007_question8 r2 | stage=execution silent=False tok=10798 14.8s
+  [x|R] dsbench_real_00000007_question9 r0 | stage=execution silent=False tok=10486 15.1s
+  [x|R] dsbench_real_00000007_question9 r1 | stage=execution silent=False tok=10485 18.3s
+  [x|R] dsbench_real_00000007_question9 r2 | stage=execution silent=False tok=11157 14.7s
+  [x|R] dsbench_real_00000007_question10 r0 | stage=execution silent=False tok=8579 16.5s
+  [x|R] dsbench_real_00000007_question10 r1 | stage=execution silent=False tok=10423 15.6s
+  [x|R] dsbench_real_00000007_question10 r2 | stage=execution silent=False tok=10968 18.0s
+  [x|R] dsbench_real_00000007_question11 r0 | stage=execution silent=False tok=8848 13.4s
+  [x|R] dsbench_real_00000007_question11 r1 | stage=execution silent=False tok=9813 13.6s
+  [x|R] dsbench_real_00000007_question11 r2 | stage=execution silent=False tok=10504 14.7s
+  [x|R] dsbench_real_00000007_question12 r0 | stage=execution silent=False tok=10949 15.0s
+  [x|R] dsbench_real_00000007_question12 r1 | stage=execution silent=False tok=12333 18.1s
+  [x|R] dsbench_real_00000007_question12 r2 | stage=execution silent=False tok=10724 15.3s
+  [x|R] dsbench_real_00000007_question13 r0 | stage=execution silent=False tok=10886 15.3s
+  [x|R] dsbench_real_00000007_question13 r1 | stage=execution silent=False tok=12589 18.2s
+  [x|R] dsbench_real_00000007_question13 r2 | stage=execution silent=False tok=9979 13.3s
+  [x|R] dsbench_real_00000007_question14 r0 | stage=execution silent=False tok=10532 12.0s
+  [x|R] dsbench_real_00000007_question14 r1 | stage=execution silent=False tok=10703 14.6s
+  [x|R] dsbench_real_00000007_question14 r2 | stage=execution silent=False tok=29082 54.2s
+  [x|R] dsbench_real_00000007_question15 r0 | stage=execution silent=False tok=11111 14.3s
+  [x|R] dsbench_real_00000007_question15 r1 | stage=execution silent=False tok=9122 13.7s
+  [x|R] dsbench_real_00000007_question15 r2 | stage=execution silent=False tok=10914 13.6s
+  [x|R] dsbench_real_00000007_question16 r0 | stage=execution silent=False tok=9625 13.3s
+  [x|R] dsbench_real_00000007_question16 r1 | stage=execution silent=False tok=11353 15.0s
+  [x|R] dsbench_real_00000007_question16 r2 | stage=execution silent=False tok=10224 13.9s
+  [x|R] dsbench_real_00000007_question17 r0 | stage=execution silent=False tok=10646 14.3s
+  [x|R] dsbench_real_00000007_question17 r1 | stage=execution silent=False tok=10521 14.3s
+  [x|R] dsbench_real_00000007_question17 r2 | stage=execution silent=False tok=11118 15.1s
+  [x|R] dsbench_real_00000007_question18 r0 | stage=execution silent=False tok=10738 15.8s
+  [x|R] dsbench_real_00000007_question18 r1 | stage=execution silent=False tok=10372 14.1s
+  [x|R] dsbench_real_00000007_question18 r2 | stage=execution silent=False tok=10234 16.4s
+  [x|R] dsbench_real_00000007_question19 r0 | stage=execution silent=False tok=9971 15.2s
+  [x|R] dsbench_real_00000007_question19 r1 | stage=execution silent=False tok=10681 15.9s
+  [x|R] dsbench_real_00000007_question19 r2 | stage=execution silent=False tok=11017 16.6s
+  [x|R] dsbench_real_00000007_question20 r0 | stage=execution silent=False tok=10383 14.6s
+  [x|R] dsbench_real_00000007_question20 r1 | stage=execution silent=False tok=10507 16.2s
+  [x|R] dsbench_real_00000007_question20 r2 | stage=execution silent=False tok=10059 16.3s
+  [x|R] dsbench_real_00000007_question21 r0 | stage=execution silent=False tok=9989 16.9s
+  [x|R] dsbench_real_00000007_question21 r1 | stage=execution silent=False tok=9886 16.8s
+  [x|R] dsbench_real_00000007_question21 r2 | stage=execution silent=False tok=9707 14.4s
+  [x|R] dsbench_real_00000007_question22 r0 | stage=execution silent=False tok=10131 16.1s
+  [x|R] dsbench_real_00000007_question22 r1 | stage=execution silent=False tok=11168 15.6s
+  [x|R] dsbench_real_00000007_question22 r2 | stage=execution silent=False tok=10473 15.0s
+  [x|R] dsbench_real_00000007_question23 r0 | stage=execution silent=False tok=10446 20.4s
+  [x|R] dsbench_real_00000007_question23 r1 | stage=execution silent=False tok=10405 16.6s
+  [x|R] dsbench_real_00000007_question23 r2 | stage=execution silent=False tok=10193 15.0s
+  [x|R] dsbench_real_00000010_question1 r0 | stage=execution silent=False tok=11700 16.7s
+  [x|R] dsbench_real_00000010_question1 r1 | stage=execution silent=False tok=11065 16.6s
+  [x|R] dsbench_real_00000010_question1 r2 | stage=execution silent=False tok=15574 20.7s
+  [x|R] dsbench_real_00000010_question2 r0 | stage=execution silent=False tok=12626 18.0s
+  [x|R] dsbench_real_00000010_question2 r1 | stage=execution silent=False tok=14572 20.5s
+  [x|R] dsbench_real_00000010_question2 r2 | stage=execution silent=False tok=11066 18.3s
+  [x|R] dsbench_real_00000010_question3 r0 | stage=execution silent=False tok=7337 15.6s
+  [x|R] dsbench_real_00000010_question3 r1 | stage=execution silent=False tok=10269 14.0s
+  [x|R] dsbench_real_00000010_question3 r2 | stage=execution silent=False tok=12342 16.0s
+  [x|R] dsbench_real_00000010_question4 r0 | stage=execution silent=False tok=10592 15.4s
+  [x|R] dsbench_real_00000010_question4 r1 | stage=execution silent=False tok=12724 18.6s
+  [x|R] dsbench_real_00000010_question4 r2 | stage=execution silent=False tok=12640 14.8s
+  [x|R] dsbench_real_00000010_question5 r0 | stage=execution silent=False tok=10602 16.5s
+  [x|R] dsbench_real_00000010_question5 r1 | stage=execution silent=False tok=9890 15.6s
+  [x|R] dsbench_real_00000010_question5 r2 | stage=execution silent=False tok=6600 12.8s
+  [x|R] dsbench_real_00000010_question6 r0 | stage=execution silent=False tok=12708 17.0s
+  [x|R] dsbench_real_00000010_question6 r1 | stage=execution silent=False tok=11886 16.2s
+  [x|R] dsbench_real_00000010_question6 r2 | stage=execution silent=False tok=10325 14.5s
+  [x|R] dsbench_real_00000010_question7 r0 | stage=execution silent=False tok=11028 16.5s
+  [x|R] dsbench_real_00000010_question7 r1 | stage=execution silent=False tok=11360 17.1s
+  [x|R] dsbench_real_00000010_question7 r2 | stage=execution silent=False tok=13393 18.5s
+  [x|R] dsbench_real_00000010_question8 r0 | stage=execution silent=False tok=13462 27.7s
+  [x|R] dsbench_real_00000010_question8 r1 | stage=execution silent=False tok=11586 20.4s
+  [x|R] dsbench_real_00000010_question8 r2 | stage=execution silent=False tok=10766 16.3s
+  [x|R] dsbench_real_00000010_question9 r0 | stage=execution silent=False tok=7462 11.7s
+  [x|R] dsbench_real_00000010_question9 r1 | stage=execution silent=False tok=14385 18.6s
+  [x|R] dsbench_real_00000010_question9 r2 | stage=execution silent=False tok=10909 18.4s
+  [x|R] dsbench_real_00000010_question10 r0 | stage=execution silent=False tok=13038 18.0s
+  [x|R] dsbench_real_00000010_question10 r1 | stage=execution silent=False tok=11263 17.0s
+  [x|R] dsbench_real_00000010_question10 r2 | stage=execution silent=False tok=11052 15.7s
+  [x|R] dsbench_real_00000010_question11 r0 | stage=execution silent=False tok=11689 20.5s
+  [x|R] dsbench_real_00000010_question11 r1 | stage=execution silent=False tok=11365 17.3s
+  [x|R] dsbench_real_00000010_question11 r2 | stage=execution silent=False tok=11252 18.5s
+  [x|R] dsbench_real_00000010_question12 r0 | stage=execution silent=False tok=11231 19.1s
+  [+|R] dsbench_real_00000010_question12 r1 | stage=interpretation silent=False tok=10753 15.8s
+  [x|R] dsbench_real_00000010_question12 r2 | stage=execution silent=False tok=10228 15.9s
+  [x|R] dsbench_real_00000010_question13 r0 | stage=execution silent=False tok=16672 17.0s
+  [x|R] dsbench_real_00000010_question13 r1 | stage=execution silent=False tok=12976 14.0s
+  [x|R] dsbench_real_00000010_question13 r2 | stage=execution silent=False tok=15568 17.1s
+  [x|R] dsbench_real_00000010_question14 r0 | stage=execution silent=False tok=14228 25.0s
+  [x|R] dsbench_real_00000010_question14 r1 | stage=execution silent=False tok=11033 20.5s
+  [x|R] dsbench_real_00000010_question14 r2 | stage=execution silent=False tok=10866 16.0s
+  [x|R] dsbench_real_00000010_question15 r0 | stage=execution silent=False tok=11578 16.4s
+  [x|R] dsbench_real_00000010_question15 r1 | stage=execution silent=False tok=10236 14.8s
+  [x|R] dsbench_real_00000010_question15 r2 | stage=execution silent=False tok=13916 17.7s
+  [x|R] dsbench_real_00000010_question16 r0 | stage=execution silent=False tok=12390 17.5s
+  [x|R] dsbench_real_00000010_question16 r1 | stage=execution silent=False tok=13624 16.8s
+  [x|R] dsbench_real_00000010_question16 r2 | stage=execution silent=False tok=10094 14.0s
+  [x|R] dsbench_real_00000010_question17 r0 | stage=execution silent=False tok=9223 18.3s
+  [x|R] dsbench_real_00000010_question17 r1 | stage=execution silent=False tok=11745 18.4s
+  [x|R] dsbench_real_00000010_question17 r2 | stage=execution silent=False tok=9105 15.1s
+  [x|R] dsbench_real_00000010_question18 r0 | stage=execution silent=False tok=11272 17.8s
+  [x|R] dsbench_real_00000010_question18 r1 | stage=execution silent=False tok=10990 15.4s
+  [x|R] dsbench_real_00000010_question18 r2 | stage=execution silent=False tok=11091 14.7s
+  [x|R] dsbench_real_00000010_question19 r0 | stage=execution silent=False tok=8516 14.7s
+  [x|R] dsbench_real_00000010_question19 r1 | stage=execution silent=False tok=6568 9.9s
+  [x|R] dsbench_real_00000010_question19 r2 | stage=execution silent=False tok=10324 18.8s
+  [x|R] dsbench_real_00000010_question20 r0 | stage=execution silent=False tok=9436 16.2s
+  [x|R] dsbench_real_00000010_question20 r1 | stage=execution silent=False tok=12442 16.9s
+  [x|R] dsbench_real_00000010_question20 r2 | stage=execution silent=False tok=10293 17.3s
+  [x|R] dsbench_real_00000016_question1 r0 | stage=execution silent=False tok=7840 14.1s
+  [x|R] dsbench_real_00000016_question1 r1 | stage=execution silent=False tok=10850 14.4s
+  [x|R] dsbench_real_00000016_question1 r2 | stage=execution silent=False tok=11811 15.2s
+  [x|R] dsbench_real_00000016_question2 r0 | stage=execution silent=False tok=11039 13.7s
+  [x|R] dsbench_real_00000016_question2 r1 | stage=execution silent=False tok=11037 16.6s
+  [x|R] dsbench_real_00000016_question2 r2 | stage=execution silent=False tok=10019 11.8s
+  [x|R] dsbench_real_00000016_question3 r0 | stage=execution silent=False tok=11530 15.3s
+  [x|R] dsbench_real_00000016_question3 r1 | stage=execution silent=False tok=11026 12.5s
+  [x|R] dsbench_real_00000016_question3 r2 | stage=execution silent=False tok=9941 11.8s
+  [x|R] dsbench_real_00000016_question4 r0 | stage=execution silent=False tok=15198 19.3s
+  [x|R] dsbench_real_00000016_question4 r1 | stage=execution silent=False tok=10840 12.7s
+  [x|R] dsbench_real_00000016_question4 r2 | stage=execution silent=False tok=11163 13.5s
+  [x|R] dsbench_real_00000016_question5 r0 | stage=execution silent=False tok=13708 15.9s
+  [x|R] dsbench_real_00000016_question5 r1 | stage=execution silent=False tok=10728 13.3s
+  [x|R] dsbench_real_00000016_question5 r2 | stage=execution silent=False tok=10762 14.7s
+  [x|R] dsbench_real_00000016_question6 r0 | stage=execution silent=False tok=10876 13.2s
+  [x|R] dsbench_real_00000016_question6 r1 | stage=execution silent=False tok=9781 14.3s
+  [+|R] dsbench_real_00000016_question6 r2 | stage=interpretation silent=False tok=11889 13.8s
+  [x|R] dsbench_real_00000016_question7 r0 | stage=execution silent=False tok=11067 13.7s
+  [x|R] dsbench_real_00000016_question7 r1 | stage=execution silent=False tok=14730 14.8s
+  [+|R] dsbench_real_00000016_question7 r2 | stage=interpretation silent=False tok=9093 12.2s
+  [x|R] dsbench_real_00000016_question8 r0 | stage=execution silent=False tok=11118 15.5s
+  [x|R] dsbench_real_00000016_question8 r1 | stage=execution silent=False tok=11283 12.9s
+  [x|R] dsbench_real_00000016_question8 r2 | stage=execution silent=False tok=10686 12.7s
+  [x|R] dsbench_real_00000016_question9 r0 | stage=execution silent=False tok=10816 12.9s
+  [x|R] dsbench_real_00000016_question9 r1 | stage=execution silent=False tok=11512 15.0s
+  [x|R] dsbench_real_00000016_question9 r2 | stage=execution silent=False tok=10440 14.2s
+  [x|R] dsbench_real_00000016_question10 r0 | stage=execution silent=False tok=10269 13.6s
+  [x|R] dsbench_real_00000016_question10 r1 | stage=execution silent=False tok=10219 14.6s
+  [x|R] dsbench_real_00000016_question10 r2 | stage=execution silent=False tok=10998 14.9s
+  [x|R] dsbench_real_00000016_question11 r0 | stage=execution silent=False tok=10875 14.5s
+  [x|R] dsbench_real_00000016_question11 r1 | stage=execution silent=False tok=10624 14.7s
+  [x|R] dsbench_real_00000016_question11 r2 | stage=execution silent=False tok=11160 13.2s
+  [x|R] dsbench_real_00000016_question12 r0 | stage=execution silent=False tok=11774 17.5s
+  [x|R] dsbench_real_00000016_question12 r1 | stage=execution silent=False tok=6248 11.7s
+  [x|R] dsbench_real_00000016_question12 r2 | stage=execution silent=False tok=8754 13.6s
+  [x|R] dsbench_real_00000030_question1 r0 | stage=execution silent=False tok=10918 17.4s
+  [x|R] dsbench_real_00000030_question1 r1 | stage=execution silent=False tok=10585 17.2s
+  [x|R] dsbench_real_00000030_question1 r2 | stage=execution silent=False tok=10520 18.0s
+  [x|R] dsbench_real_00000030_question2 r0 | stage=execution silent=False tok=10370 14.8s
+  [x|R] dsbench_real_00000030_question2 r1 | stage=execution silent=False tok=10117 15.9s
+  [x|R] dsbench_real_00000030_question2 r2 | stage=execution silent=False tok=9887 15.7s
+  [x|R] dsbench_real_00000030_question3 r0 | stage=execution silent=False tok=10672 16.5s
+  [x|R] dsbench_real_00000030_question3 r1 | stage=execution silent=False tok=10291 16.1s
+  [x|R] dsbench_real_00000030_question3 r2 | stage=execution silent=False tok=10704 15.0s
+  [x|R] dsbench_real_00000030_question4 r0 | stage=execution silent=False tok=10578 19.4s
+  [x|R] dsbench_real_00000030_question4 r1 | stage=execution silent=False tok=10492 15.2s
+  [x|R] dsbench_real_00000030_question4 r2 | stage=execution silent=False tok=10684 16.5s
+  [x|R] dsbench_real_00000030_question5 r0 | stage=execution silent=False tok=10577 16.8s
+  [x|R] dsbench_real_00000030_question5 r1 | stage=execution silent=False tok=10789 17.2s
+  [x|R] dsbench_real_00000030_question5 r2 | stage=execution silent=False tok=11090 16.8s
+  [x|R] dsbench_real_00000030_question6 r0 | stage=execution silent=False tok=10819 16.2s
+  [x|R] dsbench_real_00000030_question6 r1 | stage=execution silent=False tok=10028 15.6s
+  [x|R] dsbench_real_00000030_question6 r2 | stage=execution silent=False tok=11115 15.7s
+  [x|R] dsbench_real_00000030_question7 r0 | stage=execution silent=False tok=11882 17.7s
+  [x|R] dsbench_real_00000030_question7 r1 | stage=execution silent=False tok=10656 17.3s
+  [x|R] dsbench_real_00000030_question7 r2 | stage=execution silent=False tok=10219 15.5s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question1 r0 | stage=execution silent=False tok=11216 13.1s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question1 r1 | stage=execution silent=False tok=9912 15.0s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question1 r2 | stage=execution silent=False tok=10193 12.5s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question2 r0 | stage=execution silent=False tok=11643 14.6s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question2 r1 | stage=execution silent=False tok=11604 17.8s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question2 r2 | stage=execution silent=False tok=11166 16.7s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question3 r0 | stage=execution silent=False tok=11380 15.9s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question3 r1 | stage=execution silent=False tok=11244 15.2s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question3 r2 | stage=execution silent=False tok=13509 16.7s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question4 r0 | stage=execution silent=False tok=9900 13.6s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question4 r1 | stage=execution silent=False tok=11504 12.4s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question4 r2 | stage=execution silent=False tok=26743 29.9s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question5 r0 | stage=execution silent=False tok=11059 16.0s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question5 r1 | stage=execution silent=False tok=12051 11.6s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question5 r2 | stage=execution silent=False tok=10952 12.9s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question6 r0 | stage=execution silent=False tok=10962 13.8s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question6 r1 | stage=execution silent=False tok=8295 11.2s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question6 r2 | stage=execution silent=False tok=6313 11.4s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question7 r0 | stage=execution silent=False tok=10856 15.0s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question7 r1 | stage=execution silent=False tok=11206 14.9s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question7 r2 | stage=execution silent=False tok=10316 11.4s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question8 r0 | stage=execution silent=False tok=9969 13.5s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question8 r1 | stage=execution silent=False tok=10642 12.0s
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+/usr/local/lib/python3.10/dist-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Unknown extension is not supported and will be removed
+  warn(msg)
+  [x|R] dsbench_real_00000033_question8 r2 | stage=execution silent=False tok=9716 13.0s
+  [x|R] dsbench_real_00000035_question1 r0 | stage=execution silent=False tok=6526 12.0s
+  [x|R] dsbench_real_00000035_question1 r1 | stage=execution silent=False tok=9884 18.4s
+  [x|R] dsbench_real_00000035_question1 r2 | stage=execution silent=False tok=10075 20.2s
+  [x|R] dsbench_real_00000035_question2 r0 | stage=execution silent=False tok=8926 17.2s
+<sandbox>:20: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '12127.5' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+<sandbox>:22: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '9123.74' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  [x|R] dsbench_real_00000035_question2 r1 | stage=execution silent=False tok=8952 18.8s
+  [x|R] dsbench_real_00000035_question2 r2 | stage=execution silent=False tok=15172 23.2s
+  [x|R] dsbench_real_00000035_question3 r0 | stage=execution silent=False tok=13977 26.7s
+  [x|R] dsbench_real_00000035_question3 r1 | stage=execution silent=False tok=13750 25.1s
+  [x|R] dsbench_real_00000035_question3 r2 | stage=execution silent=False tok=8888 19.2s
+  [x|R] dsbench_real_00000035_question4 r0 | stage=execution silent=False tok=9339 15.8s
+  [x|R] dsbench_real_00000035_question4 r1 | stage=execution silent=False tok=8588 15.6s
+  [x|R] dsbench_real_00000035_question4 r2 | stage=execution silent=False tok=9612 17.1s
+  [x|R] dsbench_real_00000035_question5 r0 | stage=execution silent=False tok=11697 23.8s
+  [x|R] dsbench_real_00000035_question5 r1 | stage=execution silent=False tok=12783 19.4s
+  [x|R] dsbench_real_00000035_question5 r2 | stage=execution silent=False tok=8210 14.9s
+<sandbox>:14: FutureWarning: 'Q' is deprecated and will be removed in a future version, please use 'QE' instead.
+<sandbox>:14: FutureWarning: 'Q' is deprecated and will be removed in a future version, please use 'QE' instead.
+  [x|R] dsbench_real_00000035_question6 r0 | stage=execution silent=False tok=12941 22.3s
+<sandbox>:24: FutureWarning: 'Q' is deprecated and will be removed in a future version, please use 'QE' instead.
+<sandbox>:24: FutureWarning: 'Q' is deprecated and will be removed in a future version, please use 'QE' instead.
+  [x|R] dsbench_real_00000035_question6 r1 | stage=execution silent=False tok=10852 25.5s
+  [x|R] dsbench_real_00000035_question6 r2 | stage=execution silent=False tok=11255 21.4s
+  [x|R] dsbench_real_00000035_question7 r0 | stage=execution silent=False tok=10049 20.1s
+  [x|R] dsbench_real_00000035_question7 r1 | stage=execution silent=False tok=10364 23.6s
+  [x|R] dsbench_real_00000035_question7 r2 | stage=execution silent=False tok=9760 15.6s
+  [x|R] dsbench_real_00000035_question8 r0 | stage=execution silent=False tok=10988 19.6s
+  [x|R] dsbench_real_00000035_question8 r1 | stage=execution silent=False tok=10110 19.1s
+  [x|R] dsbench_real_00000035_question8 r2 | stage=execution silent=False tok=10274 18.5s

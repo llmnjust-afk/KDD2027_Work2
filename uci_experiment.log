@@ -26,3 +26,200 @@ Running: gpt-4o-mini (gpt-4o-mini)
   [+] uci_iris_median_sepal_width r0 | stage=interpretation silent=False tok=4244 12.1s
   [+] uci_iris_median_sepal_width r1 | stage=interpretation silent=False tok=3140 9.5s
   [+] uci_iris_median_sepal_width r2 | stage=interpretation silent=False tok=7020 15.3s
+  [+] uci_titanic_survival_rate r0 | stage=interpretation silent=False tok=6217 14.4s
+  [+] uci_titanic_survival_rate r1 | stage=interpretation silent=False tok=6718 13.2s
+  [x] uci_titanic_survival_rate r2 | stage=execution silent=False tok=5173 12.1s
+  [+] uci_titanic_survival_by_class r0 | stage=interpretation silent=False tok=4414 10.5s
+  [+] uci_titanic_survival_by_class r1 | stage=interpretation silent=False tok=6232 11.9s
+  [+] uci_titanic_survival_by_class r2 | stage=interpretation silent=False tok=3377 8.4s
+  [+] uci_titanic_avg_fare r0 | stage=interpretation silent=False tok=2457 7.8s
+  [+] uci_titanic_avg_fare r1 | stage=interpretation silent=False tok=5606 10.8s
+  [+] uci_titanic_avg_fare r2 | stage=interpretation silent=False tok=5650 13.9s
+  [+] uci_titanic_common_port r0 | stage=interpretation silent=False tok=6771 14.5s
+  [+] uci_titanic_common_port r1 | stage=interpretation silent=False tok=5527 12.0s
+  [+] uci_titanic_common_port r2 | stage=interpretation silent=False tok=6715 13.9s
+  [+] uci_titanic_passenger_count r0 | stage=interpretation silent=False tok=3549 9.1s
+  [+] uci_titanic_passenger_count r1 | stage=interpretation silent=False tok=1315 4.1s
+  [+] uci_titanic_passenger_count r2 | stage=interpretation silent=False tok=2463 7.0s
+  [x] uci_tips_avg_tip_by_day r0 | stage=execution silent=False tok=6919 16.8s
+  [x] uci_tips_avg_tip_by_day r1 | stage=execution silent=False tok=3864 11.3s
+  [x] uci_tips_avg_tip_by_day r2 | stage=execution silent=False tok=5889 14.3s
+  [x] uci_tips_total_bill r0 | stage=execution silent=False tok=4262 9.4s
+  [+] uci_tips_total_bill r1 | stage=interpretation silent=False tok=4050 9.4s
+  [x] uci_tips_total_bill r2 | stage=execution silent=False tok=5650 11.7s
+  [+] uci_tips_tip_percentage r0 | stage=interpretation silent=False tok=3347 8.6s
+  [+] uci_tips_tip_percentage r1 | stage=interpretation silent=False tok=3999 10.7s
+  [+] uci_tips_tip_percentage r2 | stage=interpretation silent=False tok=3199 8.6s
+  [x] uci_tips_common_party_size r0 | stage=execution silent=False tok=5581 14.4s
+  [+] uci_tips_common_party_size r1 | stage=interpretation silent=False tok=6603 15.3s
+  [+] uci_tips_common_party_size r2 | stage=interpretation silent=False tok=3532 9.0s
+  [+] uci_mpg_avg_by_origin r0 | stage=interpretation silent=False tok=6197 11.5s
+  [+] uci_mpg_avg_by_origin r1 | stage=interpretation silent=False tok=4768 10.2s
+  [+] uci_mpg_avg_by_origin r2 | stage=interpretation silent=False tok=3560 8.4s
+  [+] uci_mpg_max_hp r0 | stage=interpretation silent=False tok=4122 12.2s
+  [+] uci_mpg_max_hp r1 | stage=interpretation silent=False tok=3115 10.5s
+  [+] uci_mpg_max_hp r2 | stage=interpretation silent=False tok=3212 9.9s
+  [+] uci_mpg_corr_mpg_weight r0 | stage=interpretation silent=False tok=4620 10.9s
+  [+] uci_mpg_corr_mpg_weight r1 | stage=interpretation silent=False tok=4037 10.4s
+  [+] uci_mpg_corr_mpg_weight r2 | stage=interpretation silent=False tok=6846 14.4s
+  [+] uci_mpg_common_cylinders r0 | stage=interpretation silent=False tok=4342 11.5s
+  [+] uci_mpg_common_cylinders r1 | stage=interpretation silent=False tok=6445 15.5s
+  [+] uci_mpg_common_cylinders r2 | stage=interpretation silent=False tok=4759 10.9s
+  [+] uci_penguins_avg_mass r0 | stage=interpretation silent=False tok=3593 10.5s
+  [+] uci_penguins_avg_mass r1 | stage=interpretation silent=False tok=3730 10.2s
+  [+] uci_penguins_avg_mass r2 | stage=interpretation silent=False tok=3710 8.7s
+  [+] uci_penguins_island_count r0 | stage=interpretation silent=False tok=4620 12.9s
+  [+] uci_penguins_island_count r1 | stage=interpretation silent=False tok=3611 9.7s
+  [+] uci_penguins_island_count r2 | stage=interpretation silent=False tok=3844 10.0s
+  [+] uci_penguins_max_flipper r0 | stage=interpretation silent=False tok=3211 9.2s
+  [+] uci_penguins_max_flipper r1 | stage=interpretation silent=False tok=6042 13.7s
+  [+] uci_penguins_max_flipper r2 | stage=interpretation silent=False tok=4314 11.6s
+  [+] uci_flights_peak_year r0 | stage=interpretation silent=False tok=6916 15.1s
+  [+] uci_flights_peak_year r1 | stage=interpretation silent=False tok=6974 16.0s
+  [x] uci_flights_peak_year r2 | stage=execution silent=False tok=5618 15.3s
+  [+] uci_flights_avg_july r0 | stage=interpretation silent=False tok=5365 10.5s
+  [x] uci_flights_avg_july r1 | stage=execution silent=False tok=5063 13.5s
+  [+] uci_flights_avg_july r2 | stage=interpretation silent=False tok=4486 10.9s
+
+  --- gpt-4o-mini summary ---
+  success_rate: 0.8261 +/- 0.0435
+  silent_fail:  0.0000
+  tok/success:  5663
+
+============================================================
+Running: gpt-4o (gpt-4o)
+============================================================
+  [~] uci_iris_avg_sepal r0 | stage=interpretation silent=True tok=2050 8.4s
+  [~] uci_iris_avg_sepal r1 | stage=interpretation silent=True tok=1672 4.7s
+  [~] uci_iris_avg_sepal r2 | stage=interpretation silent=True tok=1647 5.5s
+  [+] uci_iris_corr r0 | stage=interpretation silent=False tok=1263 4.5s
+  [+] uci_iris_corr r1 | stage=interpretation silent=False tok=1916 6.0s
+  [+] uci_iris_corr r2 | stage=interpretation silent=False tok=1277 4.5s
+  [+] uci_iris_species_count r0 | stage=interpretation silent=False tok=1577 5.4s
+  [+] uci_iris_species_count r1 | stage=interpretation silent=False tok=1555 5.4s
+  [+] uci_iris_species_count r2 | stage=interpretation silent=False tok=1580 5.3s
+  [+] uci_iris_max_petal_width r0 | stage=interpretation silent=False tok=1472 5.5s
+  [+] uci_iris_max_petal_width r1 | stage=interpretation silent=False tok=1459 7.0s
+  [+] uci_iris_max_petal_width r2 | stage=interpretation silent=False tok=1469 5.6s
+  [+] uci_iris_median_sepal_width r0 | stage=interpretation silent=False tok=896 4.9s
+  [+] uci_iris_median_sepal_width r1 | stage=interpretation silent=False tok=1468 5.6s
+  [+] uci_iris_median_sepal_width r2 | stage=interpretation silent=False tok=1478 4.7s
+  [+] uci_titanic_survival_rate r0 | stage=interpretation silent=False tok=1483 6.9s
+  [+] uci_titanic_survival_rate r1 | stage=interpretation silent=False tok=1481 6.0s
+  [+] uci_titanic_survival_rate r2 | stage=interpretation silent=False tok=1493 4.5s
+  [+] uci_titanic_survival_by_class r0 | stage=interpretation silent=False tok=1691 5.2s
+  [+] uci_titanic_survival_by_class r1 | stage=interpretation silent=False tok=1687 6.7s
+  [+] uci_titanic_survival_by_class r2 | stage=interpretation silent=False tok=1687 5.0s
+  [+] uci_titanic_avg_fare r0 | stage=interpretation silent=False tok=1481 5.1s
+  [+] uci_titanic_avg_fare r1 | stage=interpretation silent=False tok=2312 7.8s
+  [+] uci_titanic_avg_fare r2 | stage=interpretation silent=False tok=2324 6.6s
+  [+] uci_titanic_common_port r0 | stage=interpretation silent=False tok=1717 6.4s
+  [+] uci_titanic_common_port r1 | stage=interpretation silent=False tok=1561 5.3s
+  [+] uci_titanic_common_port r2 | stage=interpretation silent=False tok=1569 5.6s
+  [+] uci_titanic_passenger_count r0 | stage=interpretation silent=False tok=830 3.0s
+  [+] uci_titanic_passenger_count r1 | stage=interpretation silent=False tok=834 4.1s
+  [+] uci_titanic_passenger_count r2 | stage=interpretation silent=False tok=650 3.2s
+  [~] uci_tips_avg_tip_by_day r0 | stage=interpretation silent=True tok=1533 5.0s
+  [~] uci_tips_avg_tip_by_day r1 | stage=interpretation silent=True tok=1611 6.8s
+  [~] uci_tips_avg_tip_by_day r2 | stage=interpretation silent=True tok=1609 5.1s
+  [+] uci_tips_total_bill r0 | stage=interpretation silent=False tok=1410 5.3s
+  [+] uci_tips_total_bill r1 | stage=interpretation silent=False tok=1425 4.6s
+  [+] uci_tips_total_bill r2 | stage=interpretation silent=False tok=1404 5.0s
+  [+] uci_tips_tip_percentage r0 | stage=interpretation silent=False tok=1508 4.5s
+  [+] uci_tips_tip_percentage r1 | stage=interpretation silent=False tok=1570 5.5s
+  [+] uci_tips_tip_percentage r2 | stage=interpretation silent=False tok=1514 7.5s
+  [+] uci_tips_common_party_size r0 | stage=interpretation silent=False tok=1469 5.3s
+  [+] uci_tips_common_party_size r1 | stage=interpretation silent=False tok=1458 5.2s
+  [+] uci_tips_common_party_size r2 | stage=interpretation silent=False tok=1481 4.4s
+  [+] uci_mpg_avg_by_origin r0 | stage=interpretation silent=False tok=1657 4.5s
+  [+] uci_mpg_avg_by_origin r1 | stage=interpretation silent=False tok=1623 5.8s
+  [+] uci_mpg_avg_by_origin r2 | stage=interpretation silent=False tok=1691 4.6s
+  [+] uci_mpg_max_hp r0 | stage=interpretation silent=False tok=2245 6.6s
+  [+] uci_mpg_max_hp r1 | stage=interpretation silent=False tok=2303 5.6s
+  [+] uci_mpg_max_hp r2 | stage=interpretation silent=False tok=1527 4.5s
+  [+] uci_mpg_corr_mpg_weight r0 | stage=interpretation silent=False tok=1249 5.0s
+  [+] uci_mpg_corr_mpg_weight r1 | stage=interpretation silent=False tok=1263 5.8s
+  [+] uci_mpg_corr_mpg_weight r2 | stage=interpretation silent=False tok=1249 5.9s
+  [+] uci_mpg_common_cylinders r0 | stage=interpretation silent=False tok=1629 5.0s
+  [+] uci_mpg_common_cylinders r1 | stage=interpretation silent=False tok=1564 5.2s
+  [+] uci_mpg_common_cylinders r2 | stage=interpretation silent=False tok=1573 4.7s
+  [+] uci_penguins_avg_mass r0 | stage=interpretation silent=False tok=1632 6.0s
+  [+] uci_penguins_avg_mass r1 | stage=interpretation silent=False tok=1660 4.8s
+  [+] uci_penguins_avg_mass r2 | stage=interpretation silent=False tok=2074 6.2s
+  [+] uci_penguins_island_count r0 | stage=interpretation silent=False tok=1606 6.0s
+  [+] uci_penguins_island_count r1 | stage=interpretation silent=False tok=1641 7.4s
+  [+] uci_penguins_island_count r2 | stage=interpretation silent=False tok=1678 5.2s
+  [+] uci_penguins_max_flipper r0 | stage=interpretation silent=False tok=1566 7.1s
+  [+] uci_penguins_max_flipper r1 | stage=interpretation silent=False tok=1548 6.0s
+  [+] uci_penguins_max_flipper r2 | stage=interpretation silent=False tok=1556 5.8s
+  [+] uci_flights_peak_year r0 | stage=interpretation silent=False tok=1408 6.6s
+  [+] uci_flights_peak_year r1 | stage=interpretation silent=False tok=1448 5.4s
+  [+] uci_flights_peak_year r2 | stage=interpretation silent=False tok=1398 6.2s
+  [+] uci_flights_avg_july r0 | stage=interpretation silent=False tok=1387 6.1s
+  [+] uci_flights_avg_july r1 | stage=interpretation silent=False tok=1354 4.8s
+  [+] uci_flights_avg_july r2 | stage=interpretation silent=False tok=1348 4.7s
+
+  --- gpt-4o summary ---
+  success_rate: 0.9130 +/- 0.0000
+  silent_fail:  1.0000
+  tok/success:  1690
+
+============================================================
+Running: deepseek-chat (deepseek-v3)
+============================================================
+  [+] uci_iris_avg_sepal r0 | stage=interpretation silent=False tok=2912 48.0s
+  [+] uci_iris_avg_sepal r1 | stage=interpretation silent=False tok=2739 133.7s
+  [+] uci_iris_avg_sepal r2 | stage=interpretation silent=False tok=2874 347.3s
+  [+] uci_iris_corr r0 | stage=interpretation silent=False tok=1481 27.4s
+  [+] uci_iris_corr r1 | stage=interpretation silent=False tok=1643 219.7s
+  [+] uci_iris_corr r2 | stage=interpretation silent=False tok=2916 40.5s
+  [+] uci_iris_species_count r0 | stage=interpretation silent=False tok=3436 67.8s
+  [+] uci_iris_species_count r1 | stage=interpretation silent=False tok=3499 78.6s
+  [+] uci_iris_species_count r2 | stage=interpretation silent=False tok=2978 46.9s
+  [+] uci_iris_max_petal_width r0 | stage=interpretation silent=False tok=1482 200.3s
+  [+] uci_iris_max_petal_width r1 | stage=interpretation silent=False tok=1782 24.1s
+  [+] uci_iris_max_petal_width r2 | stage=interpretation silent=False tok=1528 170.5s
+  [+] uci_iris_median_sepal_width r0 | stage=interpretation silent=False tok=1449 18.9s
+  [+] uci_iris_median_sepal_width r1 | stage=interpretation silent=False tok=1594 26.6s
+  [+] uci_iris_median_sepal_width r2 | stage=interpretation silent=False tok=1724 24.9s
+  [+] uci_titanic_survival_rate r0 | stage=interpretation silent=False tok=2673 30.4s
+  [+] uci_titanic_survival_rate r1 | stage=interpretation silent=False tok=3127 24.7s
+  [+] uci_titanic_survival_rate r2 | stage=interpretation silent=False tok=3187 315.4s
+  [+] uci_titanic_survival_by_class r0 | stage=interpretation silent=False tok=1385 146.7s
+  [x] uci_titanic_survival_by_class r1 | stage=execution silent=False tok=3314 49.9s
+  [+] uci_titanic_survival_by_class r2 | stage=interpretation silent=False tok=2417 111.5s
+  [+] uci_titanic_avg_fare r0 | stage=interpretation silent=False tok=2420 34.2s
+  [+] uci_titanic_avg_fare r1 | stage=interpretation silent=False tok=2009 27.4s
+  [+] uci_titanic_avg_fare r2 | stage=interpretation silent=False tok=2801 67.2s
+  [x] uci_titanic_common_port r0 | stage=execution silent=False tok=2798 41.1s
+  [x] uci_titanic_common_port r1 | stage=execution silent=False tok=2782 277.6s
+  [x] uci_titanic_common_port r2 | stage=execution silent=False tok=2882 148.1s
+  [+] uci_titanic_passenger_count r0 | stage=interpretation silent=False tok=1362 62.9s
+  [+] uci_titanic_passenger_count r1 | stage=interpretation silent=False tok=1277 21.9s
+  [+] uci_titanic_passenger_count r2 | stage=interpretation silent=False tok=1295 262.0s
+  [+] uci_tips_avg_tip_by_day r0 | stage=interpretation silent=False tok=2513 59.9s
+  [+] uci_tips_avg_tip_by_day r1 | stage=interpretation silent=False tok=2565 330.6s
+  [+] uci_tips_avg_tip_by_day r2 | stage=interpretation silent=False tok=2691 259.8s
+  [+] uci_tips_total_bill r0 | stage=interpretation silent=False tok=2882 218.8s
+  [+] uci_tips_total_bill r1 | stage=interpretation silent=False tok=2953 111.2s
+  [+] uci_tips_total_bill r2 | stage=interpretation silent=False tok=2624 186.5s
+  [+] uci_tips_tip_percentage r0 | stage=interpretation silent=False tok=1855 601.2s
+  [+] uci_tips_tip_percentage r1 | stage=interpretation silent=False tok=1605 116.0s
+  [+] uci_tips_tip_percentage r2 | stage=interpretation silent=False tok=1621 277.3s
+  [+] uci_tips_common_party_size r0 | stage=interpretation silent=False tok=2765 95.5s
+  [+] uci_tips_common_party_size r1 | stage=interpretation silent=False tok=2862 29.4s
+  [+] uci_tips_common_party_size r2 | stage=interpretation silent=False tok=2777 42.9s
+  [+] uci_mpg_avg_by_origin r0 | stage=interpretation silent=False tok=2658 63.0s
+  [+] uci_mpg_avg_by_origin r1 | stage=interpretation silent=False tok=2331 30.5s
+  [+] uci_mpg_avg_by_origin r2 | stage=interpretation silent=False tok=2551 202.2s
+  [+] uci_mpg_max_hp r0 | stage=interpretation silent=False tok=1778 65.6s
+  [+] uci_mpg_max_hp r1 | stage=interpretation silent=False tok=1874 99.3s
+  [+] uci_mpg_max_hp r2 | stage=interpretation silent=False tok=1815 30.0s
+  [+] uci_mpg_corr_mpg_weight r0 | stage=interpretation silent=False tok=1644 56.9s
+  [+] uci_mpg_corr_mpg_weight r1 | stage=interpretation silent=False tok=1616 101.9s
+  [+] uci_mpg_corr_mpg_weight r2 | stage=interpretation silent=False tok=2185 315.4s
+  [+] uci_mpg_common_cylinders r0 | stage=interpretation silent=False tok=2567 46.3s
+  [+] uci_mpg_common_cylinders r1 | stage=interpretation silent=False tok=2953 84.7s
+  [+] uci_mpg_common_cylinders r2 | stage=interpretation silent=False tok=2906 43.9s
+  [+] uci_penguins_avg_mass r0 | stage=interpretation silent=False tok=1186 15.9s
+  [+] uci_penguins_avg_mass r1 | stage=interpretation silent=False tok=3074 47.2s
