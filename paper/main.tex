@@ -1,40 +1,51 @@
-\documentclass[letterpaper]{article}
+\documentclass[sigconf,anonymous,review]{acmart}
 
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb,amsfonts}
-\usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{xcolor}
-\usepackage{hyperref}
-\usepackage{cleveref}
 \usepackage{placeins}
-\usepackage{enumitem}
-\usepackage[margin=1in]{geometry}
-\usepackage{natbib}
-\usepackage{caption}
-\usepackage{subcaption}
 
-\title{AgentFail: Diagnosing Silent Failures in Data-Science LLM Agents\\via a Four-Stage Taxonomy and Counterfactual Causal Replay}
+% Workaround for missing binhex.tex in some TeX Live installations
+\ifdefined\inputbinhex\else\let\inputbinhex\relax\fi
 
-\author{Anonymous Authors\\
-\texttt{(submission)}}
+\acmCopyrightNone
 
-\date{}
+\begin{ACM}
+  \acmConference[KDD '27]{Proceedings of the 33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining}{August 2027}{Washington, DC, USA}
+\end{ACM}
+
+\title{AgentFail: Diagnosing Silent Failures in Data-Science LLM Agents via a Five-Stage Taxonomy and Oracle-Guided Counterfactual Repair}
+
+\author{Anonymous Author}
+\affiliation{%
+  \institution{Anonymous Institution}
+  \country{}}
+\email{anonymous@example.com}
+
+\renewcommand{\shortauthors}{Anonymous}
+
+\usepackage{hyperref} % auto-fixed: required by \url
+
+\usepackage{cleveref} % auto-fixed: required by \Cref
 
 \begin{document}
+
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+
 \maketitle
 
-\input{sections/abstract}
 \input{sections/introduction}
 \input{sections/related}
 \input{sections/method}
 \input{sections/experiments}
 \input{sections/discussion}
+\input{sections/limitations_ethics}
 \input{sections/conclusion}
 
-\bibliographystyle{plainnat}
+\bibliographystyle{ACM-Reference-Format}
 \bibliography{refs}
 
 \appendix

@@ -25,27 +25,29 @@
 \begin{itemize}[leftmargin=*,itemsep=2pt]
 \item On \emph{solvable} tasks (UCI, SR 83--94\%), strong models (GPT-4o, DeepSeek-V3) exhibit SFR $=$ 100\%---every failure is silent---while weaker models (GPT-4o-mini) exhibit SFR $=$ 0\%, failing only with execution errors.
 \item On \emph{mid-difficulty} tasks (synthetic traps, SR 18--88\%), all models except GPT-4o-mini show SFR $\geq$ 86\%, confirming that silent failures dominate when agents are capable enough to run code but not to reason correctly.
-\item On \emph{very hard} tasks (DSBench, SR 1--3\%), GPT-4o still achieves SFR $=$ 83\%, but GPT-4o-mini drops to SFR $=$ 41\%, reflecting a mix of execution and interpretation failures.
+\item On \emph{very hard} tasks (DSBench, SR 1--3\%), the corrected SFR is 18.5\%, reflecting a mix of execution and interpretation failures.
 \end{itemize}
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.75\linewidth]{figures/bifurcation.pdf}
-\caption{Failure bifurcation: silent-failure rate vs.\ success rate across three task suites and four models. Strong models (GPT-4o, DeepSeek-V3) cluster at SFR $=$ 100\% even on real data; weak models (GPT-4o-mini) show SFR $=$ 0\% on easy tasks. The bifurcation shows that silent failure is the dominant mode precisely when agents can execute code but cannot reason correctly.}
+\caption{Failure bifurcation: silent-failure rate vs.\ success rate across three task suites and four models. The pattern shows that SFR is high on synthetic trap tasks (designed to elicit silent failures) and low on real tasks. A null-model analysis (see text) shows that 60\% of the SFR variation is explained by execution-success-rate differences (mechanical effect), but 40\% reflects additional structure.}
 \label{fig:bifurcation}
 \end{figure}
 
-The key insight is that \emph{silent failure is not an artefact of synthetic tasks}: GPT-4o shows SFR $=$ 100\% on real UCI data and SFR $=$ 83\% on real DSBench data. Silent failure is a property of \emph{strong models}, not of task design. When a model is strong enough to generate executable code, its residual failures are overwhelmingly wrong answers rather than crashes.
+\textbf{Null-model analysis.} A reviewer correctly noted that SFR is partially mechanical: stronger models have fewer crashes, so the denominator shrinks for loud failures, inflating SFR. We test this by computing the correlation between execution-success rate and SFR across all model$\times$suite combinations. The resulting $R^2 = 0.605$, indicating that 60\% of SFR variation is mechanical but 40\% reflects structure beyond execution success alone. We therefore describe the bifurcation as \emph{partially mechanical}: the high SFR on synthetic tasks is partly a definitional consequence of fewer crashes, but the variation across task types (synthetic SFR $=$ 98\% vs.\ UCI SFR $=$ 4\%) cannot be explained by execution success alone.
+
+\textbf{Taxonomy validation.} We validate the taxonomy via LLM-as-judge annotation (GPT-4o-mini, 100 traces, blind to the rule-based label). After fixing a classifier bug that incorrectly labeled \texttt{final\_answer=None} traces as silent, Cohen's $\kappa = 0.435$ (moderate agreement), with 100\% agreement on runtime classifications. The remaining disagreement centers on the boundary between \texttt{output\_mismatch} and \texttt{answer\_error}, two sub-categories of silent failure.
 
 \subsection{Result 2: Model Comparison}
 \label{sec:res-models}
 
-\Cref{fig:model-comparison} compares the four primary models on the 95-task main suite. DeepSeek-V3 achieves the highest success rate (88.4\%) and the lowest token cost per success (1943 tokens), while Qwen3-max performs poorly (18.3\%) due to format-incompatibility issues with the ReAct harness. Critically, all four models show SFR $\geq$ 86\%: once a model fails, the failure is almost always silent.
+\Cref{fig:model-comparison} compares the four primary models on the 95-task main suite. DeepSeek-V3 achieves the highest success rate (88.4\%) and the lowest token cost per success (1943 tokens), while Qwen3-max performs poorly (18.3\%) due to format-incompatibility issues with the ReAct harness. On the synthetic trap tasks, the corrected SFR (accounting for the classifier fix described in \Cref{sec:res-stages}) is high: 86--100\% for all models, meaning that when agents fail on these tasks, the failure is almost always a wrong answer rather than a crash. However, on real UCI data the SFR drops to 3.7\%, and on DSBench to 18.5\%, indicating that the high SFR is specific to tasks designed to elicit silent failures, not a universal property of agent failures.
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{figures/model_comparison.pdf}
-\caption{Model comparison on 95 tasks (3 runs). Left: success rate. Right: silent-failure rate of failures. All models exhibit SFR $\geq$ 86\%, meaning failures are predominantly silent.}
+\caption{Model comparison on 95 tasks (3 runs). Left: success rate. Right: silent-failure rate of failures on synthetic trap tasks.}
 \label{fig:model-comparison}
 \end{figure}
 
@@ -73,21 +75,26 @@ Counterfactual causal replay successfully attributes 79--88\% of failures to a s
 
 \begin{table}[t]
 \centering
-\caption{Causal-attribution rate: proportion of failures for which counterfactual replay flips the outcome to correct.}
+\caption{Oracle repair rate: proportion of failed tasks (where ground-truth code is available) for which replacing the originating step with the ground-truth action fixes the outcome. Computed only on failed traces, not on all runs.}
 \label{tab:causal}
 \small
-\begin{tabular}{@{}lc@{}}
+\begin{tabular}{@{}lcc@{}}
 \toprule
-Model & Causal-attribution rate \\
+Model & Tested tasks & Oracle repair rate \\
 \midrule
-DeepSeek-V3 & 88.4\% \\
-GPT-4o & 81.4\% \\
-GPT-4o-mini & 79.3\% \\
-Qwen3-max & 18.3\% \\
-DeepSeek-R1 & 0.0\% \\
+GPT-4o-mini (main) & 23 & 73.9\% \\
+DeepSeek-R1 (main) & 76 & 76.3\% \\
+Qwen3-max (main) & 75 & 76.0\% \\
+GPT-4o (main) & 15 & 26.7\% \\
+GPT-4o (final) & 45 & 73.3\% \\
+GPT-4o-mini (final) & 35 & 60.0\% \\
+\midrule
+Overall & 526 & 66.4\% \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\textbf{Note on terminology.} Following reviewer feedback, we renamed this metric from ``causal-attribution rate'' to ``oracle repair rate.'' The original name implied causal attribution, but the metric only demonstrates that injecting the ground-truth solution repairs the failure---it does not prove the originating step was the unique root cause. We include negative controls (random-step intervention) to measure specificity; a full causal analysis with human root-cause labels is left to future work.
 
 \subsection{Result 6: Verifier Ablation}
 \label{sec:res-verifier}

@@ -4,7 +4,7 @@
 \subsection{Why Strong Models Fail Silently}
 \label{sec:disc-why}
 
-Our results reveal a paradox: the stronger the model, the more silent its failures. GPT-4o and DeepSeek-V3 generate executable code nearly always (SFR $=$ 100\%), so their residual errors are wrong answers rather than crashes. This has a sobering implication: improving code-generation ability---the focus of most agent research---will \emph{increase} the proportion of silent failures, because the pool of loud failures shrinks while silent failures persist. The community should therefore prioritise verification and self-correction mechanisms targeted at interpretation-stage errors, not just code-generation improvements.
+Our results reveal a nuanced picture: on synthetic trap tasks, the corrected SFR is high (86--100\%) because these tasks are designed so that code runs but the answer is wrong. On real UCI data, however, the SFR drops to 4\%, and on DSBench to 19\%. A null-model analysis ($R^2 = 0.605$) shows that 60\% of the SFR variation across models is a mechanical consequence of execution-success-rate differences (stronger models crash less, so their remaining failures are more likely silent), but 40\% reflects additional structure. The practical implication is that improving code-generation ability alone will shift the failure distribution toward silent failures, but silent failures are not the dominant mode on all task types---they are most prevalent on tasks where code execution succeeds but reasoning fails.
 
 \subsection{Implications for Agent Deployment}
 \label{sec:disc-impl}
@@ -14,9 +14,6 @@ The zero recovery rate (\Cref{sec:res-recovery}) has direct deployment consequen
 \subsection{The Bifurcation Phenomenon}
 \label{sec:disc-bifurcation}
 
-The failure bifurcation (\Cref{sec:res-bifurcation}) suggests that silent failure is a \emph{phase transition} in the difficulty--capability space. Below a threshold (easy tasks, high SR), models fail rarely and loudly. Above another threshold (very hard tasks, near-0\% SR), models fail constantly and loudly. In between---the regime where models are ``good enough to run code but not good enough to reason correctly''---silent failure dominates. This middle regime is precisely where most real-world data-science tasks sit, making silent failure the practically dominant failure mode.
+The failure bifurcation (\Cref{sec:res-bifurcation}) is partially mechanical ($R^2 = 0.605$): the high SFR on synthetic tasks is partly a definitional consequence of fewer crashes, but the variation across task types (synthetic SFR $=$ 98\% vs.\ UCI SFR $=$ 4\%) cannot be explained by execution success alone. We therefore characterise the bifurcation as a task-dependent phenomenon: tasks that allow code to run (synthetic traps) produce silent failures, while tasks that trigger code crashes (real data with complex formats) produce loud failures. This is not a universal ``phase transition'' but a task-type effect, and we report it as such rather than claiming a general law.
 
-\subsection{Limitations}
-\label{sec:disc-lim}
-
-We acknowledge several limitations. \textbf{Agent harness.} We use a minimal ReAct harness; production agents (e.g., code-interpreter, AutoGen) may exhibit different failure distributions. We view this as a controlled baseline; future work should apply AgentFail to richer harnesses. \textbf{Model scope.} DeepSeek-R1 and Qwen3-max achieved 0\% success on UCI tasks, likely due to output-format incompatibility with the ReAct parser rather than fundamental inability; we report these results transparently but caution against over-interpreting them. \textbf{Annotation.} Our taxonomy is rule-based; while we provide an annotation protocol for inter-rater reliability (Cohen's $\kappa$), the $\kappa$ value is pending human annotation. \textbf{Task realism.} The synthetic trap tasks are designed to elicit specific failures; the UCI tasks are simple tabular analyses; only the DSBench tasks are genuinely complex real-world problems, and there the low success rate limits the diagnostic signal.
+A detailed discussion of limitations and ethical considerations is provided in \Cref{sec:limits-ethics}.
