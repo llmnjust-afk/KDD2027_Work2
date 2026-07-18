@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Verifier ablation (McNemar test). $b$=baseline correct \& verifier wrong, $c$=baseline wrong \& verifier correct.}
+\label{tab:verifier}
+\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Model & $\Delta$SR (\%) & $b$ & $c$ & $p$-value \\
+\midrule
+GPT-4o-mini & -1.3 & 32 & 28 & 0.699ns \\
+GPT-4o & +19.0 & 12 & 104 & 0.000*** \\
+DeepSeek-V3 & -0.7 & 8 & 6 & 0.789ns \\
+DeepSeek-R1 & +0.0 & 0 & 0 & 1.000ns \\
+Qwen3-max & +24.9 & 3 & 74 & 0.000*** \\
+\bottomrule
+\end{tabular}
+\end{table}

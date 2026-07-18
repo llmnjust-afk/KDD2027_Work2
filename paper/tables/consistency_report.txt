@@ -1,0 +1,5 @@
+✓ Total runs (4875 + supplementary): 4875 == 4875 PASS
+✓ silent + loud == failures: 2836 == 2836 PASS
+
+Suite breakdown: {'synthetic': 3330, 'uci': 345, 'dsbench': 1200}
+Oracle repair: tested=526, repaired=349, rate=0.6635

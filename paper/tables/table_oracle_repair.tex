@@ -1,0 +1,31 @@
+\begin{table}[t]
+\centering
+\caption{Oracle repair rate (failed tasks only).}
+\label{tab:oracle-repair}
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Model (suite) & Tested & Repaired \\
+\midrule
+deepseek-chat+verifier (main) & 13 & 7 (54%) \\
+deepseek-chat (main) & 11 & 5 (45%) \\
+deepseek-r1+verifier (main) & 76 & 58 (76%) \\
+deepseek-r1 (main) & 76 & 58 (76%) \\
+gpt-4o+verifier (main) & 17 & 6 (35%) \\
+gpt-4o-mini+verifier (main) & 31 & 23 (74%) \\
+gpt-4o-mini (main) & 23 & 17 (74%) \\
+gpt-4o (main) & 15 & 4 (27%) \\
+qwen3-max+verifier (main) & 65 & 48 (74%) \\
+qwen3-max (main) & 75 & 57 (76%) \\
+deepseek-chat (uci) & 1 & 0 (0%) \\
+deepseek-r1 (uci) & 18 & 5 (28%) \\
+gpt-4o-mini (uci) & 5 & 2 (40%) \\
+gpt-4o (uci) & 2 & 0 (0%) \\
+qwen3-max (uci) & 18 & 5 (28%) \\
+gpt-4o-mini (final) & 35 & 21 (60%) \\
+gpt-4o (final) & 45 & 33 (73%) \\
+\midrule
+\textbf{Overall} & \textbf{526} & \textbf{349 (66%)} \\
+\bottomrule
+\end{tabular}
+\end{table}

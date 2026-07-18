@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering
+\caption{Comprehensive results across all models and task suites. SR = success rate, SFR = silent-failure rate (corrected, on failed runs only). ``n/a = not evaluated.}
+\label{tab:main-results}
+\small
+\begin{tabular}{@{}llcccccc@{}}
+\toprule
+ & & \multicolumn{2}{c}{Synthetic} & \multicolumn{2}{c}{UCI real} & \multicolumn{2}{c}{DSBench real} \\
+\cmidrule(lr){3-4} \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+Model & Variant & SR (\%) & SFR (\%) & SR (\%) & SFR (\%) & SR (\%) & SFR (\%) \\
+\midrule
+GPT-4o-mini & Baseline & 73.9 & 39 & 82.6 & 0 & 0.8 & 0 \\
+GPT-4o-mini & Verifier & 72.6 & 85 & n/a & n/a & n/a & n/a \\
+GPT-4o & Baseline & 62.1 & 45 & 91.3 & 100 & 3.3 & 38 \\
+GPT-4o & Verifier & 81.1 & 100 & n/a & n/a & n/a & n/a \\
+DeepSeek-V3 & Baseline & 88.4 & 100 & 94.2 & 0 & n/a & n/a \\
+DeepSeek-V3 & Verifier & 87.7 & 97 & n/a & n/a & n/a & n/a \\
+DeepSeek-R1 & Baseline & 0.0 & 100 & 0.0 & 0 & n/a & n/a \\
+DeepSeek-R1 & Verifier & 0.0 & 100 & n/a & n/a & n/a & n/a \\
+Qwen3-max & Baseline & 18.2 & 100 & 0.0 & 0 & n/a & n/a \\
+Qwen3-max & Verifier & 43.2 & 99 & n/a & n/a & n/a & n/a \\
+\bottomrule
+\end{tabular}
+\end{table*}
