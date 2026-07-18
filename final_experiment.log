@@ -5,12 +5,7 @@ Models: ['gpt-4o-mini', 'gpt-4o'] | Repeats: 3 | Total runs: 1680
 ============================================================
 Running: gpt-4o-mini (gpt-4o-mini)
 ============================================================
-  [+|S] tabular_eda_00 r0 | stage=interpretation silent=False tok=4840 16.7s
-  [+|S] tabular_eda_00 r1 | stage=interpretation silent=False tok=3536 11.6s
-  [+|S] tabular_eda_00 r2 | stage=interpretation silent=False tok=4617 13.4s
-  [+|S] tabular_eda_01 r0 | stage=interpretation silent=False tok=4706 10.4s
-  [+|S] tabular_eda_01 r1 | stage=interpretation silent=False tok=4526 10.5s
-  [+|S] tabular_eda_01 r2 | stage=interpretation silent=False tok=6322 13.9s
-  [+|S] tabular_eda_02 r0 | stage=interpretation silent=False tok=3715 12.4s
-  [+|S] tabular_eda_02 r1 | stage=interpretation silent=False tok=2750 9.9s
-  [x|S] tabular_eda_02 r2 | stage=execution silent=False tok=5599 16.2s
+  [+|S] tabular_eda_00 r0 | stage=interpretation silent=False tok=3565 13.2s
+  [+|S] tabular_eda_00 r1 | stage=interpretation silent=False tok=6498 16.4s
+  [x|S] tabular_eda_00 r2 | stage=execution silent=False tok=5139 14.1s
+  [+|S] tabular_eda_01 r0 | stage=interpretation silent=False tok=3232 8.3s

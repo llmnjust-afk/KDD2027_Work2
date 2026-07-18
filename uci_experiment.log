@@ -1,0 +1,28 @@
+  iris: 5 tasks
+  titanic: 5 tasks
+  tips: 4 tasks
+  mpg: 4 tasks
+  penguins: 3 tasks
+  flights: 2 tasks
+Built 23 UCI real-data tasks
+UCI experiment: 23 tasks, 5 models, 3 repeats
+Total runs: 345
+
+============================================================
+Running: gpt-4o-mini (gpt-4o-mini)
+============================================================
+  [x] uci_iris_avg_sepal r0 | stage=execution silent=False tok=3703 10.4s
+  [x] uci_iris_avg_sepal r1 | stage=execution silent=False tok=3686 8.2s
+  [x] uci_iris_avg_sepal r2 | stage=execution silent=False tok=4423 9.7s
+  [+] uci_iris_corr r0 | stage=interpretation silent=False tok=4102 9.7s
+  [+] uci_iris_corr r1 | stage=interpretation silent=False tok=3308 9.0s
+  [+] uci_iris_corr r2 | stage=interpretation silent=False tok=5739 11.8s
+  [+] uci_iris_species_count r0 | stage=interpretation silent=False tok=5992 14.9s
+  [+] uci_iris_species_count r1 | stage=interpretation silent=False tok=5921 12.4s
+  [+] uci_iris_species_count r2 | stage=interpretation silent=False tok=4620 13.1s
+  [+] uci_iris_max_petal_width r0 | stage=interpretation silent=False tok=3266 10.9s
+  [+] uci_iris_max_petal_width r1 | stage=interpretation silent=False tok=3287 11.3s
+  [+] uci_iris_max_petal_width r2 | stage=interpretation silent=False tok=3510 10.5s
+  [+] uci_iris_median_sepal_width r0 | stage=interpretation silent=False tok=4244 12.1s
+  [+] uci_iris_median_sepal_width r1 | stage=interpretation silent=False tok=3140 9.5s
+  [+] uci_iris_median_sepal_width r2 | stage=interpretation silent=False tok=7020 15.3s
