@@ -33,9 +33,7 @@ DSBench & 200 & 0 & 3 & 197 \\
 \subsection{Expected Baseline Performance}
 \label{app:baselines}
 
-\Cref{tab:baselines} reports the expected baseline performance for each model and suite, providing reference points for future work. DeepSeek-V3 is the strongest on synthetic (88.4\%) and UCI (94.2\%) tasks. DSBench is challenging for all evaluated models (0--3.3\%).
-
-\begin{table}[t]
+\Cref{tab:baselines} reports the expected baseline performance for each model and suite, providing reference points for future work. DeepSeek-V3 is the strongest on synthetic (88.4\%) and UCI (94.2\%) tasks. DSBench is challenging for all evaluated models (0--3.3\%).\begin{table}[t]
 \centering
 \caption{Baseline success rates (\%) by model and suite. ``n/a'' indicates API rate limiting prevented evaluation.}
 \label{tab:baselines}
@@ -47,7 +45,7 @@ Model & Synthetic & UCI & DSBench \\
 DeepSeek-V3 & \textbf{88.4} & \textbf{94.2} & 0.0 \\
 GPT-4o-mini & 73.9 & 82.6 & 0.8 \\
 GPT-4o & 62.1 & 91.3 & \textbf{3.3} \\
-Qwen3-max & 18.2 & 0.0 & n/a \\
+Qwen3-max & 18.2 & 0.0 & 3.0 \\
 DeepSeek-R1 & 0.0 & 0.0 & n/a \\
 \bottomrule
 \end{tabular}
@@ -94,11 +92,11 @@ The code is released under an open-source license (MIT). The synthetic task gene
 
 \subsection{Propagation Depth Analysis}
 
-\Cref{tab:propagation} reports the propagation depth distribution across all 3{,}781 failures. The average depth is 0.30 steps, meaning most failures are detected immediately. However, 262 failures (6.9\%) propagate to depth $\geq$ 2, indicating long-horizon failure spread where the agent continues building on a wrong intermediate result.
+\Cref{tab:propagation} reports the propagation depth distribution across all 3{,}940 failures. The average depth is 0.30 steps, meaning most failures are detected immediately. However, 262 failures (6.9\%) propagate to depth $\geq$ 2, indicating long-horizon failure spread where the agent continues building on a wrong intermediate result.
 
 \begin{table}[t]
 \centering
-\caption{Propagation depth distribution (all 3{,}781 failures).}
+\caption{Propagation depth distribution (all 3{,}940 failures).}
 \label{tab:propagation}
 \small
 \begin{tabular}{@{}ccc@{}}

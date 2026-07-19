@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Negative control analysis. The no-op intervention (running GT code independently) produces identical results to the oracle intervention, confirming that oracle repair measures GT code correctness, not step-specific causal effect.}
+\label{tab:negative-control}
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Intervention & Tasks repaired & Rate (\%) \\
+\midrule
+Oracle (replace originating step) & 36/56 & 64.3 \\
+No-op (run GT code independently) & 36/56 & 64.3 \\
+\midrule
+Conservative TP (oracle $\wedge$ $\neg$noop) & 0/56 & 0.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
