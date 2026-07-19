@@ -3,7 +3,20 @@
 
 We provide a 100-trace annotation set sampled stratified by model from all 3{,}940 failed traces. $\geq 3$ annotators independently label each trace with (stage, category, is\_silent). Cohen's $\kappa$ is computed pairwise and Fleiss' $\kappa$ across all annotators on the stage label. The annotation guide, JSON form, and CSV form are released with the code. Target $\kappa \geq 0.7$. (Current LLM-as-judge $\kappa = 0.435$; human annotation is pending.)
 
+\section{Harness Ablation Details}
+\label{app:harness}
+
+\Cref{tab:harness-ablation} reports the full harness ablation results. Three harnesses were tested on a 30-task subset of synthetic tasks (6 per domain) with 3 repetitions each: H1 (minimal ReAct, max 8 steps), H2 (single-shot, one LLM call produces a complete Python script), and H3 (few-shot ReAct with one worked example). Silent failures persist across all three harnesses for GPT-4o (SFR: 100\%/30\%/100\%), confirming they are not an artifact of the minimal ReAct design.
+
+\input{tables/table_harness_ablation}
+
 \section{Reproducibility}
 \label{app:repro}
 
 All experiments use deterministic data generation (fixed seeds for synthetic tasks) and temperature-0 LLM calls. The framework includes a deterministic MockLLM that reproduces the full pipeline without API cost. Real-model experiments use the ChatAnywhere OpenAI-compatible endpoint. Total API cost: \$80. Code and data: \url{https://github.com/llmnjust-afk/KDD2027_Work2}.
+
+\section{Data Availability}
+\label{app:data-avail}
+
+All code, data, and annotated traces are publicly available at \url{https://github.com/llmnjust-afk/KDD2027_Work2}. The repository includes: (1) the full AgentFail framework source code; (2) the manifest CSV with 5{,}984 annotated runs; (3) the 100-trace annotation set; (4) the MockLLM backend for zero-cost reproduction; (5) all table-generation scripts with assertion checks. The synthetic task generators are self-contained. UCI datasets are downloaded at runtime from public repositories. DSBench tasks require a separate download from~\citep{jing2024dsbench}.
+

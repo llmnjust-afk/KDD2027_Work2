@@ -58,33 +58,19 @@ The classifier walks an \texttt{AgentTrace} and assigns a \texttt{FailureClassif
 \subsection{Propagation Depth}
 \label{sec:propagation}
 
-Once a failure originates at step $i$, it may propagate to later steps. We define \emph{propagation depth} as the number of steps from the originating failure to the step where it is detected (or to the trace end if never detected). Loud failures have depth 0 (immediately visible); silent failures can have depth $\geq 1$, meaning the agent continues building on a wrong intermediate result. A propagation depth $\geq 2$ indicates a \emph{long-horizon} failure spread, the most dangerous regime because it wastes the most tokens and is hardest to recover from. Across all 3{,}940 failures in our experiments, the average propagation depth is 0.30 steps; 88.6\% of failures are detected immediately (depth 0), while 6.9\% propagate to depth $\geq 2$. \Cref{fig:propdepth} shows the full distribution.
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.85\linewidth]{figures/propagation_depth.pdf}
-\caption{Propagation depth distribution across all 3{,}940 failures. The majority (88.6\%) are detected immediately (depth 0); 6.9\% propagate to depth $\geq 2$, indicating long-horizon failure spread.}
-\label{fig:propdepth}
-\end{figure}
+Once a failure originates at step $i$, it may propagate to later steps. We define \emph{propagation depth} as the number of steps from the originating failure to the step where it is detected (or to the trace end if never detected). Loud failures have depth 0 (immediately visible); silent failures can have depth $\geq 1$, meaning the agent continues building on a wrong intermediate result. A propagation depth $\geq 2$ indicates a \emph{long-horizon} failure spread, the most dangerous regime because it wastes the most tokens and is hardest to recover from. Across all 3{,}940 failures, the average propagation depth is 0.30 steps; 88.6\% are detected immediately (depth 0), while 6.9\% propagate to depth $\geq 2$ (see \Cref{tab:propagation} in \Cref{app:datacard}).
 
 \subsection{Oracle-Guided Repair}
 \label{sec:causal}
 
-To test whether a failed trace is \emph{repairable}, we adapt the counterfactual principle~\citep{shah2026causal} to the data-science setting. Given a trace that failed, we synthesise a \emph{counterfactual} version of the originating step: the canonical ground-truth code derived from the task's reference solution path. We then replay execution from that point in a fresh sandbox. If the replayed trace now produces the correct answer, the failure was repairable; if the replay still fails, the failure has a deeper root cause (e.g., a planning error that contaminated all downstream steps).
+To test whether a failed trace is \emph{repairable}, we adapt the counterfactual principle~\citep{shah2026causal} to the data-science setting. Given a trace that failed, we synthesise a \emph{counterfactual} version of the originating step: the canonical ground-truth code derived from the task's reference solution path. We then replay execution from that point in a fresh sandbox. If the replayed trace now produces the correct answer, the failure was repairable; if the replay still fails, the failure has a deeper root cause.
 
 Formally, let $T = (s_1, \dots, s_n)$ be a failed trace and $s_k$ the classified originating step. Let $s_k^*$ be the ground-truth action for step $k$. We construct the counterfactual trace $T' = (s_1, \dots, s_{k-1}, s_k^*, \dots)$ and execute it. The repair is successful iff $T'$ yields the correct answer. The \emph{oracle repair rate} is the proportion of failed traces for which repair succeeds.
 
-\textbf{Negative control.} A no-op control runs the ground-truth code independently in a fresh sandbox, without any step replacement. If the oracle repair rate exceeds the no-op rate, the difference would indicate step-specific causal effect; if the two rates match (as we observe, see \Cref{sec:disc-negative-control}), the oracle repair rate measures only whether the ground-truth code produces the correct answer, not step-level causality. We therefore report oracle repair as an upper bound on reparability.
+\textbf{Negative control.} A no-op control runs the ground-truth code independently without any step replacement. If the oracle repair rate matches the no-op rate (as we observe, \Cref{sec:disc-negative-control}), the oracle rate measures only whether the ground-truth code produces the correct answer, not step-level causality. We therefore report oracle repair as an upper bound on reparability.
 
 \subsection{Diagnostic Metrics}
 \label{sec:metrics}
 
-We report three layers of metrics:
+We report three layers of metrics: \textbf{Layer 1 (task-level):} success rate (SR), code-execution success rate. \textbf{Layer 2 (failure-diagnostic):} silent-failure rate (SFR = proportion of failures that are silent), stage distribution, propagation depth, recovery rate, and oracle repair rate. \textbf{Layer 3 (token-economic):} tokens-per-success and cost-per-success, addressing the under-reporting of cost identified by~\citet{moghadasi2026what}. Verifier comparisons use the McNemar test ($b$, $c$, $\chi^2$ $p$-value).
 
-\textbf{Layer 1 (task-level):} success rate (SR), code-execution success rate, and standard task-specific metrics (F1, RMSE).
-
-\textbf{Layer 2 (failure-diagnostic):} silent-failure rate (SFR = proportion of failures that are silent), stage distribution (proportion of failures in each of the five stages), average and maximum propagation depth, long-horizon failure rate (proportion with depth $\geq 2$), recovery rate (proportion of detected failures the agent subsequently corrects), over-privilege rate, and oracle repair rate.
-
-\textbf{Layer 3 (token-economic):} tokens-per-success, cost-per-success, invalid-token ratio, and the cost--accuracy frontier. These metrics address the under-reporting of cost identified by~\citet{moghadasi2026what}.
-
-All experiments report mean $\pm$ standard deviation over $\geq 3$ repetitions. Verifier comparisons use the McNemar test (appropriate for paired binary outcomes), reporting $b$ (baseline correct \& verifier wrong), $c$ (baseline wrong \& verifier correct), and the $\chi^2$ $p$-value.
