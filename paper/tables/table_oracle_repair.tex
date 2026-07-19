@@ -1,18 +1,17 @@
 \begin{table}[t]
 \centering
-\caption{Oracle-guided repair results. The repair rate measures whether ground-truth code produces the correct answer; it does not establish step-specific causality (see \Cref{tab:negative-control}).}
+\caption{Oracle-guided repair results. The full oracle rate (526 tasks) and the negative-control subset (56 tasks) use different samples; the no-op control confirms that oracle repair measures GT-code correctness, not step-specific causality.}
 \label{tab:oracle-repair}
 \small
-\begin{tabular}{@{}lc@{}}
+\begin{tabular}{@{}lcc@{}}
 \toprule
-Metric & Value \\
+Metric & Tasks & Rate (\%) \\
 \midrule
-Failed tasks tested & 526 \\
-Tasks repaired (oracle) & 349 \\
-Oracle repair rate & 66.3\% \\
-\midrule
-Negative control: no-op rate & 64.3\% \\
-Conservative TP rate & 0.0\% \\
+Oracle repair (full) & 349/526 & 66.3 \\
+\multicolumn{3}{l}{\textit{Negative control subset (56 tasks):}} \\
+\quad Oracle repair & 36/56 & 64.3 \\
+\quad No-op (GT code only) & 36/56 & 64.3 \\
+\quad Conservative TP & 0/56 & 0.0 \\
 \bottomrule
 \end{tabular}
 \end{table}

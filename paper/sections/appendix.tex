@@ -1,9 +1,9 @@
 \section{Annotation Protocol for Inter-Rater Reliability}
 \label{app:annotation}
 
-We provide a 100-trace annotation set sampled stratified by model from all 1299 failed traces. Two annotators independently label each trace with (stage, category, is\_silent). Cohen's $\kappa$ is computed on the stage label. The annotation guide, JSON form, and CSV form are released with the code. Target $\kappa \geq 0.7$.
+We provide a 100-trace annotation set sampled stratified by model from all 3{,}781 failed traces. $\geq 3$ annotators independently label each trace with (stage, category, is\_silent). Cohen's $\kappa$ is computed pairwise and Fleiss' $\kappa$ across all annotators on the stage label. The annotation guide, JSON form, and CSV form are released with the code. Target $\kappa \geq 0.7$. (Current LLM-as-judge $\kappa = 0.435$; human annotation is pending.)
 
 \section{Reproducibility}
 \label{app:repro}
 
-All experiments use deterministic data generation (fixed seeds for synthetic tasks) and temperature-0 LLM calls. The framework includes a deterministic MockLLM that reproduces the full pipeline without API cost. Real-model experiments use the ChatAnywhere OpenAI-compatible endpoint. Total API cost: \$60. Code and data: \url{https://github.com/llmnjust-afk/KDD2027_Work2}.
+All experiments use deterministic data generation (fixed seeds for synthetic tasks) and temperature-0 LLM calls. The framework includes a deterministic MockLLM that reproduces the full pipeline without API cost. Real-model experiments use the ChatAnywhere OpenAI-compatible endpoint. Total API cost: \$80. Code and data: \url{https://github.com/llmnjust-afk/KDD2027_Work2}.

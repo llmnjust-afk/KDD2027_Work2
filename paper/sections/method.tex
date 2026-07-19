@@ -67,12 +67,14 @@ Once a failure originates at step $i$, it may propagate to later steps. We defin
 \label{fig:propdepth}
 \end{figure}
 
-\subsection{Counterfactual Causal Replay}
+\subsection{Oracle-Guided Repair}
 \label{sec:causal}
 
-To attribute a failure to a specific step, we adapt the counterfactual principle~\citep{shah2026causal} to the data-science setting. Given a trace that failed, we synthesise a \emph{counterfactual} version of the originating step: the canonical ground-truth code derived from the task's reference solution path. We then replay execution from that point in a fresh sandbox. If the replayed trace now produces the correct answer, we have counterfactual evidence that the originating step caused the failure; if the replay still fails, the failure has a deeper root cause (e.g., a planning error that contaminated all downstream steps).
+To test whether a failed trace is \emph{repairable}, we adapt the counterfactual principle~\citep{shah2026causal} to the data-science setting. Given a trace that failed, we synthesise a \emph{counterfactual} version of the originating step: the canonical ground-truth code derived from the task's reference solution path. We then replay execution from that point in a fresh sandbox. If the replayed trace now produces the correct answer, the failure was repairable; if the replay still fails, the failure has a deeper root cause (e.g., a planning error that contaminated all downstream steps).
 
-Formally, let $T = (s_1, \dots, s_n)$ be a failed trace and $s_k$ the classified originating step. Let $s_k^*$ be the ground-truth action for step $k$. We construct the counterfactual trace $T' = (s_1, \dots, s_{k-1}, s_k^*, \dots)$ and execute it. The causal attribution is successful iff $T'$ yields the correct answer. The \emph{causal-attribution rate} is the proportion of failed traces for which attribution succeeds.
+Formally, let $T = (s_1, \dots, s_n)$ be a failed trace and $s_k$ the classified originating step. Let $s_k^*$ be the ground-truth action for step $k$. We construct the counterfactual trace $T' = (s_1, \dots, s_{k-1}, s_k^*, \dots)$ and execute it. The repair is successful iff $T'$ yields the correct answer. The \emph{oracle repair rate} is the proportion of failed traces for which repair succeeds.
+
+\textbf{Negative control.} A no-op control runs the ground-truth code independently in a fresh sandbox, without any step replacement. If the oracle repair rate exceeds the no-op rate, the difference would indicate step-specific causal effect; if the two rates match (as we observe, see \Cref{sec:disc-negative-control}), the oracle repair rate measures only whether the ground-truth code produces the correct answer, not step-level causality. We therefore report oracle repair as an upper bound on reparability.
 
 \subsection{Diagnostic Metrics}
 \label{sec:metrics}
@@ -81,8 +83,8 @@ We report three layers of metrics:
 
 \textbf{Layer 1 (task-level):} success rate (SR), code-execution success rate, and standard task-specific metrics (F1, RMSE).
 
-\textbf{Layer 2 (failure-diagnostic):} silent-failure rate (SFR = proportion of failures that are silent), stage distribution (proportion of failures in each of the five stages), average and maximum propagation depth, long-horizon failure rate (proportion with depth $\geq 2$), recovery rate (proportion of detected failures the agent subsequently corrects), over-privilege rate, and causal-attribution rate.
+\textbf{Layer 2 (failure-diagnostic):} silent-failure rate (SFR = proportion of failures that are silent), stage distribution (proportion of failures in each of the five stages), average and maximum propagation depth, long-horizon failure rate (proportion with depth $\geq 2$), recovery rate (proportion of detected failures the agent subsequently corrects), over-privilege rate, and oracle repair rate.
 
 \textbf{Layer 3 (token-economic):} tokens-per-success, cost-per-success, invalid-token ratio, and the cost--accuracy frontier. These metrics address the under-reporting of cost identified by~\citet{moghadasi2026what}.
 
-All experiments report mean $\pm$ standard deviation over $\geq 3$ repetitions, bootstrap 95\% confidence intervals, and paired $t$-tests with Cohen's $d$ for verifier comparisons.
+All experiments report mean $\pm$ standard deviation over $\geq 3$ repetitions. Verifier comparisons use the McNemar test (appropriate for paired binary outcomes), reporting $b$ (baseline correct \& verifier wrong), $c$ (baseline wrong \& verifier correct), and the $\chi^2$ $p$-value.
