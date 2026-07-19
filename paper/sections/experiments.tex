@@ -101,3 +101,20 @@ A key finding is that the verifier's effect is \emph{model-dependent}: it helps 
 \Cref{fig:token} plots tokens-per-success against success rate. DeepSeek-V3 is the most efficient (1{,}943 tokens/success on synthetic), while GPT-4o is the most expensive despite a lower success rate. The cost--accuracy frontier is non-monotonic: the cheapest model (Qwen3-max, 770 tokens/run) has the lowest SR, while the most expensive (GPT-4o, 1{,}241 tokens/run on synthetic but 12{,}792 on DSBench) does not achieve the highest SR. On DSBench, token costs escalate dramatically (10{,}790--12{,}792 tokens/run) because the complex multi-sheet Excel workbooks require longer reasoning traces, yet success rates remain near zero---a cost-effectiveness failure mode unique to real-world data.
 
 \FloatBarrier
+
+\subsection{Result 9: Harness Ablation}
+\label{sec:res-harness}
+
+A natural concern is whether silent failures are an artifact of our minimal ReAct harness rather than a genuine model-level phenomenon. To test this, we compare three harnesses on the same 30-task subset of synthetic tasks (6 per domain) with 3 repetitions each:
+
+\begin{itemize}[leftmargin=*,itemsep=1pt]
+\item \textbf{H1 (ReAct):} Our baseline minimal ReAct agent (max 8 steps).
+\item \textbf{H2 (Single-shot):} One LLM call produces a complete Python script; no multi-step interaction.
+\item \textbf{H3 (Few-shot ReAct):} ReAct with one worked example appended to the system prompt.
+\end{itemize}
+
+\input{tables/table_harness_ablation}
+
+\Cref{tab:harness-ablation} reports the results. The key finding is that \textbf{silent failures persist across all three harnesses for GPT-4o}: SFR is 100\% under H1 (ReAct), 30\% under H2 (single-shot), and 100\% under H3 (few-shot ReAct). This confirms that silent failures are not an artifact of the minimal ReAct design---they arise even when the agent writes a complete script in a single shot (H2) or receives a worked example (H3). Interestingly, H2 (single-shot) has a \emph{lower} SFR but also a much lower SR (44.4\% vs.\ 86.7\%), because single-shot code more often crashes (producing loud failures) rather than running successfully with a wrong answer. GPT-4o-mini shows silent failures only under H2, suggesting its failures under ReAct manifest as crashes rather than wrong answers. DeepSeek-V3 achieves near-perfect SR under all tested harnesses, producing too few failures for a meaningful SFR comparison. These results validate that our silent-failure findings generalise beyond the minimal ReAct harness.
+
+\FloatBarrier

@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\caption{Harness ablation. Three harnesses tested on 30 synthetic tasks $\times$ 3 repetitions. H1 = minimal ReAct (baseline); H2 = single-shot (one LLM call, complete code); H3 = few-shot ReAct (ReAct + 1 worked example). Silent failures persist across all three harnesses for GPT-4o, confirming they are not an artifact of the minimal ReAct design. DeepSeek-V3 cells are partial due to long API latencies.}
+\label{tab:harness-ablation}
+\small
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+Model & Harness & $n$ & SR (\%) & SFR (\%) & Silent \\
+\midrule
+\multirow{3}{*}{GPT-4o}
+ & H1: ReAct & 90 & 86.7 & \textbf{100.0} & 12 \\
+ & H2: Single-shot & 90 & 44.4 & 30.0 & 15 \\
+ & H3: Few-shot ReAct & 90 & 82.2 & \textbf{100.0} & 16 \\
+\midrule
+\multirow{3}{*}{GPT-4o-mini}
+ & H1: ReAct & 90 & 70.0 & 0.0 & 0 \\
+ & H2: Single-shot & 90 & 53.3 & 28.6 & 12 \\
+ & H3: Few-shot ReAct & 90 & 85.6 & 0.0 & 0 \\
+\midrule
+\multirow{2}{*}{DeepSeek-V3}
+ & H1: ReAct & 11 & 100.0 & 0.0 & 0 \\
+ & H2: Single-shot & 17 & 82.4 & 0.0 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
