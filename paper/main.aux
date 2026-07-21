@@ -153,8 +153,8 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.12}Result 11: Benchmark Tasks and Baselines}{7}{subsection.4.12}\protected@file@percent }
 \newlabel{sec:res-benchmark}{{4.12}{7}{Result 11: Benchmark Tasks and Baselines}{subsection.4.12}{}}
 \newlabel{sec:res-benchmark@cref}{{[subsection][12][4]4.12}{[1][7][]7}}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Baseline classifiers for failure-stage classification (binary: output\_mismatch vs.\ runtime). The silent heuristic achieves 80.3\% accuracy. LLM judges are evaluated on the 47-trace annotation set against rule-based system labels. Train/dev/test split is by task ID (198/42/43 tasks) to prevent leakage.\relax }}{8}{table.caption.15}\protected@file@percent }
-\newlabel{tab:baselines-classification}{{8}{8}{Baseline classifiers for failure-stage classification (binary: output\_mismatch vs.\ runtime). The silent heuristic achieves 80.3\% accuracy. LLM judges are evaluated on the 47-trace annotation set against rule-based system labels. Train/dev/test split is by task ID (198/42/43 tasks) to prevent leakage.\relax }{table.caption.15}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Baseline classifiers for failure-stage classification (binary: output\_mismatch vs.\ runtime). Simple baselines use heuristic rules; ML baselines are trained on the train split (1{,}101 traces) and evaluated on the test split (194 traces) with no label leakage. LLM judges are evaluated on the 47-trace annotation set. Train/dev/test split is by task ID (198/42/43 tasks) to prevent leakage.\relax }}{8}{table.caption.15}\protected@file@percent }
+\newlabel{tab:baselines-classification}{{8}{8}{Baseline classifiers for failure-stage classification (binary: output\_mismatch vs.\ runtime). Simple baselines use heuristic rules; ML baselines are trained on the train split (1{,}101 traces) and evaluated on the test split (194 traces) with no label leakage. LLM judges are evaluated on the 47-trace annotation set. Train/dev/test split is by task ID (198/42/43 tasks) to prevent leakage.\relax }{table.caption.15}{}}
 \newlabel{tab:baselines-classification@cref}{{[table][8][]8}{[1][7][]8}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{8}{section.5}\protected@file@percent }
 \newlabel{sec:disc}{{5}{8}{Discussion}{section.5}{}}
@@ -165,12 +165,12 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Implications for Agent Deployment}{8}{subsection.5.2}\protected@file@percent }
 \newlabel{sec:disc-impl}{{5.2}{8}{Implications for Agent Deployment}{subsection.5.2}{}}
 \newlabel{sec:disc-impl@cref}{{[subsection][2][5]5.2}{[1][8][]8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Negative Control: Oracle Repair Revisited}{8}{subsection.5.3}\protected@file@percent }
-\newlabel{sec:disc-negative-control}{{5.3}{8}{Negative Control: Oracle Repair Revisited}{subsection.5.3}{}}
-\newlabel{sec:disc-negative-control@cref}{{[subsection][3][5]5.3}{[1][8][]8}}
 \@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Negative control analysis. The no-op intervention (running GT code independently) produces identical results to the oracle intervention, confirming that oracle repair measures GT code correctness, not step-specific causal effect.\relax }}{8}{table.caption.16}\protected@file@percent }
 \newlabel{tab:negative-control}{{9}{8}{Negative control analysis. The no-op intervention (running GT code independently) produces identical results to the oracle intervention, confirming that oracle repair measures GT code correctness, not step-specific causal effect.\relax }{table.caption.16}{}}
 \newlabel{tab:negative-control@cref}{{[table][9][]9}{[1][8][]8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Negative Control: Oracle Repair Revisited}{8}{subsection.5.3}\protected@file@percent }
+\newlabel{sec:disc-negative-control}{{5.3}{8}{Negative Control: Oracle Repair Revisited}{subsection.5.3}{}}
+\newlabel{sec:disc-negative-control@cref}{{[subsection][3][5]5.3}{[1][8][]8}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Limitations and Ethical Considerations}{8}{section.6}\protected@file@percent }
 \newlabel{sec:limits-ethics}{{6}{8}{Limitations and Ethical Considerations}{section.6}{}}
 \newlabel{sec:limits-ethics@cref}{{[section][6][]6}{[1][8][]8}}
@@ -187,9 +187,6 @@
 \@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Task difficulty distribution by suite. Easy: SR $\geq $ 75\%; Medium: 25\% $\leq $ SR $<$ 75\%; Hard: SR $<$ 25\%.\relax }}{9}{table.caption.17}\protected@file@percent }
 \newlabel{tab:difficulty}{{10}{9}{Task difficulty distribution by suite. Easy: SR $\geq $ 75\%; Medium: 25\% $\leq $ SR $<$ 75\%; Hard: SR $<$ 25\%.\relax }{table.caption.17}{}}
 \newlabel{tab:difficulty@cref}{{[table][10][2147483647]10}{[1][9][]9}}
-\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Baseline success rates (\%) by model and suite. ``n/a'' indicates API rate limiting prevented evaluation.\relax }}{9}{table.caption.18}\protected@file@percent }
-\newlabel{tab:baselines}{{11}{9}{Baseline success rates (\%) by model and suite. ``n/a'' indicates API rate limiting prevented evaluation.\relax }{table.caption.18}{}}
-\newlabel{tab:baselines@cref}{{[table][11][2147483647]11}{[1][9][]9}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Contamination and Template Analysis}{9}{subsection.A.2}\protected@file@percent }
 \newlabel{app:contamination}{{A.2}{9}{Contamination and Template Analysis}{subsection.A.2}{}}
 \newlabel{app:contamination@cref}{{[subappendix][2][2147483647,1]A.2}{[1][9][]9}}
@@ -199,8 +196,11 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {A.4}Expected Baseline Performance}{9}{subsection.A.4}\protected@file@percent }
 \newlabel{app:baselines}{{A.4}{9}{Expected Baseline Performance}{subsection.A.4}{}}
 \newlabel{app:baselines@cref}{{[subappendix][4][2147483647,1]A.4}{[1][9][]9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {A.5}Data Schema}{9}{subsection.A.5}\protected@file@percent }
 \citation{jing2024dsbench}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Baseline success rates (\%) by model and suite. ``n/a'' indicates API rate limiting prevented evaluation.\relax }}{10}{table.caption.18}\protected@file@percent }
+\newlabel{tab:baselines}{{11}{10}{Baseline success rates (\%) by model and suite. ``n/a'' indicates API rate limiting prevented evaluation.\relax }{table.caption.18}{}}
+\newlabel{tab:baselines@cref}{{[table][11][2147483647]11}{[1][9][]10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.5}Data Schema}{10}{subsection.A.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {A.6}Provenance and Reproducibility}{10}{subsection.A.6}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {A.7}Answer Evaluation Details}{10}{subsection.A.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {A.8}Known Issues}{10}{subsection.A.8}\protected@file@percent }
@@ -224,12 +224,12 @@
 \@writefile{toc}{\contentsline {section}{\numberline {D}Recovery Benchmark Details}{11}{appendix.D}\protected@file@percent }
 \newlabel{app:recovery}{{D}{11}{Recovery Benchmark Details}{appendix.D}{}}
 \newlabel{app:recovery@cref}{{[appendix][4][2147483647]D}{[1][11][]11}}
-\@writefile{toc}{\contentsline {section}{\numberline {E}Reproducibility}{11}{appendix.E}\protected@file@percent }
-\newlabel{app:repro}{{E}{11}{Reproducibility}{appendix.E}{}}
-\newlabel{app:repro@cref}{{[appendix][5][2147483647]E}{[1][11][]11}}
 \@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Harness ablation. Three harnesses tested on 30 synthetic tasks $\times $ 3 repetitions. H1 = minimal ReAct (baseline); H2 = single-shot (one LLM call, complete code); H3 = few-shot ReAct (ReAct + 1 worked example). Silent failures persist across all three harnesses for GPT-4o, confirming they are not an artifact of the minimal ReAct design. DeepSeek-V3 cells are partial due to long API latencies.\relax }}{11}{table.caption.20}\protected@file@percent }
 \newlabel{tab:harness-ablation}{{13}{11}{Harness ablation. Three harnesses tested on 30 synthetic tasks $\times $ 3 repetitions. H1 = minimal ReAct (baseline); H2 = single-shot (one LLM call, complete code); H3 = few-shot ReAct (ReAct + 1 worked example). Silent failures persist across all three harnesses for GPT-4o, confirming they are not an artifact of the minimal ReAct design. DeepSeek-V3 cells are partial due to long API latencies.\relax }{table.caption.20}{}}
 \newlabel{tab:harness-ablation@cref}{{[table][13][2147483647]13}{[1][11][]11}}
+\@writefile{toc}{\contentsline {section}{\numberline {E}Reproducibility}{11}{appendix.E}\protected@file@percent }
+\newlabel{app:repro}{{E}{11}{Reproducibility}{appendix.E}{}}
+\newlabel{app:repro@cref}{{[appendix][5][2147483647]E}{[1][11][]11}}
 \@writefile{toc}{\contentsline {section}{\numberline {F}Data Availability}{11}{appendix.F}\protected@file@percent }
 \newlabel{app:data-avail}{{F}{11}{Data Availability}{appendix.F}{}}
 \newlabel{app:data-avail@cref}{{[appendix][6][2147483647]F}{[1][11][]11}}

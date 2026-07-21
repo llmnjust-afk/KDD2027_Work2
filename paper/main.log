@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.7.4)  21 JUL 2026 15:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.7.4)  21 JUL 2026 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1557,13 +1557,19 @@ Overfull \hbox (24.19606pt too wide) in paragraph at lines 140--141
  []
 
 (./tables/table_baselines_classification.tex
-Overfull \hbox (70.62833pt too wide) in paragraph at lines 6--23
+Overfull \hbox (89.12425pt too wide) in paragraph at lines 6--29
  [][] 
  []
 
 ) [7.7 <./figures/token_economics.pdf>]) (./sections/discussion.tex
+Underfull \vbox (badness 7832) has occurred while \output is active []
+
+
 (./tables/table_negative_control.tex)) (./sections/limitations_ethics.tex
-[8.8]) (./sections/conclusion.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8.8])
+(./sections/conclusion.tex)
 No file main.bbl.
 (./sections/datacard.tex
 Overfull \hbox (1.42134pt too wide) in paragraph at lines 6--7
@@ -1572,10 +1578,17 @@ al first 100 chars) ex-ist within
  []
 
 
+Underfull \vbox (badness 2221) has occurred while \output is active []
+
+
+
 Package natbib Warning: Citation `jing2024dsbench' on page 9 undefined on input
  line 10.
 
 
+Underfull \vbox (badness 1983) has occurred while \output is active []
+
+ [9.9]
 Overfull \hbox (9.47343pt too wide) in paragraph at lines 64--65
 []\T1/zi4/m/n/9 task_id\T1/LinuxLibertineT-TLF/m/n/9 (-20) , \T1/zi4/m/n/9 suit
 e\T1/LinuxLibertineT-TLF/m/n/9 (-20) : task iden-ti-fier and suite (\T1/zi4/m/n
@@ -1584,7 +1597,7 @@ rtineT-TLF/m/n/9 (-20) /\T1/zi4/m/n/9 dsbench\T1/LinuxLibertineT-TLF/m/n/9 (-20
 ) ) 
  []
 
-[9.9]
+
 Overfull \hbox (4.09747pt too wide) in paragraph at lines 68--69
 []\T1/zi4/m/n/9 api_status\T1/LinuxLibertineT-TLF/m/n/9 (-20) , \T1/zi4/m/n/9 p
 arser_status\T1/LinuxLibertineT-TLF/m/n/9 (-20) , \T1/zi4/m/n/9 execution_statu
@@ -1639,10 +1652,6 @@ Overfull \hbox (15.53015pt too wide) in paragraph at lines 91--92
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
 Package natbib Warning: Citation `jing2024dsbench' on page 10 undefined on inpu
 t line 105.
 
@@ -1653,11 +1662,7 @@ Overfull \hbox (56.59334pt too wide) in paragraph at lines 115--116
 OR.PATCH\T1/LinuxLibertineT-TLF/m/n/9 (-20) ).
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10.10])
-(./sections/appendix.tex (./tables/table_harness_ablation.tex)
+[10.10]) (./sections/appendix.tex (./tables/table_harness_ablation.tex)
 
 Package natbib Warning: Citation `jing2024dsbench' on page 11 undefined on inpu
 t line 26.
@@ -1690,13 +1695,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: DB47525B757921257C9B17BEF3EBD2A0;10410.
  ) 
 Here is how much of TeX's memory you used:
- 23608 strings out of 477975
- 401650 string characters out of 5839282
+ 23605 strings out of 477975
+ 401575 string characters out of 5839282
  1898330 words of memory out of 5000000
  42423 multiletter control sequences out of 15000+600000
- 715310 words of font info for 499 fonts, out of 8000000 for 9000
+ 715045 words of font info for 497 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
- 85i,16n,131p,1765b,701s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,17n,131p,1765b,701s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.enc}{/us
 r/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_ki75ao.enc}{/usr/shar
 e/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{/usr/share/texliv
@@ -1721,10 +1726,10 @@ LibertineTZ.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (11 pages, 710621 bytes).
+Output written on main.pdf (11 pages, 710952 bytes).
 PDF statistics:
- 726 PDF objects out of 1000 (max. 8388607)
- 429 compressed objects within 5 object streams
+ 725 PDF objects out of 1000 (max. 8388607)
+ 428 compressed objects within 5 object streams
  85 named destinations out of 1000 (max. 500000)
  114098 words of extra memory for PDF output out of 128383 (max. 10000000)
 

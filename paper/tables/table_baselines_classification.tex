@@ -1,15 +1,21 @@
 \begin{table}[t]
 \centering
-\caption{Baseline classifiers for failure-stage classification (binary: output\_mismatch vs.\ runtime). The silent heuristic achieves 80.3\% accuracy. LLM judges are evaluated on the 47-trace annotation set against rule-based system labels. Train/dev/test split is by task ID (198/42/43 tasks) to prevent leakage.}
+\caption{Baseline classifiers for failure-stage classification (binary: output\_mismatch vs.\ runtime). Simple baselines use heuristic rules; ML baselines are trained on the train split (1{,}101 traces) and evaluated on the test split (194 traces) with no label leakage. LLM judges are evaluated on the 47-trace annotation set. Train/dev/test split is by task ID (198/42/43 tasks) to prevent leakage.}
 \label{tab:baselines-classification}
 \small
 \begin{tabular}{@{}lcc@{}}
 \toprule
 Baseline & Accuracy (\%) & Description \\
 \midrule
+\multicolumn{3}{l}{\textit{Simple baselines:}} \\
 Majority (output\_mismatch) & 61.6 & Always predict majority class \\
-Silent heuristic & \textbf{80.3} & Silent $\to$ output\_mismatch; loud $\to$ runtime \\
+Silent heuristic & 80.3 & Silent $\to$ output\_mismatch; loud $\to$ runtime \\
 Token threshold & 55.2 & tokens $<$ 500 $\to$ runtime; else output\_mismatch \\
+\midrule
+\multicolumn{3}{l}{\textit{ML baselines (train/test split, no label leakage):}} \\
+TF-IDF + Logistic Regression & 86.1 & TF-IDF on trace text + LR \\
+Trace features + Random Forest & 88.7 & Structural features (tokens, model, depth) + RF \\
+Code-aware + Logistic Regression & \textbf{89.2} & Structural + token features + LR \\
 \midrule
 \multicolumn{3}{l}{\textit{LLM judges (47-trace annotation set):}} \\
 GPT-4o-mini judge & 70.7 & LLM classifies stage from trace \\
