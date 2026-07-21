@@ -5927,6 +5927,71 @@
       "tokens": 0,
       "elapsed": 89.37522292137146,
       "status": "OK"
+    },
+    {
+      "task_id": "uci_mpg_avg_by_origin",
+      "rep": 0,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 62.535228967666626,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_mpg_avg_by_origin",
+      "rep": 1,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 36.743462324142456,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_mpg_avg_by_origin",
+      "rep": 2,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 93.58279585838318,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_mpg_max_hp",
+      "rep": 0,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 31.362232208251953,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_mpg_max_hp",
+      "rep": 1,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 60.46857142448425,
+      "status": "OK"
     }
   ]
 }
