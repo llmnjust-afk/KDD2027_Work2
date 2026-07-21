@@ -54,16 +54,16 @@ This zero-recovery finding has a strong practical implication: in a multi-step p
 \subsection{Result 5: Propagation Depth Analysis}
 \label{sec:res-propagation}
 
-\Cref{sec:propagation} defines propagation depth. Here we analyse propagation depth \emph{by model}, revealing a striking pattern (\Cref{fig:propdepth-model}). GPT-4o has a mean propagation depth of 1.10 steps with 24.8\% of its failures reaching long-horizon status (depth $\geq$ 2)---far higher than any other model. GPT-4o-mini has a mean depth of 0.25 (7.1\% long-horizon), while DeepSeek-V3, DeepSeek-R1, and Qwen3-max all have zero propagation depth, meaning their failures are detected immediately.
+\Cref{sec:propagation} defines propagation depth. Here we analyse propagation depth \emph{by model}, revealing a striking pattern (\Cref{fig:propdepth-model}). GPT-4o has a mean propagation depth of 1.10 steps with 24.8\% of its failures reaching long-horizon status (depth $\geq$ 2)---far higher than any other model. GPT-4o-mini has a mean depth of 0.25 (7.1\% long-horizon), while DeepSeek-V3, DeepSeek-R1, and Qwen3-max all have zero propagation depth.
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.95\linewidth]{figures/propdepth_by_model.pdf}
-\caption{Propagation depth by model (baseline, all suites). GPT-4o exhibits the longest failure propagation (mean 1.10, 24.8\% long-horizon), while other models detect failures immediately. This reflects GPT-4o's tendency to continue reasoning on a wrong intermediate result rather than crashing.}
+\caption{Propagation depth by model (baseline, valid runs only). GPT-4o exhibits the longest failure propagation (mean 1.10, 24.8\% long-horizon). Other models show depth 0, which may reflect either immediate error detection or early trace termination due to infrastructure failures (see \Cref{tab:comprehensive}).}
 \label{fig:propdepth-model}
 \end{figure}
 
-This model-dependent propagation is diagnostically meaningful: GPT-4o's higher SR (62.1\% on synthetic) means it rarely crashes, but when it does fail silently, it tends to \emph{build on} the wrong intermediate result across multiple steps, wasting tokens and making the failure harder to localise. In contrast, DeepSeek-V3's failures are concentrated in the final answer (depth 0), making them easier to detect but impossible for the agent to self-correct.
+We caution that zero propagation depth has two possible interpretations: (1) the failure was immediately detected by the agent (a loud failure at depth 0), or (2) the trace terminated early due to infrastructure failures (API errors, parse failures, or empty responses), leaving no steps to propagate through. Our enriched manifest (\texttt{manifest\_v2.csv}) distinguishes these cases via the \texttt{is\_infra\_failure} field. Among valid (non-infrastructure) failures, GPT-4o's longer propagation reflects its tendency to continue reasoning on a wrong intermediate result rather than crashing, making the failure harder to localise. In contrast, DeepSeek-V3's valid failures are concentrated at depth 0, meaning the error manifests in the final answer without intermediate propagation.
 
 \subsection{Result 6: Oracle-Guided Repair}
 \label{sec:res-causal}
@@ -105,6 +105,41 @@ A key finding is that the verifier's effect is \emph{model-dependent}: it helps 
 \subsection{Result 9: Harness Ablation}
 \label{sec:res-harness}
 
-To verify that silent failures are not an artifact of our minimal ReAct harness, we compare three harnesses on a 30-task subset (3 repetitions): H1 (minimal ReAct, baseline), H2 (single-shot, one LLM call produces a complete script), and H3 (few-shot ReAct with one worked example). The key finding (\Cref{tab:harness-ablation}, Appendix) is that \textbf{silent failures persist across all three harnesses for GPT-4o}: SFR is 100\% (H1), 30\% (H2), and 100\% (H3). This confirms silent failures are not an artifact of the minimal ReAct design---they arise even in single-shot code generation. Details in \Cref{app:harness}.
+To verify that silent failures are not an artifact of our minimal ReAct harness, we compare three harnesses on both synthetic (30-task subset, 3 reps) and UCI (23 tasks, 3 reps) tasks: H1 (minimal ReAct, baseline), H2 (single-shot, one LLM call produces a complete script), and H3 (few-shot ReAct with one worked example). On synthetic, GPT-4o shows SFR of 100\% (H1), 30\% (H2), and 100\% (H3); on UCI, the pattern is consistent at 100\%, 31\%, 100\%. The harness significantly affects the failure distribution, so we report harness as a benchmark dimension rather than a nuisance factor. Details in \Cref{app:harness}.
+
+\FloatBarrier
+
+\subsection{Result 10: Recovery Benchmark}
+\label{sec:res-recovery-bench}
+
+To test whether feedback signals enable agents to recover from failures, we run a recovery benchmark with 6 conditions on 100 failed traces (80 silent + 20 loud) sampled from synthetic tasks:
+
+\begin{itemize}[leftmargin=*,itemsep=1pt]
+\item \textbf{C1 (No feedback):} Re-run the task with no additional signal.
+\item \textbf{C2 (Generic feedback):} ``Your previous answer may be incorrect. Please retry.''
+\item \textbf{C3 (Runtime feedback):} ``Check your logic carefully (e.g., count vs sum, groupby vs filter).''
+\item \textbf{C4 (Unit-test feedback):} ``Verify your result by checking data types and aggregation function.''
+\item \textbf{C5 (Critic feedback):} GPT-4o-mini reviews the answer and provides critique.
+\item \textbf{C6 (Independent rerun):} ``Solve using a completely different approach.''
+\end{itemize}
+
+The overall recovery rate is \textbf{15.7\%} (94/600), a substantial improvement over the 0\% recovery in the standard protocol. Critically, \textbf{loud failures recover at 36.7\% (44/120) while silent failures recover at only 10.4\% (50/480)}, confirming that silent failures remain far harder to correct even with explicit feedback. All six conditions produce similar recovery rates (14--17\%), suggesting that the mere act of re-running with any prompt-level signal triggers partial recovery, but no single feedback type is dramatically more effective.
+
+\FloatBarrier
+
+\subsection{Result 11: Benchmark Tasks and Baselines}
+\label{sec:res-benchmark}
+
+We define three diagnostic benchmark tasks on which future work can be evaluated:
+
+\begin{itemize}[leftmargin=*,itemsep=1pt]
+\item \textbf{Task B (Observability classification):} Given a trace, predict success / loud / silent.
+\item \textbf{Task C (Failure-stage classification):} Given a failed trace, predict the failure stage (interpretation vs.\ execution).
+\item \textbf{Task D (Originating-step localization):} Predict the first erroneous step.
+\end{itemize}
+
+We provide a train/dev/test split by task ID (198/42/43 tasks) to prevent leakage. \Cref{tab:baselines-classification} reports three baseline classifiers for Task C on 1{,}562 valid failures. The majority baseline achieves 61.6\%, while the silent heuristic (mapping \texttt{is\_silent} to stage) achieves \textbf{80.3\%}, establishing a non-trivial baseline that future classifiers should surpass.
+
+\input{tables/table_baselines_classification}
 
 \FloatBarrier

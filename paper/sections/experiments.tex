@@ -105,11 +105,29 @@ A key finding is that the verifier's effect is \emph{model-dependent}: it helps 
 \subsection{Result 9: Harness Ablation}
 \label{sec:res-harness}
 
-To verify that silent failures are not an artifact of our minimal ReAct harness, we compare three harnesses on a 30-task subset (3 repetitions): H1 (minimal ReAct, baseline), H2 (single-shot, one LLM call produces a complete script), and H3 (few-shot ReAct with one worked example). The key finding (\Cref{tab:harness-ablation}, Appendix) is that \textbf{silent failures persist across all three harnesses for GPT-4o}: SFR is 100\% (H1), 30\% (H2), and 100\% (H3). However, the harness does significantly affect the failure distribution, so we report harness as a benchmark dimension rather than a nuisance factor. Details in \Cref{app:harness}.
+To verify that silent failures are not an artifact of our minimal ReAct harness, we compare three harnesses on both synthetic (30-task subset, 3 reps) and UCI (23 tasks, 3 reps) tasks: H1 (minimal ReAct, baseline), H2 (single-shot, one LLM call produces a complete script), and H3 (few-shot ReAct with one worked example). On synthetic, GPT-4o shows SFR of 100\% (H1), 30\% (H2), and 100\% (H3); on UCI, the pattern is consistent at 100\%, 31\%, 100\%. The harness significantly affects the failure distribution, so we report harness as a benchmark dimension rather than a nuisance factor. Details in \Cref{app:harness}.
 
 \FloatBarrier
 
-\subsection{Result 10: Benchmark Tasks and Baselines}
+\subsection{Result 10: Recovery Benchmark}
+\label{sec:res-recovery-bench}
+
+To test whether feedback signals enable agents to recover from failures, we run a recovery benchmark with 6 conditions on 100 failed traces (80 silent + 20 loud) sampled from synthetic tasks:
+
+\begin{itemize}[leftmargin=*,itemsep=1pt]
+\item \textbf{C1 (No feedback):} Re-run the task with no additional signal.
+\item \textbf{C2 (Generic feedback):} ``Your previous answer may be incorrect. Please retry.''
+\item \textbf{C3 (Runtime feedback):} ``Check your logic carefully (e.g., count vs sum, groupby vs filter).''
+\item \textbf{C4 (Unit-test feedback):} ``Verify your result by checking data types and aggregation function.''
+\item \textbf{C5 (Critic feedback):} GPT-4o-mini reviews the answer and provides critique.
+\item \textbf{C6 (Independent rerun):} ``Solve using a completely different approach.''
+\end{itemize}
+
+The overall recovery rate is \textbf{15.7\%} (94/600), a substantial improvement over the 0\% recovery in the standard protocol. Critically, \textbf{loud failures recover at 36.7\% (44/120) while silent failures recover at only 10.4\% (50/480)}, confirming that silent failures remain far harder to correct even with explicit feedback. All six conditions produce similar recovery rates (14--17\%), suggesting that the mere act of re-running with any prompt-level signal triggers partial recovery, but no single feedback type is dramatically more effective.
+
+\FloatBarrier
+
+\subsection{Result 11: Benchmark Tasks and Baselines}
 \label{sec:res-benchmark}
 
 We define three diagnostic benchmark tasks on which future work can be evaluated:

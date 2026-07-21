@@ -6,9 +6,14 @@ We provide a 100-trace annotation set sampled stratified by model from all 3{,}9
 \section{Harness Ablation Details}
 \label{app:harness}
 
-\Cref{tab:harness-ablation} reports the full harness ablation results. Three harnesses were tested on a 30-task subset of synthetic tasks (6 per domain) with 3 repetitions each: H1 (minimal ReAct, max 8 steps), H2 (single-shot, one LLM call produces a complete Python script), and H3 (few-shot ReAct with one worked example). Silent failures persist across all three harnesses for GPT-4o (SFR: 100\%/30\%/100\%), confirming they are not an artifact of the minimal ReAct design.
+\Cref{tab:harness-ablation} reports the full harness ablation results on synthetic tasks. We also ran the same three harnesses on all 23 UCI tasks (3 repetitions each), with consistent results: GPT-4o shows SFR of 100\% (H1), 31\% (H2), and 100\% (H3) on UCI, matching the synthetic pattern (100\%/30\%/100\%). This confirms silent failures are not an artifact of the minimal ReAct design across both task types.
 
 \input{tables/table_harness_ablation}
+
+\section{Recovery Benchmark Details}
+\label{app:recovery}
+
+The recovery benchmark (\Cref{sec:res-recovery-bench}) tests 100 failed traces (80 silent + 20 loud) under 6 feedback conditions, yielding 600 runs. Overall recovery rate is 15.7\%. The key finding is the asymmetry between failure types: loud failures recover at 36.7\% (44/120) while silent failures recover at only 10.4\% (50/480), confirming that silent failures remain substantially harder to correct even with explicit feedback signals.
 
 \section{Reproducibility}
 \label{app:repro}
