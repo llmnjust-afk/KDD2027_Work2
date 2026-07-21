@@ -52,7 +52,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "misread_output",
     "suite": "uci",
     "annotator_1": {
@@ -128,7 +128,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "none",
     "system_subcategory": "none",
     "suite": "synthetic",
     "annotator_1": {
@@ -204,7 +204,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "misread_output",
     "suite": "synthetic",
     "annotator_1": {
@@ -281,7 +281,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "misread_output",
     "suite": "synthetic",
     "annotator_1": {
@@ -358,7 +358,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "misread_output",
     "suite": "synthetic",
     "annotator_1": {
@@ -482,7 +482,7 @@
     ],
     "n_steps": 7,
     "system_is_silent": "True",
-    "system_failure_stage": "execution",
+    "system_failure_stage": "runtime",
     "system_subcategory": "security_block",
     "suite": "synthetic",
     "annotator_1": {
@@ -607,7 +607,7 @@
     ],
     "n_steps": 7,
     "system_is_silent": "True",
-    "system_failure_stage": "execution",
+    "system_failure_stage": "runtime",
     "system_subcategory": "security_block",
     "suite": "synthetic",
     "annotator_1": {
@@ -732,7 +732,7 @@
     ],
     "n_steps": 7,
     "system_is_silent": "True",
-    "system_failure_stage": "execution",
+    "system_failure_stage": "runtime",
     "system_subcategory": "security_block",
     "suite": "synthetic",
     "annotator_1": {
@@ -869,7 +869,7 @@
     ],
     "n_steps": 8,
     "system_is_silent": "True",
-    "system_failure_stage": "execution",
+    "system_failure_stage": "runtime",
     "system_subcategory": "security_block",
     "suite": "synthetic",
     "annotator_1": {
@@ -969,7 +969,7 @@
     ],
     "n_steps": 5,
     "system_is_silent": "True",
-    "system_failure_stage": "execution",
+    "system_failure_stage": "runtime",
     "system_subcategory": "security_block",
     "suite": "synthetic",
     "annotator_1": {
@@ -1081,7 +1081,7 @@
     ],
     "n_steps": 6,
     "system_is_silent": "True",
-    "system_failure_stage": "execution",
+    "system_failure_stage": "runtime",
     "system_subcategory": "security_block",
     "suite": "synthetic",
     "annotator_1": {
@@ -1194,7 +1194,7 @@
     ],
     "n_steps": 6,
     "system_is_silent": "True",
-    "system_failure_stage": "execution",
+    "system_failure_stage": "runtime",
     "system_subcategory": "security_block",
     "suite": "synthetic",
     "annotator_1": {
@@ -1306,7 +1306,7 @@
     ],
     "n_steps": 6,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "none",
     "system_subcategory": "none",
     "suite": "synthetic",
     "annotator_1": {
@@ -1418,7 +1418,7 @@
     ],
     "n_steps": 6,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "none",
     "system_subcategory": "none",
     "suite": "synthetic",
     "annotator_1": {
@@ -1518,7 +1518,7 @@
     ],
     "n_steps": 5,
     "system_is_silent": "True",
-    "system_failure_stage": "execution",
+    "system_failure_stage": "runtime",
     "system_subcategory": "security_block",
     "suite": "synthetic",
     "annotator_1": {
@@ -1642,7 +1642,7 @@
     ],
     "n_steps": 7,
     "system_is_silent": "False",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "none",
     "system_subcategory": "none",
     "suite": "synthetic",
     "annotator_1": {
@@ -1767,7 +1767,7 @@
     ],
     "n_steps": 7,
     "system_is_silent": "False",
-    "system_failure_stage": "execution",
+    "system_failure_stage": "runtime",
     "system_subcategory": "security_block",
     "suite": "synthetic",
     "annotator_1": {
@@ -1844,7 +1844,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -1921,7 +1921,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -1998,7 +1998,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "misread_output",
     "suite": "synthetic",
     "annotator_1": {
@@ -2074,7 +2074,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -2150,7 +2150,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -2238,7 +2238,7 @@
     ],
     "n_steps": 4,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -2326,7 +2326,7 @@
     ],
     "n_steps": 4,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -2402,7 +2402,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -2479,7 +2479,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -2555,7 +2555,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "misread_output",
     "suite": "synthetic",
     "annotator_1": {
@@ -2631,7 +2631,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "False",
-    "system_failure_stage": "execution",
+    "system_failure_stage": "runtime",
     "system_subcategory": "security_block",
     "suite": "uci",
     "annotator_1": {
@@ -2707,7 +2707,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "False",
-    "system_failure_stage": "execution",
+    "system_failure_stage": "runtime",
     "system_subcategory": "security_block",
     "suite": "uci",
     "annotator_1": {
@@ -2783,7 +2783,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "False",
-    "system_failure_stage": "execution",
+    "system_failure_stage": "runtime",
     "system_subcategory": "security_block",
     "suite": "uci",
     "annotator_1": {
@@ -2859,7 +2859,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "False",
-    "system_failure_stage": "execution",
+    "system_failure_stage": "runtime",
     "system_subcategory": "security_block",
     "suite": "uci",
     "annotator_1": {
@@ -2935,7 +2935,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -3000,7 +3000,7 @@
     ],
     "n_steps": 2,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -3076,7 +3076,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -3152,7 +3152,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -3205,7 +3205,7 @@
     ],
     "n_steps": 1,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -3282,7 +3282,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -3346,7 +3346,7 @@
     ],
     "n_steps": 2,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -3410,7 +3410,7 @@
     ],
     "n_steps": 2,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -3487,7 +3487,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -3540,7 +3540,7 @@
     ],
     "n_steps": 1,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "hallucinated_answer",
     "suite": "synthetic",
     "annotator_1": {
@@ -3616,7 +3616,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "none",
     "system_subcategory": "none",
     "suite": "synthetic",
     "annotator_1": {
@@ -3729,7 +3729,7 @@
     ],
     "n_steps": 6,
     "system_is_silent": "False",
-    "system_failure_stage": "execution",
+    "system_failure_stage": "runtime",
     "system_subcategory": "security_block",
     "suite": "synthetic",
     "annotator_1": {
@@ -3866,7 +3866,7 @@
     ],
     "n_steps": 8,
     "system_is_silent": "True",
-    "system_failure_stage": "execution",
+    "system_failure_stage": "runtime",
     "system_subcategory": "security_block",
     "suite": "synthetic",
     "annotator_1": {
@@ -4001,7 +4001,7 @@
     ],
     "n_steps": 8,
     "system_is_silent": "False",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "none",
     "system_subcategory": "none",
     "suite": "synthetic",
     "annotator_1": {
@@ -4138,7 +4138,7 @@
     ],
     "n_steps": 8,
     "system_is_silent": "False",
-    "system_failure_stage": "execution",
+    "system_failure_stage": "runtime",
     "system_subcategory": "security_block",
     "suite": "synthetic",
     "annotator_1": {
@@ -4214,7 +4214,7 @@
     ],
     "n_steps": 3,
     "system_is_silent": "True",
-    "system_failure_stage": "interpretation",
+    "system_failure_stage": "output_mismatch",
     "system_subcategory": "misread_output",
     "suite": "synthetic",
     "annotator_1": {

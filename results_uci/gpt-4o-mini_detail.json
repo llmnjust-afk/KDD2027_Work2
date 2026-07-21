@@ -15,7 +15,8 @@
       "tokens": 3703,
       "elapsed_s": 10.38,
       "status": "OK",
-      "final_answer": "virginica 6.588"
+      "final_answer": "virginica 6.588",
+      "stage_v5": "runtime"
     },
     {
       "task_id": "uci_iris_avg_sepal",
@@ -32,7 +33,8 @@
       "tokens": 3686,
       "elapsed_s": 8.15,
       "status": "OK",
-      "final_answer": "virginica 6.588"
+      "final_answer": "virginica 6.588",
+      "stage_v5": "runtime"
     },
     {
       "task_id": "uci_iris_avg_sepal",
@@ -49,7 +51,8 @@
       "tokens": 4423,
       "elapsed_s": 9.7,
       "status": "OK",
-      "final_answer": "No data available"
+      "final_answer": "No data available",
+      "stage_v5": "runtime"
     },
     {
       "task_id": "uci_iris_corr",
@@ -66,7 +69,8 @@
       "tokens": 4102,
       "elapsed_s": 9.7,
       "status": "OK",
-      "final_answer": "0.8717537758865831"
+      "final_answer": "0.8717537758865831",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_iris_corr",
@@ -83,7 +87,8 @@
       "tokens": 3308,
       "elapsed_s": 9.02,
       "status": "OK",
-      "final_answer": "0.8717537758865831"
+      "final_answer": "0.8717537758865831",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_iris_corr",
@@ -100,7 +105,8 @@
       "tokens": 5739,
       "elapsed_s": 11.77,
       "status": "OK",
-      "final_answer": "0.8717537758865831"
+      "final_answer": "0.8717537758865831",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_iris_species_count",
@@ -117,7 +123,8 @@
       "tokens": 5992,
       "elapsed_s": 14.93,
       "status": "OK",
-      "final_answer": "setosa 50"
+      "final_answer": "setosa 50",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_iris_species_count",
@@ -134,7 +141,8 @@
       "tokens": 5921,
       "elapsed_s": 12.44,
       "status": "OK",
-      "final_answer": "setosa 50"
+      "final_answer": "setosa 50",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_iris_species_count",
@@ -151,7 +159,8 @@
       "tokens": 4620,
       "elapsed_s": 13.15,
       "status": "OK",
-      "final_answer": "setosa 50"
+      "final_answer": "setosa 50",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_iris_max_petal_width",
@@ -168,7 +177,8 @@
       "tokens": 3266,
       "elapsed_s": 10.94,
       "status": "OK",
-      "final_answer": "2.5"
+      "final_answer": "2.5",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_iris_max_petal_width",
@@ -185,7 +195,8 @@
       "tokens": 3287,
       "elapsed_s": 11.28,
       "status": "OK",
-      "final_answer": "2.5"
+      "final_answer": "2.5",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_iris_max_petal_width",
@@ -202,7 +213,8 @@
       "tokens": 3510,
       "elapsed_s": 10.53,
       "status": "OK",
-      "final_answer": "2.5"
+      "final_answer": "2.5",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_iris_median_sepal_width",
@@ -219,7 +231,8 @@
       "tokens": 4244,
       "elapsed_s": 12.09,
       "status": "OK",
-      "final_answer": "3.0"
+      "final_answer": "3.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_iris_median_sepal_width",
@@ -236,7 +249,8 @@
       "tokens": 3140,
       "elapsed_s": 9.48,
       "status": "OK",
-      "final_answer": "3.0"
+      "final_answer": "3.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_iris_median_sepal_width",
@@ -253,7 +267,8 @@
       "tokens": 7020,
       "elapsed_s": 15.26,
       "status": "OK",
-      "final_answer": "3.0"
+      "final_answer": "3.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_titanic_survival_rate",
@@ -270,7 +285,8 @@
       "tokens": 6217,
       "elapsed_s": 14.44,
       "status": "OK",
-      "final_answer": "0.3838383838383838"
+      "final_answer": "0.3838383838383838",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_titanic_survival_rate",
@@ -287,7 +303,8 @@
       "tokens": 6718,
       "elapsed_s": 13.2,
       "status": "OK",
-      "final_answer": "0.3838383838383838"
+      "final_answer": "0.3838383838383838",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_titanic_survival_rate",
@@ -304,7 +321,8 @@
       "tokens": 5173,
       "elapsed_s": 12.13,
       "status": "OK",
-      "final_answer": "Column \"Survived\" not found.')"
+      "final_answer": "Column \"Survived\" not found.')",
+      "stage_v5": "runtime"
     },
     {
       "task_id": "uci_titanic_survival_by_class",
@@ -321,7 +339,8 @@
       "tokens": 4414,
       "elapsed_s": 10.55,
       "status": "OK",
-      "final_answer": "1 0.6296296296296297"
+      "final_answer": "1 0.6296296296296297",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_titanic_survival_by_class",
@@ -338,7 +357,8 @@
       "tokens": 6232,
       "elapsed_s": 11.88,
       "status": "OK",
-      "final_answer": "1 0.6296296296296297"
+      "final_answer": "1 0.6296296296296297",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_titanic_survival_by_class",
@@ -355,7 +375,8 @@
       "tokens": 3377,
       "elapsed_s": 8.4,
       "status": "OK",
-      "final_answer": "1 0.6296296296296297"
+      "final_answer": "1 0.6296296296296297",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_titanic_avg_fare",
@@ -372,7 +393,8 @@
       "tokens": 2457,
       "elapsed_s": 7.77,
       "status": "OK",
-      "final_answer": "32.204207968574636"
+      "final_answer": "32.204207968574636",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_titanic_avg_fare",
@@ -389,7 +411,8 @@
       "tokens": 5606,
       "elapsed_s": 10.85,
       "status": "OK",
-      "final_answer": "32.204207968574636"
+      "final_answer": "32.204207968574636",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_titanic_avg_fare",
@@ -406,7 +429,8 @@
       "tokens": 5650,
       "elapsed_s": 13.92,
       "status": "OK",
-      "final_answer": "32.204207968574636"
+      "final_answer": "32.204207968574636",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_titanic_common_port",
@@ -423,7 +447,8 @@
       "tokens": 6771,
       "elapsed_s": 14.53,
       "status": "OK",
-      "final_answer": "Southampton 644"
+      "final_answer": "Southampton 644",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_titanic_common_port",
@@ -440,7 +465,8 @@
       "tokens": 5527,
       "elapsed_s": 12.01,
       "status": "OK",
-      "final_answer": "Southampton 644"
+      "final_answer": "Southampton 644",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_titanic_common_port",
@@ -457,7 +483,8 @@
       "tokens": 6715,
       "elapsed_s": 13.89,
       "status": "OK",
-      "final_answer": "Southampton 644"
+      "final_answer": "Southampton 644",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_titanic_passenger_count",
@@ -474,7 +501,8 @@
       "tokens": 3549,
       "elapsed_s": 9.06,
       "status": "OK",
-      "final_answer": "891"
+      "final_answer": "891",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_titanic_passenger_count",
@@ -491,7 +519,8 @@
       "tokens": 1315,
       "elapsed_s": 4.07,
       "status": "OK",
-      "final_answer": "891"
+      "final_answer": "891",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_titanic_passenger_count",
@@ -508,7 +537,8 @@
       "tokens": 2463,
       "elapsed_s": 7.01,
       "status": "OK",
-      "final_answer": "891"
+      "final_answer": "891",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_tips_avg_tip_by_day",
@@ -525,7 +555,8 @@
       "tokens": 6919,
       "elapsed_s": 16.76,
       "status": "OK",
-      "final_answer": "Sun 3.2551315789473683"
+      "final_answer": "Sun 3.2551315789473683",
+      "stage_v5": "runtime"
     },
     {
       "task_id": "uci_tips_avg_tip_by_day",
@@ -542,7 +573,8 @@
       "tokens": 3864,
       "elapsed_s": 11.3,
       "status": "OK",
-      "final_answer": "Sun 3.2551315789473683"
+      "final_answer": "Sun 3.2551315789473683",
+      "stage_v5": "runtime"
     },
     {
       "task_id": "uci_tips_avg_tip_by_day",
@@ -559,7 +591,8 @@
       "tokens": 5889,
       "elapsed_s": 14.3,
       "status": "OK",
-      "final_answer": "Sun 3.2551315789473683"
+      "final_answer": "Sun 3.2551315789473683",
+      "stage_v5": "runtime"
     },
     {
       "task_id": "uci_tips_total_bill",
@@ -576,7 +609,8 @@
       "tokens": 4262,
       "elapsed_s": 9.42,
       "status": "OK",
-      "final_answer": "6186.35"
+      "final_answer": "6186.35",
+      "stage_v5": "runtime"
     },
     {
       "task_id": "uci_tips_total_bill",
@@ -593,7 +627,8 @@
       "tokens": 4050,
       "elapsed_s": 9.37,
       "status": "OK",
-      "final_answer": "4827.77"
+      "final_answer": "4827.77",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_tips_total_bill",
@@ -610,7 +645,8 @@
       "tokens": 5650,
       "elapsed_s": 11.66,
       "status": "OK",
-      "final_answer": "6186.35"
+      "final_answer": "6186.35",
+      "stage_v5": "runtime"
     },
     {
       "task_id": "uci_tips_tip_percentage",
@@ -627,7 +663,8 @@
       "tokens": 3347,
       "elapsed_s": 8.61,
       "status": "OK",
-      "final_answer": "16.08025817225047"
+      "final_answer": "16.08025817225047",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_tips_tip_percentage",
@@ -644,7 +681,8 @@
       "tokens": 3999,
       "elapsed_s": 10.7,
       "status": "OK",
-      "final_answer": "16.08025817225047"
+      "final_answer": "16.08025817225047",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_tips_tip_percentage",
@@ -661,7 +699,8 @@
       "tokens": 3199,
       "elapsed_s": 8.58,
       "status": "OK",
-      "final_answer": "16.08025817225047"
+      "final_answer": "16.08025817225047",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_tips_common_party_size",
@@ -678,7 +717,8 @@
       "tokens": 5581,
       "elapsed_s": 14.4,
       "status": "OK",
-      "final_answer": null
+      "final_answer": null,
+      "stage_v5": "runtime"
     },
     {
       "task_id": "uci_tips_common_party_size",
@@ -695,7 +735,8 @@
       "tokens": 6603,
       "elapsed_s": 15.35,
       "status": "OK",
-      "final_answer": "2 156"
+      "final_answer": "2 156",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_tips_common_party_size",
@@ -712,7 +753,8 @@
       "tokens": 3532,
       "elapsed_s": 8.96,
       "status": "OK",
-      "final_answer": "2 156"
+      "final_answer": "2 156",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_mpg_avg_by_origin",
@@ -729,7 +771,8 @@
       "tokens": 6197,
       "elapsed_s": 11.47,
       "status": "OK",
-      "final_answer": "japan 30.450632911392404"
+      "final_answer": "japan 30.450632911392404",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_mpg_avg_by_origin",
@@ -746,7 +789,8 @@
       "tokens": 4768,
       "elapsed_s": 10.25,
       "status": "OK",
-      "final_answer": "japan 30.450632911392404"
+      "final_answer": "japan 30.450632911392404",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_mpg_avg_by_origin",
@@ -763,7 +807,8 @@
       "tokens": 3560,
       "elapsed_s": 8.37,
       "status": "OK",
-      "final_answer": "japan 30.450632911392404"
+      "final_answer": "japan 30.450632911392404",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_mpg_max_hp",
@@ -780,7 +825,8 @@
       "tokens": 4122,
       "elapsed_s": 12.16,
       "status": "OK",
-      "final_answer": "230.0"
+      "final_answer": "230.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_mpg_max_hp",
@@ -797,7 +843,8 @@
       "tokens": 3115,
       "elapsed_s": 10.46,
       "status": "OK",
-      "final_answer": "230.0"
+      "final_answer": "230.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_mpg_max_hp",
@@ -814,7 +861,8 @@
       "tokens": 3212,
       "elapsed_s": 9.87,
       "status": "OK",
-      "final_answer": "230.0"
+      "final_answer": "230.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_mpg_corr_mpg_weight",
@@ -831,7 +879,8 @@
       "tokens": 4620,
       "elapsed_s": 10.92,
       "status": "OK",
-      "final_answer": "-0.8317409332443352"
+      "final_answer": "-0.8317409332443352",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_mpg_corr_mpg_weight",
@@ -848,7 +897,8 @@
       "tokens": 4037,
       "elapsed_s": 10.44,
       "status": "OK",
-      "final_answer": "-0.8317409332443352"
+      "final_answer": "-0.8317409332443352",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_mpg_corr_mpg_weight",
@@ -865,7 +915,8 @@
       "tokens": 6846,
       "elapsed_s": 14.45,
       "status": "OK",
-      "final_answer": "-0.8317409332443352"
+      "final_answer": "-0.8317409332443352",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_mpg_common_cylinders",
@@ -882,7 +933,8 @@
       "tokens": 4342,
       "elapsed_s": 11.54,
       "status": "OK",
-      "final_answer": "4 204"
+      "final_answer": "4 204",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_mpg_common_cylinders",
@@ -899,7 +951,8 @@
       "tokens": 6445,
       "elapsed_s": 15.48,
       "status": "OK",
-      "final_answer": "4 204"
+      "final_answer": "4 204",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_mpg_common_cylinders",
@@ -916,7 +969,8 @@
       "tokens": 4759,
       "elapsed_s": 10.91,
       "status": "OK",
-      "final_answer": "4 204"
+      "final_answer": "4 204",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_penguins_avg_mass",
@@ -933,7 +987,8 @@
       "tokens": 3593,
       "elapsed_s": 10.48,
       "status": "OK",
-      "final_answer": "Gentoo 5076.016260162602"
+      "final_answer": "Gentoo 5076.016260162602",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_penguins_avg_mass",
@@ -950,7 +1005,8 @@
       "tokens": 3730,
       "elapsed_s": 10.21,
       "status": "OK",
-      "final_answer": "Gentoo 5076.016260162602"
+      "final_answer": "Gentoo 5076.016260162602",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_penguins_avg_mass",
@@ -967,7 +1023,8 @@
       "tokens": 3710,
       "elapsed_s": 8.74,
       "status": "OK",
-      "final_answer": "Gentoo 5076.016260162602"
+      "final_answer": "Gentoo 5076.016260162602",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_penguins_island_count",
@@ -984,7 +1041,8 @@
       "tokens": 4620,
       "elapsed_s": 12.86,
       "status": "OK",
-      "final_answer": "Biscoe 168"
+      "final_answer": "Biscoe 168",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_penguins_island_count",
@@ -1001,7 +1059,8 @@
       "tokens": 3611,
       "elapsed_s": 9.67,
       "status": "OK",
-      "final_answer": "Biscoe 168"
+      "final_answer": "Biscoe 168",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_penguins_island_count",
@@ -1018,7 +1077,8 @@
       "tokens": 3844,
       "elapsed_s": 10.04,
       "status": "OK",
-      "final_answer": "Biscoe 168"
+      "final_answer": "Biscoe 168",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_penguins_max_flipper",
@@ -1035,7 +1095,8 @@
       "tokens": 3211,
       "elapsed_s": 9.19,
       "status": "OK",
-      "final_answer": "231.0"
+      "final_answer": "231.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_penguins_max_flipper",
@@ -1052,7 +1113,8 @@
       "tokens": 6042,
       "elapsed_s": 13.69,
       "status": "OK",
-      "final_answer": "231.0"
+      "final_answer": "231.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_penguins_max_flipper",
@@ -1069,7 +1131,8 @@
       "tokens": 4314,
       "elapsed_s": 11.62,
       "status": "OK",
-      "final_answer": "231.0"
+      "final_answer": "231.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_flights_peak_year",
@@ -1086,7 +1149,8 @@
       "tokens": 6916,
       "elapsed_s": 15.12,
       "status": "OK",
-      "final_answer": "1960 5714"
+      "final_answer": "1960 5714",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_flights_peak_year",
@@ -1103,7 +1167,8 @@
       "tokens": 6974,
       "elapsed_s": 15.97,
       "status": "OK",
-      "final_answer": "1960 5714"
+      "final_answer": "1960 5714",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_flights_peak_year",
@@ -1120,7 +1185,8 @@
       "tokens": 5618,
       "elapsed_s": 15.3,
       "status": "OK",
-      "final_answer": null
+      "final_answer": null,
+      "stage_v5": "runtime"
     },
     {
       "task_id": "uci_flights_avg_july",
@@ -1137,7 +1203,8 @@
       "tokens": 5365,
       "elapsed_s": 10.53,
       "status": "OK",
-      "final_answer": "351.3333333333333"
+      "final_answer": "351.3333333333333",
+      "stage_v5": "none"
     },
     {
       "task_id": "uci_flights_avg_july",
@@ -1154,7 +1221,8 @@
       "tokens": 5063,
       "elapsed_s": 13.52,
       "status": "OK",
-      "final_answer": null
+      "final_answer": null,
+      "stage_v5": "runtime"
     },
     {
       "task_id": "uci_flights_avg_july",
@@ -1171,7 +1239,8 @@
       "tokens": 4486,
       "elapsed_s": 10.95,
       "status": "OK",
-      "final_answer": "351.3333333333333"
+      "final_answer": "351.3333333333333",
+      "stage_v5": "none"
     }
   ],
   "failure_metrics": {

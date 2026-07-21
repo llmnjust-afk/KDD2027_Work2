@@ -15,7 +15,8 @@
       "tokens": 704,
       "elapsed_s": 4.05,
       "status": "OK",
-      "final_answer": "food 2948"
+      "final_answer": "food 2948",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_00",
@@ -32,7 +33,8 @@
       "tokens": 692,
       "elapsed_s": 4.17,
       "status": "OK",
-      "final_answer": "food 2948"
+      "final_answer": "food 2948",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_00",
@@ -49,7 +51,8 @@
       "tokens": 686,
       "elapsed_s": 3.35,
       "status": "OK",
-      "final_answer": "food 2948"
+      "final_answer": "food 2948",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_01",
@@ -66,7 +69,8 @@
       "tokens": 574,
       "elapsed_s": 3.67,
       "status": "OK",
-      "final_answer": "4943"
+      "final_answer": "4943",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_01",
@@ -83,7 +87,8 @@
       "tokens": 574,
       "elapsed_s": 2.71,
       "status": "OK",
-      "final_answer": "4943"
+      "final_answer": "4943",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_01",
@@ -100,7 +105,8 @@
       "tokens": 842,
       "elapsed_s": 4.1,
       "status": "OK",
-      "final_answer": "4943"
+      "final_answer": "4943",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_02",
@@ -117,7 +123,8 @@
       "tokens": 766,
       "elapsed_s": 4.18,
       "status": "OK",
-      "final_answer": "books 1625.0"
+      "final_answer": "books 1625.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_02",
@@ -134,7 +141,8 @@
       "tokens": 760,
       "elapsed_s": 4.4,
       "status": "OK",
-      "final_answer": "books 1625.0"
+      "final_answer": "books 1625.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_02",
@@ -151,7 +159,8 @@
       "tokens": 780,
       "elapsed_s": 3.75,
       "status": "OK",
-      "final_answer": "books 1625.0"
+      "final_answer": "books 1625.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_03",
@@ -168,7 +177,8 @@
       "tokens": 754,
       "elapsed_s": 3.39,
       "status": "OK",
-      "final_answer": "clothing 6"
+      "final_answer": "clothing 6",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_03",
@@ -185,7 +195,8 @@
       "tokens": 744,
       "elapsed_s": 4.01,
       "status": "OK",
-      "final_answer": "clothing 6"
+      "final_answer": "clothing 6",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_03",
@@ -202,7 +213,8 @@
       "tokens": 758,
       "elapsed_s": 3.4,
       "status": "OK",
-      "final_answer": "clothing 6"
+      "final_answer": "clothing 6",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_04",
@@ -219,7 +231,8 @@
       "tokens": 706,
       "elapsed_s": 3.31,
       "status": "OK",
-      "final_answer": "toys 2056"
+      "final_answer": "toys 2056",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_04",
@@ -236,7 +249,8 @@
       "tokens": 706,
       "elapsed_s": 3.72,
       "status": "OK",
-      "final_answer": "toys 2056"
+      "final_answer": "toys 2056",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_04",
@@ -253,7 +267,8 @@
       "tokens": 704,
       "elapsed_s": 3.84,
       "status": "OK",
-      "final_answer": "toys 2056"
+      "final_answer": "toys 2056",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_05",
@@ -270,7 +285,8 @@
       "tokens": 574,
       "elapsed_s": 2.9,
       "status": "OK",
-      "final_answer": "3358"
+      "final_answer": "3358",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_05",
@@ -287,7 +303,8 @@
       "tokens": 574,
       "elapsed_s": 3.04,
       "status": "OK",
-      "final_answer": "3358"
+      "final_answer": "3358",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_05",
@@ -304,7 +321,8 @@
       "tokens": 572,
       "elapsed_s": 3.05,
       "status": "OK",
-      "final_answer": "3358"
+      "final_answer": "3358",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_06",
@@ -321,7 +339,8 @@
       "tokens": 778,
       "elapsed_s": 4.13,
       "status": "OK",
-      "final_answer": "books 1421.0"
+      "final_answer": "books 1421.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_06",
@@ -338,7 +357,8 @@
       "tokens": 782,
       "elapsed_s": 4.62,
       "status": "OK",
-      "final_answer": "books 1421.0"
+      "final_answer": "books 1421.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_06",
@@ -355,7 +375,8 @@
       "tokens": 760,
       "elapsed_s": 4.06,
       "status": "OK",
-      "final_answer": "books 1421.0"
+      "final_answer": "books 1421.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_07",
@@ -372,7 +393,8 @@
       "tokens": 744,
       "elapsed_s": 3.82,
       "status": "OK",
-      "final_answer": "toys 4"
+      "final_answer": "toys 4",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_07",
@@ -389,7 +411,8 @@
       "tokens": 762,
       "elapsed_s": 4.0,
       "status": "OK",
-      "final_answer": "toys 4"
+      "final_answer": "toys 4",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_07",
@@ -406,7 +429,8 @@
       "tokens": 740,
       "elapsed_s": 4.02,
       "status": "OK",
-      "final_answer": "toys 4"
+      "final_answer": "toys 4",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_08",
@@ -423,7 +447,8 @@
       "tokens": 690,
       "elapsed_s": 3.76,
       "status": "OK",
-      "final_answer": "clothing 685"
+      "final_answer": "clothing 685",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_08",
@@ -440,7 +465,8 @@
       "tokens": 704,
       "elapsed_s": 3.41,
       "status": "OK",
-      "final_answer": "clothing 685"
+      "final_answer": "clothing 685",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_08",
@@ -457,7 +483,8 @@
       "tokens": 702,
       "elapsed_s": 3.35,
       "status": "OK",
-      "final_answer": "clothing 685"
+      "final_answer": "clothing 685",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_09",
@@ -474,7 +501,8 @@
       "tokens": 572,
       "elapsed_s": 2.96,
       "status": "OK",
-      "final_answer": "2833"
+      "final_answer": "2833",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_09",
@@ -491,7 +519,8 @@
       "tokens": 574,
       "elapsed_s": 3.45,
       "status": "OK",
-      "final_answer": "2833"
+      "final_answer": "2833",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_09",
@@ -508,7 +537,8 @@
       "tokens": 574,
       "elapsed_s": 3.43,
       "status": "OK",
-      "final_answer": "2833"
+      "final_answer": "2833",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_10",
@@ -525,7 +555,8 @@
       "tokens": 750,
       "elapsed_s": 4.42,
       "status": "OK",
-      "final_answer": "clothing 697.0"
+      "final_answer": "clothing 697.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_10",
@@ -542,7 +573,8 @@
       "tokens": 778,
       "elapsed_s": 3.83,
       "status": "OK",
-      "final_answer": "clothing 697.0"
+      "final_answer": "clothing 697.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_10",
@@ -559,7 +591,8 @@
       "tokens": 788,
       "elapsed_s": 4.84,
       "status": "OK",
-      "final_answer": "clothing 697.0"
+      "final_answer": "clothing 697.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_11",
@@ -576,7 +609,8 @@
       "tokens": 1042,
       "elapsed_s": 5.85,
       "status": "OK",
-      "final_answer": "books 5"
+      "final_answer": "books 5",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_11",
@@ -593,7 +627,8 @@
       "tokens": 1394,
       "elapsed_s": 6.73,
       "status": "OK",
-      "final_answer": "books 5"
+      "final_answer": "books 5",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_11",
@@ -610,7 +645,8 @@
       "tokens": 762,
       "elapsed_s": 3.57,
       "status": "OK",
-      "final_answer": "books 5"
+      "final_answer": "books 5",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_12",
@@ -627,7 +663,8 @@
       "tokens": 690,
       "elapsed_s": 3.22,
       "status": "OK",
-      "final_answer": "books 967"
+      "final_answer": "books 967",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_12",
@@ -644,7 +681,8 @@
       "tokens": 704,
       "elapsed_s": 3.25,
       "status": "OK",
-      "final_answer": "books 967"
+      "final_answer": "books 967",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_12",
@@ -661,7 +699,8 @@
       "tokens": 690,
       "elapsed_s": 2.89,
       "status": "OK",
-      "final_answer": "books 967"
+      "final_answer": "books 967",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_13",
@@ -678,7 +717,8 @@
       "tokens": 574,
       "elapsed_s": 3.02,
       "status": "OK",
-      "final_answer": "2785"
+      "final_answer": "2785",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_13",
@@ -695,7 +735,8 @@
       "tokens": 574,
       "elapsed_s": 2.75,
       "status": "OK",
-      "final_answer": "2785"
+      "final_answer": "2785",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_13",
@@ -712,7 +753,8 @@
       "tokens": 574,
       "elapsed_s": 2.92,
       "status": "OK",
-      "final_answer": "2785"
+      "final_answer": "2785",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_14",
@@ -729,7 +771,8 @@
       "tokens": 758,
       "elapsed_s": 4.43,
       "status": "OK",
-      "final_answer": "toys 498.0"
+      "final_answer": "toys 498.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_14",
@@ -746,7 +789,8 @@
       "tokens": 778,
       "elapsed_s": 3.72,
       "status": "OK",
-      "final_answer": "toys 498.0"
+      "final_answer": "toys 498.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_14",
@@ -763,7 +807,8 @@
       "tokens": 778,
       "elapsed_s": 3.57,
       "status": "OK",
-      "final_answer": "toys 498.0"
+      "final_answer": "toys 498.0",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_15",
@@ -780,7 +825,8 @@
       "tokens": 756,
       "elapsed_s": 3.7,
       "status": "OK",
-      "final_answer": "books 4"
+      "final_answer": "books 4",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "tabular_eda_15",
@@ -797,7 +843,8 @@
       "tokens": 762,
       "elapsed_s": 3.37,
       "status": "OK",
-      "final_answer": "toys 4"
+      "final_answer": "toys 4",
+      "stage_v5": "none"
     },
     {
       "task_id": "tabular_eda_15",
@@ -814,7 +861,8 @@
       "tokens": 756,
       "elapsed_s": 4.3,
       "status": "OK",
-      "final_answer": "books 4"
+      "final_answer": "books 4",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "time_series_00",
@@ -831,7 +879,8 @@
       "tokens": 1392,
       "elapsed_s": 6.72,
       "status": "OK",
-      "final_answer": "2024-01-12"
+      "final_answer": "2024-01-12",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_00",
@@ -848,7 +897,8 @@
       "tokens": 1474,
       "elapsed_s": 6.23,
       "status": "OK",
-      "final_answer": "2024-01-12"
+      "final_answer": "2024-01-12",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_00",
@@ -865,7 +915,8 @@
       "tokens": 1439,
       "elapsed_s": 7.34,
       "status": "OK",
-      "final_answer": "2024-01-12"
+      "final_answer": "2024-01-12",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_01",
@@ -882,7 +933,8 @@
       "tokens": 1381,
       "elapsed_s": 8.0,
       "status": "OK",
-      "final_answer": "97.02"
+      "final_answer": "97.02",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_01",
@@ -899,7 +951,8 @@
       "tokens": 1245,
       "elapsed_s": 48.52,
       "status": "OK",
-      "final_answer": "97.02"
+      "final_answer": "97.02",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_01",
@@ -916,7 +969,8 @@
       "tokens": 1261,
       "elapsed_s": 6.03,
       "status": "OK",
-      "final_answer": "97.02"
+      "final_answer": "97.02",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_02",
@@ -933,7 +987,8 @@
       "tokens": 2479,
       "elapsed_s": 9.24,
       "status": "OK",
-      "final_answer": "0.7714215686274516"
+      "final_answer": "0.7714215686274516",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_02",
@@ -950,7 +1005,8 @@
       "tokens": 1594,
       "elapsed_s": 7.39,
       "status": "OK",
-      "final_answer": "0.7714215686274516"
+      "final_answer": "0.7714215686274516",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_02",
@@ -967,7 +1023,8 @@
       "tokens": 1619,
       "elapsed_s": 5.97,
       "status": "OK",
-      "final_answer": "0.7714215686274516"
+      "final_answer": "0.7714215686274516",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_03",
@@ -984,7 +1041,8 @@
       "tokens": 638,
       "elapsed_s": 4.85,
       "status": "OK",
-      "final_answer": "2024-01-07"
+      "final_answer": "2024-01-07",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_03",
@@ -1001,7 +1059,8 @@
       "tokens": 648,
       "elapsed_s": 3.3,
       "status": "OK",
-      "final_answer": "2024-01-07"
+      "final_answer": "2024-01-07",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_03",
@@ -1018,7 +1077,8 @@
       "tokens": 632,
       "elapsed_s": 3.46,
       "status": "OK",
-      "final_answer": "2024-01-07"
+      "final_answer": "2024-01-07",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_04",
@@ -1035,7 +1095,8 @@
       "tokens": 1457,
       "elapsed_s": 6.5,
       "status": "OK",
-      "final_answer": "2024-01-10"
+      "final_answer": "2024-01-10",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_04",
@@ -1052,7 +1113,8 @@
       "tokens": 1396,
       "elapsed_s": 6.01,
       "status": "OK",
-      "final_answer": "2024-01-10"
+      "final_answer": "2024-01-10",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_04",
@@ -1069,7 +1131,8 @@
       "tokens": 1578,
       "elapsed_s": 7.7,
       "status": "OK",
-      "final_answer": "2024-01-10"
+      "final_answer": "2024-01-10",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_05",
@@ -1086,7 +1149,8 @@
       "tokens": 1247,
       "elapsed_s": 4.49,
       "status": "OK",
-      "final_answer": "126.02"
+      "final_answer": "126.02",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_05",
@@ -1103,7 +1167,8 @@
       "tokens": 1232,
       "elapsed_s": 5.74,
       "status": "OK",
-      "final_answer": "126.02"
+      "final_answer": "126.02",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_05",
@@ -1120,7 +1185,8 @@
       "tokens": 1295,
       "elapsed_s": 5.38,
       "status": "OK",
-      "final_answer": "126.02"
+      "final_answer": "126.02",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_06",
@@ -1137,7 +1203,8 @@
       "tokens": 1734,
       "elapsed_s": 6.05,
       "status": "OK",
-      "final_answer": "1.5395882352941168"
+      "final_answer": "1.5395882352941168",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_06",
@@ -1154,7 +1221,8 @@
       "tokens": 1539,
       "elapsed_s": 4.44,
       "status": "OK",
-      "final_answer": "1.5395882352941168"
+      "final_answer": "1.5395882352941168",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_06",
@@ -1171,7 +1239,8 @@
       "tokens": 2454,
       "elapsed_s": 7.39,
       "status": "OK",
-      "final_answer": "1.5395882352941168"
+      "final_answer": "1.5395882352941168",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_07",
@@ -1188,7 +1257,8 @@
       "tokens": 1669,
       "elapsed_s": 4.74,
       "status": "OK",
-      "final_answer": "2024-01-08"
+      "final_answer": "2024-01-08",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_07",
@@ -1205,7 +1275,8 @@
       "tokens": 1745,
       "elapsed_s": 5.02,
       "status": "OK",
-      "final_answer": "2024-01-08"
+      "final_answer": "2024-01-08",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_07",
@@ -1222,7 +1293,8 @@
       "tokens": 1735,
       "elapsed_s": 4.95,
       "status": "OK",
-      "final_answer": "2024-01-08"
+      "final_answer": "2024-01-08",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_08",
@@ -1239,7 +1311,8 @@
       "tokens": 1468,
       "elapsed_s": 4.24,
       "status": "OK",
-      "final_answer": "2024-01-09"
+      "final_answer": "2024-01-09",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_08",
@@ -1256,7 +1329,8 @@
       "tokens": 1498,
       "elapsed_s": 4.94,
       "status": "OK",
-      "final_answer": "2024-01-09"
+      "final_answer": "2024-01-09",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_08",
@@ -1273,7 +1347,8 @@
       "tokens": 1814,
       "elapsed_s": 6.7,
       "status": "OK",
-      "final_answer": "2024-01-09"
+      "final_answer": "2024-01-09",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_09",
@@ -1290,7 +1365,8 @@
       "tokens": 1319,
       "elapsed_s": 4.42,
       "status": "OK",
-      "final_answer": "83.72"
+      "final_answer": "83.72",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_09",
@@ -1307,7 +1383,8 @@
       "tokens": 1245,
       "elapsed_s": 3.82,
       "status": "OK",
-      "final_answer": "83.72"
+      "final_answer": "83.72",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_09",
@@ -1324,7 +1401,8 @@
       "tokens": 1253,
       "elapsed_s": 3.61,
       "status": "OK",
-      "final_answer": "83.72"
+      "final_answer": "83.72",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_10",
@@ -1341,7 +1419,8 @@
       "tokens": 1948,
       "elapsed_s": 5.92,
       "status": "OK",
-      "final_answer": "-0.9236043956043958"
+      "final_answer": "-0.9236043956043958",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_10",
@@ -1358,7 +1437,8 @@
       "tokens": 1890,
       "elapsed_s": 5.68,
       "status": "OK",
-      "final_answer": "-0.9236043956043958"
+      "final_answer": "-0.9236043956043958",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_10",
@@ -1375,7 +1455,8 @@
       "tokens": 1928,
       "elapsed_s": 6.13,
       "status": "OK",
-      "final_answer": "-0.9236043956043958"
+      "final_answer": "-0.9236043956043958",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_11",
@@ -1392,7 +1473,8 @@
       "tokens": 1739,
       "elapsed_s": 4.86,
       "status": "OK",
-      "final_answer": "2024-01-11"
+      "final_answer": "2024-01-11",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_11",
@@ -1409,7 +1491,8 @@
       "tokens": 1733,
       "elapsed_s": 4.99,
       "status": "OK",
-      "final_answer": "2024-01-11"
+      "final_answer": "2024-01-11",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_11",
@@ -1426,7 +1509,8 @@
       "tokens": 1745,
       "elapsed_s": 5.69,
       "status": "OK",
-      "final_answer": "2024-01-11"
+      "final_answer": "2024-01-11",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_12",
@@ -1443,7 +1527,8 @@
       "tokens": 1966,
       "elapsed_s": 6.07,
       "status": "OK",
-      "final_answer": "2024-01-04"
+      "final_answer": "2024-01-04",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_12",
@@ -1460,7 +1545,8 @@
       "tokens": 1474,
       "elapsed_s": 4.5,
       "status": "OK",
-      "final_answer": "2024-01-04"
+      "final_answer": "2024-01-04",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_12",
@@ -1477,7 +1563,8 @@
       "tokens": 2000,
       "elapsed_s": 5.21,
       "status": "OK",
-      "final_answer": "2024-01-04"
+      "final_answer": "2024-01-04",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_13",
@@ -1494,7 +1581,8 @@
       "tokens": 1313,
       "elapsed_s": 3.73,
       "status": "OK",
-      "final_answer": "131.72"
+      "final_answer": "131.72",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_13",
@@ -1511,7 +1599,8 @@
       "tokens": 1213,
       "elapsed_s": 3.42,
       "status": "OK",
-      "final_answer": "131.72"
+      "final_answer": "131.72",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_13",
@@ -1528,7 +1617,8 @@
       "tokens": 1313,
       "elapsed_s": 5.43,
       "status": "OK",
-      "final_answer": "131.72"
+      "final_answer": "131.72",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_14",
@@ -1545,7 +1635,8 @@
       "tokens": 1486,
       "elapsed_s": 4.7,
       "status": "OK",
-      "final_answer": "-0.6619230769230771"
+      "final_answer": "-0.6619230769230771",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_14",
@@ -1562,7 +1653,8 @@
       "tokens": 1892,
       "elapsed_s": 5.52,
       "status": "OK",
-      "final_answer": "-0.6619230769230771"
+      "final_answer": "-0.6619230769230771",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_14",
@@ -1579,7 +1671,8 @@
       "tokens": 1420,
       "elapsed_s": 4.39,
       "status": "OK",
-      "final_answer": "-0.6619230769230771"
+      "final_answer": "-0.6619230769230771",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_15",
@@ -1596,7 +1689,8 @@
       "tokens": 1625,
       "elapsed_s": 5.04,
       "status": "OK",
-      "final_answer": "2024-01-09"
+      "final_answer": "2024-01-09",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_15",
@@ -1613,7 +1707,8 @@
       "tokens": 1721,
       "elapsed_s": 4.45,
       "status": "OK",
-      "final_answer": "2024-01-09"
+      "final_answer": "2024-01-09",
+      "stage_v5": "none"
     },
     {
       "task_id": "time_series_15",
@@ -1630,7 +1725,8 @@
       "tokens": 1653,
       "elapsed_s": 4.67,
       "status": "OK",
-      "final_answer": "2024-01-09"
+      "final_answer": "2024-01-09",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_00",
@@ -1647,7 +1743,8 @@
       "tokens": 1655,
       "elapsed_s": 4.6,
       "status": "OK",
-      "final_answer": "22"
+      "final_answer": "22",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_00",
@@ -1664,7 +1761,8 @@
       "tokens": 1889,
       "elapsed_s": 5.15,
       "status": "OK",
-      "final_answer": "22"
+      "final_answer": "22",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_00",
@@ -1681,7 +1779,8 @@
       "tokens": 1635,
       "elapsed_s": 5.58,
       "status": "OK",
-      "final_answer": "22"
+      "final_answer": "22",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_01",
@@ -1698,7 +1797,8 @@
       "tokens": 706,
       "elapsed_s": 2.74,
       "status": "OK",
-      "final_answer": "0 3"
+      "final_answer": "0 3",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_01",
@@ -1715,7 +1815,8 @@
       "tokens": 706,
       "elapsed_s": 2.5,
       "status": "OK",
-      "final_answer": "0 3"
+      "final_answer": "0 3",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_01",
@@ -1732,7 +1833,8 @@
       "tokens": 706,
       "elapsed_s": 5.26,
       "status": "OK",
-      "final_answer": "0 3"
+      "final_answer": "0 3",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_02",
@@ -1749,7 +1851,8 @@
       "tokens": 1944,
       "elapsed_s": 6.07,
       "status": "OK",
-      "final_answer": "0.4642857142857143"
+      "final_answer": "0.4642857142857143",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_02",
@@ -1766,7 +1869,8 @@
       "tokens": 2153,
       "elapsed_s": 6.2,
       "status": "OK",
-      "final_answer": "0.4642857142857143"
+      "final_answer": "0.4642857142857143",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_02",
@@ -1783,7 +1887,8 @@
       "tokens": 2008,
       "elapsed_s": 5.18,
       "status": "OK",
-      "final_answer": "0.4642857142857143"
+      "final_answer": "0.4642857142857143",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_03",
@@ -1800,7 +1905,8 @@
       "tokens": 716,
       "elapsed_s": 3.11,
       "status": "OK",
-      "final_answer": "0 9"
+      "final_answer": "0 9",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "recommendation_03",
@@ -1817,7 +1923,8 @@
       "tokens": 712,
       "elapsed_s": 2.67,
       "status": "OK",
-      "final_answer": "0 9"
+      "final_answer": "0 9",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "recommendation_03",
@@ -1834,7 +1941,8 @@
       "tokens": 668,
       "elapsed_s": 2.37,
       "status": "OK",
-      "final_answer": "0 9"
+      "final_answer": "0 9",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "recommendation_04",
@@ -1851,7 +1959,8 @@
       "tokens": 1719,
       "elapsed_s": 5.08,
       "status": "OK",
-      "final_answer": "18"
+      "final_answer": "18",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_04",
@@ -1868,7 +1977,8 @@
       "tokens": 1893,
       "elapsed_s": 5.36,
       "status": "OK",
-      "final_answer": "18"
+      "final_answer": "18",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_04",
@@ -1885,7 +1995,8 @@
       "tokens": 1650,
       "elapsed_s": 5.09,
       "status": "OK",
-      "final_answer": "18"
+      "final_answer": "18",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_05",
@@ -1902,7 +2013,8 @@
       "tokens": 696,
       "elapsed_s": 2.45,
       "status": "OK",
-      "final_answer": "0 4"
+      "final_answer": "0 4",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "recommendation_05",
@@ -1919,7 +2031,8 @@
       "tokens": 706,
       "elapsed_s": 2.42,
       "status": "OK",
-      "final_answer": "0 4"
+      "final_answer": "0 4",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "recommendation_05",
@@ -1936,7 +2049,8 @@
       "tokens": 706,
       "elapsed_s": 2.84,
       "status": "OK",
-      "final_answer": "0 4"
+      "final_answer": "0 4",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "recommendation_06",
@@ -1953,7 +2067,8 @@
       "tokens": 1962,
       "elapsed_s": 5.33,
       "status": "OK",
-      "final_answer": "0.4375"
+      "final_answer": "0.4375",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_06",
@@ -1970,7 +2085,8 @@
       "tokens": 1932,
       "elapsed_s": 5.0,
       "status": "OK",
-      "final_answer": "0.4375"
+      "final_answer": "0.4375",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_06",
@@ -1987,7 +2103,8 @@
       "tokens": 1957,
       "elapsed_s": 6.0,
       "status": "OK",
-      "final_answer": "0.4375"
+      "final_answer": "0.4375",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_07",
@@ -2004,7 +2121,8 @@
       "tokens": 712,
       "elapsed_s": 2.46,
       "status": "OK",
-      "final_answer": "0 9"
+      "final_answer": "0 9",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "recommendation_07",
@@ -2021,7 +2139,8 @@
       "tokens": 708,
       "elapsed_s": 2.76,
       "status": "OK",
-      "final_answer": "0 9"
+      "final_answer": "0 9",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "recommendation_07",
@@ -2038,7 +2157,8 @@
       "tokens": 677,
       "elapsed_s": 3.17,
       "status": "OK",
-      "final_answer": "0 9"
+      "final_answer": "0 9",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "recommendation_08",
@@ -2055,7 +2175,8 @@
       "tokens": 1710,
       "elapsed_s": 4.85,
       "status": "OK",
-      "final_answer": "14"
+      "final_answer": "14",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_08",
@@ -2072,7 +2193,8 @@
       "tokens": 1698,
       "elapsed_s": 4.66,
       "status": "OK",
-      "final_answer": "14"
+      "final_answer": "14",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_08",
@@ -2089,7 +2211,8 @@
       "tokens": 1758,
       "elapsed_s": 5.28,
       "status": "OK",
-      "final_answer": "14"
+      "final_answer": "14",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_09",
@@ -2106,7 +2229,8 @@
       "tokens": 706,
       "elapsed_s": 2.59,
       "status": "OK",
-      "final_answer": "0 5"
+      "final_answer": "0 5",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "recommendation_09",
@@ -2123,7 +2247,8 @@
       "tokens": 2062,
       "elapsed_s": 6.88,
       "status": "OK",
-      "final_answer": "1 4"
+      "final_answer": "1 4",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_09",
@@ -2140,7 +2265,8 @@
       "tokens": 706,
       "elapsed_s": 2.56,
       "status": "OK",
-      "final_answer": "0 5"
+      "final_answer": "0 5",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "recommendation_10",
@@ -2157,7 +2283,8 @@
       "tokens": 1937,
       "elapsed_s": 5.95,
       "status": "OK",
-      "final_answer": "0.35"
+      "final_answer": "0.35",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_10",
@@ -2174,7 +2301,8 @@
       "tokens": 1939,
       "elapsed_s": 6.46,
       "status": "OK",
-      "final_answer": "0.35"
+      "final_answer": "0.35",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_10",
@@ -2191,7 +2319,8 @@
       "tokens": 2128,
       "elapsed_s": 6.76,
       "status": "OK",
-      "final_answer": "0.35"
+      "final_answer": "0.35",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_11",
@@ -2208,7 +2337,8 @@
       "tokens": 1283,
       "elapsed_s": 6.05,
       "status": "OK",
-      "final_answer": "0 10"
+      "final_answer": "0 10",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "recommendation_11",
@@ -2225,7 +2355,8 @@
       "tokens": 674,
       "elapsed_s": 4.67,
       "status": "OK",
-      "final_answer": "0 10"
+      "final_answer": "0 10",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "recommendation_11",
@@ -2242,7 +2373,8 @@
       "tokens": 1928,
       "elapsed_s": 6.76,
       "status": "OK",
-      "final_answer": "1 5"
+      "final_answer": "1 5",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_12",
@@ -2259,7 +2391,8 @@
       "tokens": 1754,
       "elapsed_s": 4.87,
       "status": "OK",
-      "final_answer": "39"
+      "final_answer": "39",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_12",
@@ -2276,7 +2409,8 @@
       "tokens": 1690,
       "elapsed_s": 6.38,
       "status": "OK",
-      "final_answer": "39"
+      "final_answer": "39",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_12",
@@ -2293,7 +2427,8 @@
       "tokens": 1750,
       "elapsed_s": 4.97,
       "status": "OK",
-      "final_answer": "39"
+      "final_answer": "39",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_13",
@@ -2310,7 +2445,8 @@
       "tokens": 714,
       "elapsed_s": 2.34,
       "status": "OK",
-      "final_answer": "0 3"
+      "final_answer": "0 3",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_13",
@@ -2327,7 +2463,8 @@
       "tokens": 704,
       "elapsed_s": 2.16,
       "status": "OK",
-      "final_answer": "0 3"
+      "final_answer": "0 3",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_13",
@@ -2344,7 +2481,8 @@
       "tokens": 700,
       "elapsed_s": 2.58,
       "status": "OK",
-      "final_answer": "0 3"
+      "final_answer": "0 3",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_14",
@@ -2361,7 +2499,8 @@
       "tokens": 2025,
       "elapsed_s": 5.33,
       "status": "OK",
-      "final_answer": "0.5416666666666666"
+      "final_answer": "0.5416666666666666",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_14",
@@ -2378,7 +2517,8 @@
       "tokens": 2107,
       "elapsed_s": 5.86,
       "status": "OK",
-      "final_answer": "0.5416666666666666"
+      "final_answer": "0.5416666666666666",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_14",
@@ -2395,7 +2535,8 @@
       "tokens": 1968,
       "elapsed_s": 4.98,
       "status": "OK",
-      "final_answer": "0.5416666666666666"
+      "final_answer": "0.5416666666666666",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_15",
@@ -2412,7 +2553,8 @@
       "tokens": 1807,
       "elapsed_s": 4.68,
       "status": "OK",
-      "final_answer": "2 5"
+      "final_answer": "2 5",
+      "stage_v5": "none"
     },
     {
       "task_id": "recommendation_15",
@@ -2429,7 +2571,8 @@
       "tokens": 672,
       "elapsed_s": 3.49,
       "status": "OK",
-      "final_answer": "0 7"
+      "final_answer": "0 7",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "recommendation_15",
@@ -2446,7 +2589,8 @@
       "tokens": 698,
       "elapsed_s": 3.21,
       "status": "OK",
-      "final_answer": "0 7"
+      "final_answer": "0 7",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_00",
@@ -2463,7 +2607,8 @@
       "tokens": 604,
       "elapsed_s": 2.16,
       "status": "OK",
-      "final_answer": "0.9859920319890257"
+      "final_answer": "0.9859920319890257",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_00",
@@ -2480,7 +2625,8 @@
       "tokens": 600,
       "elapsed_s": 2.3,
       "status": "OK",
-      "final_answer": "0.9859920319890257"
+      "final_answer": "0.9859920319890257",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_00",
@@ -2497,7 +2643,8 @@
       "tokens": 600,
       "elapsed_s": 2.31,
       "status": "OK",
-      "final_answer": "0.9859920319890257"
+      "final_answer": "0.9859920319890257",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_01",
@@ -2514,7 +2661,8 @@
       "tokens": 752,
       "elapsed_s": 3.21,
       "status": "OK",
-      "final_answer": "', mean_value, std_value)"
+      "final_answer": "', mean_value, std_value)",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_01",
@@ -2531,7 +2679,8 @@
       "tokens": 740,
       "elapsed_s": 3.37,
       "status": "OK",
-      "final_answer": "', mean_value, std_value)"
+      "final_answer": "', mean_value, std_value)",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_01",
@@ -2548,7 +2697,8 @@
       "tokens": 740,
       "elapsed_s": 2.94,
       "status": "OK",
-      "final_answer": "', mean_value, std_value)"
+      "final_answer": "', mean_value, std_value)",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_02",
@@ -2565,7 +2715,8 @@
       "tokens": 618,
       "elapsed_s": 2.1,
       "status": "OK",
-      "final_answer": "B 7"
+      "final_answer": "B 7",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_02",
@@ -2582,7 +2733,8 @@
       "tokens": 622,
       "elapsed_s": 2.19,
       "status": "OK",
-      "final_answer": "B 7"
+      "final_answer": "B 7",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_02",
@@ -2599,7 +2751,8 @@
       "tokens": 1138,
       "elapsed_s": 4.48,
       "status": "OK",
-      "final_answer": "B 7"
+      "final_answer": "B 7",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_03",
@@ -2616,7 +2769,8 @@
       "tokens": 752,
       "elapsed_s": 2.54,
       "status": "OK",
-      "final_answer": "94.11 0.0"
+      "final_answer": "94.11 0.0",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_03",
@@ -2633,7 +2787,8 @@
       "tokens": 750,
       "elapsed_s": 3.05,
       "status": "OK",
-      "final_answer": "94.11 0.0"
+      "final_answer": "94.11 0.0",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_03",
@@ -2650,7 +2805,8 @@
       "tokens": 750,
       "elapsed_s": 2.54,
       "status": "OK",
-      "final_answer": "94.11 0.0"
+      "final_answer": "94.11 0.0",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_04",
@@ -2667,7 +2823,8 @@
       "tokens": 600,
       "elapsed_s": 2.67,
       "status": "OK",
-      "final_answer": "0.9712972100126799"
+      "final_answer": "0.9712972100126799",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_04",
@@ -2684,7 +2841,8 @@
       "tokens": 600,
       "elapsed_s": 2.54,
       "status": "OK",
-      "final_answer": "0.9712972100126799"
+      "final_answer": "0.9712972100126799",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_04",
@@ -2701,7 +2859,8 @@
       "tokens": 600,
       "elapsed_s": 2.24,
       "status": "OK",
-      "final_answer": "0.9712972100126799"
+      "final_answer": "0.9712972100126799",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_05",
@@ -2718,7 +2877,8 @@
       "tokens": 761,
       "elapsed_s": 3.2,
       "status": "OK",
-      "final_answer": "', mean_value, std_value)"
+      "final_answer": "', mean_value, std_value)",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_05",
@@ -2735,7 +2895,8 @@
       "tokens": 957,
       "elapsed_s": 3.72,
       "status": "OK",
-      "final_answer": "54.96 nan"
+      "final_answer": "54.96 nan",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_05",
@@ -2752,7 +2913,8 @@
       "tokens": 732,
       "elapsed_s": 3.04,
       "status": "OK",
-      "final_answer": "54.96 nan"
+      "final_answer": "54.96 nan",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_06",
@@ -2769,7 +2931,8 @@
       "tokens": 618,
       "elapsed_s": 2.35,
       "status": "OK",
-      "final_answer": "C 4"
+      "final_answer": "C 4",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_06",
@@ -2786,7 +2949,8 @@
       "tokens": 618,
       "elapsed_s": 2.49,
       "status": "OK",
-      "final_answer": "C 4"
+      "final_answer": "C 4",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_06",
@@ -2803,7 +2967,8 @@
       "tokens": 1139,
       "elapsed_s": 3.71,
       "status": "OK",
-      "final_answer": "C 4"
+      "final_answer": "C 4",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_07",
@@ -2820,7 +2985,8 @@
       "tokens": 750,
       "elapsed_s": 2.68,
       "status": "OK",
-      "final_answer": "92.91 0.0"
+      "final_answer": "92.91 0.0",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_07",
@@ -2837,7 +3003,8 @@
       "tokens": 752,
       "elapsed_s": 2.51,
       "status": "OK",
-      "final_answer": "92.91 0.0"
+      "final_answer": "92.91 0.0",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_07",
@@ -2854,7 +3021,8 @@
       "tokens": 756,
       "elapsed_s": 4.29,
       "status": "OK",
-      "final_answer": "92.91 0.0"
+      "final_answer": "92.91 0.0",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_08",
@@ -2871,7 +3039,8 @@
       "tokens": 610,
       "elapsed_s": 2.31,
       "status": "OK",
-      "final_answer": "0.9963567847614448"
+      "final_answer": "0.9963567847614448",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_08",
@@ -2888,7 +3057,8 @@
       "tokens": 604,
       "elapsed_s": 2.44,
       "status": "OK",
-      "final_answer": "0.9963567847614448"
+      "final_answer": "0.9963567847614448",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_08",
@@ -2905,7 +3075,8 @@
       "tokens": 610,
       "elapsed_s": 2.47,
       "status": "OK",
-      "final_answer": "0.9963567847614448"
+      "final_answer": "0.9963567847614448",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_09",
@@ -2922,7 +3093,8 @@
       "tokens": 739,
       "elapsed_s": 2.8,
       "status": "OK",
-      "final_answer": "', mean_value, std_value)"
+      "final_answer": "', mean_value, std_value)",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_09",
@@ -2939,7 +3111,8 @@
       "tokens": 739,
       "elapsed_s": 3.3,
       "status": "OK",
-      "final_answer": "', mean_value, std_value)"
+      "final_answer": "', mean_value, std_value)",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_09",
@@ -2956,7 +3129,8 @@
       "tokens": 739,
       "elapsed_s": 4.8,
       "status": "OK",
-      "final_answer": "', mean_value, std_value)"
+      "final_answer": "', mean_value, std_value)",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_10",
@@ -2973,7 +3147,8 @@
       "tokens": 618,
       "elapsed_s": 2.05,
       "status": "OK",
-      "final_answer": "C 4"
+      "final_answer": "C 4",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_10",
@@ -2990,7 +3165,8 @@
       "tokens": 622,
       "elapsed_s": 2.18,
       "status": "OK",
-      "final_answer": "C 4"
+      "final_answer": "C 4",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_10",
@@ -3007,7 +3183,8 @@
       "tokens": 618,
       "elapsed_s": 2.2,
       "status": "OK",
-      "final_answer": "C 4"
+      "final_answer": "C 4",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_11",
@@ -3024,7 +3201,8 @@
       "tokens": 752,
       "elapsed_s": 2.84,
       "status": "OK",
-      "final_answer": "96.41 0.0"
+      "final_answer": "96.41 0.0",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_11",
@@ -3041,7 +3219,8 @@
       "tokens": 752,
       "elapsed_s": 2.53,
       "status": "OK",
-      "final_answer": "96.41 0.0"
+      "final_answer": "96.41 0.0",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_11",
@@ -3058,7 +3237,8 @@
       "tokens": 752,
       "elapsed_s": 2.52,
       "status": "OK",
-      "final_answer": "96.41 0.0"
+      "final_answer": "96.41 0.0",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_12",
@@ -3075,7 +3255,8 @@
       "tokens": 610,
       "elapsed_s": 2.15,
       "status": "OK",
-      "final_answer": "0.9769682899325098"
+      "final_answer": "0.9769682899325098",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_12",
@@ -3092,7 +3273,8 @@
       "tokens": 606,
       "elapsed_s": 2.14,
       "status": "OK",
-      "final_answer": "0.9769682899325098"
+      "final_answer": "0.9769682899325098",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_12",
@@ -3109,7 +3291,8 @@
       "tokens": 624,
       "elapsed_s": 2.36,
       "status": "OK",
-      "final_answer": "0.9769682899325098"
+      "final_answer": "0.9769682899325098",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_13",
@@ -3126,7 +3309,8 @@
       "tokens": 753,
       "elapsed_s": 3.36,
       "status": "OK",
-      "final_answer": "', mean_value, std_value)"
+      "final_answer": "', mean_value, std_value)",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_13",
@@ -3143,7 +3327,8 @@
       "tokens": 725,
       "elapsed_s": 3.14,
       "status": "OK",
-      "final_answer": "49.23 nan"
+      "final_answer": "49.23 nan",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_13",
@@ -3160,7 +3345,8 @@
       "tokens": 753,
       "elapsed_s": 4.22,
       "status": "OK",
-      "final_answer": "', mean_value, std_value)"
+      "final_answer": "', mean_value, std_value)",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_14",
@@ -3177,7 +3363,8 @@
       "tokens": 618,
       "elapsed_s": 2.23,
       "status": "OK",
-      "final_answer": "B 9"
+      "final_answer": "B 9",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_14",
@@ -3194,7 +3381,8 @@
       "tokens": 618,
       "elapsed_s": 2.27,
       "status": "OK",
-      "final_answer": "B 9"
+      "final_answer": "B 9",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_14",
@@ -3211,7 +3399,8 @@
       "tokens": 618,
       "elapsed_s": 2.73,
       "status": "OK",
-      "final_answer": "B 9"
+      "final_answer": "B 9",
+      "stage_v5": "none"
     },
     {
       "task_id": "statistical_15",
@@ -3228,7 +3417,8 @@
       "tokens": 752,
       "elapsed_s": 2.75,
       "status": "OK",
-      "final_answer": "91.89 0.0"
+      "final_answer": "91.89 0.0",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_15",
@@ -3245,7 +3435,8 @@
       "tokens": 750,
       "elapsed_s": 2.9,
       "status": "OK",
-      "final_answer": "91.89 0.0"
+      "final_answer": "91.89 0.0",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "statistical_15",
@@ -3262,7 +3453,8 @@
       "tokens": 720,
       "elapsed_s": 2.98,
       "status": "OK",
-      "final_answer": "91.89 0.0"
+      "final_answer": "91.89 0.0",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "text_log_00",
@@ -3279,7 +3471,8 @@
       "tokens": 1686,
       "elapsed_s": 5.24,
       "status": "OK",
-      "final_answer": "6"
+      "final_answer": "6",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_00",
@@ -3296,7 +3489,8 @@
       "tokens": 1727,
       "elapsed_s": 4.88,
       "status": "OK",
-      "final_answer": "6"
+      "final_answer": "6",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_00",
@@ -3313,7 +3507,8 @@
       "tokens": 1742,
       "elapsed_s": 6.51,
       "status": "OK",
-      "final_answer": "6"
+      "final_answer": "6",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_01",
@@ -3330,7 +3525,8 @@
       "tokens": 1407,
       "elapsed_s": 3.83,
       "status": "OK",
-      "final_answer": "DEBUG 5"
+      "final_answer": "DEBUG 5",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_01",
@@ -3347,7 +3543,8 @@
       "tokens": 1393,
       "elapsed_s": 4.29,
       "status": "OK",
-      "final_answer": "DEBUG 5"
+      "final_answer": "DEBUG 5",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_01",
@@ -3364,7 +3561,8 @@
       "tokens": 1320,
       "elapsed_s": 3.35,
       "status": "OK",
-      "final_answer": "DEBUG 5"
+      "final_answer": "DEBUG 5",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_02",
@@ -3381,7 +3579,8 @@
       "tokens": 768,
       "elapsed_s": 2.59,
       "status": "OK",
-      "final_answer": "user_4 9"
+      "final_answer": "user_4 9",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_02",
@@ -3398,7 +3597,8 @@
       "tokens": 760,
       "elapsed_s": 2.44,
       "status": "OK",
-      "final_answer": "user_4 9"
+      "final_answer": "user_4 9",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_02",
@@ -3415,7 +3615,8 @@
       "tokens": 774,
       "elapsed_s": 2.7,
       "status": "OK",
-      "final_answer": "user_4 9"
+      "final_answer": "user_4 9",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_03",
@@ -3432,7 +3633,8 @@
       "tokens": 1514,
       "elapsed_s": 4.13,
       "status": "OK",
-      "final_answer": "0 1"
+      "final_answer": "0 1",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "text_log_03",
@@ -3449,7 +3651,8 @@
       "tokens": 1594,
       "elapsed_s": 4.11,
       "status": "OK",
-      "final_answer": "0 1"
+      "final_answer": "0 1",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "text_log_03",
@@ -3466,7 +3669,8 @@
       "tokens": 1449,
       "elapsed_s": 3.63,
       "status": "OK",
-      "final_answer": "0 1"
+      "final_answer": "0 1",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "text_log_04",
@@ -3483,7 +3687,8 @@
       "tokens": 1671,
       "elapsed_s": 5.38,
       "status": "OK",
-      "final_answer": "5"
+      "final_answer": "5",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_04",
@@ -3500,7 +3705,8 @@
       "tokens": 1669,
       "elapsed_s": 4.23,
       "status": "OK",
-      "final_answer": "5"
+      "final_answer": "5",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_04",
@@ -3517,7 +3723,8 @@
       "tokens": 1746,
       "elapsed_s": 4.73,
       "status": "OK",
-      "final_answer": "5"
+      "final_answer": "5",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_05",
@@ -3534,7 +3741,8 @@
       "tokens": 1387,
       "elapsed_s": 4.0,
       "status": "OK",
-      "final_answer": "DEBUG 10"
+      "final_answer": "DEBUG 10",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_05",
@@ -3551,7 +3759,8 @@
       "tokens": 1403,
       "elapsed_s": 3.44,
       "status": "OK",
-      "final_answer": "DEBUG 10"
+      "final_answer": "DEBUG 10",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_05",
@@ -3568,7 +3777,8 @@
       "tokens": 1371,
       "elapsed_s": 4.1,
       "status": "OK",
-      "final_answer": "DEBUG 10"
+      "final_answer": "DEBUG 10",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_06",
@@ -3585,7 +3795,8 @@
       "tokens": 782,
       "elapsed_s": 2.84,
       "status": "OK",
-      "final_answer": "user_3 8"
+      "final_answer": "user_3 8",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_06",
@@ -3602,7 +3813,8 @@
       "tokens": 760,
       "elapsed_s": 2.53,
       "status": "OK",
-      "final_answer": "user_3 8"
+      "final_answer": "user_3 8",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_06",
@@ -3619,7 +3831,8 @@
       "tokens": 774,
       "elapsed_s": 2.62,
       "status": "OK",
-      "final_answer": "user_3 8"
+      "final_answer": "user_3 8",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_07",
@@ -3636,7 +3849,8 @@
       "tokens": 2003,
       "elapsed_s": 5.66,
       "status": "OK",
-      "final_answer": "0 1"
+      "final_answer": "0 1",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "text_log_07",
@@ -3653,7 +3867,8 @@
       "tokens": 1507,
       "elapsed_s": 4.89,
       "status": "OK",
-      "final_answer": "0 1"
+      "final_answer": "0 1",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "text_log_07",
@@ -3670,7 +3885,8 @@
       "tokens": 1455,
       "elapsed_s": 3.79,
       "status": "OK",
-      "final_answer": "0 1"
+      "final_answer": "0 1",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "text_log_08",
@@ -3687,7 +3903,8 @@
       "tokens": 1638,
       "elapsed_s": 5.37,
       "status": "OK",
-      "final_answer": "6"
+      "final_answer": "6",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_08",
@@ -3704,7 +3921,8 @@
       "tokens": 1750,
       "elapsed_s": 4.77,
       "status": "OK",
-      "final_answer": "6"
+      "final_answer": "6",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_08",
@@ -3721,7 +3939,8 @@
       "tokens": 1686,
       "elapsed_s": 4.51,
       "status": "OK",
-      "final_answer": "6"
+      "final_answer": "6",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_09",
@@ -3738,7 +3957,8 @@
       "tokens": 1404,
       "elapsed_s": 5.25,
       "status": "OK",
-      "final_answer": "ERROR 8"
+      "final_answer": "ERROR 8",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_09",
@@ -3755,7 +3975,8 @@
       "tokens": 1834,
       "elapsed_s": 5.44,
       "status": "OK",
-      "final_answer": "ERROR 8"
+      "final_answer": "ERROR 8",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_09",
@@ -3772,7 +3993,8 @@
       "tokens": 1393,
       "elapsed_s": 3.48,
       "status": "OK",
-      "final_answer": "ERROR 8"
+      "final_answer": "ERROR 8",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_10",
@@ -3789,7 +4011,8 @@
       "tokens": 760,
       "elapsed_s": 2.75,
       "status": "OK",
-      "final_answer": "user_1 5"
+      "final_answer": "user_1 5",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_10",
@@ -3806,7 +4029,8 @@
       "tokens": 776,
       "elapsed_s": 2.56,
       "status": "OK",
-      "final_answer": "user_1 5"
+      "final_answer": "user_1 5",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_10",
@@ -3823,7 +4047,8 @@
       "tokens": 760,
       "elapsed_s": 3.81,
       "status": "OK",
-      "final_answer": "user_1 5"
+      "final_answer": "user_1 5",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_11",
@@ -3840,7 +4065,8 @@
       "tokens": 776,
       "elapsed_s": 2.68,
       "status": "OK",
-      "final_answer": "0 1"
+      "final_answer": "0 1",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "text_log_11",
@@ -3857,7 +4083,8 @@
       "tokens": 1492,
       "elapsed_s": 4.03,
       "status": "OK",
-      "final_answer": "0 1"
+      "final_answer": "0 1",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "text_log_11",
@@ -3874,7 +4101,8 @@
       "tokens": 1492,
       "elapsed_s": 7.31,
       "status": "OK",
-      "final_answer": "0 1"
+      "final_answer": "0 1",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "text_log_12",
@@ -3891,7 +4119,8 @@
       "tokens": 1746,
       "elapsed_s": 4.75,
       "status": "OK",
-      "final_answer": "11"
+      "final_answer": "11",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_12",
@@ -3908,7 +4137,8 @@
       "tokens": 1753,
       "elapsed_s": 5.63,
       "status": "OK",
-      "final_answer": "11"
+      "final_answer": "11",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_12",
@@ -3925,7 +4155,8 @@
       "tokens": 1741,
       "elapsed_s": 4.83,
       "status": "OK",
-      "final_answer": "11"
+      "final_answer": "11",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_13",
@@ -3942,7 +4173,8 @@
       "tokens": 1387,
       "elapsed_s": 3.55,
       "status": "OK",
-      "final_answer": "DEBUG 8"
+      "final_answer": "DEBUG 8",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_13",
@@ -3959,7 +4191,8 @@
       "tokens": 1388,
       "elapsed_s": 4.3,
       "status": "OK",
-      "final_answer": "DEBUG 8"
+      "final_answer": "DEBUG 8",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_13",
@@ -3976,7 +4209,8 @@
       "tokens": 1387,
       "elapsed_s": 4.03,
       "status": "OK",
-      "final_answer": "DEBUG 8"
+      "final_answer": "DEBUG 8",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_14",
@@ -3993,7 +4227,8 @@
       "tokens": 760,
       "elapsed_s": 2.76,
       "status": "OK",
-      "final_answer": "user_1 4"
+      "final_answer": "user_1 4",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_14",
@@ -4010,7 +4245,8 @@
       "tokens": 758,
       "elapsed_s": 3.81,
       "status": "OK",
-      "final_answer": "user_1 4"
+      "final_answer": "user_1 4",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_14",
@@ -4027,7 +4263,8 @@
       "tokens": 760,
       "elapsed_s": 2.5,
       "status": "OK",
-      "final_answer": "user_1 4"
+      "final_answer": "user_1 4",
+      "stage_v5": "none"
     },
     {
       "task_id": "text_log_15",
@@ -4044,7 +4281,8 @@
       "tokens": 1522,
       "elapsed_s": 4.02,
       "status": "OK",
-      "final_answer": "0 1"
+      "final_answer": "0 1",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "text_log_15",
@@ -4061,7 +4299,8 @@
       "tokens": 2012,
       "elapsed_s": 6.1,
       "status": "OK",
-      "final_answer": "0 1"
+      "final_answer": "0 1",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "text_log_15",
@@ -4078,7 +4317,8 @@
       "tokens": 1455,
       "elapsed_s": 3.67,
       "status": "OK",
-      "final_answer": "0 1"
+      "final_answer": "0 1",
+      "stage_v5": "output_mismatch"
     },
     {
       "task_id": "dsbench_00000001_question6",
@@ -4095,7 +4335,8 @@
       "tokens": 1148,
       "elapsed_s": 4.38,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question6",
@@ -4112,7 +4353,8 @@
       "tokens": 1059,
       "elapsed_s": 3.07,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question6",
@@ -4129,7 +4371,8 @@
       "tokens": 1148,
       "elapsed_s": 2.97,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question7",
@@ -4146,7 +4389,8 @@
       "tokens": 1167,
       "elapsed_s": 3.58,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question7",
@@ -4163,7 +4407,8 @@
       "tokens": 1059,
       "elapsed_s": 3.35,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question7",
@@ -4180,7 +4425,8 @@
       "tokens": 1059,
       "elapsed_s": 2.84,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question9",
@@ -4197,7 +4443,8 @@
       "tokens": 1143,
       "elapsed_s": 3.45,
       "status": "OK",
-      "final_answer": "A"
+      "final_answer": "A",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question9",
@@ -4214,7 +4461,8 @@
       "tokens": 1155,
       "elapsed_s": 3.35,
       "status": "OK",
-      "final_answer": "A"
+      "final_answer": "A",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question9",
@@ -4231,7 +4479,8 @@
       "tokens": 1122,
       "elapsed_s": 3.14,
       "status": "OK",
-      "final_answer": "A"
+      "final_answer": "A",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question11",
@@ -4248,7 +4497,8 @@
       "tokens": 1110,
       "elapsed_s": 3.32,
       "status": "OK",
-      "final_answer": "C"
+      "final_answer": "C",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question11",
@@ -4265,7 +4515,8 @@
       "tokens": 1138,
       "elapsed_s": 3.51,
       "status": "OK",
-      "final_answer": "C"
+      "final_answer": "C",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question11",
@@ -4282,7 +4533,8 @@
       "tokens": 1166,
       "elapsed_s": 3.26,
       "status": "OK",
-      "final_answer": "C"
+      "final_answer": "C",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question12",
@@ -4299,7 +4551,8 @@
       "tokens": 1162,
       "elapsed_s": 3.25,
       "status": "OK",
-      "final_answer": "E"
+      "final_answer": "E",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question12",
@@ -4316,7 +4569,8 @@
       "tokens": 1059,
       "elapsed_s": 3.14,
       "status": "OK",
-      "final_answer": "E"
+      "final_answer": "E",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question12",
@@ -4333,7 +4587,8 @@
       "tokens": 1171,
       "elapsed_s": 3.26,
       "status": "OK",
-      "final_answer": "E"
+      "final_answer": "E",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question14",
@@ -4350,7 +4605,8 @@
       "tokens": 1190,
       "elapsed_s": 3.54,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question14",
@@ -4367,7 +4623,8 @@
       "tokens": 1059,
       "elapsed_s": 2.97,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question14",
@@ -4384,7 +4641,8 @@
       "tokens": 1163,
       "elapsed_s": 3.88,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question15",
@@ -4401,7 +4659,8 @@
       "tokens": 1059,
       "elapsed_s": 3.07,
       "status": "OK",
-      "final_answer": "A"
+      "final_answer": "A",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question15",
@@ -4418,7 +4677,8 @@
       "tokens": 1155,
       "elapsed_s": 3.16,
       "status": "OK",
-      "final_answer": "A"
+      "final_answer": "A",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000001_question15",
@@ -4435,7 +4695,8 @@
       "tokens": 1157,
       "elapsed_s": 3.35,
       "status": "OK",
-      "final_answer": "A"
+      "final_answer": "A",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question1",
@@ -4452,7 +4713,8 @@
       "tokens": 1542,
       "elapsed_s": 4.22,
       "status": "OK",
-      "final_answer": "C"
+      "final_answer": "C",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question1",
@@ -4469,7 +4731,8 @@
       "tokens": 1111,
       "elapsed_s": 4.14,
       "status": "OK",
-      "final_answer": "C"
+      "final_answer": "C",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question1",
@@ -4486,7 +4749,8 @@
       "tokens": 1538,
       "elapsed_s": 3.88,
       "status": "OK",
-      "final_answer": "C"
+      "final_answer": "C",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question2",
@@ -4503,7 +4767,8 @@
       "tokens": 1078,
       "elapsed_s": 2.96,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question2",
@@ -4520,7 +4785,8 @@
       "tokens": 1082,
       "elapsed_s": 3.35,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question2",
@@ -4537,7 +4803,8 @@
       "tokens": 1082,
       "elapsed_s": 3.2,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question3",
@@ -4554,7 +4821,8 @@
       "tokens": 1187,
       "elapsed_s": 3.7,
       "status": "OK",
-      "final_answer": "A"
+      "final_answer": "A",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question3",
@@ -4571,7 +4839,8 @@
       "tokens": 1169,
       "elapsed_s": 3.43,
       "status": "OK",
-      "final_answer": "A"
+      "final_answer": "A",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question3",
@@ -4588,7 +4857,8 @@
       "tokens": 1175,
       "elapsed_s": 3.75,
       "status": "OK",
-      "final_answer": "A"
+      "final_answer": "A",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question4",
@@ -4605,7 +4875,8 @@
       "tokens": 1119,
       "elapsed_s": 3.4,
       "status": "OK",
-      "final_answer": "C"
+      "final_answer": "C",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question4",
@@ -4622,7 +4893,8 @@
       "tokens": 1184,
       "elapsed_s": 4.32,
       "status": "OK",
-      "final_answer": "C"
+      "final_answer": "C",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question4",
@@ -4639,7 +4911,8 @@
       "tokens": 1126,
       "elapsed_s": 3.62,
       "status": "OK",
-      "final_answer": "C"
+      "final_answer": "C",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question5",
@@ -4656,7 +4929,8 @@
       "tokens": 1164,
       "elapsed_s": 3.74,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question5",
@@ -4673,7 +4947,8 @@
       "tokens": 1166,
       "elapsed_s": 3.45,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question5",
@@ -4690,7 +4965,8 @@
       "tokens": 1082,
       "elapsed_s": 3.16,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question6",
@@ -4707,7 +4983,8 @@
       "tokens": 1165,
       "elapsed_s": 3.59,
       "status": "OK",
-      "final_answer": "C"
+      "final_answer": "C",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question6",
@@ -4724,7 +5001,8 @@
       "tokens": 1159,
       "elapsed_s": 3.73,
       "status": "OK",
-      "final_answer": "C"
+      "final_answer": "C",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question6",
@@ -4741,7 +5019,8 @@
       "tokens": 1538,
       "elapsed_s": 4.32,
       "status": "OK",
-      "final_answer": "C"
+      "final_answer": "C",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question7",
@@ -4758,7 +5037,8 @@
       "tokens": 1539,
       "elapsed_s": 4.79,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question7",
@@ -4775,7 +5055,8 @@
       "tokens": 1181,
       "elapsed_s": 3.28,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question7",
@@ -4792,7 +5073,8 @@
       "tokens": 1168,
       "elapsed_s": 3.24,
       "status": "OK",
-      "final_answer": "D"
+      "final_answer": "D",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question8",
@@ -4809,7 +5091,8 @@
       "tokens": 1163,
       "elapsed_s": 3.65,
       "status": "OK",
-      "final_answer": "C"
+      "final_answer": "C",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question8",
@@ -4826,7 +5109,8 @@
       "tokens": 1176,
       "elapsed_s": 3.71,
       "status": "OK",
-      "final_answer": "C"
+      "final_answer": "C",
+      "stage_v5": "none"
     },
     {
       "task_id": "dsbench_00000002_question8",
@@ -4843,7 +5127,8 @@
       "tokens": 1143,
       "elapsed_s": 3.66,
       "status": "OK",
-      "final_answer": "C"
+      "final_answer": "C",
+      "stage_v5": "none"
     }
   ],
   "failure_metrics": {

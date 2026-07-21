@@ -5,79 +5,63 @@
 For each failed trace, **independently** assign three labels:
 
 1. **is_silent**: `True` (code ran without error but answer is wrong) | `False` (code crashed)
-2. **stage**: `interpretation` | `execution` | `planning`
-3. **subcategory**: specific failure type (see below)
+2. **stage**: One of five stages (see below)
+3. **subcategory**: Specific failure type (see below)
 
-## Taxonomy
+## Five-Stage Taxonomy
+
+Stages are defined by **where the error is first detectable**, making them mutually exclusive.
 
 ### Silent failures (is_silent = True)
 
-- **interpretation**: Code executed successfully but the agent produced a wrong answer.
-  - `wrong_aggregation`: Used wrong function (e.g., `.count()` instead of `.sum()`)
-  - `wrong_column`: Selected the wrong column or field
-  `misread_output`: Misinterpreted the execution output
+- **output_mismatch**: Code executed successfully but the agent extracted, computed, or reported a wrong answer.
+  - `misread_output`: Misinterpreted the execution output
   - `hallucinated_answer`: Answer not supported by code output
   - `no_answer_printed`: Code ran but no ANSWER was extracted
   - `type_confusion`: Mixed up data types (e.g., string vs numeric)
 
+- **answer_error**: Code runs and produces a result, but the result itself is wrong relative to ground truth.
+  - `wrong_aggregation`: Used wrong function (e.g., `.count()` instead of `.sum()`)
+  - `wrong_result`: Correct operation but wrong result due to data issues
+  - `incomplete_analysis`: Analysis is incomplete or partial
+
 ### Loud failures (is_silent = False)
 
-- **execution**: Code raised an exception.
+- **runtime**: Code raised an exception.
   - `runtime_error`: General runtime exception
   - `key_error`: KeyError (wrong column name)
   - `type_error`: TypeError (incompatible operations)
   - `security_block`: Sandbox blocked the operation
 
-### Planning failures
+### Planning failures (is_silent varies)
 
-- **planning**: Agent chose the wrong analytical approach.
-  - `wrong_operation`: Selected wrong statistical operation
+- **analytical_plan**: Agent chose the wrong analytical approach.
+  - `wrong_operation_plan`: Selected wrong statistical operation
   - `temporal_leakage`: Used future data in time-series analysis
+
+### Code generation failures (is_silent varies)
+
+- **code_generation**: Agent wrote code that embodies a wrong operation.
+  - `wrong_column`: Selected the wrong column or field
+  - `wrong_aggregation_code`: Code uses wrong aggregation function
+
+## Disambiguation Rule
+
+The classifier assigns the **first** stage at which the error becomes detectable:
+
+- If the code uses the **wrong operation** (e.g., `.count()` instead of `.sum()`), it is **code_generation** — the error is detectable at code-writing time.
+- If the code uses the **correct operation** but the result is wrong due to data issues, it is **answer_error**.
+- If the code and result are **correct** but the agent **misreports** the final answer, it is **output_mismatch**.
+- If the code **crashes**, it is **runtime** — regardless of whether the approach was also wrong.
 
 ## Rules
 
 1. **Annotate INDEPENDENTLY** — do not discuss with other annotators.
 2. **Do NOT look at the system labels** — they are hidden and should not influence you.
-3. If `final_answer` is `None` or empty, it usually means **execution** (loud) failure.
-4. If `final_answer` has a value but it doesn't match `gt_answer`, it usually means **interpretation** (silent) failure.
-5. If the code crashes (stderr contains traceback/exception), it is **execution** (loud).
-6. If the code runs (no exception) but the answer is wrong, it is **interpretation** (silent).
-7. If you are unsure between two categories, choose the one that best reflects **where the error first occurs**.
-8. Use the `notes` field to explain ambiguous cases.
-
-## Example
-
-### Example 1: Silent failure
-
-```
-Task: What is the average sepal_length for each species?
-Code: df.groupby('species')['sepal_length'].count()  # WRONG: count not mean
-Output: setosa 50  # code ran, but wrong answer
-Answer: setosa 50
-GT: setosa 5.006
-
-Annotation:
-  is_silent: True
-  stage: interpretation
-  subcategory: wrong_aggregation
-  notes: "Used .count() instead of .mean()"
-```
-
-### Example 2: Loud failure
-
-```
-Task: What is the survival rate on Titanic?
-Code: df['survived'].mean()  # column name is 'Survived' not 'survived'
-Output: KeyError: 'survived'
-Answer: None
-GT: 0.384
-
-Annotation:
-  is_silent: False
-  stage: execution
-  subcategory: key_error
-  notes: "Column name case mismatch"
-```
+3. If `final_answer` is `None` or empty, it usually means **runtime** (loud) failure.
+4. If `final_answer` has a value but doesn't match `gt_answer`, it is a silent failure — decide between **output_mismatch**, **answer_error**, and **code_generation**.
+5. If the code crashes (stderr contains traceback/exception), it is **runtime** (loud).
+6. Use the `notes` field to explain ambiguous cases.
 
 ## Output Format
 
@@ -85,9 +69,9 @@ For each trace, fill in:
 
 ```json
 {
-  "stage": "interpretation|execution|planning",
+  "stage": "output_mismatch|answer_error|runtime|analytical_plan|code_generation",
   "is_silent": "True|False",
-  "subcategory": "wrong_aggregation|key_error|...",
+  "subcategory": "misread_output|wrong_aggregation|runtime_error|...",
   "notes": "brief explanation"
 }
 ```
