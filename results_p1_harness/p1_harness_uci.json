@@ -5576,6 +5576,58 @@
       "tokens": 0,
       "elapsed": 38.24687719345093,
       "status": "OK"
+    },
+    {
+      "task_id": "uci_titanic_survival_rate",
+      "rep": 0,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 36.95787191390991,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_titanic_survival_rate",
+      "rep": 1,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 95.10762643814087,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_titanic_survival_rate",
+      "rep": 2,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 80.03861951828003,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_titanic_survival_by_class",
+      "rep": 0,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": false,
+      "failure_stage": "output_mismatch",
+      "is_silent": true,
+      "tokens": 0,
+      "elapsed": 54.3901801109314,
+      "status": "OK"
     }
   ]
 }
