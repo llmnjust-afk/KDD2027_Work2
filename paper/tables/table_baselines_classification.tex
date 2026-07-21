@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Baseline classifiers for failure-stage classification (binary: interpretation vs.\ execution). The silent heuristic (using the \texttt{is\_silent} field) achieves 80.3\% accuracy, establishing a non-trivial baseline for future work. Train/dev/test split is by task ID (198/42/43 tasks) to prevent leakage.}
+\label{tab:baselines-classification}
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Baseline & Accuracy (\%) & Description \\
+\midrule
+Majority (interpretation) & 61.6 & Always predict majority class \\
+Silent heuristic & \textbf{80.3} & Silent $\to$ interpretation; loud $\to$ execution \\
+Token threshold & 55.2 & tokens $<$ 500 $\to$ execution; else interpretation \\
+\bottomrule
+\end{tabular}
+\end{table}
