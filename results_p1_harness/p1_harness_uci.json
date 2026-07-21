@@ -5628,6 +5628,71 @@
       "tokens": 0,
       "elapsed": 54.3901801109314,
       "status": "OK"
+    },
+    {
+      "task_id": "uci_titanic_survival_by_class",
+      "rep": 1,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": false,
+      "failure_stage": "output_mismatch",
+      "is_silent": true,
+      "tokens": 0,
+      "elapsed": 67.32406520843506,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_titanic_survival_by_class",
+      "rep": 2,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 72.89714169502258,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_titanic_avg_fare",
+      "rep": 0,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 57.75318789482117,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_titanic_avg_fare",
+      "rep": 1,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 50.346917152404785,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_titanic_avg_fare",
+      "rep": 2,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 38.798540353775024,
+      "status": "OK"
     }
   ]
 }
