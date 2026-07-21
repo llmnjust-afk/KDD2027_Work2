@@ -5693,6 +5693,71 @@
       "tokens": 0,
       "elapsed": 38.798540353775024,
       "status": "OK"
+    },
+    {
+      "task_id": "uci_titanic_common_port",
+      "rep": 0,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 108.20830011367798,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_titanic_common_port",
+      "rep": 1,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 68.97897124290466,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_titanic_common_port",
+      "rep": 2,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 85.08608222007751,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_titanic_passenger_count",
+      "rep": 0,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 54.52946734428406,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_titanic_passenger_count",
+      "rep": 1,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 30.342013835906982,
+      "status": "OK"
     }
   ]
 }

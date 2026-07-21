@@ -1943,6 +1943,54 @@
       "elapsed": 12.617230653762817,
       "status": "OK",
       "critique": ""
+    },
+    {
+      "task_id": "time_series_10",
+      "model": "deepseek-v3",
+      "condition": "c1_nofeedback",
+      "original_was_silent": "True",
+      "correct": true,
+      "is_silent": false,
+      "failure_stage": "output_mismatch",
+      "elapsed": 128.63505458831787,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "time_series_10",
+      "model": "deepseek-v3",
+      "condition": "c2_generic",
+      "original_was_silent": "True",
+      "correct": true,
+      "is_silent": false,
+      "failure_stage": "output_mismatch",
+      "elapsed": 109.7484941482544,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "time_series_10",
+      "model": "deepseek-v3",
+      "condition": "c3_runtime",
+      "original_was_silent": "True",
+      "correct": true,
+      "is_silent": false,
+      "failure_stage": "output_mismatch",
+      "elapsed": 69.24085998535156,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "time_series_10",
+      "model": "deepseek-v3",
+      "condition": "c4_unittest",
+      "original_was_silent": "True",
+      "correct": true,
+      "is_silent": false,
+      "failure_stage": "output_mismatch",
+      "elapsed": 90.67330431938171,
+      "status": "OK",
+      "critique": ""
     }
   ]
 }
