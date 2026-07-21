@@ -65,7 +65,7 @@ This zero-recovery finding has a strong practical implication: in a multi-step p
 \label{fig:propdepth-model}
 \end{figure}
 
-We caution that zero propagation depth has two possible interpretations: (1) the failure was immediately detected by the agent (a loud failure at depth 0), or (2) the trace terminated early due to infrastructure failures (API errors, parse failures, or empty responses), leaving no steps to propagate through. Our enriched manifest (\texttt{manifest\_v2.csv}) distinguishes these cases via the \texttt{is\_infra\_failure} field. Among valid (non-infrastructure) failures, GPT-4o's longer propagation reflects its tendency to continue reasoning on a wrong intermediate result rather than crashing, making the failure harder to localise. In contrast, DeepSeek-V3's valid failures are concentrated at depth 0, meaning the error manifests in the final answer without intermediate propagation.
+We caution that zero propagation depth has two possible interpretations: (1) the failure was immediately detected by the agent (a loud failure at depth 0), or (2) the trace terminated early due to infrastructure failures (API errors, parse failures, or empty responses), leaving no steps to propagate through. Our enriched manifest (\texttt{manifest\_v3.csv}) distinguishes these cases via the \texttt{is\_infra\_failure} field. Among valid (non-infrastructure) failures, GPT-4o's longer propagation reflects its tendency to continue reasoning on a wrong intermediate result rather than crashing, making the failure harder to localise. In contrast, DeepSeek-V3's valid failures are concentrated at depth 0, meaning the error manifests in the final answer without intermediate propagation.
 
 \subsection{Result 6: Oracle-Guided Repair}
 \label{sec:res-causal}

@@ -1,7 +1,7 @@
 \section{Annotation Protocol for Inter-Rater Reliability}
 \label{app:annotation}
 
-We provide a 100-trace annotation set sampled stratified by model from all 3{,}940 failed traces. $\geq 3$ annotators independently label each trace with (stage, category, is\_silent). Cohen's $\kappa$ is computed pairwise and Fleiss' $\kappa$ across all annotators on the stage label. The annotation guide, JSON form, and CSV form are released with the code. Target $\kappa \geq 0.7$. (Current LLM-as-judge $\kappa = 0.435$; human annotation is pending.)
+We provide a 47-trace annotation set sampled stratified by model from all 3{,}940 failed traces. $\geq 3$ annotators independently label each trace with (stage, category, is\_silent). Cohen's $\kappa$ is computed pairwise and Fleiss' $\kappa$ across all annotators on the stage label. The annotation guide, JSON form, and CSV form are released with the code. Target $\kappa \geq 0.7$. (Current LLM-as-judge $\kappa = 0.435$; human annotation is pending.)
 
 \section{Harness Ablation Details}
 \label{app:harness}
@@ -23,5 +23,5 @@ All experiments use deterministic data generation (fixed seeds for synthetic tas
 \section{Data Availability}
 \label{app:data-avail}
 
-All code, data, and traces are publicly available at \url{https://github.com/llmnjust-afk/KDD2027_Work2}. The repository includes: (1) the full AgentFail framework source code; (2) the enriched manifest (\texttt{manifest\_v2.csv}) with 18 fields and 5{,}984 runs, of which 3{,}602 are valid runs with automatically generated diagnostic labels; (3) the 47-trace annotation set with full Thought/Code/Output data; (4) the MockLLM backend for zero-cost reproduction; (5) all table-generation scripts with assertion checks; (6) \texttt{requirements.txt} for dependency pinning. The synthetic task generators are self-contained. UCI datasets are downloaded at runtime from public repositories. DSBench tasks require a separate download from~\citep{jing2024dsbench}. Raw LLM responses are not redistributed.
+All code, data, and traces are publicly available at \url{https://github.com/llmnjust-afk/KDD2027_Work2}. The repository includes: (1) the full AgentFail framework source code; (2) the enriched manifest (\texttt{manifest\_v3.csv}) with 30 fields and 5{,}984 runs, of which 3{,}602 are valid runs with automatically generated diagnostic labels; (3) the 47-trace annotation set with full Thought/Code/Output data; (4) the MockLLM backend for zero-cost reproduction; (5) all table-generation scripts with assertion checks; (6) \texttt{requirements.txt} for dependency pinning. The synthetic task generators are self-contained. UCI datasets are downloaded at runtime from public repositories. DSBench tasks require a separate download from~\citep{jing2024dsbench}. Raw LLM responses are not redistributed.
 
