@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.7.4)  21 JUL 2026 15:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.7.4)  21 JUL 2026 15:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1486,12 +1486,8 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 5.5pt on input line 13.
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
 (Font)              scaled to size 7.0pt on input line 13.
-
-Underfull \vbox (badness 1817) has occurred while \output is active []
-
-
-(./tables/table_comprehensive.tex) (./tables/table_main_results.tex)
-(./tables/table_null_model.tex)
+ (./tables/table_comprehensive.tex)
+(./tables/table_main_results.tex) (./tables/table_null_model.tex)
 <figures/bifurcation.pdf, id=333, 389.57121pt x 245.15857pt>
 File: figures/bifurcation.pdf Graphic file (type pdf)
 <use figures/bifurcation.pdf>
@@ -1502,7 +1498,7 @@ Package pdftex.def Info: figures/bifurcation.pdf  used on input line 39.
 Class acmart Warning: A possible image without description on input line 42.
 
 [4.4]
-<figures/propdepth_by_model.pdf, id=345, 642.93024pt x 223.97661pt>
+<figures/propdepth_by_model.pdf, id=346, 642.93024pt x 223.97661pt>
 File: figures/propdepth_by_model.pdf Graphic file (type pdf)
 <use figures/propdepth_by_model.pdf>
 Package pdftex.def Info: figures/propdepth_by_model.pdf  used on input line 63.
@@ -1512,14 +1508,15 @@ Package pdftex.def Info: figures/propdepth_by_model.pdf  used on input line 63.
 
 Class acmart Warning: A possible image without description on input line 66.
 
-[5.5 <./figures/bifurcation.pdf>]
+
 Overfull \hbox (19.40681pt too wide) in paragraph at lines 68--69
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) (\T1/zi4/m/n/9 manifest_v3.csv\T1/LinuxLibe
 rtineT-TLF/m/n/9 (-20) ) dis-tin-guishes these cases via the \T1/zi4/m/n/9 is_i
 nfra_failure
  []
 
-(./tables/table_oracle_repair.tex) (./tables/table_verifier.tex
+[5.5 <./figures/bifurcation.pdf>] (./tables/table_oracle_repair.tex)
+(./tables/table_verifier.tex
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 (Font)              scaled to size 8.0pt on input line 11.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
@@ -1537,7 +1534,7 @@ Overfull \hbox (5.97824pt too wide) in paragraph at lines 84--85
 strongest model (DeepSeek-
  []
 
-<figures/verifier_ablation.pdf, id=401, 389.6923pt x 245.11781pt>
+<figures/verifier_ablation.pdf, id=402, 389.6923pt x 245.11781pt>
 File: figures/verifier_ablation.pdf Graphic file (type pdf)
 <use figures/verifier_ablation.pdf>
 Package pdftex.def Info: figures/verifier_ablation.pdf  used on input line 88.
@@ -1545,7 +1542,7 @@ Package pdftex.def Info: figures/verifier_ablation.pdf  used on input line 88.
 
 Class acmart Warning: A possible image without description on input line 91.
 
-<figures/token_economics.pdf, id=402, 389.52034pt x 245.15857pt>
+<figures/token_economics.pdf, id=403, 389.52034pt x 245.15857pt>
 File: figures/token_economics.pdf Graphic file (type pdf)
 <use figures/token_economics.pdf>
 Package pdftex.def Info: figures/token_economics.pdf  used on input line 98.
@@ -1554,17 +1551,19 @@ Package pdftex.def Info: figures/token_economics.pdf  used on input line 98.
 Class acmart Warning: A possible image without description on input line 101.
 
 [6.6 <./figures/propdepth_by_model.pdf> <./figures/verifier_ablation.pdf>]
-(./tables/table_baselines_classification.tex
-LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 9.0pt on input line 3.
+Overfull \hbox (24.19606pt too wide) in paragraph at lines 140--141
+\T1/LinuxLibertineT-TLF/m/n/9 (-20) dict the fail-ure stage from five classes: 
+{an-a-lyt-i-cal_plan, code_generation,
+ []
 
-Overfull \hbox (70.62833pt too wide) in paragraph at lines 6--15
+(./tables/table_baselines_classification.tex
+Overfull \hbox (70.62833pt too wide) in paragraph at lines 6--23
  [][] 
  []
 
-)) (./sections/discussion.tex [7.7 <./figures/token_economics.pdf>]
-(./tables/table_negative_control.tex)) (./sections/limitations_ethics.tex)
-(./sections/conclusion.tex)
+) [7.7 <./figures/token_economics.pdf>]) (./sections/discussion.tex
+(./tables/table_negative_control.tex)) (./sections/limitations_ethics.tex
+[8.8]) (./sections/conclusion.tex)
 No file main.bbl.
 (./sections/datacard.tex
 Overfull \hbox (1.42134pt too wide) in paragraph at lines 6--7
@@ -1572,10 +1571,6 @@ Overfull \hbox (1.42134pt too wide) in paragraph at lines 6--7
 al first 100 chars) ex-ist within
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8.8]
 
 Package natbib Warning: Citation `jing2024dsbench' on page 9 undefined on input
  line 10.
@@ -1589,7 +1584,7 @@ rtineT-TLF/m/n/9 (-20) /\T1/zi4/m/n/9 dsbench\T1/LinuxLibertineT-TLF/m/n/9 (-20
 ) ) 
  []
 
-
+[9.9]
 Overfull \hbox (4.09747pt too wide) in paragraph at lines 68--69
 []\T1/zi4/m/n/9 api_status\T1/LinuxLibertineT-TLF/m/n/9 (-20) , \T1/zi4/m/n/9 p
 arser_status\T1/LinuxLibertineT-TLF/m/n/9 (-20) , \T1/zi4/m/n/9 execution_statu
@@ -1617,7 +1612,7 @@ Overfull \hbox (10.72318pt too wide) in paragraph at lines 83--84
 /LinuxLibertineT-TLF/m/n/9 (-20) .
  []
 
-[9.9]
+
 Overfull \hbox (27.33405pt too wide) in paragraph at lines 87--88
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) aliases whose un-der-ly-ing model may chang
 e; only \T1/zi4/m/n/9 qwen3-max-2026-01-23
@@ -1644,6 +1639,10 @@ Overfull \hbox (15.53015pt too wide) in paragraph at lines 91--92
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
 Package natbib Warning: Citation `jing2024dsbench' on page 10 undefined on inpu
 t line 105.
 
@@ -1654,7 +1653,11 @@ Overfull \hbox (56.59334pt too wide) in paragraph at lines 115--116
 OR.PATCH\T1/LinuxLibertineT-TLF/m/n/9 (-20) ).
  []
 
-) (./sections/appendix.tex (./tables/table_harness_ablation.tex) [10.10]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10.10])
+(./sections/appendix.tex (./tables/table_harness_ablation.tex)
 
 Package natbib Warning: Citation `jing2024dsbench' on page 11 undefined on inpu
 t line 26.
@@ -1679,50 +1682,49 @@ Class acmart Warning: ACM keywords are mandatory for papers over two pages.
 Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
 
-Overfull \vbox (1.07011pt too high) has occurred while \output is active []
-
+Package balance Warning: You have called \balance in second column
+(balance)                Columns might not be balanced.
 
 [11.11] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: DB47525B757921257C9B17BEF3EBD2A0;10410.
  ) 
 Here is how much of TeX's memory you used:
- 23600 strings out of 477975
- 401402 string characters out of 5839282
+ 23608 strings out of 477975
+ 401650 string characters out of 5839282
  1898330 words of memory out of 5000000
- 42425 multiletter control sequences out of 15000+600000
- 714457 words of font info for 492 fonts, out of 8000000 for 9000
+ 42423 multiletter control sequences out of 15000+600000
+ 715310 words of font info for 499 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
  85i,16n,131p,1765b,701s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{/usr/
-share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.enc}{/usr/share/
-texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_ki75ao.enc}{/usr/share/texliv
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.enc}{/us
+r/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_ki75ao.enc}{/usr/shar
+e/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/share/texlive/texm
 f-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/share/texlive/texmf-dist
 /fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/share/texlive/texmf-dist/fonts
 /enc/dvips/libertine/lbtn_7grukw.enc}{/usr/share/texlive/texmf-dist/fonts/enc/d
 vips/libertine/lbtn_nh77jq.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/l
 ibertine/lbtn_76gpa5.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/inco
-nsolata/Inconsolata-zi4b.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-inconsolata/Inconsolata-zi4r.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/newtx/LibertineMathMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/newtx/LibertineMathMI5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/n
-ewtx/LibertineMathMI7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/new
-tx/LibertineMathRM.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libert
-ine/LinBiolinumT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertin
-e/LinBiolinumTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine
-/LinLibertineT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/
-LinLibertineTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/
-LinLibertineTBI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine
-/LinLibertineTI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine
-/LinLibertineTZ.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/New
-TXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (11 pages, 721920 bytes).
+nsolata/Inconsolata-zi4r.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+newtx/LibertineMathMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/new
+tx/LibertineMathMI5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx
+/LibertineMathMI7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/L
+ibertineMathRM.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/
+LinBiolinumT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/Li
+nBiolinumTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/Lin
+LibertineT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinL
+ibertineTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinL
+ibertineTBI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/Lin
+LibertineTI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/Lin
+LibertineTZ.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on main.pdf (11 pages, 710621 bytes).
 PDF statistics:
- 724 PDF objects out of 1000 (max. 8388607)
- 426 compressed objects within 5 object streams
+ 726 PDF objects out of 1000 (max. 8388607)
+ 429 compressed objects within 5 object streams
  85 named destinations out of 1000 (max. 500000)
- 114610 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 114098 words of extra memory for PDF output out of 128383 (max. 10000000)
 

@@ -1,6 +1,6 @@
 \begin{table}[t]
 \centering
-\caption{Baseline classifiers for failure-stage classification (binary: output\_mismatch vs.\ runtime). The silent heuristic (using the \texttt{is\_silent} field) achieves 80.3\% accuracy, establishing a non-trivial baseline for future work. Train/dev/test split is by task ID (198/42/43 tasks) to prevent leakage.}
+\caption{Baseline classifiers for failure-stage classification (binary: output\_mismatch vs.\ runtime). The silent heuristic achieves 80.3\% accuracy. LLM judges are evaluated on the 47-trace annotation set against rule-based system labels. Train/dev/test split is by task ID (198/42/43 tasks) to prevent leakage.}
 \label{tab:baselines-classification}
 \small
 \begin{tabular}{@{}lcc@{}}
@@ -10,6 +10,14 @@ Baseline & Accuracy (\%) & Description \\
 Majority (output\_mismatch) & 61.6 & Always predict majority class \\
 Silent heuristic & \textbf{80.3} & Silent $\to$ output\_mismatch; loud $\to$ runtime \\
 Token threshold & 55.2 & tokens $<$ 500 $\to$ runtime; else output\_mismatch \\
+\midrule
+\multicolumn{3}{l}{\textit{LLM judges (47-trace annotation set):}} \\
+GPT-4o-mini judge & 70.7 & LLM classifies stage from trace \\
+GPT-4o judge & 17.1 & LLM classifies stage from trace \\
+\midrule
+\multicolumn{3}{l}{\textit{Step localization (Task D):}} \\
+Random-step & 82.1 & Random step selection \\
+Last-step & 100.0 & Always predict last step \\
 \bottomrule
 \end{tabular}
 \end{table}

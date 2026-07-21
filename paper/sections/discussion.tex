@@ -9,7 +9,7 @@ On synthetic trap tasks, the corrected SFR is high (86--100\%) because these tas
 \subsection{Implications for Agent Deployment}
 \label{sec:disc-impl}
 
-The zero recovery rate (\Cref{sec:res-recovery}) has direct deployment consequences. An agent that never self-corrects silent failures will propagate wrong answers through multi-step pipelines, and the errors compound. Practitioners cannot rely on the agent to ``notice'' it is wrong; external verification is mandatory. However, our verifier ablation (\Cref{sec:res-verifier}) shows that simple rule-based verification is a double-edged sword: it helps weak models but not strong ones. Effective verification likely requires model-specific calibration or learned verifiers.
+The zero recovery rate (\Cref{sec:res-recovery}) has deployment implications. In the current setting without explicit correctness feedback, an agent will not self-correct silent failures, and wrong answers propagate through multi-step pipelines. However, our recovery benchmark (\Cref{sec:res-recovery-bench}) shows that feedback signals enable 15.7\% recovery, suggesting that external verification or in-loop feedback mechanisms can mitigate this issue. Our verifier ablation (\Cref{sec:res-verifier}) further shows that simple rule-based verification helps weak models but not strong ones, indicating that effective verification likely requires model-specific calibration or learned verifiers.
 
 \subsection{Negative Control: Oracle Repair Revisited}
 \label{sec:disc-negative-control}
