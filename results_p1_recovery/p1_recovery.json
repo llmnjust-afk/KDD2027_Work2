@@ -935,6 +935,114 @@
       "elapsed": 82.04314136505127,
       "status": "OK",
       "critique": ""
+    },
+    {
+      "task_id": "statistical_03",
+      "model": "deepseek-v3",
+      "condition": "c1_nofeedback",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": true,
+      "failure_stage": "output_mismatch",
+      "elapsed": 21.503191471099854,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_03",
+      "model": "deepseek-v3",
+      "condition": "c2_generic",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": true,
+      "failure_stage": "output_mismatch",
+      "elapsed": 20.69800329208374,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_03",
+      "model": "deepseek-v3",
+      "condition": "c3_runtime",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 41.94684958457947,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_03",
+      "model": "deepseek-v3",
+      "condition": "c4_unittest",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": true,
+      "failure_stage": "output_mismatch",
+      "elapsed": 26.423686027526855,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_03",
+      "model": "deepseek-v3",
+      "condition": "c5_critic",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 65.02620315551758,
+      "status": "OK",
+      "critique": "The answer provided by the AI agent states that the median is 94.11 and the interquartile range (IQR) is 0.0. \n\nUpon reviewing this answer, there are a few points to consider:\n\n1. **Median Calculation"
+    },
+    {
+      "task_id": "statistical_03",
+      "model": "deepseek-v3",
+      "condition": "c6_rerun",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 33.79142713546753,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_13",
+      "model": "deepseek-v3",
+      "condition": "c1_nofeedback",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 32.4588086605072,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_13",
+      "model": "deepseek-v3",
+      "condition": "c2_generic",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 25.644933700561523,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_13",
+      "model": "deepseek-v3",
+      "condition": "c3_runtime",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": true,
+      "failure_stage": "output_mismatch",
+      "elapsed": 31.271368265151978,
+      "status": "OK",
+      "critique": ""
     }
   ]
 }
