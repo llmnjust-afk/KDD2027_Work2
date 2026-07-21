@@ -58,26 +58,33 @@ DeepSeek-R1 & 0.0 & 0.0 & n/a \\
 
 \subsection{Data Schema}
 
-Each run in the manifest (\texttt{manifest.csv}) contains the following fields:
+Each run in the enriched manifest (\texttt{manifest\_v3.csv}, 30 fields) contains:
 
 \begin{itemize}[leftmargin=*,itemsep=1pt]
-\item \texttt{task\_id}: unique task identifier (e.g., \texttt{tabular\_eda\_00})
-\item \texttt{suite}: \texttt{synthetic}, \texttt{uci}, or \texttt{dsbench}
-\item \texttt{model}: LLM identifier (e.g., \texttt{gpt-4o}, \texttt{deepseek-v3})
-\item \texttt{variant}: \texttt{baseline} or \texttt{verifier}
+\item \texttt{task\_id}, \texttt{suite}: task identifier and suite (\texttt{synthetic}/\texttt{uci}/\texttt{dsbench})
+\item \texttt{model}, \texttt{model\_snapshot}, \texttt{provider}: model name, version info (rolling alias vs pinned snapshot), API provider
+\item \texttt{harness}, \texttt{variant}: agent harness type and experiment variant (\texttt{baseline}/\texttt{verifier})
 \item \texttt{rep}: repetition index (0--2)
-\item \texttt{correct}: boolean, whether the final answer matches ground truth
-\item \texttt{failure\_stage}: \texttt{none}, \texttt{runtime}, or \texttt{silent}
-\item \texttt{is\_silent}: boolean, whether the failure is silent
-\item \texttt{tokens}: total tokens consumed
+\item \texttt{api\_status}, \texttt{parser\_status}, \texttt{execution\_status}: infrastructure status
+\item \texttt{task\_correct}: whether the final answer matches ground truth
+\item \texttt{observability}: \texttt{success}/\texttt{silent}/\texttt{loud}
+\item \texttt{failure\_stage}, \texttt{failure\_subcategory}: five-stage taxonomy label and subcategory
+\item \texttt{is\_infra\_failure}, \texttt{infra\_subtype}: infrastructure failure flag and subtype (\texttt{api\_error}/\texttt{unknown}/\texttt{none})
+\item \texttt{originating\_step}, \texttt{propagation\_depth}: failure localisation and spread
+\item \texttt{is\_silent}, \texttt{recovered}: silent failure flag and recovery status
+\item \texttt{tokens}, \texttt{tokens\_input}, \texttt{tokens\_output}, \texttt{cost\_usd}: token usage and cost
 \item \texttt{final\_answer}: agent's final answer (truncated to 200 chars)
-\item \texttt{causal\_attributed}: boolean, whether oracle repair succeeded
-\item \texttt{source\_file}: original detail JSON filename
+\item \texttt{label\_source}: \texttt{rule} (rule-based classifier) or \texttt{unmatched}
+\item \texttt{annotation\_confidence}, \texttt{human\_gold}, \texttt{adjudication\_status}: human annotation fields (pending)
 \end{itemize}
+
+\textbf{Annotation uncertainty.} The \texttt{label\_source} field indicates whether a label comes from the rule-based classifier (\texttt{rule}) or is unmatched. The \texttt{annotation\_confidence} and \texttt{human\_gold} fields are currently empty, pending the 47-trace human annotation protocol. Once completed, each trace will have $\geq 3$ independent labels and an adjudicated gold label; the agreement rate will be reported as Fleiss' $\kappa$.
+
+\textbf{Missing and duplicate runs.} The manifest contains 5{,}984 runs. Some (task, model, variant) groups have fewer than 3 repetitions due to API failures or timeouts; these are retained with \texttt{api\_status}$=$\texttt{error}. Duplicate runs (same task, model, variant, rep) are detected by the assertion checks and removed. Infrastructure-failed runs are retained in the manifest (for transparency) but excluded from valid-run analyses via the \texttt{is\_infra\_failure} filter.
 
 \subsection{Provenance and Reproducibility}
 
-All experiments use deterministic data generation (fixed seed$=$16 for synthetic tasks) and temperature-0 LLM calls. The framework includes a MockLLM backend that reproduces the full pipeline without API cost. Real-model experiments use the ChatAnywhere OpenAI-compatible endpoint (API calls: June--July 2026). Total API cost: \$80. Note that four of five model identifiers (\texttt{gpt-4o}, \texttt{gpt-4o-mini}, \texttt{deepseek-chat}, \texttt{deepseek-reasoner}) are rolling aliases whose underlying model may change; only \texttt{qwen3-max-2026-01-23} is a pinned snapshot. Repetition agreement under temperature 0 is 89.9\%, with disagreement attributed to server-side non-determinism. The repository includes a \texttt{requirements.txt} for dependency pinning; a Docker image is planned for the camera-ready version.
+All experiments use deterministic data generation (fixed seed$=$16 for synthetic tasks) and temperature-0 LLM calls. The framework includes a MockLLM backend that reproduces the full pipeline without API cost. Real-model experiments use the ChatAnywhere OpenAI-compatible endpoint (API calls: June--July 2026). Total API cost: \$80. Note that four of five model identifiers (\texttt{gpt-4o}, \texttt{gpt-4o-mini}, \texttt{deepseek-chat}, \texttt{deepseek-reasoner}) are rolling aliases whose underlying model may change; only \texttt{qwen3-max-2026-01-23} is a pinned snapshot. Repetition agreement under temperature 0 is 89.9\%, with disagreement attributed to server-side non-determinism. The repository includes a \texttt{requirements.txt} for dependency pinning and MD5 checksums for key artifacts (\texttt{manifest\_v3.csv}: \texttt{29ceae8...}, \texttt{manifest.csv}: \texttt{6e2f809...}). A Docker image is planned for the camera-ready version.
 
 \subsection{Answer Evaluation Details}
 
