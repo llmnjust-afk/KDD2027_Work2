@@ -32,6 +32,8 @@ We decompose every agent failure into one of five stages, defined by \emph{where
 
 The Runtime vs.\ Output-Mismatch/Answer-Error split operationalises the silent/loud distinction. This is the conceptual core of the taxonomy: a loud failure (Runtime) is a \emph{detectable} error that the agent can in principle recover from, whereas a silent failure (Output-Mismatch or Answer-Error) is an \emph{undetectable} error that propagates undetected. \Cref{tab:taxonomy} lists the full hierarchy.
 
+\textbf{Disambiguation rule.} To ensure mutual exclusivity, the classifier assigns the \emph{first} stage at which the error becomes detectable. Consider a task requiring per-group sum where the agent uses \texttt{.count()}: the error is \emph{detectable at code-generation time} (the code uses the wrong operation), so it is classified as Code-Generation, not Answer-Error (where the code uses the correct operation but the data produces a wrong result) or Output-Mismatch (where the code and result are correct but the agent misreports). The key distinction is: Code-Generation means the code itself is wrong; Answer-Error means the code is correct but the answer is wrong due to data issues; Output-Mismatch means the code and result are correct but the agent misreads or hallucinates the final answer. This ordering prevents the ambiguity where a single failure could be assigned to multiple stages.
+
 \begin{table}[t]
 \centering
 \caption{Five-stage failure taxonomy (v2). Stages are defined by \emph{where the error is detectable}, making them mutually exclusive.}

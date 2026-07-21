@@ -3,11 +3,16 @@
 
 \subsection{Task Suite Descriptions}
 
-\textbf{Synthetic trap tasks (95 tasks).} Programmatically generated across 5 domains (tabular EDA, time-series, recommendation, statistical, text-log) with deterministic ground-truth answers. Each task includes designed failure traps (e.g., count-vs-sum ambiguity, temporal leakage, type confusion). Data is generated at runtime from fixed seeds, ensuring reproducibility without external data dependencies.
+\textbf{Synthetic trap tasks (95 tasks).} Programmatically generated across 5 domains (tabular EDA, time-series, recommendation, statistical, text-log) with deterministic ground-truth answers. Each domain uses 16 task instances generated from a fixed seed (seed$=$16). Tasks share structural templates within each domain but use different generated data, producing 70/80 unique answers (87.5\% uniqueness). Near-duplicate questions (identical first 100 chars) exist within domains (55/80) due to shared question structure, but the underlying data and expected answers differ. Train/dev/test splits are by task ID, not by template, so the same template appears in all splits---this is intentional, as the goal is to evaluate failure diagnosis, not template memorisation.
 
 \textbf{UCI real-data tasks (23 tasks).} Analytical questions on 6 public datasets (Iris, Titanic, Tips, MPG, Penguins, Flights) downloaded at runtime from public repositories. Answers are computed deterministically from the real data. Tasks cover groupby aggregation, correlation, counting, and filtering.
 
 \textbf{DSBench real tasks (200 tasks).} Real financial-analysis questions from ModelOff competitions~\citep{jing2024dsbench}, using original multi-sheet Excel workbooks. Answers are multiple-choice (A--I) or numeric. Tasks require understanding complex financial data structures.
+
+\subsection{Contamination and Template Analysis}
+\label{app:contamination}
+
+The synthetic tasks are generated from 5 templates (one per domain), each producing 16 instances with different data. The answer distribution shows 70/80 unique answers (87.5\%), with the most common answer appearing in only 4 tasks. This indicates low risk of answer-pattern memorisation. The train/dev/test split (198/42/43 tasks) is stratified by task ID across all suites; since the same template appears in all splits, models cannot exploit template-specific patterns. For DSBench, the tasks originate from public ModelOff competitions and may have appeared in LLM training data; we do not claim contamination-free evaluation for DSBench, only diagnostic trace analysis.
 
 \subsection{Task Difficulty Distribution}
 \label{app:difficulty}
@@ -70,13 +75,27 @@ Each run in the manifest (\texttt{manifest.csv}) contains the following fields:
 \item \texttt{source\_file}: original detail JSON filename
 \end{itemize}
 
-\subsection{Provenance}
+\subsection{Provenance and Reproducibility}
 
-All experiments use deterministic data generation (fixed seeds for synthetic tasks) and temperature-0 LLM calls. The framework includes a MockLLM backend that reproduces the full pipeline without API cost. Real-model experiments use the ChatAnywhere OpenAI-compatible endpoint. Total API cost: \$80.
+All experiments use deterministic data generation (fixed seed$=$16 for synthetic tasks) and temperature-0 LLM calls. The framework includes a MockLLM backend that reproduces the full pipeline without API cost. Real-model experiments use the ChatAnywhere OpenAI-compatible endpoint (API calls: June--July 2026). Total API cost: \$80. Note that four of five model identifiers (\texttt{gpt-4o}, \texttt{gpt-4o-mini}, \texttt{deepseek-chat}, \texttt{deepseek-reasoner}) are rolling aliases whose underlying model may change; only \texttt{qwen3-max-2026-01-23} is a pinned snapshot. Repetition agreement under temperature 0 is 89.9\%, with disagreement attributed to server-side non-determinism. The repository includes a \texttt{requirements.txt} for dependency pinning; a Docker image is planned for the camera-ready version.
+
+\subsection{Answer Evaluation Details}
+
+Answers are evaluated as follows: (1) \emph{Numeric answers}: compared with a relative tolerance of $10^{-3}$ (e.g., \texttt{abs(agent - gt) / max(abs(gt), 1e-9) < 1e-3}). (2) \emph{String answers}: normalised by stripping whitespace, converting to lowercase, and removing punctuation before exact match. (3) \emph{Multiple-choice answers} (DSBench): matched on the letter (A--I) only, ignoring surrounding text. (4) \emph{Tuple answers} (e.g., ``(species, value)''): each component is evaluated independently; both must match. The evaluator code is in \texttt{agentfail/benchmark/tasks.py}.
+
+\subsection{Known Issues}
+
+\begin{itemize}[leftmargin=*,itemsep=1pt]
+\item DeepSeek-R1 produces no valid traces on any suite (100\% infrastructure failure); its results should not be interpreted as model inability.
+\item DeepSeek-V3 on DSBench: all 600 runs are infrastructure failures (tokens$=$0), likely due to Excel parsing issues in the sandbox.
+\item Qwen3-max on UCI: all 69 runs are infrastructure failures.
+\item The rule-based classifier labels are validated only against an LLM judge ($\kappa=0.435$); human gold labels are pending.
+\item DSBench tasks require a separate download and may be present in LLM training data.
+\end{itemize}
 
 \subsection{Licensing and Maintenance}
 
-The code is released under an open-source license (MIT). The synthetic task generators are self-contained and require no external data. UCI datasets are public domain. DSBench tasks are used under their original license~\citep{jing2024dsbench}; users must obtain DSBench separately. The benchmark can be extended with new tasks by implementing the \texttt{Task} interface.
+The code is released under an open-source license (MIT). The synthetic task generators are self-contained and require no external data. UCI datasets are public domain. DSBench tasks are used under their original license~\citep{jing2024dsbench}; users must obtain DSBench separately. Raw LLM responses are not redistributed; users must re-run experiments to obtain them. The benchmark can be extended with new tasks by implementing the \texttt{Task} interface.
 
 \textbf{Maintenance plan.} The repository is maintained by the authors. Issues and pull requests are accepted via GitHub. The maintainers commit to:
 \begin{itemize}[leftmargin=*,itemsep=1pt]

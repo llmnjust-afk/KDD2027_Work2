@@ -4,13 +4,15 @@
 \subsection{Experimental Setup}
 \label{sec:setup}
 
-\textbf{Models.} We evaluate five frontier LLMs via an OpenAI-compatible endpoint: GPT-4o, GPT-4o-mini, DeepSeek-V3 (\texttt{deepseek-chat}), DeepSeek-R1 (\texttt{deepseek-reasoner}), and Qwen3-max (\texttt{qwen3-max-2026-01-23}). All models use temperature 0 and a maximum of 6--8 ReAct steps.
+\textbf{Models.} We evaluate five frontier LLMs via an OpenAI-compatible endpoint (ChatAnywhere): GPT-4o, GPT-4o-mini, DeepSeek-V3 (\texttt{deepseek-chat}), DeepSeek-R1 (\texttt{deepseek-reasoner}), and Qwen3-max (\texttt{qwen3-max-2026-01-23}). Note that \texttt{qwen3-max-2026-01-23} is a pinned version snapshot, while the other four are rolling aliases that may be updated by the provider. All models use temperature 0 and a maximum of 6--8 ReAct steps. API calls were made during June--July 2026.
 
 \textbf{Task suites.} We use three complementary task suites (\Cref{tab:task-summary}):
 
 \input{tables/table_task_summary}
 
-\textbf{Protocol.} Each (model, task) pair is run for 3 repetitions. The main experiment (95 tasks $\times$ 5 models $\times$ 2 variants $\times$ 3 repeats) yields 2{,}850 runs on synthetic tasks; the UCI experiment (23 tasks $\times$ 5 models $\times$ 3 repeats) yields 345 runs; the DSBench experiment (200 tasks $\times$ 3 models $\times$ 3 repeats + 164 Qwen3-max runs) yields 1{,}964 runs. In total we analyse \textbf{5{,}984 agent runs} and \textbf{3{,}940 failures}. All tables in this paper are auto-generated from a single source-of-truth manifest with assertion checks\footnote{See \texttt{build\_manifest\_and\_tables.py} in our supplementary code.}.
+\textbf{Protocol and scale.} Each (model, task) pair is run for 3 repetitions at temperature 0. In total we analyse \textbf{5{,}984 agent runs} across \textbf{318 unique tasks} (95 synthetic $+$ 23 UCI $+$ 200 DSBench), yielding \textbf{3{,}940 failures}. Of these, \textbf{2{,}218 (38.1\%) are infrastructure failures} (API errors, parse failures, or empty responses with tokens$=$0), leaving \textbf{3{,}602 valid runs} with automatically generated diagnostic labels. The 47-trace human annotation protocol (\Cref{app:annotation}) provides gold-label validation on a stratified subset. All tables are auto-generated from a single source-of-truth manifest (\texttt{manifest\_v2.csv}, 18 fields) with assertion checks\footnote{See \texttt{build\_manifest\_and\_tables.py} in our supplementary code.}.
+
+\textbf{Repetition agreement.} Under temperature 0, 89.9\% of (task, model, variant) groups show full agreement across 3 repetitions (all correct or all incorrect). The 10.1\% disagreement rate reflects server-side non-determinism in the API endpoint, not sampling randomness. DeepSeek-R1 shows 100\% agreement (all infrastructure failures), while GPT-4o-mini shows 84.6\%.
 
 \textbf{Statistical tests.} Verifier comparisons use the McNemar test (appropriate for paired binary outcomes), reporting $b$ (baseline correct \& verifier wrong), $c$ (baseline wrong \& verifier correct), and the $\chi^2$ $p$-value.
 
@@ -133,12 +135,12 @@ The overall recovery rate is \textbf{15.7\%} (94/600), a substantial improvement
 We define three diagnostic benchmark tasks on which future work can be evaluated:
 
 \begin{itemize}[leftmargin=*,itemsep=1pt]
-\item \textbf{Task B (Observability classification):} Given a trace, predict success / loud / silent.
-\item \textbf{Task C (Failure-stage classification):} Given a failed trace, predict the failure stage (interpretation vs.\ execution).
-\item \textbf{Task D (Originating-step localization):} Predict the first erroneous step.
+\item \textbf{Task B (Observability classification):} Given a trace, predict success / loud / silent. Metric: accuracy and macro-F1.
+\item \textbf{Task C (Failure-stage classification):} Given a failed trace, predict the failure stage (interpretation vs.\ execution). Metric: accuracy and macro-F1.
+\item \textbf{Task D (Originating-step localization):} Predict the first erroneous step. Metric: step-level accuracy and mean absolute error.
 \end{itemize}
 
-We provide a train/dev/test split by task ID (198/42/43 tasks) to prevent leakage. \Cref{tab:baselines-classification} reports three baseline classifiers for Task C on 1{,}562 valid failures. The majority baseline achieves 61.6\%, while the silent heuristic (mapping \texttt{is\_silent} to stage) achieves \textbf{80.3\%}, establishing a non-trivial baseline that future classifiers should surpass.
+\textbf{Evaluation protocol.} We provide a train/dev/test split by task ID (198/42/43 tasks) to prevent data leakage---the same task never appears in multiple splits. For Task C, \Cref{tab:baselines-classification} reports three baseline classifiers on 1{,}562 valid failures. The majority baseline achieves 61.6\%, while the silent heuristic (mapping \texttt{is\_silent} to stage) achieves \textbf{80.3\%}, establishing a non-trivial baseline. For Task D, a random-step baseline and a last-step baseline serve as lower bounds. The human upper bound will be established upon completion of the 47-trace human annotation protocol (\Cref{app:annotation}). Future submissions should report results on the test split only; the dev split is for hyperparameter tuning. Results should be submitted via pull request to the repository with reproducible code.
 
 \input{tables/table_baselines_classification}
 
