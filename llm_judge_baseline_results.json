@@ -1,0 +1,12 @@
+{
+  "gpt4o_mini": {
+    "accuracy": 70.73170731707317,
+    "silent_agreement": 85.36585365853658,
+    "n": 41
+  },
+  "gpt4o": {
+    "accuracy": 17.073170731707318,
+    "silent_agreement": 65.85365853658537,
+    "n": 41
+  }
+}

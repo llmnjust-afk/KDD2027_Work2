@@ -1,0 +1,38 @@
+{
+  "c1_nofeedback": {
+    "detection": 17,
+    "attempt": 17,
+    "repair": 17,
+    "n": 100
+  },
+  "c2_generic": {
+    "detection": 17,
+    "attempt": 17,
+    "repair": 17,
+    "n": 100
+  },
+  "c3_runtime": {
+    "detection": 17,
+    "attempt": 17,
+    "repair": 17,
+    "n": 100
+  },
+  "c4_unittest": {
+    "detection": 14,
+    "attempt": 14,
+    "repair": 14,
+    "n": 100
+  },
+  "c5_critic": {
+    "detection": 15,
+    "attempt": 15,
+    "repair": 15,
+    "n": 100
+  },
+  "c6_rerun": {
+    "detection": 14,
+    "attempt": 14,
+    "repair": 14,
+    "n": 100
+  }
+}
