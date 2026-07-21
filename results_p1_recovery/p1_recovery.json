@@ -2783,6 +2783,114 @@
       "elapsed": 74.02219939231873,
       "status": "OK",
       "critique": ""
+    },
+    {
+      "task_id": "statistical_13",
+      "model": "deepseek-v3",
+      "condition": "c5_critic",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 117.21912956237793,
+      "status": "OK",
+      "critique": "The answer provided by the AI agent states that the mean of the value column is 49.23 and the standard deviation is \"nan\" (not a number). This raises several concerns regarding the correctness of the "
+    },
+    {
+      "task_id": "statistical_13",
+      "model": "deepseek-v3",
+      "condition": "c6_rerun",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 119.65903878211975,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "recommendation_03",
+      "model": "gpt-4o",
+      "condition": "c1_nofeedback",
+      "original_was_silent": "True",
+      "correct": true,
+      "is_silent": false,
+      "failure_stage": "output_mismatch",
+      "elapsed": 5.893653869628906,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "recommendation_03",
+      "model": "gpt-4o",
+      "condition": "c2_generic",
+      "original_was_silent": "True",
+      "correct": true,
+      "is_silent": false,
+      "failure_stage": "output_mismatch",
+      "elapsed": 6.348515033721924,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "recommendation_03",
+      "model": "gpt-4o",
+      "condition": "c3_runtime",
+      "original_was_silent": "True",
+      "correct": true,
+      "is_silent": false,
+      "failure_stage": "output_mismatch",
+      "elapsed": 6.166997194290161,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "recommendation_03",
+      "model": "gpt-4o",
+      "condition": "c4_unittest",
+      "original_was_silent": "True",
+      "correct": true,
+      "is_silent": false,
+      "failure_stage": "output_mismatch",
+      "elapsed": 10.566850662231445,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "recommendation_03",
+      "model": "gpt-4o",
+      "condition": "c5_critic",
+      "original_was_silent": "True",
+      "correct": true,
+      "is_silent": false,
+      "failure_stage": "output_mismatch",
+      "elapsed": 15.944791316986084,
+      "status": "OK",
+      "critique": "The answer provided by the AI agent is \"0 5,\" indicating that item ID 0 received 5 clicks. To evaluate the correctness of this answer, we need to consider the following points:\n\n1. **Item Identificati"
+    },
+    {
+      "task_id": "recommendation_03",
+      "model": "gpt-4o",
+      "condition": "c6_rerun",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": true,
+      "failure_stage": "output_mismatch",
+      "elapsed": 11.540022373199463,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "tabular_eda_15",
+      "model": "gpt-4o",
+      "condition": "c1_nofeedback",
+      "original_was_silent": "True",
+      "correct": true,
+      "is_silent": false,
+      "failure_stage": "output_mismatch",
+      "elapsed": 5.287050008773804,
+      "status": "OK",
+      "critique": ""
     }
   ]
 }
