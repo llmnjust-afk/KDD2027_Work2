@@ -1043,6 +1043,138 @@
       "elapsed": 31.271368265151978,
       "status": "OK",
       "critique": ""
+    },
+    {
+      "task_id": "statistical_13",
+      "model": "deepseek-v3",
+      "condition": "c4_unittest",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": true,
+      "failure_stage": "output_mismatch",
+      "elapsed": 55.849786043167114,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_13",
+      "model": "deepseek-v3",
+      "condition": "c5_critic",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 82.32594847679138,
+      "status": "OK",
+      "critique": "The answer provided by the AI agent states that the mean of the value column is 49.23 and the standard deviation is \"nan\" (not a number). This raises several concerns regarding the correctness of the "
+    },
+    {
+      "task_id": "statistical_13",
+      "model": "deepseek-v3",
+      "condition": "c6_rerun",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 58.510438203811646,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_07",
+      "model": "gpt-4o-mini",
+      "condition": "c1_nofeedback",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 10.56717562675476,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_07",
+      "model": "gpt-4o-mini",
+      "condition": "c2_generic",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 13.362330198287964,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_07",
+      "model": "gpt-4o-mini",
+      "condition": "c3_runtime",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 11.625316381454468,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_07",
+      "model": "gpt-4o-mini",
+      "condition": "c4_unittest",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 11.52468204498291,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_07",
+      "model": "gpt-4o-mini",
+      "condition": "c5_critic",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 26.710336208343506,
+      "status": "OK",
+      "critique": "The answer provided by the AI agent states that the median is 92.91 and the interquartile range (IQR) is 0.0. \n\nUpon reviewing this answer, there are a few points to consider:\n\n1. **Median Calculation"
+    },
+    {
+      "task_id": "statistical_07",
+      "model": "gpt-4o-mini",
+      "condition": "c6_rerun",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 20.59027123451233,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_09",
+      "model": "gpt-4o-mini",
+      "condition": "c1_nofeedback",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 10.692630767822266,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_09",
+      "model": "gpt-4o-mini",
+      "condition": "c2_generic",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 15.939109563827515,
+      "status": "OK",
+      "critique": ""
     }
   ]
 }
