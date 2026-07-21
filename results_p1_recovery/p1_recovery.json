@@ -1991,6 +1991,78 @@
       "elapsed": 90.67330431938171,
       "status": "OK",
       "critique": ""
+    },
+    {
+      "task_id": "time_series_10",
+      "model": "deepseek-v3",
+      "condition": "c5_critic",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 176.3888659477234,
+      "status": "OK",
+      "critique": "The answer provided by the AI agent indicates a slope of approximately -0.9236, suggesting a negative linear trend over time. To evaluate the correctness of this answer, several factors should be cons"
+    },
+    {
+      "task_id": "time_series_10",
+      "model": "deepseek-v3",
+      "condition": "c6_rerun",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 95.9810380935669,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_01",
+      "model": "gpt-4o-mini",
+      "condition": "c1_nofeedback",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 16.46229648590088,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_01",
+      "model": "gpt-4o-mini",
+      "condition": "c2_generic",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 12.441073179244995,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_01",
+      "model": "gpt-4o-mini",
+      "condition": "c3_runtime",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 10.688199520111084,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_01",
+      "model": "gpt-4o-mini",
+      "condition": "c4_unittest",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 12.23367714881897,
+      "status": "OK",
+      "critique": ""
     }
   ]
 }

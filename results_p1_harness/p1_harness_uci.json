@@ -5758,6 +5758,71 @@
       "tokens": 0,
       "elapsed": 30.342013835906982,
       "status": "OK"
+    },
+    {
+      "task_id": "uci_titanic_passenger_count",
+      "rep": 2,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 33.81641364097595,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_tips_avg_tip_by_day",
+      "rep": 0,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 67.5093879699707,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_tips_avg_tip_by_day",
+      "rep": 1,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 73.69703149795532,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_tips_avg_tip_by_day",
+      "rep": 2,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 47.03614258766174,
+      "status": "OK"
+    },
+    {
+      "task_id": "uci_tips_total_bill",
+      "rep": 0,
+      "model": "deepseek-v3",
+      "harness": "h1_react",
+      "suite": "uci",
+      "correct": true,
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "tokens": 0,
+      "elapsed": 77.84951996803284,
+      "status": "OK"
     }
   ]
 }
