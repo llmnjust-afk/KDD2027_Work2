@@ -1,0 +1,17 @@
+{
+  "tfidf_lr": {
+    "accuracy": 86.08247422680412,
+    "n_train": 1101,
+    "n_test": 194
+  },
+  "trace_features_rf": {
+    "accuracy": 88.65979381443299,
+    "n_train": 1101,
+    "n_test": 194
+  },
+  "code_aware_lr": {
+    "accuracy": 89.17525773195877,
+    "n_train": 1101,
+    "n_test": 194
+  }
+}
