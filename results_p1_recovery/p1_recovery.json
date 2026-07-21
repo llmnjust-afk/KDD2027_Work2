@@ -155,6 +155,66 @@
       "elapsed": 31.58657193183899,
       "status": "OK",
       "critique": ""
+    },
+    {
+      "task_id": "statistical_01",
+      "model": "deepseek-v3",
+      "condition": "c2_generic",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 53.07606220245361,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_01",
+      "model": "deepseek-v3",
+      "condition": "c3_runtime",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": true,
+      "failure_stage": "output_mismatch",
+      "elapsed": 59.37301182746887,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_01",
+      "model": "deepseek-v3",
+      "condition": "c4_unittest",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": true,
+      "failure_stage": "output_mismatch",
+      "elapsed": 38.56989884376526,
+      "status": "OK",
+      "critique": ""
+    },
+    {
+      "task_id": "statistical_01",
+      "model": "deepseek-v3",
+      "condition": "c5_critic",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 120.09337139129639,
+      "status": "OK",
+      "critique": "The answer provided by the AI agent states that the mean of the value column is 41.37 and the standard deviation is \"nan\" (not a number). This raises several concerns regarding the correctness of the "
+    },
+    {
+      "task_id": "statistical_01",
+      "model": "deepseek-v3",
+      "condition": "c6_rerun",
+      "original_was_silent": "True",
+      "correct": false,
+      "is_silent": false,
+      "failure_stage": "runtime",
+      "elapsed": 43.89388561248779,
+      "status": "OK",
+      "critique": ""
     }
   ]
 }
