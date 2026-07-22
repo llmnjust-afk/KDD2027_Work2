@@ -1,0 +1,19 @@
+{
+  "n_traces": 47,
+  "n_all_3_filled": 47,
+  "full_agreement": 42,
+  "fleiss_kappa_stage": 0.86,
+  "fleiss_kappa_silent": 0.881,
+  "cohen_kappa_12": 0.798,
+  "cohen_kappa_13": 1.0,
+  "cohen_kappa_23": 0.798,
+  "system_vs_human_kappa": 0.438,
+  "system_vs_human_accuracy": 71.7948717948718,
+  "confusion_matrix": {
+    "output_mismatch->output_mismatch": 12,
+    "runtime->runtime": 16,
+    "output_mismatch->runtime": 11,
+    "runtime->output_mismatch": 0
+  },
+  "n_valid_pr": 39
+}

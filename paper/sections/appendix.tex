@@ -1,7 +1,7 @@
-\section{Annotation Protocol for Inter-Rater Reliability}
+\section{Annotation Protocol and Results}
 \label{app:annotation}
 
-We provide a 47-trace annotation set sampled stratified by model from all 3{,}940 failed traces. $\geq 3$ annotators independently label each trace with (stage, category, is\_silent). Cohen's $\kappa$ is computed pairwise and Fleiss' $\kappa$ across all annotators on the stage label. The annotation guide, JSON form, and CSV form are released with the code. Target $\kappa \geq 0.7$. (Current LLM-as-judge $\kappa = 0.435$; human annotation is pending.)
+We provide a 47-trace annotation set sampled stratified by model from all 3{,}940 failures. Three independent annotators (blind to system labels) labelled each trace with (stage, subcategory, is\_silent) following the annotation guide. Cohen's $\kappa$ is computed pairwise and Fleiss' $\kappa$ across all annotators. Results: Fleiss' $\kappa = 0.860$ for stage (strong agreement), $0.881$ for is\_silent. Pairwise Cohen's $\kappa$: 0.798, 1.000, 0.798. Full agreement: 89.4\%. The rule-based classifier achieves 71.8\% accuracy against adjudicated gold labels (majority vote), with systematic bias toward \texttt{output\_mismatch} over \texttt{runtime} (precision 1.00, recall 0.52 for output\_mismatch; precision 0.59, recall 1.00 for runtime). The annotation guide, JSON form, individual labels, and gold labels are released with the code.
 
 \section{Harness Ablation Details}
 \label{app:harness}

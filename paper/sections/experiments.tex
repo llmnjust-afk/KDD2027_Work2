@@ -44,7 +44,9 @@ The corrected SFR reveals a task-dependent pattern: on synthetic trap tasks, SFR
 \subsection{Result 3: Taxonomy Validation}
 \label{sec:res-taxonomy}
 
-We validate the five-stage taxonomy via LLM-as-judge annotation (GPT-4o-mini, 100 traces, blind to the rule-based label). After fixing a classifier bug that incorrectly labeled \texttt{final\_answer=None} traces as silent, Cohen's $\kappa = 0.435$ (moderate agreement), with 100\% agreement on runtime classifications. The remaining disagreement centers on the boundary between \texttt{output\_mismatch} and \texttt{answer\_error}. We acknowledge that LLM-as-judge cannot replace human annotation; full human validation with $\geq 3$ annotators is needed for a definitive $\kappa$.
+We validate the five-stage taxonomy via human annotation. Three independent annotators (blind to system labels) labelled 47 failed traces with (stage, is\_silent, subcategory). Inter-annotator agreement is strong: Fleiss' $\kappa = 0.860$ for stage and $0.881$ for is\_silent, with 89.4\% full agreement across all three annotators. Pairwise Cohen's $\kappa$ values are 0.798, 1.000, and 0.798 (average 0.865). The main source of disagreement is the boundary between \texttt{output\_mismatch} and \texttt{answer\_error} (5 traces).
+
+Against the adjudicated gold labels (majority vote), the rule-based classifier achieves 71.8\% accuracy (Cohen's $\kappa = 0.438$). The confusion matrix reveals a systematic bias: the classifier labels 11 traces as \texttt{output\_mismatch} that humans classify as \texttt{runtime} (precision 1.00, recall 0.52 for output\_mismatch; precision 0.59, recall 1.00 for runtime). This suggests the classifier over-assigns silent failures when the trace contains both execution errors and answer mismatches. We release the individual annotator labels and gold labels with the dataset.
 
 \subsection{Result 4: Zero Self-Correction}
 \label{sec:res-recovery}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.7.4)  21 JUL 2026 15:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.7.4)  22 JUL 2026 10:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1287,138 +1287,26 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.2pt on input line 37.
  (./sections/introduction.tex
-
-Package natbib Warning: Citation `maojun2025survey' on page 1 undefined on inpu
-t line 4.
-
-
-Package natbib Warning: Citation `rahman2025llmbased' on page 1 undefined on in
-put line 4.
-
-
-Package natbib Warning: Citation `jing2024dsbench' on page 1 undefined on input
- line 4.
-
-
-Package natbib Warning: Citation `zhang2026datascibench' on page 1 undefined on
- input line 4.
-
-
-Package natbib Warning: Citation `sun2026dsaeval' on page 1 undefined on input 
-line 4.
-
-
-Package natbib Warning: Citation `mehta2026confident' on page 1 undefined on in
-put line 6.
-
-
-Package natbib Warning: Citation `wu2026when' on page 1 undefined on input line
- 6.
-
-
-Package natbib Warning: Citation `liu2026silent' on page 1 undefined on input l
-ine 6.
-
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 17.
-[1.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ [1.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-])
-(./sections/related.tex
+]) (./sections/related.tex
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 14
+.
 
-Package natbib Warning: Citation `jing2024dsbench' on page 2 undefined on input
- line 5.
-
-
-Package natbib Warning: Citation `zhang2026datascibench' on page 2 undefined on
- input line 5.
-
-
-Package natbib Warning: Citation `sun2026dsaeval' on page 2 undefined on input 
-line 5.
-
-
-Package natbib Warning: Citation `xu2026longdsbench' on page 2 undefined on inp
-ut line 5.
-
-
-Package natbib Warning: Citation `tsymbalov2026graceds' on page 2 undefined on 
-input line 5.
-
-
-Package natbib Warning: Citation `moghadasi2026what' on page 2 undefined on inp
-ut line 5.
-
-
-Package natbib Warning: Citation `schmidgall2025agent' on page 2 undefined on i
-nput line 5.
-
-
-Package natbib Warning: Citation `albayaydh2026beyond' on page 2 undefined on i
-nput line 8.
-
-
-Package natbib Warning: Citation `soni2026toolfailbench' on page 2 undefined on
- input line 8.
-
-
-Package natbib Warning: Citation `wu2026when' on page 2 undefined on input line
- 8.
-
-
-Package natbib Warning: Citation `liu2026silent' on page 2 undefined on input l
-ine 8.
-
-
-Package natbib Warning: Citation `mehta2026confident' on page 2 undefined on in
-put line 8.
-
-
-Package natbib Warning: Citation `wang2026trajaudit' on page 2 undefined on inp
-ut line 8.
-
-
-Package natbib Warning: Citation `reddy2026reason' on page 2 undefined on input
- line 8.
-
-
-Package natbib Warning: Citation `zhang2026library' on page 2 undefined on inpu
-t line 8.
-
-
-Package natbib Warning: Citation `gu2026ekka' on page 2 undefined on input line
- 8.
-
-
-Package natbib Warning: Citation `shah2026causal' on page 2 undefined on input 
-line 11.
-
-
-Package natbib Warning: Citation `wang2022selfconsistency' on page 2 undefined 
-on input line 11.
-
-
-Package natbib Warning: Citation `itkin2026delayed' on page 2 undefined on inpu
-t line 11.
-
-
-Package natbib Warning: Citation `itkin2026delayed' on page 2 undefined on inpu
-t line 11.
-
-
-Package natbib Warning: Citation `li2025from' on page 2 undefined on input line
- 14.
-
-
-Package natbib Warning: Citation `gao2025llmbased' on page 2 undefined on input
- line 14.
-
-
-Package natbib Warning: Citation `mohammadi2025evaluation' on page 2 undefined 
-on input line 14.
-
-) (./sections/method.tex
-<figures/framework.pdf, id=232, 715.47299pt x 296.307pt>
+(/usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
+)
+LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
+(Font)              scaled to size 9.0pt on input line 14.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `zi4' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+)
+(./sections/method.tex
+<figures/framework.pdf, id=273, 715.47299pt x 296.307pt>
 File: figures/framework.pdf Graphic file (type pdf)
 <use figures/framework.pdf>
 Package pdftex.def Info: figures/framework.pdf  used on input line 8.
@@ -1428,27 +1316,10 @@ Package pdftex.def Info: figures/framework.pdf  used on input line 8.
 Class acmart Warning: A possible image without description on input line 11.
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 17.
+(Font)              scaled to size 9.0pt on input line 19.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 17.
-[2.2 <./figures/framework.pdf>]
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 18
-.
-
-(/usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
-File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
-)
-LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 18.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `zi4' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-
-Package natbib Warning: Citation `jing2024dsbench' on page 3 undefined on input
- line 18.
-
+(Font)              scaled to size 7.0pt on input line 19.
+[2.2]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/it' will be
 (Font)              scaled to size 9.0pt on input line 39.
 
@@ -1463,16 +1334,7 @@ ntTrace \T1/LinuxLibertineT-TLF/m/n/9 (-20) and as-signs a \T1/zi4/m/n/9 Failur
 eClassification
  []
 
-
-Package natbib Warning: Citation `shah2026causal' on page 3 undefined on input 
-line 68.
-
-[3.3]
-
-Package natbib Warning: Citation `moghadasi2026what' on page 4 undefined on inp
-ut line 77.
-
-) (./sections/experiments.tex
+[3.3 <./figures/framework.pdf>]) (./sections/experiments.tex
 Overfull \hbox (2.04593pt too wide) in paragraph at lines 7--8
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) (\T1/zi4/m/n/9 deepseek-chat\T1/LinuxLibert
 ineT-TLF/m/n/9 (-20) ), DeepSeek-R1 (\T1/zi4/m/n/9 deepseek-reasoner\T1/LinuxLi
@@ -1488,7 +1350,7 @@ LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
 (Font)              scaled to size 7.0pt on input line 13.
  (./tables/table_comprehensive.tex)
 (./tables/table_main_results.tex) (./tables/table_null_model.tex)
-<figures/bifurcation.pdf, id=333, 389.57121pt x 245.15857pt>
+<figures/bifurcation.pdf, id=395, 389.57121pt x 245.15857pt>
 File: figures/bifurcation.pdf Graphic file (type pdf)
 <use figures/bifurcation.pdf>
 Package pdftex.def Info: figures/bifurcation.pdf  used on input line 39.
@@ -1497,25 +1359,28 @@ Package pdftex.def Info: figures/bifurcation.pdf  used on input line 39.
 
 Class acmart Warning: A possible image without description on input line 42.
 
-[4.4]
-<figures/propdepth_by_model.pdf, id=346, 642.93024pt x 223.97661pt>
+[4.4] [5.5 <./figures/bifurcation.pdf>]
+<figures/propdepth_by_model.pdf, id=458, 642.93024pt x 223.97661pt>
 File: figures/propdepth_by_model.pdf Graphic file (type pdf)
 <use figures/propdepth_by_model.pdf>
-Package pdftex.def Info: figures/propdepth_by_model.pdf  used on input line 63.
+Package pdftex.def Info: figures/propdepth_by_model.pdf  used on input line 65.
 
 (pdftex.def)             Requested size: 229.08937pt x 79.80786pt.
 
 
-Class acmart Warning: A possible image without description on input line 66.
+Class acmart Warning: A possible image without description on input line 68.
 
 
-Overfull \hbox (19.40681pt too wide) in paragraph at lines 68--69
+Overfull \hbox (19.40681pt too wide) in paragraph at lines 70--71
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) (\T1/zi4/m/n/9 manifest_v3.csv\T1/LinuxLibe
 rtineT-TLF/m/n/9 (-20) ) dis-tin-guishes these cases via the \T1/zi4/m/n/9 is_i
 nfra_failure
  []
 
-[5.5 <./figures/bifurcation.pdf>] (./tables/table_oracle_repair.tex)
+(./tables/table_oracle_repair.tex)
+Underfull \vbox (badness 1460) has occurred while \output is active []
+
+
 (./tables/table_verifier.tex
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 (Font)              scaled to size 8.0pt on input line 11.
@@ -1525,52 +1390,72 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 (Font)              scaled to size 5.5pt on input line 11.
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 9.0pt on input line 82.
+(Font)              scaled to size 9.0pt on input line 84.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 7.3pt on input line 82.
+(Font)              scaled to size 7.3pt on input line 84.
 
-Overfull \hbox (5.97824pt too wide) in paragraph at lines 84--85
+Overfull \hbox (5.97824pt too wide) in paragraph at lines 86--87
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) max at 18.2%, GPT-4o at 62.1%) but not the 
 strongest model (DeepSeek-
  []
 
-<figures/verifier_ablation.pdf, id=402, 389.6923pt x 245.11781pt>
+<figures/verifier_ablation.pdf, id=464, 389.6923pt x 245.11781pt>
 File: figures/verifier_ablation.pdf Graphic file (type pdf)
 <use figures/verifier_ablation.pdf>
-Package pdftex.def Info: figures/verifier_ablation.pdf  used on input line 88.
+Package pdftex.def Info: figures/verifier_ablation.pdf  used on input line 90.
 (pdftex.def)             Requested size: 217.03127pt x 136.51324pt.
 
-Class acmart Warning: A possible image without description on input line 91.
+Class acmart Warning: A possible image without description on input line 93.
 
-<figures/token_economics.pdf, id=403, 389.52034pt x 245.15857pt>
+<figures/token_economics.pdf, id=465, 389.52034pt x 245.15857pt>
 File: figures/token_economics.pdf Graphic file (type pdf)
 <use figures/token_economics.pdf>
-Package pdftex.def Info: figures/token_economics.pdf  used on input line 98.
+Package pdftex.def Info: figures/token_economics.pdf  used on input line 100.
 (pdftex.def)             Requested size: 204.97684pt x 129.00943pt.
 
-Class acmart Warning: A possible image without description on input line 101.
+Class acmart Warning: A possible image without description on input line 103.
 
-[6.6 <./figures/propdepth_by_model.pdf> <./figures/verifier_ablation.pdf>]
-Overfull \hbox (24.19606pt too wide) in paragraph at lines 140--141
+[6.6 <./figures/propdepth_by_model.pdf>]
+Overfull \hbox (24.19606pt too wide) in paragraph at lines 142--143
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) dict the fail-ure stage from five classes: 
 {an-a-lyt-i-cal_plan, code_generation,
  []
 
+[7.7 <./figures/verifier_ablation.pdf> <./figures/token_economics.pdf>]
 (./tables/table_baselines_classification.tex
 Overfull \hbox (89.12425pt too wide) in paragraph at lines 6--29
  [][] 
  []
 
-) [7.7 <./figures/token_economics.pdf>]) (./sections/discussion.tex
-Underfull \vbox (badness 7832) has occurred while \output is active []
-
-
-(./tables/table_negative_control.tex)) (./sections/limitations_ethics.tex
+)) (./sections/discussion.tex (./tables/table_negative_control.tex))
+(./sections/limitations_ethics.tex [8.8]) (./sections/conclusion.tex)
+(./main.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8.8])
-(./sections/conclusion.tex)
-No file main.bbl.
+LaTeX Info: Redefining \tempurl on input line 68.
+LaTeX Info: Redefining \tempurl on input line 84.
+LaTeX Info: Redefining \tempurl on input line 99.
+LaTeX Info: Redefining \tempurl on input line 117.
+LaTeX Info: Redefining \tempurl on input line 137.
+LaTeX Info: Redefining \tempurl on input line 151.
+LaTeX Info: Redefining \tempurl on input line 168.
+LaTeX Info: Redefining \tempurl on input line 182.
+LaTeX Info: Redefining \tempurl on input line 197.
+LaTeX Info: Redefining \tempurl on input line 213.
+LaTeX Info: Redefining \tempurl on input line 230.
+LaTeX Info: Redefining \tempurl on input line 246.
+LaTeX Info: Redefining \tempurl on input line 265.
+LaTeX Info: Redefining \tempurl on input line 279.
+LaTeX Info: Redefining \tempurl on input line 294.
+LaTeX Info: Redefining \tempurl on input line 312.
+LaTeX Info: Redefining \tempurl on input line 327.
+LaTeX Info: Redefining \tempurl on input line 342.
+LaTeX Info: Redefining \tempurl on input line 370.
+ [9.9]
+LaTeX Info: Redefining \tempurl on input line 386.
+LaTeX Info: Redefining \tempurl on input line 404.
+LaTeX Info: Redefining \tempurl on input line 420.
+)
 (./sections/datacard.tex
 Overfull \hbox (1.42134pt too wide) in paragraph at lines 6--7
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) ness). Near-duplicate ques-tions (iden-ti-c
@@ -1578,17 +1463,6 @@ al first 100 chars) ex-ist within
  []
 
 
-Underfull \vbox (badness 2221) has occurred while \output is active []
-
-
-
-Package natbib Warning: Citation `jing2024dsbench' on page 9 undefined on input
- line 10.
-
-
-Underfull \vbox (badness 1983) has occurred while \output is active []
-
- [9.9]
 Overfull \hbox (9.47343pt too wide) in paragraph at lines 64--65
 []\T1/zi4/m/n/9 task_id\T1/LinuxLibertineT-TLF/m/n/9 (-20) , \T1/zi4/m/n/9 suit
 e\T1/LinuxLibertineT-TLF/m/n/9 (-20) : task iden-ti-fier and suite (\T1/zi4/m/n
@@ -1618,7 +1492,7 @@ zi4/m/n/9 human_gold\T1/LinuxLibertineT-TLF/m/n/9 (-20) , \T1/zi4/m/n/9 adjudic
 ation_status\T1/LinuxLibertineT-TLF/m/n/9 (-20) :
  []
 
-
+[10.10]
 Overfull \hbox (10.72318pt too wide) in paragraph at lines 83--84
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) to API fail-ures or time-outs; these are re
 -tained with \T1/zi4/m/n/9 api_status$\U/ntxmia/m/it/9 =$\T1/zi4/m/n/9 error\T1
@@ -1652,8 +1526,12 @@ Overfull \hbox (15.53015pt too wide) in paragraph at lines 91--92
  []
 
 
-Package natbib Warning: Citation `jing2024dsbench' on page 10 undefined on inpu
-t line 105.
+Overfull \hbox (17.712pt too wide) in paragraph at lines 99--100
+\T1/LinuxLibertineT-TLF/m/n/9 (-20) gold la-bels ($\OML/nxlmi/m/it/9 ^^T \U/ntx
+mia/m/it/9 = \OT1/LinuxLibertineT-TLF/m/n/9 (-20) 0\OML/nxlmi/m/it/9 :\OT1/Linu
+xLibertineT-TLF/m/n/9 (-20) 438$\T1/LinuxLibertineT-TLF/m/n/9 (-20) ), with sys
+-tem-atic bias to-ward \T1/zi4/m/n/9 output_mismatch
+ []
 
 
 Overfull \hbox (56.59334pt too wide) in paragraph at lines 115--116
@@ -1662,15 +1540,7 @@ Overfull \hbox (56.59334pt too wide) in paragraph at lines 115--116
 OR.PATCH\T1/LinuxLibertineT-TLF/m/n/9 (-20) ).
  []
 
-[10.10]) (./sections/appendix.tex (./tables/table_harness_ablation.tex)
-
-Package natbib Warning: Citation `jing2024dsbench' on page 11 undefined on inpu
-t line 26.
-
-)
-
-Package natbib Warning: There were undefined citations.
-
+) (./sections/appendix.tex [11.11] (./tables/table_harness_ablation.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
@@ -1690,18 +1560,21 @@ Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 Package balance Warning: You have called \balance in second column
 (balance)                Columns might not be balanced.
 
-[11.11] (./main.aux)
+[12.12] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DB47525B757921257C9B17BEF3EBD2A0;10410.
+(rerunfilecheck)             Checksum: 5929118E17D1F37F15961FD22B98C3EE;10423.
  ) 
 Here is how much of TeX's memory you used:
- 23605 strings out of 477975
- 401575 string characters out of 5839282
+ 23780 strings out of 477975
+ 405472 string characters out of 5839282
  1898330 words of memory out of 5000000
- 42423 multiletter control sequences out of 15000+600000
- 715045 words of font info for 497 fonts, out of 8000000 for 9000
+ 42516 multiletter control sequences out of 15000+600000
+ 720232 words of font info for 533 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
- 85i,17n,131p,1765b,701s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,16n,131p,1903b,755s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.enc}{/us
 r/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_ki75ao.enc}{/usr/shar
 e/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{/usr/share/texliv
@@ -1726,10 +1599,10 @@ LibertineTZ.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (11 pages, 710952 bytes).
+Output written on main.pdf (12 pages, 723446 bytes).
 PDF statistics:
- 725 PDF objects out of 1000 (max. 8388607)
- 428 compressed objects within 5 object streams
- 85 named destinations out of 1000 (max. 500000)
- 114098 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 848 PDF objects out of 1000 (max. 8388607)
+ 549 compressed objects within 6 object streams
+ 112 named destinations out of 1000 (max. 500000)
+ 114106 words of extra memory for PDF output out of 128383 (max. 10000000)
 

@@ -1,0 +1,425 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{24}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Albayaydh et~al\mbox{.}(2026)]%
+        {albayaydh2026beyond}
+\bibfield{author}{\bibinfo{person}{Wael Albayaydh}, \bibinfo{person}{Rui Zhao},
+  {and} \bibinfo{person}{Ivan Flechais}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Beyond the Leaderboard: A Synthesis of Tool-Use,
+  Planning, and Reasoning Failures in Large Language Model Agents}.
+\newblock \bibinfo{howpublished}{arXiv:2607.05775}.
+\newblock
+\showeprint[arxiv]{2607.05775}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2607.05775v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Gao et~al\mbox{.}(2025)]%
+        {gao2025llmbased}
+\bibfield{author}{\bibinfo{person}{Mingqi Gao}, \bibinfo{person}{Xinyu Hu},
+  \bibinfo{person}{Xunjian Yin}, \bibinfo{person}{Jie Ruan},
+  \bibinfo{person}{Xiao Pu}, {and} \bibinfo{person}{Xiaojun Wan}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{LLM-based NLG Evaluation: Current Status and
+  Challenges}.
+\newblock \bibinfo{journal}{\emph{Computational Linguistics}}
+  \bibinfo{volume}{51}, \bibinfo{number}{2} (\bibinfo{year}{2025}),
+  \bibinfo{pages}{661--687}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1162/coli_a_00561}
+\showDOI{\tempurl}
+
+
+\bibitem[Gu et~al\mbox{.}(2026)]%
+        {gu2026ekka}
+\bibfield{author}{\bibinfo{person}{Yile Gu}, \bibinfo{person}{Zhen Zhang},
+  \bibinfo{person}{Shaowei Zhu}, \bibinfo{person}{Xinwei Fu},
+  \bibinfo{person}{Jun Wu}, \bibinfo{person}{Yida Wang}, {and}
+  \bibinfo{person}{Baris Kasikci}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Ekka: Automated Diagnosis of Silent Errors in LLM
+  Inference}.
+\newblock \bibinfo{howpublished}{arXiv:2606.04594}.
+\newblock
+\showeprint[arxiv]{2606.04594}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2606.04594v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Itkin(2026)]%
+        {itkin2026delayed}
+\bibfield{author}{\bibinfo{person}{Igor Itkin}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Delayed Verification Destabilizes Multi-Agent LLM
+  Belief: Instability Thresholds and Optimal Corrector Placement}.
+\newblock \bibinfo{howpublished}{arXiv:2606.27409}.
+\newblock
+\showeprint[arxiv]{2606.27409}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2606.27409v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Jing et~al\mbox{.}(2024)]%
+        {jing2024dsbench}
+\bibfield{author}{\bibinfo{person}{Liqiang Jing}, \bibinfo{person}{Zhehui
+  Huang}, \bibinfo{person}{Xiaoyang Wang}, \bibinfo{person}{Wenlin Yao},
+  \bibinfo{person}{Wenhao Yu}, \bibinfo{person}{Kaixin Ma},
+  \bibinfo{person}{Hongming Zhang}, \bibinfo{person}{Xinya Du}, {and}
+  \bibinfo{person}{Dong Yu}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{DSBench: How Far Are Data Science Agents from
+  Becoming Data Science Experts?}
+\newblock \bibinfo{howpublished}{arXiv:2409.07703}.
+\newblock
+\showeprint[arxiv]{2409.07703}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2409.07703v3}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Li et~al\mbox{.}(2025)]%
+        {li2025from}
+\bibfield{author}{\bibinfo{person}{Da-Wei Li}, \bibinfo{person}{Bohan Jiang},
+  \bibinfo{person}{Lili Huang}, \bibinfo{person}{Alimohammad Beigi},
+  \bibinfo{person}{Chengshuai Zhao}, \bibinfo{person}{Zhen Tan},
+  \bibinfo{person}{Amrita Bhattacharjee}, \bibinfo{person}{Yuxuan Jiang},
+  \bibinfo{person}{Canyu Chen}, \bibinfo{person}{Tianhao Wu},
+  \bibinfo{person}{Kan Shu}, \bibinfo{person}{Lu Cheng}, {and}
+  \bibinfo{person}{H.L. Liu}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{From Generation to Judgment: Opportunities and
+  Challenges of LLM-as-a-judge}.
+\newblock \bibinfo{journal}{\emph{Proceedings of EMNLP}}
+  (\bibinfo{year}{2025}), \bibinfo{pages}{2757--2791}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2025.emnlp-main.138}
+\showDOI{\tempurl}
+
+
+\bibitem[Liu(2026)]%
+        {liu2026silent}
+\bibfield{author}{\bibinfo{person}{Dexing Liu}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Silent Failure in LLM Agent Systems: The Entropy
+  Principle and the Inevitable Disorder of Autonomous Agents}.
+\newblock \bibinfo{howpublished}{arXiv:2606.08162}.
+\newblock
+\showeprint[arxiv]{2606.08162}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2606.08162v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Maojun et~al\mbox{.}(2025)]%
+        {maojun2025survey}
+\bibfield{author}{\bibinfo{person}{Sun Maojun}, \bibinfo{person}{Ruijian Han},
+  \bibinfo{person}{Binyan Jiang}, \bibinfo{person}{Houduo Qi},
+  \bibinfo{person}{Defeng Sun}, \bibinfo{person}{Yancheng Yuan}, {and}
+  \bibinfo{person}{Jian Huang}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{A Survey on Large Language Model-based Agents for
+  Statistics and Data Science}.
+\newblock \bibinfo{journal}{\emph{The American Statistician}}
+  (\bibinfo{year}{2025}), \bibinfo{pages}{1--14}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1080/00031305.2025.2561140}
+\showDOI{\tempurl}
+
+
+\bibitem[Mehta(2026)]%
+        {mehta2026confident}
+\bibfield{author}{\bibinfo{person}{Aman Mehta}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Confident and Wrong: Silent Semantic Failures in
+  Coding Agents}.
+\newblock \bibinfo{howpublished}{arXiv:2603.25764}.
+\newblock
+\showeprint[arxiv]{2603.25764}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2603.25764v3}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Moghadasi and Ghaderi(2026)]%
+        {moghadasi2026what}
+\bibfield{author}{\bibinfo{person}{Mahdi~Naser Moghadasi} {and}
+  \bibinfo{person}{Faezeh Ghaderi}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{What Twelve LLM Agent Benchmark Papers Disclose About
+  Themselves: A Pilot Audit and an Open Scoring Schema}.
+\newblock \bibinfo{howpublished}{arXiv:2605.21404}.
+\newblock
+\showeprint[arxiv]{2605.21404}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2605.21404v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Mohammadi et~al\mbox{.}(2025)]%
+        {mohammadi2025evaluation}
+\bibfield{author}{\bibinfo{person}{Mahmoud Mohammadi}, \bibinfo{person}{Yipeng
+  Li}, \bibinfo{person}{Jane~C. Lo}, {and} \bibinfo{person}{Wendy Yip}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Evaluation and Benchmarking of LLM Agents: A
+  Survey}.
+\newblock \bibinfo{journal}{\emph{Proceedings of SIGKDD}}
+  (\bibinfo{year}{2025}), \bibinfo{pages}{6129--6139}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3711896.3736570}
+\showDOI{\tempurl}
+
+
+\bibitem[Rahman et~al\mbox{.}(2025)]%
+        {rahman2025llmbased}
+\bibfield{author}{\bibinfo{person}{Mizanur Rahman}, \bibinfo{person}{Amran
+  Bhuiyan}, \bibinfo{person}{Mohammed~Saidul Islam},
+  \bibinfo{person}{Md~Tahmid~Rahman Laskar}, \bibinfo{person}{Ridwan Mahbub},
+  \bibinfo{person}{Ahmed Masry}, \bibinfo{person}{Shafiq Joty}, {and}
+  \bibinfo{person}{Enamul Hoque}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{LLM-Based Data Science Agents: A Survey of
+  Capabilities, Challenges, and Future Directions}.
+\newblock \bibinfo{howpublished}{arXiv:2510.04023}.
+\newblock
+\showeprint[arxiv]{2510.04023}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2510.04023v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Reddy et~al\mbox{.}(2026)]%
+        {reddy2026reason}
+\bibfield{author}{\bibinfo{person}{Vikas Reddy}, \bibinfo{person}{Sumanth~Reddy
+  Challaram}, {and} \bibinfo{person}{Abhishek Basu}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Reason Less, Verify More: Deterministic Gates Recover
+  a Silent Policy-Violation Failure Mode in Tool-Using LLM Agents}.
+\newblock \bibinfo{howpublished}{arXiv:2607.07405}.
+\newblock
+\showeprint[arxiv]{2607.07405}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2607.07405v2}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Schmidgall et~al\mbox{.}(2025)]%
+        {schmidgall2025agent}
+\bibfield{author}{\bibinfo{person}{Samuel Schmidgall}, \bibinfo{person}{Yusheng
+  Su}, \bibinfo{person}{Ze Wang}, \bibinfo{person}{Ximeng Sun},
+  \bibinfo{person}{Jialian Wu}, \bibinfo{person}{Xiaodong Yu},
+  \bibinfo{person}{Jiang Liu}, \bibinfo{person}{Michael Moor},
+  \bibinfo{person}{Zicheng Liu}, {and} \bibinfo{person}{Emad Barsoum}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Agent Laboratory: Using LLM Agents as Research
+  Assistants}.
+\newblock \bibinfo{journal}{\emph{Findings of EMNLP}} (\bibinfo{year}{2025}),
+  \bibinfo{pages}{5977--6043}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2025.findings-emnlp.320}
+\showDOI{\tempurl}
+
+
+\bibitem[Shah(2026)]%
+        {shah2026causal}
+\bibfield{author}{\bibinfo{person}{Jaineet Shah}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Causal Agent Replay: Counterfactual Attribution for
+  LLM-Agent Failures}.
+\newblock \bibinfo{howpublished}{arXiv:2606.08275}.
+\newblock
+\showeprint[arxiv]{2606.08275}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2606.08275v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Soni(2026)]%
+        {soni2026toolfailbench}
+\bibfield{author}{\bibinfo{person}{Harsh Soni}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{ToolFailBench: Diagnosing Tool-Use Failures in LLM
+  Agents}.
+\newblock \bibinfo{howpublished}{arXiv:2607.04686}.
+\newblock
+\showeprint[arxiv]{2607.04686}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2607.04686v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Sun et~al\mbox{.}(2026)]%
+        {sun2026dsaeval}
+\bibfield{author}{\bibinfo{person}{Maojun Sun}, \bibinfo{person}{Yifei Xie},
+  \bibinfo{person}{Yue Wu}, \bibinfo{person}{Ruijian Han},
+  \bibinfo{person}{Binyan Jiang}, \bibinfo{person}{Defeng Sun},
+  \bibinfo{person}{Yancheng Yuan}, {and} \bibinfo{person}{Jian Huang}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{DSAEval: Evaluating Data Science Agents on a Wide
+  Range of Real-World Data Science Problems}. In
+  \bibinfo{booktitle}{\emph{arXiv (Cornell University)}}.
+  \bibinfo{publisher}{Cornell University}.
+\newblock
+\urldef\tempurl%
+\url{https://arxiv.org/pdf/2601.13591}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Tsymbalov et~al\mbox{.}(2026)]%
+        {tsymbalov2026graceds}
+\bibfield{author}{\bibinfo{person}{Aleksandr Tsymbalov}, \bibinfo{person}{Danis
+  Zaripov}, \bibinfo{person}{Artem Epifanov}, {and} \bibinfo{person}{Anastasya
+  Palienko}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{GRACE-DS: a Guarded Reward-guided Agent Correction
+  Environment in Data Science}. In \bibinfo{booktitle}{\emph{arXiv (Cornell
+  University)}}. \bibinfo{publisher}{Cornell University}.
+\newblock
+\urldef\tempurl%
+\url{https://arxiv.org/pdf/2606.16000}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Wang et~al\mbox{.}(2026)]%
+        {wang2026trajaudit}
+\bibfield{author}{\bibinfo{person}{Minxing Wang}, \bibinfo{person}{Xiaofei
+  Xie}, {and} \bibinfo{person}{Yintong Huo}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{TrajAudit: Automated Failure Diagnosis for Agentic
+  Coding Systems}.
+\newblock \bibinfo{howpublished}{arXiv:2605.26563}.
+\newblock
+\showeprint[arxiv]{2605.26563}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2605.26563v2}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Wang et~al\mbox{.}(2023)]%
+        {wang2022selfconsistency}
+\bibfield{author}{\bibinfo{person}{Xuezhi Wang}, \bibinfo{person}{Jason Wei},
+  \bibinfo{person}{Dale Schuurmans}, \bibinfo{person}{Quoc Le},
+  \bibinfo{person}{Ed Chi}, \bibinfo{person}{Sharan Narang},
+  \bibinfo{person}{Aakanksha Chowdhery}, {and} \bibinfo{person}{Denny Zhou}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Self-Consistency Improves Chain of Thought
+  Reasoning in Language Models}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2203.11171}}
+  (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Wu(2026)]%
+        {wu2026when}
+\bibfield{author}{\bibinfo{person}{Wei Wu}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{When Errors Become Narratives: A Longitudinal
+  Taxonomy of Silent Failures in a Production LLM Agent Runtime}.
+\newblock \bibinfo{howpublished}{arXiv:2606.14589}.
+\newblock
+\showeprint[arxiv]{2606.14589}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2606.14589v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Xu et~al\mbox{.}(2026)]%
+        {xu2026longdsbench}
+\bibfield{author}{\bibinfo{person}{Kewei Xu}, \bibinfo{person}{Xiaoben Lu},
+  \bibinfo{person}{Shuofei Qiao}, \bibinfo{person}{Zihan Ding},
+  \bibinfo{person}{Haoming Xu}, \bibinfo{person}{Lei Liang}, {and}
+  \bibinfo{person}{Ningyu Zhang}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{LongDS-Bench: On the Failure of Long-Horizon
+  Agentic Data Analysis}. In \bibinfo{booktitle}{\emph{arXiv (Cornell
+  University)}}. \bibinfo{publisher}{Cornell University}.
+\newblock
+\urldef\tempurl%
+\url{https://arxiv.org/pdf/2605.30434}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Zhang et~al\mbox{.}(2026b)]%
+        {zhang2026datascibench}
+\bibfield{author}{\bibinfo{person}{Dan Zhang}, \bibinfo{person}{Sining
+  Zhoubian}, \bibinfo{person}{Cai Min}, \bibinfo{person}{Fanghu Li},
+  \bibinfo{person}{Likun Yang}, \bibinfo{person}{Wei Wang},
+  \bibinfo{person}{Tian Dong}, \bibinfo{person}{Ziniu Hu}, \bibinfo{person}{Jie
+  Tang}, {and} \bibinfo{person}{Yisong Yue}.} \bibinfo{year}{2026}\natexlab{b}.
+\newblock \showarticletitle{DataSciBench: An LLM Agent Benchmark for Data
+  Science}.
+\newblock \bibinfo{journal}{\emph{Findings of ACL}} (\bibinfo{year}{2026}),
+  \bibinfo{pages}{3685--3728}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2026.findings-acl.181}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhang et~al\mbox{.}(2026a)]%
+        {zhang2026library}
+\bibfield{author}{\bibinfo{person}{Xing Zhang}, \bibinfo{person}{Yanwei Cui},
+  \bibinfo{person}{Guanghui Wang}, \bibinfo{person}{Ziyuan Li},
+  \bibinfo{person}{Wei Qiu}, \bibinfo{person}{Bing Zhu}, {and}
+  \bibinfo{person}{Peiyang He}.} \bibinfo{year}{2026}\natexlab{a}.
+\newblock \bibinfo{title}{Library Drift: Diagnosing and Fixing a Silent Failure
+  Mode in Self-Evolving LLM Skill Libraries}.
+\newblock \bibinfo{howpublished}{arXiv:2605.19576}.
+\newblock
+\showeprint[arxiv]{2605.19576}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2605.19576v2}
+\showURL{%
+\tempurl}
+
+
+\end{thebibliography}
