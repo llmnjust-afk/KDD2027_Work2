@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.7.4)  22 JUL 2026 11:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.7.4)  22 JUL 2026 13:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1288,12 +1288,10 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.2pt on input line 37.
  (./sections/introduction.tex
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 15.
+(Font)              scaled to size 6.0pt on input line 14.
  [1.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]) (./sections/related.tex
-Underfull \vbox (badness 2951) has occurred while \output is active []
-
 LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 14
 .
 
@@ -1317,11 +1315,14 @@ Package pdftex.def Info: figures/framework.pdf  used on input line 8.
 
 Class acmart Warning: A possible image without description on input line 11.
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 17.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 7.0pt on input line 17.
-[2.2]
+ [2.2]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/it' will be
 (Font)              scaled to size 9.0pt on input line 39.
 
@@ -1334,6 +1335,13 @@ Overfull \hbox (28.55495pt too wide) in paragraph at lines 58--59
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) The clas-si-fier walks an \T1/zi4/m/n/9 Age
 ntTrace \T1/LinuxLibertineT-TLF/m/n/9 (-20) and as-signs a \T1/zi4/m/n/9 Failur
 eClassification
+ []
+
+
+Overfull \hbox (7.68053pt too wide) in paragraph at lines 58--59
+\T1/LinuxLibertineT-TLF/m/n/9 (-20) tion rule checks stages in or-der of de-tec
+tabil-ity: Run-time $\LMS/ntxsy/m/n/9 !$ \T1/LinuxLibertineT-TLF/m/n/9 (-20) An
+alytical-
  []
 
 [3.3 <./figures/framework.pdf>]) (./sections/experiments.tex
@@ -1350,9 +1358,9 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 5.5pt on input line 13.
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
 (Font)              scaled to size 7.0pt on input line 13.
- (./tables/table_comprehensive.tex)
-(./tables/table_null_model.tex) [4.4]
-<figures/bifurcation.pdf, id=405, 389.57121pt x 245.15857pt>
+ (./tables/table_comprehensive.tex) [4.4]
+(./tables/table_null_model.tex)
+<figures/bifurcation.pdf, id=404, 389.57121pt x 245.15857pt>
 File: figures/bifurcation.pdf Graphic file (type pdf)
 <use figures/bifurcation.pdf>
 Package pdftex.def Info: figures/bifurcation.pdf  used on input line 35.
@@ -1362,7 +1370,7 @@ Package pdftex.def Info: figures/bifurcation.pdf  used on input line 35.
 Class acmart Warning: A possible image without description on input line 38.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4378) has occurred while \output is active []
 
  [5.5 <./figures/bifurcation.pdf>]
 <figures/propdepth_by_model.pdf, id=457, 642.93024pt x 223.97661pt>
@@ -1416,39 +1424,39 @@ Package pdftex.def Info: figures/token_economics.pdf  used on input line 96.
 
 Class acmart Warning: A possible image without description on input line 99.
 
-[6.6 <./figures/propdepth_by_model.pdf> <./figures/verifier_ablation.pdf>]
+[6.6 <./figures/propdepth_by_model.pdf>]
+Overfull \hbox (11.64804pt too wide) in paragraph at lines 138--139
+\T1/LinuxLibertineT-TLF/m/n/9 (-20) stages are in-stan-ti-ated: \T1/zi4/m/n/9 r
+untime\T1/LinuxLibertineT-TLF/m/n/9 (-20) , \T1/zi4/m/n/9 output_mismatch\T1/Li
+nuxLibertineT-TLF/m/n/9 (-20) , \T1/zi4/m/n/9 answer_error\T1/LinuxLibertineT-T
+LF/m/n/9 (-20) ,
+ []
+
+
+Overfull \hbox (9.94206pt too wide) in paragraph at lines 138--139
+\T1/LinuxLibertineT-TLF/m/n/9 (-20) and \T1/zi4/m/n/9 analytical_plan\T1/LinuxL
+ibertineT-TLF/m/n/9 (-20) . Code-Generation has zero cases---confirmed
+ []
+
+[7.7 <./figures/verifier_ablation.pdf> <./figures/token_economics.pdf>]
 (./tables/table_baselines_classification.tex
 Overfull \hbox (89.12425pt too wide) in paragraph at lines 6--29
  [][] 
  []
 
-) [7.7 <./figures/token_economics.pdf>]) (./sections/discussion.tex
-Underfull \vbox (badness 7832) has occurred while \output is active []
-
-
-(./tables/table_negative_control.tex)) (./sections/limitations_ethics.tex
-Overfull \hbox (4.34668pt too wide) in paragraph at lines 4--5
-\T1/LinuxLibertineT-TLF/m/n/9 (-20) and thus merges them into \T1/zi4/m/n/9 out
-put_mismatch\T1/LinuxLibertineT-TLF/m/n/9 (-20) . Pop-u-lat-ing Analytical-
- []
-
-
-Overfull \hbox (13.93526pt too wide) in paragraph at lines 4--5
-\T1/LinuxLibertineT-TLF/m/n/9 (-20) Plan, Code-Generation, and Answer-Error wit
-h 100--200 gold-annotated
- []
-
-[8.8]) (./sections/conclusion.tex)
+)) (./sections/discussion.tex (./tables/table_negative_control.tex))
+(./sections/limitations_ethics.tex [8.8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-(./main.bbl
+)
+(./sections/conclusion.tex) (./main.bbl
 LaTeX Info: Redefining \tempurl on input line 68.
 LaTeX Info: Redefining \tempurl on input line 84.
 LaTeX Info: Redefining \tempurl on input line 99.
 LaTeX Info: Redefining \tempurl on input line 117.
 LaTeX Info: Redefining \tempurl on input line 137.
 LaTeX Info: Redefining \tempurl on input line 151.
+ [9.9]
 LaTeX Info: Redefining \tempurl on input line 168.
 LaTeX Info: Redefining \tempurl on input line 182.
 LaTeX Info: Redefining \tempurl on input line 197.
@@ -1459,18 +1467,16 @@ LaTeX Info: Redefining \tempurl on input line 265.
 LaTeX Info: Redefining \tempurl on input line 279.
 LaTeX Info: Redefining \tempurl on input line 294.
 LaTeX Info: Redefining \tempurl on input line 312.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9.9]
 LaTeX Info: Redefining \tempurl on input line 327.
 LaTeX Info: Redefining \tempurl on input line 342.
 LaTeX Info: Redefining \tempurl on input line 370.
 LaTeX Info: Redefining \tempurl on input line 386.
 LaTeX Info: Redefining \tempurl on input line 404.
 LaTeX Info: Redefining \tempurl on input line 420.
-)
-(./sections/datacard.tex
+) (./sections/datacard.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10.10]
 Overfull \hbox (9.47343pt too wide) in paragraph at lines 64--65
 []\T1/zi4/m/n/9 task_id\T1/LinuxLibertineT-TLF/m/n/9 (-20) , \T1/zi4/m/n/9 suit
 e\T1/LinuxLibertineT-TLF/m/n/9 (-20) : task iden-ti-fier and suite (\T1/zi4/m/n
@@ -1486,7 +1492,7 @@ arser_status\T1/LinuxLibertineT-TLF/m/n/9 (-20) , \T1/zi4/m/n/9 execution_statu
 s\T1/LinuxLibertineT-TLF/m/n/9 (-20) : in-fras-truc-ture
  []
 
-[10.10]
+
 Overfull \hbox (4.67896pt too wide) in paragraph at lines 73--74
 []\T1/zi4/m/n/9 originating_step\T1/LinuxLibertineT-TLF/m/n/9 (-20) , \T1/zi4/m
 /n/9 propagation_depth\T1/LinuxLibertineT-TLF/m/n/9 (-20) : fail-ure lo-cal-i-s
@@ -1541,18 +1547,14 @@ xLibertineT-TLF/m/n/9 (-20) 438$\T1/LinuxLibertineT-TLF/m/n/9 (-20) ), with sys
 -tem-atic bias to-ward \T1/zi4/m/n/9 output_mismatch
  []
 
-
+[11.11]
 Overfull \hbox (56.59334pt too wide) in paragraph at lines 115--116
 []\T1/LinuxLibertineT-TLF/b/n/9 (-20) Versioning. \T1/LinuxLibertineT-TLF/m/n/9
  (-20) The bench-mark fol-lows se-man-tic ver-sion-ing (\T1/zi4/m/n/9 MAJOR.MIN
 OR.PATCH\T1/LinuxLibertineT-TLF/m/n/9 (-20) ).
  []
 
-) (./sections/appendix.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11.11]
-(./tables/table_harness_ablation.tex))
+) (./sections/appendix.tex (./tables/table_harness_ablation.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
@@ -1577,13 +1579,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 9A39BA5D7F2BD88B4CE969D55ED0645A;10423.
  ) 
 Here is how much of TeX's memory you used:
- 23782 strings out of 477975
- 405494 string characters out of 5839282
+ 23767 strings out of 477975
+ 405122 string characters out of 5839282
  1895330 words of memory out of 5000000
  42511 multiletter control sequences out of 15000+600000
- 721455 words of font info for 540 fonts, out of 8000000 for 9000
+ 720000 words of font info for 530 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
- 85i,16n,131p,3476b,747s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,16n,131p,3501b,719s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.enc}{/us
 r/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_ki75ao.enc}{/usr/shar
 e/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{/usr/share/texliv
@@ -1608,7 +1610,7 @@ LibertineTZ.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (12 pages, 725714 bytes).
+Output written on main.pdf (12 pages, 726498 bytes).
 PDF statistics:
  847 PDF objects out of 1000 (max. 8388607)
  548 compressed objects within 6 object streams
