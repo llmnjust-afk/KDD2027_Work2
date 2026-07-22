@@ -3,7 +3,7 @@
 
 \subsection{Task Suite Descriptions}
 
-\textbf{Synthetic trap tasks (95 tasks).} Programmatically generated across 5 domains (tabular EDA, time-series, recommendation, statistical, text-log) with deterministic ground-truth answers. Each domain uses 16 task instances generated from a fixed seed (seed$=$16). Tasks share structural templates within each domain but use different generated data, producing 70/80 unique answers (87.5\% uniqueness). Near-duplicate questions (identical first 100 chars) exist within domains (55/80) due to shared question structure, but the underlying data and expected answers differ. Train/dev/test splits are by task ID, not by template, so the same template appears in all splits---this is intentional, as the goal is to evaluate failure diagnosis, not template memorisation.
+\textbf{Synthetic trap tasks (95 tasks).} 80 tasks are programmatically generated across 5 domains (tabular EDA, time-series, recommendation, statistical, text-log), with 16 instances per domain using a fixed seed (seed$=$16). Tasks share structural templates within each domain but use different generated data, producing 70/80 unique answers (87.5\% uniqueness). Near-duplicate questions (identical first 100 chars) exist within domains (55/80) due to shared question structure, but the underlying data and expected answers differ. The remaining 15 tasks are DSBench questions (identified by \texttt{dsbench\_00000001} or \texttt{dsbench\_00000002} prefixes in the task ID) that are structurally similar to synthetic traps but originate from DSBench workbooks. Train/dev/test splits are by task ID, not by template, so the same template appears in all splits---this is intentional, as the goal is to evaluate failure diagnosis, not template memorisation.
 
 \textbf{UCI real-data tasks (23 tasks).} Analytical questions on 6 public datasets (Iris, Titanic, Tips, MPG, Penguins, Flights) downloaded at runtime from public repositories. Answers are computed deterministically from the real data. Tasks cover groupby aggregation, correlation, counting, and filtering.
 
@@ -58,7 +58,7 @@ DeepSeek-R1 & 0.0 & 0.0 & n/a \\
 
 \subsection{Data Schema}
 
-Each run in the enriched manifest (\texttt{manifest\_v3.csv}, 30 fields) contains:
+Each run in the enriched manifest (\texttt{manifest\_v3.csv}, 32 fields) contains:
 
 \begin{itemize}[leftmargin=*,itemsep=1pt]
 \item \texttt{task\_id}, \texttt{suite}: task identifier and suite (\texttt{synthetic}/\texttt{uci}/\texttt{dsbench})

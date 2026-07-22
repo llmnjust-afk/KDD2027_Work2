@@ -55,7 +55,7 @@ Answer-Error & wrong\_result, incomplete\_analysis & Yes \\
 \subsection{Failure Classification}
 \label{sec:classifier}
 
-The classifier walks an \texttt{AgentTrace} and assigns a \texttt{FailureClassification} (stage, sub-category, originating step, silence flag) to the first failed step. Classification is rule-based for high precision and full reproducibility, using signals from the trace: exception type (for Runtime), code-pattern matching (e.g., presence of \texttt{.count()} when the ground-truth path requires \texttt{.sum()} for Output-Mismatch), and answer-output mismatch. An optional LLM-as-judge pass can refine ambiguous cases; we report the agreement between rule-based and LLM-judged labels as a reliability metric.
+The classifier walks an \texttt{AgentTrace} and assigns a \texttt{FailureClassification} (stage, sub-category, originating step, silence flag) to the first failed step. Classification is rule-based for high precision and full reproducibility, using signals from the trace: exception type (for Runtime), code-pattern matching (e.g., detecting \texttt{.count()} when the reference path requires \texttt{.sum()}, classified as Code-Generation per the disambiguation rule), and answer-output mismatch (for Output-Mismatch). We note that in the current classifier implementation, code-level operation mismatches are merged into Output-Mismatch due to the difficulty of reliably distinguishing code-generation errors from answer-extraction errors without ground-truth path annotations; future versions should separate these categories.
 
 \subsection{Propagation Depth}
 \label{sec:propagation}
