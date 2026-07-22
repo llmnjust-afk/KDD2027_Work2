@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.7.4)  22 JUL 2026 13:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.7.4)  22 JUL 2026 13:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1438,14 +1438,23 @@ Overfull \hbox (9.94206pt too wide) in paragraph at lines 138--139
 ibertineT-TLF/m/n/9 (-20) . Code-Generation has zero cases---confirmed
  []
 
-[7.7 <./figures/verifier_ablation.pdf> <./figures/token_economics.pdf>]
+
+Underfull \vbox (badness 5417) has occurred while \output is active []
+
+ [7.7 <./figures/verifier_ablation.pdf> <./figures/token_economics.pdf>]
 (./tables/table_baselines_classification.tex
 Overfull \hbox (89.12425pt too wide) in paragraph at lines 6--29
  [][] 
  []
 
-)) (./sections/discussion.tex (./tables/table_negative_control.tex))
-(./sections/limitations_ethics.tex [8.8]
+)) (./sections/discussion.tex
+Underfull \vbox (badness 2096) has occurred while \output is active []
+
+
+(./tables/table_negative_control.tex)) (./sections/limitations_ethics.tex
+Underfull \vbox (badness 1253) has occurred while \output is active []
+
+ [8.8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
@@ -1454,9 +1463,12 @@ LaTeX Info: Redefining \tempurl on input line 68.
 LaTeX Info: Redefining \tempurl on input line 84.
 LaTeX Info: Redefining \tempurl on input line 99.
 LaTeX Info: Redefining \tempurl on input line 117.
+
+Underfull \vbox (badness 3428) has occurred while \output is active []
+
+ [9.9]
 LaTeX Info: Redefining \tempurl on input line 137.
 LaTeX Info: Redefining \tempurl on input line 151.
- [9.9]
 LaTeX Info: Redefining \tempurl on input line 168.
 LaTeX Info: Redefining \tempurl on input line 182.
 LaTeX Info: Redefining \tempurl on input line 197.
@@ -1473,8 +1485,12 @@ LaTeX Info: Redefining \tempurl on input line 370.
 LaTeX Info: Redefining \tempurl on input line 386.
 LaTeX Info: Redefining \tempurl on input line 404.
 LaTeX Info: Redefining \tempurl on input line 420.
-) (./sections/datacard.tex
+)
+(./sections/datacard.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 2478) has occurred while \output is active []
 
  [10.10]
 Overfull \hbox (9.47343pt too wide) in paragraph at lines 64--65
@@ -1547,14 +1563,17 @@ xLibertineT-TLF/m/n/9 (-20) 438$\T1/LinuxLibertineT-TLF/m/n/9 (-20) ), with sys
 -tem-atic bias to-ward \T1/zi4/m/n/9 output_mismatch
  []
 
-[11.11]
+
+Underfull \vbox (badness 6396) has occurred while \output is active []
+
+ [11.11]
 Overfull \hbox (56.59334pt too wide) in paragraph at lines 115--116
 []\T1/LinuxLibertineT-TLF/b/n/9 (-20) Versioning. \T1/LinuxLibertineT-TLF/m/n/9
  (-20) The bench-mark fol-lows se-man-tic ver-sion-ing (\T1/zi4/m/n/9 MAJOR.MIN
 OR.PATCH\T1/LinuxLibertineT-TLF/m/n/9 (-20) ).
  []
 
-) (./sections/appendix.tex (./tables/table_harness_ablation.tex))
+) (./sections/appendix.tex (./tables/table_harness_ablation.tex) [12.12])
 (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
@@ -1570,22 +1589,18 @@ Class acmart Warning: ACM keywords are mandatory for papers over two pages.
 
 Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
-
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
-
-[12.12] (./main.aux)
+[13.13] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 9A39BA5D7F2BD88B4CE969D55ED0645A;10423.
  ) 
 Here is how much of TeX's memory you used:
- 23767 strings out of 477975
- 405122 string characters out of 5839282
- 1895330 words of memory out of 5000000
+ 23765 strings out of 477975
+ 405054 string characters out of 5839282
+ 1897330 words of memory out of 5000000
  42511 multiletter control sequences out of 15000+600000
- 720000 words of font info for 530 fonts, out of 8000000 for 9000
+ 719637 words of font info for 528 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
- 85i,16n,131p,3501b,719s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,17n,131p,3501b,719s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.enc}{/us
 r/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_ki75ao.enc}{/usr/shar
 e/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{/usr/share/texliv
@@ -1610,10 +1625,10 @@ LibertineTZ.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (12 pages, 726498 bytes).
+Output written on main.pdf (13 pages, 728230 bytes).
 PDF statistics:
- 847 PDF objects out of 1000 (max. 8388607)
- 548 compressed objects within 6 object streams
- 111 named destinations out of 1000 (max. 500000)
+ 852 PDF objects out of 1000 (max. 8388607)
+ 552 compressed objects within 6 object streams
+ 112 named destinations out of 1000 (max. 500000)
  114106 words of extra memory for PDF output out of 128383 (max. 10000000)
 
