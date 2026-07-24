@@ -168,9 +168,11 @@ def main():
         "selected": mapping,
     }
     lock_text = json.dumps(lock_payload, sort_keys=True, separators=(",", ":"))
-    lock_sha = hashlib.sha256(lock_text.encode()).hexdigest()
-    (private / "sample_lock.json").write_text(json.dumps(lock_payload, indent=2))
-    (private / "sample_lock.sha256").write_text(f"{lock_sha}  sample_lock.json\n")
+    canonical_lock_sha = hashlib.sha256(lock_text.encode()).hexdigest()
+    lock_file_text = json.dumps(lock_payload, indent=2) + "\n"
+    lock_file_sha = hashlib.sha256(lock_file_text.encode()).hexdigest()
+    (private / "sample_lock.json").write_text(lock_file_text)
+    (private / "sample_lock.sha256").write_text(f"{lock_file_sha}  sample_lock.json\n")
     (private / "canonical.json").write_text(json.dumps(canonical, indent=2))
     (output / "ANNOTATION_GUIDE.md").write_text(GUIDE)
 
@@ -199,7 +201,8 @@ def main():
         "valid_runs": len(valid),
         "failed_runs": len(failures),
         "selected_failures": len(selected),
-        "sample_lock_sha256": lock_sha,
+        "sample_lock_canonical_sha256": canonical_lock_sha,
+        "sample_lock_file_sha256": lock_file_sha,
         "models": dict(Counter(item["model"] for item in mapping)),
         "families": dict(Counter(item["family"] for item in mapping)),
     }
