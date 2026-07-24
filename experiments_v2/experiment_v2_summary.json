@@ -1,0 +1,65 @@
+{
+  "total_runs": 927,
+  "unique_runs": 927,
+  "api_errors": 0,
+  "models": {
+    "deepseek-chat": {
+      "runs": 309,
+      "correct": 260,
+      "failed": 49,
+      "success_rate": 0.8414239482200647,
+      "stage_distribution": {
+        "analytical_plan": 15,
+        "answer_error": 28,
+        "output_mismatch": 6
+      },
+      "category_distribution": {
+        "wrong_operation_plan": 15,
+        "wrong_result": 28,
+        "hallucinated_answer": 6
+      }
+    },
+    "gpt-4o": {
+      "runs": 309,
+      "correct": 263,
+      "failed": 46,
+      "success_rate": 0.8511326860841424,
+      "stage_distribution": {
+        "output_mismatch": 32,
+        "analytical_plan": 1,
+        "answer_error": 13
+      },
+      "category_distribution": {
+        "hallucinated_answer": 31,
+        "no_answer_printed": 1,
+        "wrong_operation_plan": 1,
+        "wrong_result": 13
+      }
+    },
+    "gpt-4o-mini": {
+      "runs": 309,
+      "correct": 72,
+      "failed": 237,
+      "success_rate": 0.23300970873786409,
+      "stage_distribution": {
+        "output_mismatch": 232,
+        "runtime": 3,
+        "analytical_plan": 1,
+        "answer_error": 1
+      },
+      "category_distribution": {
+        "hallucinated_answer": 170,
+        "no_answer_printed": 62,
+        "runtime_exception": 3,
+        "wrong_operation_plan": 1,
+        "wrong_result": 1
+      }
+    }
+  },
+  "failure_stage_distribution": {
+    "output_mismatch": 270,
+    "runtime": 3,
+    "analytical_plan": 17,
+    "answer_error": 42
+  }
+}
