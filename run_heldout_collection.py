@@ -20,6 +20,7 @@ MODELS = {
     "gpt-4o": ("gpt-4o", 2.5, 10.0),
     "gpt-4o-mini": ("gpt-4o-mini", 0.15, 0.60),
     "deepseek-chat": ("deepseek-chat", 0.14, 0.28),
+    "qwen3-max": ("qwen3-max-2026-01-23", 0.5, 1.5),
 }
 
 
