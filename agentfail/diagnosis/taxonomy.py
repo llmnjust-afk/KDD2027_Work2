@@ -48,7 +48,7 @@ class FailureStage(Enum):
     ANALYTICAL_PLAN = "analytical_plan"   # thought reveals wrong approach
     CODE_GENERATION = "code_generation"   # code doesn't match correct thought
     RUNTIME = "runtime"                   # code crashes (loud)
-    OUTPUT_MISMATCH = "output_mismatch"   # answer extracted wrong from output (silent)
+    OUTPUT_MISMATCH = "output_mismatch"   # reported answer mismatches output; observability varies
     ANSWER_ERROR = "answer_error"         # code runs, output consistent, answer wrong (silent)
     NONE = "none"
 
@@ -83,7 +83,8 @@ class FailureCategory(Enum):
     KEY_ERROR_RUNTIME = "key_error_runtime"
     SECURITY_BLOCK_RUNTIME = "security_block_runtime"
 
-    # OUTPUT_MISMATCH: code runs but agent extracts wrong answer from output (silent)
+    # OUTPUT_MISMATCH: code runs but the agent extracts/reports the wrong answer;
+    # observability is annotated independently.
     MISREAD_OUTPUT = "misread_output"              # output has answer but agent reports different
     HALLUCINATED_ANSWER = "hallucinated_answer"    # answer not in output at all
     NO_ANSWER_PRINTED = "no_answer_printed"        # code ran but never printed ANSWER:
@@ -95,18 +96,13 @@ class FailureCategory(Enum):
     NONE = "none"
 
 
-# Silent = code ran without error but answer is wrong
-SILENT_STAGES = {FailureStage.OUTPUT_MISMATCH, FailureStage.ANSWER_ERROR}
+# Stage and observability are orthogonal. Answer errors are silent by default;
+# output mismatch, code generation, and planning failures may be either silent
+# or accompanied by an explicit failure message.
+SILENT_STAGES = {FailureStage.ANSWER_ERROR}
 SILENT_CATEGORIES = {
-    FailureCategory.MISREAD_OUTPUT,
-    FailureCategory.HALLUCINATED_ANSWER,
-    FailureCategory.NO_ANSWER_PRINTED,
     FailureCategory.WRONG_RESULT,
     FailureCategory.INCOMPLETE_ANALYSIS,
-    # plan errors that produce running code are also silent
-    FailureCategory.WRONG_OPERATION_PLAN,
-    FailureCategory.WRONG_FILTER_PLAN,
-    FailureCategory.LEAKAGE_PLAN,
 }
 
 

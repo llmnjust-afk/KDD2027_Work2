@@ -19,7 +19,7 @@ AgentFail fills exactly these gaps.
 
 ## Innovation points
 
-1. **4-stage failure taxonomy** (Planning / Tool-use / Execution / Interpretation)
+1. **5-stage failure taxonomy** (Analytical-Plan / Code-Generation / Runtime / Output-Mismatch / Answer-Error) with independent observability labels
    with an explicit silent-vs-loud distinction.
 2. **Silent-failure detection** + propagation-depth analysis (long-horizon
    failure spread).
@@ -61,7 +61,7 @@ agentfail/
   llm/            # LLM backends (mock + OpenAI-compatible) with token accounting
   agent/          # ReAct agent + code-execution sandbox with full trace logging
   benchmark/      # Task set with ground-truth paths + failure traps
-  diagnosis/      # 4-stage taxonomy, classifier, propagation, causal replay
+  diagnosis/      # 5-stage taxonomy, classifier, propagation, causal replay
   metrics/        # failure metrics, token economics, statistical aggregation
   method/         # failure-aware adaptive verifier (method contribution)
   eval/           # end-to-end runner + experiment config

@@ -1,29 +1,21 @@
 \begin{table}[t]
 \centering
-\caption{Baseline classifiers for failure-stage classification (binary: output\_mismatch vs.\ runtime). Simple baselines use heuristic rules; ML baselines are trained on the train split (1{,}101 traces) and evaluated on the test split (194 traces) with no label leakage. LLM judges are evaluated on the 47-trace annotation set. Train/dev/test split is by task ID (198/42/43 tasks) to prevent leakage.}
+\caption{Failure-stage baselines on the final 150-trace human-adjudicated gold set. Macro-F1 is over the four observed classes. The rule classifier uses the reference path and is therefore oracle-assisted.}
 \label{tab:baselines-classification}
 \small
 \begin{tabular}{@{}lcc@{}}
 \toprule
-Baseline & Accuracy (\%) & Description \\
+Baseline & Accuracy (\%) & Macro-F1 (\%) \\
 \midrule
-\multicolumn{3}{l}{\textit{Simple baselines:}} \\
-Majority (output\_mismatch) & 61.6 & Always predict majority class \\
-Silent heuristic & 80.3 & Silent $\to$ output\_mismatch; loud $\to$ runtime \\
-Token threshold & 55.2 & tokens $<$ 500 $\to$ runtime; else output\_mismatch \\
+Majority (Output-Mismatch) & 51.3 & 17.0 \\
+Code length ($<200$) & 48.0 & 16.3 \\
+Answer presence & 41.3 & 19.9 \\
+Observable exception & 77.3 & 45.5 \\
+\textbf{Rule classifier (oracle-assisted)} & \textbf{91.3} & \textbf{90.3} \\
 \midrule
-\multicolumn{3}{l}{\textit{ML baselines (train/test split, no label leakage):}} \\
-TF-IDF + Logistic Regression & 86.1 & TF-IDF on trace text + LR \\
-Trace features + Random Forest & 88.7 & Structural features (tokens, model, depth) + RF \\
-Code-aware + Logistic Regression & \textbf{89.2} & Structural + token features + LR \\
-\midrule
-\multicolumn{3}{l}{\textit{LLM judges (47-trace annotation set):}} \\
-GPT-4o-mini judge & 70.7 & LLM classifies stage from trace \\
-GPT-4o judge & 17.1 & LLM classifies stage from trace \\
-\midrule
-\multicolumn{3}{l}{\textit{Step localization (Task D):}} \\
-Random-step & 82.1 & Random step selection \\
-Last-step & 100.0 & Always predict last step \\
+\multicolumn{3}{l}{\textit{Step localisation on 103 traces:}} \\
+Random step (seed 2027) & 35.9 & --- \\
+Last code step & 32.0 & --- \\
 \bottomrule
 \end{tabular}
 \end{table}

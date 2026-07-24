@@ -75,10 +75,10 @@ Each run in the enriched manifest (\texttt{manifest\_v3.csv}, 32 fields) contain
 \item \texttt{tokens}, \texttt{tokens\_input}, \texttt{tokens\_output}, \texttt{cost\_usd}: token usage and cost
 \item \texttt{final\_answer}: agent's final answer (truncated to 200 chars)
 \item \texttt{label\_source}: \texttt{rule} (rule-based classifier) or \texttt{unmatched}
-\item \texttt{annotation\_confidence}, \texttt{human\_gold}, \texttt{adjudication\_status}: human annotation fields (populated for 47 traces; pending for the remainder)
+\item \texttt{annotation\_confidence}, \texttt{human\_gold}, \texttt{adjudication\_status}: human annotation fields populated for all 150 gold traces
 \end{itemize}
 
-\textbf{Annotation uncertainty.} The \texttt{label\_source} field indicates whether a label comes from the rule-based classifier (\texttt{rule}) or is unmatched. For 47 traces, three human annotators provided independent labels and an adjudicated gold label (majority vote); inter-annotator agreement is Fleiss' $\kappa = 0.860$ (strong). The rule-based classifier achieves 71.8\% accuracy against gold labels. The remaining traces retain only rule-based labels; scaling human annotation to 300--500 traces is future work.
+\textbf{Annotation uncertainty.} The release contains 150 human-adjudicated traces. The new 103-trace tranche preserves three independent labels, five blinded QC duplicates per annotator, and consensus adjudications. Raw agreement is Fleiss' $\kappa=.350$ for stage and $.590$ for observability; the revised oracle-assisted classifier achieves 91.3\% accuracy against final gold. Remaining traces retain rule labels and should not be treated as equivalent to human gold.
 
 \textbf{Missing and duplicate runs.} The manifest contains 5{,}984 runs. Some (task, model, variant) groups have fewer than 3 repetitions due to API failures or timeouts; these are retained with \texttt{api\_status}$=$\texttt{error}. Duplicate runs (same task, model, variant, rep) are detected by the assertion checks and removed. Infrastructure-failed runs are retained in the manifest (for transparency) but excluded from valid-run analyses via the \texttt{is\_infra\_failure} filter.
 
@@ -96,7 +96,7 @@ Answers are evaluated as follows: (1) \emph{Numeric answers}: compared with a re
 \item DeepSeek-R1 produces no valid traces on any suite (100\% infrastructure failure); its results should not be interpreted as model inability.
 \item DeepSeek-V3 on DSBench: all 600 runs are infrastructure failures (tokens$=$0), likely due to Excel parsing issues in the sandbox.
 \item Qwen3-max on UCI: all 69 runs are infrastructure failures.
-\item The rule-based classifier achieves 71.8\% accuracy against human gold labels ($\kappa = 0.438$), with systematic bias toward \texttt{output\_mismatch} over \texttt{runtime}; human annotation currently covers 47 of 3{,}940 failures.
+\item Human adjudication covers 150 failures; the revised oracle-assisted classifier reaches 91.3\% accuracy but requires independent held-out validation because its rules were refined after gold error analysis.
 \item DSBench tasks require a separate download and may be present in LLM training data.
 \end{itemize}
 

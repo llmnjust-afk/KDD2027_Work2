@@ -3,7 +3,7 @@
 
 \subsection{Task Suite Descriptions}
 
-\textbf{Synthetic trap tasks (95 tasks).} Programmatically generated across 5 domains (tabular EDA, time-series, recommendation, statistical, text-log) with deterministic ground-truth answers. Each domain uses 16 task instances generated from a fixed seed (seed$=$16). Tasks share structural templates within each domain but use different generated data, producing 70/80 unique answers (87.5\% uniqueness). Near-duplicate questions (identical first 100 chars) exist within domains (55/80) due to shared question structure, but the underlying data and expected answers differ. Train/dev/test splits are by task ID, not by template, so the same template appears in all splits---this is intentional, as the goal is to evaluate failure diagnosis, not template memorisation.
+\textbf{Synthetic trap tasks (95 tasks).} 80 tasks are programmatically generated across 5 domains (tabular EDA, time-series, recommendation, statistical, text-log), with 16 instances per domain using a fixed seed (seed$=$16). Tasks share structural templates within each domain but use different generated data, producing 70/80 unique answers (87.5\% uniqueness). Near-duplicate questions (identical first 100 chars) exist within domains (55/80) due to shared question structure, but the underlying data and expected answers differ. The remaining 15 tasks are DSBench questions (identified by \texttt{dsbench\_00000001} or \texttt{dsbench\_00000002} prefixes in the task ID) that are structurally similar to synthetic traps but originate from DSBench workbooks. Train/dev/test splits are by task ID, not by template, so the same template appears in all splits---this is intentional, as the goal is to evaluate failure diagnosis, not template memorisation.
 
 \textbf{UCI real-data tasks (23 tasks).} Analytical questions on 6 public datasets (Iris, Titanic, Tips, MPG, Penguins, Flights) downloaded at runtime from public repositories. Answers are computed deterministically from the real data. Tasks cover groupby aggregation, correlation, counting, and filtering.
 
@@ -58,7 +58,7 @@ DeepSeek-R1 & 0.0 & 0.0 & n/a \\
 
 \subsection{Data Schema}
 
-Each run in the enriched manifest (\texttt{manifest\_v3.csv}, 30 fields) contains:
+Each run in the enriched manifest (\texttt{manifest\_v3.csv}, 32 fields) contains:
 
 \begin{itemize}[leftmargin=*,itemsep=1pt]
 \item \texttt{task\_id}, \texttt{suite}: task identifier and suite (\texttt{synthetic}/\texttt{uci}/\texttt{dsbench})
@@ -75,10 +75,10 @@ Each run in the enriched manifest (\texttt{manifest\_v3.csv}, 30 fields) contain
 \item \texttt{tokens}, \texttt{tokens\_input}, \texttt{tokens\_output}, \texttt{cost\_usd}: token usage and cost
 \item \texttt{final\_answer}: agent's final answer (truncated to 200 chars)
 \item \texttt{label\_source}: \texttt{rule} (rule-based classifier) or \texttt{unmatched}
-\item \texttt{annotation\_confidence}, \texttt{human\_gold}, \texttt{adjudication\_status}: human annotation fields (pending)
+\item \texttt{annotation\_confidence}, \texttt{human\_gold}, \texttt{adjudication\_status}: human annotation fields populated for all 150 gold traces
 \end{itemize}
 
-\textbf{Annotation uncertainty.} The \texttt{label\_source} field indicates whether a label comes from the rule-based classifier (\texttt{rule}) or is unmatched. The \texttt{annotation\_confidence} and \texttt{human\_gold} fields are currently empty, pending the 47-trace human annotation protocol. Once completed, each trace will have $\geq 3$ independent labels and an adjudicated gold label; the agreement rate will be reported as Fleiss' $\kappa$.
+\textbf{Annotation uncertainty.} The release contains 150 human-adjudicated traces. The new 103-trace tranche preserves three independent labels, five blinded QC duplicates per annotator, and consensus adjudications. Raw agreement is Fleiss' $\kappa=.350$ for stage and $.590$ for observability; the revised oracle-assisted classifier achieves 91.3\% accuracy against final gold. Remaining traces retain rule labels and should not be treated as equivalent to human gold.
 
 \textbf{Missing and duplicate runs.} The manifest contains 5{,}984 runs. Some (task, model, variant) groups have fewer than 3 repetitions due to API failures or timeouts; these are retained with \texttt{api\_status}$=$\texttt{error}. Duplicate runs (same task, model, variant, rep) are detected by the assertion checks and removed. Infrastructure-failed runs are retained in the manifest (for transparency) but excluded from valid-run analyses via the \texttt{is\_infra\_failure} filter.
 
@@ -96,7 +96,7 @@ Answers are evaluated as follows: (1) \emph{Numeric answers}: compared with a re
 \item DeepSeek-R1 produces no valid traces on any suite (100\% infrastructure failure); its results should not be interpreted as model inability.
 \item DeepSeek-V3 on DSBench: all 600 runs are infrastructure failures (tokens$=$0), likely due to Excel parsing issues in the sandbox.
 \item Qwen3-max on UCI: all 69 runs are infrastructure failures.
-\item The rule-based classifier labels are validated only against an LLM judge ($\kappa=0.435$); human gold labels are pending.
+\item Human adjudication covers 150 failures; the revised oracle-assisted classifier reaches 91.3\% accuracy but requires independent held-out validation because its rules were refined after gold error analysis.
 \item DSBench tasks require a separate download and may be present in LLM training data.
 \end{itemize}
 

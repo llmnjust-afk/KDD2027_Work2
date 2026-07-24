@@ -1,0 +1,29 @@
+{
+  "new_gold_count": 103,
+  "combined_gold_count": 150,
+  "new_stage_distribution": {
+    "code_generation": 12,
+    "answer_error": 20,
+    "runtime": 8,
+    "output_mismatch": 63
+  },
+  "new_silent_distribution": {
+    "true": 55,
+    "false": 48
+  },
+  "new_decision_sources": {
+    "unanimous_raw_annotation": 16,
+    "consensus_adjudication": 87
+  },
+  "explicit_observable_output_mismatches": 39,
+  "combined_stage_distribution": {
+    "output_mismatch": 77,
+    "answer_error": 22,
+    "runtime": 39,
+    "code_generation": 12
+  },
+  "combined_silent_distribution": {
+    "true": 71,
+    "false": 79
+  }
+}

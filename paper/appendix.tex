@@ -1,7 +1,7 @@
-\section{Annotation Protocol for Inter-Rater Reliability}
+\section{Annotation Protocol and Results}
 \label{app:annotation}
 
-We provide a 100-trace annotation set sampled stratified by model from all 3{,}940 failed traces. $\geq 3$ annotators independently label each trace with (stage, category, is\_silent). Cohen's $\kappa$ is computed pairwise and Fleiss' $\kappa$ across all annotators on the stage label. The annotation guide, JSON form, and CSV form are released with the code. Target $\kappa \geq 0.7$. (Current LLM-as-judge $\kappa = 0.435$; human annotation is pending.)
+The final evaluation set contains 150 human-adjudicated failed traces: an earlier 47-trace tranche and 103 newly sampled traces. Three annotators independently label the new tranche while blinded to model and system predictions; each reproduces five duplicate QC traces exactly. Raw Fleiss' agreement is $\kappa=.350$ for stage (95\% CI [.235, .447]) and $.590$ for observability. Stage full agreement is 27.2\%; 87 traces undergo consensus adjudication. The final distribution is Output-Mismatch 77, Runtime 39, Answer-Error 22, Code-Generation 12, and Analytical-Plan 0. Raw labels, QC mappings, adjudications, and gold labels are released.
 
 \section{Harness Ablation Details}
 \label{app:harness}
@@ -23,5 +23,4 @@ All experiments use deterministic data generation (fixed seeds for synthetic tas
 \section{Data Availability}
 \label{app:data-avail}
 
-All code, data, and traces are publicly available at \url{https://github.com/llmnjust-afk/KDD2027_Work2}. The repository includes: (1) the full AgentFail framework source code; (2) the enriched manifest (\texttt{manifest\_v2.csv}) with 18 fields and 5{,}984 runs, of which 3{,}602 are valid runs with automatically generated diagnostic labels; (3) the 47-trace annotation set with full Thought/Code/Output data; (4) the MockLLM backend for zero-cost reproduction; (5) all table-generation scripts with assertion checks; (6) \texttt{requirements.txt} for dependency pinning. The synthetic task generators are self-contained. UCI datasets are downloaded at runtime from public repositories. DSBench tasks require a separate download from~\citep{jing2024dsbench}. Raw LLM responses are not redistributed.
-
+All code, data, and traces are available at \url{https://github.com/llmnjust-afk/KDD2027_Work2}. The release includes the 32-field manifest, the 150-trace human gold set with raw labels and adjudications, the 927-run relaxed-sandbox extension, deterministic baseline scripts, and dependency specifications. Synthetic tasks are self-contained; UCI data download at runtime, while DSBench requires its separately licensed source~\citep{jing2024dsbench}.

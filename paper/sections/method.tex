@@ -1,7 +1,7 @@
 \section{The AgentFail Framework}
 \label{sec:method}
 
-AgentFail instruments a standard ReAct-style data-science agent with three diagnostic layers: (1) a five-stage failure taxonomy that classifies each failure by where it originates and whether it is silent; (2) a propagation-depth analyser that measures how far a failure spreads before detection; and (3) a counterfactual causal-replay module that attributes failures to specific steps. \Cref{fig:framework} summarises the architecture.
+AgentFail instruments a ReAct-style data-science agent with three diagnostic layers: (1) a five-stage taxonomy plus an independent observability label; (2) a propagation-depth analyser; and (3) counterfactual replay for repairability testing. \Cref{fig:framework} summarises the architecture.
 
 \begin{figure}[t]
 \centering
@@ -26,11 +26,11 @@ We decompose every agent failure into one of five stages, defined by \emph{where
 \item \textbf{Analytical-Plan.} The agent selects the wrong analytical approach: e.g., computing the overall mean when the task requires a per-group sum, or using future data in a time-series analysis (temporal leakage). Often silent.
 \item \textbf{Code-Generation.} The agent writes code that embodies a wrong operation: e.g., using \texttt{.count()} where \texttt{.sum()} is needed, selecting the wrong column, or introducing type confusion. Silence varies.
 \item \textbf{Runtime (loud).} The generated code raises an exception: runtime errors, type errors, key errors, or sandbox security blocks. The failure is \emph{visible} to the agent, which can observe the traceback and retry.
-\item \textbf{Output-Mismatch (silent).} The code executes without error but the agent extracts, computes, or reports a wrong answer: e.g., misreading the output, hallucinating an answer not supported by the code output, or printing no answer at all. The failure is \emph{invisible} to the agent.
+\item \textbf{Output-Mismatch.} The code executes without error but the agent extracts or reports a result unsupported by the relevant execution output. The mismatch may be silent or explicitly observable (e.g., ``No data found'').
 \item \textbf{Answer-Error (silent).} The code runs and produces a result, but the result itself is wrong relative to the ground truth: e.g., a wrong aggregation result or an incomplete analysis. The failure is \emph{invisible} to the agent.
 \end{itemize}
 
-The Runtime vs.\ Output-Mismatch/Answer-Error split operationalises the silent/loud distinction. This is the conceptual core of the taxonomy: a loud failure (Runtime) is a \emph{detectable} error that the agent can in principle recover from, whereas a silent failure (Output-Mismatch or Answer-Error) is an \emph{undetectable} error that propagates undetected. \Cref{tab:taxonomy} lists the full hierarchy.
+Stage and observability answer different questions: stage identifies where the error becomes detectable, whereas \texttt{is\_silent} records whether the trace explicitly exposes failure. Runtime is ordinarily loud and Answer-Error ordinarily silent, but Output-Mismatch and Code-Generation vary. \Cref{tab:taxonomy} lists the hierarchy.
 
 \textbf{Disambiguation rule.} To ensure mutual exclusivity, the classifier assigns the \emph{first} stage at which the error becomes detectable. Consider a task requiring per-group sum where the agent uses \texttt{.count()}: the error is \emph{detectable at code-generation time} (the code uses the wrong operation), so it is classified as Code-Generation, not Answer-Error (where the code uses the correct operation but the data produces a wrong result) or Output-Mismatch (where the code and result are correct but the agent misreports). The key distinction is: Code-Generation means the code itself is wrong; Answer-Error means the code is correct but the answer is wrong due to data issues; Output-Mismatch means the code and result are correct but the agent misreads or hallucinates the final answer. This ordering prevents the ambiguity where a single failure could be assigned to multiple stages.
 
@@ -39,23 +39,25 @@ The Runtime vs.\ Output-Mismatch/Answer-Error split operationalises the silent/l
 \caption{Five-stage failure taxonomy (v2). Stages are defined by \emph{where the error is detectable}, making them mutually exclusive.}
 \label{tab:taxonomy}
 \small
+\resizebox{\linewidth}{!}{%
 \begin{tabular}{@{}lll@{}}
 \toprule
-Stage & Sub-categories & Silent? \\
+Stage & Sub-categories & Observability \\
 \midrule
 Analytical-Plan & wrong\_operation\_plan, leakage\_plan & often \\
 Code-Generation & wrong\_aggregation\_code, wrong\_column, type\_confusion & varies \\
 Runtime & runtime\_exception, key\_error, security\_block & No \\
-Output-Mismatch & misread\_output, hallucinated\_answer, no\_answer\_printed & Yes \\
+Output-Mismatch & misread\_output, hallucinated\_answer, no\_answer\_printed & varies \\
 Answer-Error & wrong\_result, incomplete\_analysis & Yes \\
 \bottomrule
 \end{tabular}
+}
 \end{table}
 
 \subsection{Failure Classification}
 \label{sec:classifier}
 
-The classifier walks an \texttt{AgentTrace} and assigns a \texttt{FailureClassification} (stage, sub-category, originating step, silence flag) to the first failed step. Classification is rule-based for high precision and full reproducibility, using signals from the trace: exception type (for Runtime), thought-text analysis against the reference path (for Analytical-Plan), code-pattern matching against \texttt{gt\_path}---the ground-truth solution path available for synthetic and UCI tasks---(for Code-Generation, e.g., detecting \texttt{.count()} when the reference requires \texttt{.sum()}), answer-output mismatch (for Output-Mismatch), and a fallback for approach-level errors (Answer-Error). The disambiguation rule checks stages in order of detectability: Runtime $\to$ Analytical-Plan $\to$ Code-Generation $\to$ Output-Mismatch $\to$ Answer-Error. On the 47-trace human gold set, the v2 classifier achieves 76.6\% accuracy (up from 57.4\% for the v1 classifier), with the improvement driven by separating Answer-Error from Output-Mismatch and detecting Analytical-Plan from thought text. Code-Generation detection is implemented (comparing agent code operations to \texttt{gt\_path}) but yields zero cases, confirming that agents on these tasks do not make operation-level code errors.
+The classifier combines global exception checks, conservative Thought analysis, Thought--Code--\texttt{gt\_path} consistency rules, whole-trace output interpretation, and explicit failure-message detection. Code-Generation rules cover wrong aggregation, wrong dynamic column selection, omitted implementation, and computed-but-unprinted answers. Because reference paths are inputs, this classifier is oracle-assisted rather than deployment-ready. On the final 150-trace human gold set it achieves 91.3\% accuracy (95\% bootstrap CI [86.7, 95.3]) and 90.3\% macro-F1 over the four observed classes; observability accuracy is 99.3\%. Code-Generation precision and recall are both 91.7\%.
 
 \subsection{Propagation Depth}
 \label{sec:propagation}
@@ -75,4 +77,3 @@ Formally, let $T = (s_1, \dots, s_n)$ be a failed trace and $s_k$ the classified
 \label{sec:metrics}
 
 We report three layers of metrics: \textbf{Layer 1 (task-level):} success rate (SR), code-execution success rate. \textbf{Layer 2 (failure-diagnostic):} silent-failure rate (SFR = proportion of failures that are silent), stage distribution, propagation depth, recovery rate, and oracle repair rate. \textbf{Layer 3 (token-economic):} tokens-per-success and cost-per-success, addressing the under-reporting of cost identified by~\citet{moghadasi2026what}. Verifier comparisons use the McNemar test ($b$, $c$, $\chi^2$ $p$-value).
-

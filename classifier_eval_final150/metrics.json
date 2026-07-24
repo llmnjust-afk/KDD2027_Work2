@@ -1,0 +1,442 @@
+{
+  "new103": {
+    "n": 103,
+    "accuracy": 0.9611650485436893,
+    "silent_accuracy": 0.9902912621359223,
+    "origin_exact": 0.7864077669902912,
+    "origin_within_one": 0.9805825242718447,
+    "gold_distribution": {
+      "code_generation": 12,
+      "answer_error": 20,
+      "runtime": 8,
+      "output_mismatch": 63
+    },
+    "pred_distribution": {
+      "code_generation": 12,
+      "answer_error": 18,
+      "output_mismatch": 65,
+      "runtime": 8
+    },
+    "per_class": {
+      "analytical_plan": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "code_generation": {
+        "precision": 0.9166666666666666,
+        "recall": 0.9166666666666666,
+        "f1": 0.9166666666666666,
+        "support": 12
+      },
+      "runtime": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8
+      },
+      "output_mismatch": {
+        "precision": 0.9538461538461539,
+        "recall": 0.9841269841269841,
+        "f1": 0.96875,
+        "support": 63
+      },
+      "answer_error": {
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.9473684210526316,
+        "support": 20
+      }
+    },
+    "macro_f1_5class": 0.7665570175438596,
+    "macro_f1_observed": 0.9581962719298245,
+    "accuracy_95ci": [
+      0.9223300970873787,
+      0.9902912621359223
+    ],
+    "mismatches": [
+      {
+        "trace_id": "new_006",
+        "cohort": "new103",
+        "gold_stage": "answer_error",
+        "pred_stage": "output_mismatch",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 0,
+        "pred_origin": 1,
+        "pred_category": "hallucinated_answer",
+        "pred_evidence": "output_mismatch: final answer is not supported by successful execution output"
+      },
+      {
+        "trace_id": "new_032",
+        "cohort": "new103",
+        "gold_stage": "answer_error",
+        "pred_stage": "output_mismatch",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 3,
+        "pred_origin": 2,
+        "pred_category": "misread_output",
+        "pred_evidence": "output_mismatch: empty stdout from an unprinted expression was interpreted as negative evidence"
+      },
+      {
+        "trace_id": "new_056",
+        "cohort": "new103",
+        "gold_stage": "code_generation",
+        "pred_stage": "output_mismatch",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 4,
+        "pred_origin": 1,
+        "pred_category": "misread_output",
+        "pred_evidence": "output_mismatch: empty stdout from an unprinted expression was interpreted as negative evidence"
+      },
+      {
+        "trace_id": "new_097",
+        "cohort": "new103",
+        "gold_stage": "output_mismatch",
+        "pred_stage": "code_generation",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 1,
+        "pred_origin": 5,
+        "pred_category": "incomplete_analysis",
+        "pred_evidence": "code_generation: final code did not implement or print the operation promised in Thought"
+      }
+    ]
+  },
+  "combined150": {
+    "n": 150,
+    "accuracy": 0.9133333333333333,
+    "silent_accuracy": 0.9933333333333333,
+    "origin_exact": 0.76,
+    "origin_within_one": 0.9133333333333333,
+    "gold_distribution": {
+      "output_mismatch": 77,
+      "answer_error": 22,
+      "runtime": 39,
+      "code_generation": 12
+    },
+    "pred_distribution": {
+      "answer_error": 29,
+      "runtime": 39,
+      "output_mismatch": 70,
+      "code_generation": 12
+    },
+    "per_class": {
+      "analytical_plan": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "code_generation": {
+        "precision": 0.9166666666666666,
+        "recall": 0.9166666666666666,
+        "f1": 0.9166666666666666,
+        "support": 12
+      },
+      "runtime": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 39
+      },
+      "output_mismatch": {
+        "precision": 0.9571428571428572,
+        "recall": 0.8701298701298701,
+        "f1": 0.9115646258503401,
+        "support": 77
+      },
+      "answer_error": {
+        "precision": 0.6896551724137931,
+        "recall": 0.9090909090909091,
+        "f1": 0.7843137254901961,
+        "support": 22
+      }
+    },
+    "macro_f1_5class": 0.7225090036014405,
+    "macro_f1_observed": 0.9031362545018007,
+    "accuracy_95ci": [
+      0.8666666666666667,
+      0.9533333333333334
+    ],
+    "mismatches": [
+      {
+        "trace_id": "trace_000",
+        "cohort": "old47",
+        "gold_stage": "output_mismatch",
+        "pred_stage": "answer_error",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 0,
+        "pred_origin": 2,
+        "pred_category": "wrong_result",
+        "pred_evidence": "answer produced but incorrect (approach-level error)"
+      },
+      {
+        "trace_id": "trace_001",
+        "cohort": "old47",
+        "gold_stage": "output_mismatch",
+        "pred_stage": "answer_error",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 0,
+        "pred_origin": 2,
+        "pred_category": "wrong_result",
+        "pred_evidence": "answer produced but incorrect (approach-level error)"
+      },
+      {
+        "trace_id": "trace_006",
+        "cohort": "old47",
+        "gold_stage": "output_mismatch",
+        "pred_stage": "answer_error",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 0,
+        "pred_origin": 2,
+        "pred_category": "wrong_result",
+        "pred_evidence": "answer produced but incorrect (approach-level error)"
+      },
+      {
+        "trace_id": "trace_008",
+        "cohort": "old47",
+        "gold_stage": "output_mismatch",
+        "pred_stage": "answer_error",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 0,
+        "pred_origin": 2,
+        "pred_category": "wrong_result",
+        "pred_evidence": "answer produced but incorrect (approach-level error)"
+      },
+      {
+        "trace_id": "trace_054",
+        "cohort": "old47",
+        "gold_stage": "output_mismatch",
+        "pred_stage": "answer_error",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 0,
+        "pred_origin": 2,
+        "pred_category": "wrong_result",
+        "pred_evidence": "answer produced but incorrect (approach-level error)"
+      },
+      {
+        "trace_id": "trace_056",
+        "cohort": "old47",
+        "gold_stage": "output_mismatch",
+        "pred_stage": "answer_error",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 0,
+        "pred_origin": 2,
+        "pred_category": "wrong_result",
+        "pred_evidence": "answer produced but incorrect (approach-level error)"
+      },
+      {
+        "trace_id": "trace_057",
+        "cohort": "old47",
+        "gold_stage": "output_mismatch",
+        "pred_stage": "answer_error",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 0,
+        "pred_origin": 2,
+        "pred_category": "wrong_result",
+        "pred_evidence": "answer produced but incorrect (approach-level error)"
+      },
+      {
+        "trace_id": "trace_059",
+        "cohort": "old47",
+        "gold_stage": "output_mismatch",
+        "pred_stage": "answer_error",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 0,
+        "pred_origin": 2,
+        "pred_category": "wrong_result",
+        "pred_evidence": "answer produced but incorrect (approach-level error)"
+      },
+      {
+        "trace_id": "trace_066",
+        "cohort": "old47",
+        "gold_stage": "output_mismatch",
+        "pred_stage": "answer_error",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 0,
+        "pred_origin": 2,
+        "pred_category": "wrong_result",
+        "pred_evidence": "answer produced but incorrect (approach-level error)"
+      },
+      {
+        "trace_id": "new_006",
+        "cohort": "new103",
+        "gold_stage": "answer_error",
+        "pred_stage": "output_mismatch",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 0,
+        "pred_origin": 1,
+        "pred_category": "hallucinated_answer",
+        "pred_evidence": "output_mismatch: final answer is not supported by successful execution output"
+      },
+      {
+        "trace_id": "new_032",
+        "cohort": "new103",
+        "gold_stage": "answer_error",
+        "pred_stage": "output_mismatch",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 3,
+        "pred_origin": 2,
+        "pred_category": "misread_output",
+        "pred_evidence": "output_mismatch: empty stdout from an unprinted expression was interpreted as negative evidence"
+      },
+      {
+        "trace_id": "new_056",
+        "cohort": "new103",
+        "gold_stage": "code_generation",
+        "pred_stage": "output_mismatch",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 4,
+        "pred_origin": 1,
+        "pred_category": "misread_output",
+        "pred_evidence": "output_mismatch: empty stdout from an unprinted expression was interpreted as negative evidence"
+      },
+      {
+        "trace_id": "new_097",
+        "cohort": "new103",
+        "gold_stage": "output_mismatch",
+        "pred_stage": "code_generation",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 1,
+        "pred_origin": 5,
+        "pred_category": "incomplete_analysis",
+        "pred_evidence": "code_generation: final code did not implement or print the operation promised in Thought"
+      }
+    ]
+  },
+  "code_generation_12": {
+    "n": 12,
+    "accuracy": 0.9166666666666666,
+    "silent_accuracy": 1.0,
+    "origin_exact": 0.9166666666666666,
+    "origin_within_one": 0.9166666666666666,
+    "gold_distribution": {
+      "code_generation": 12
+    },
+    "pred_distribution": {
+      "code_generation": 11,
+      "output_mismatch": 1
+    },
+    "per_class": {
+      "analytical_plan": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "code_generation": {
+        "precision": 1.0,
+        "recall": 0.9166666666666666,
+        "f1": 0.9565217391304348,
+        "support": 12
+      },
+      "runtime": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "output_mismatch": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "answer_error": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    },
+    "macro_f1_5class": 0.19130434782608696,
+    "macro_f1_observed": 0.9565217391304348,
+    "accuracy_95ci": [
+      0.75,
+      1.0
+    ],
+    "mismatches": [
+      {
+        "trace_id": "new_056",
+        "cohort": "new103",
+        "gold_stage": "code_generation",
+        "pred_stage": "output_mismatch",
+        "gold_silent": true,
+        "pred_silent": true,
+        "gold_origin": 4,
+        "pred_origin": 1,
+        "pred_category": "misread_output",
+        "pred_evidence": "output_mismatch: empty stdout from an unprinted expression was interpreted as negative evidence"
+      }
+    ]
+  },
+  "observable_output_mismatch_39": {
+    "n": 39,
+    "accuracy": 1.0,
+    "silent_accuracy": 0.9743589743589743,
+    "origin_exact": 1.0,
+    "origin_within_one": 1.0,
+    "gold_distribution": {
+      "output_mismatch": 39
+    },
+    "pred_distribution": {
+      "output_mismatch": 39
+    },
+    "per_class": {
+      "analytical_plan": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "code_generation": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "runtime": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "output_mismatch": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 39
+      },
+      "answer_error": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    },
+    "macro_f1_5class": 0.2,
+    "macro_f1_observed": 1.0,
+    "accuracy_95ci": [
+      1.0,
+      1.0
+    ],
+    "mismatches": []
+  }
+}

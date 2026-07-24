@@ -67,12 +67,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Nothing was printed by the Step 0 existence check because the value itself was never printed. In Step 1, the agent took that silence to mean data.csv was missing and eventually answered 'No data files found'."
     }
   },
   {
@@ -154,12 +154,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "At Step 1, an empty display is read as a negative file check. Step 3 actually shows that data.csv exists, but the agent only inspects it afterward and never reaches the requested sum."
     }
   },
   {
@@ -197,12 +197,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "answer_error",
+      "is_silent": true,
+      "originating_step": 0,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 0 prints the raw mean as 6.587999999999999, while the stored final answer shortens it to 6.588. Under the required exact-value rule, neither is the reference value 6.59."
     }
   },
   {
@@ -284,12 +284,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 assumes the CSV is absent simply because the boolean was not printed. The directory listing later finds the file, but the run ends after showing a few rows and never answers the date question."
     }
   },
   {
@@ -329,11 +329,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": true,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 3,
+      "unclassifiable": true,
+      "evidence": "Step 0 reads data.csv and applies median(), quantile(0.25), and quantile(0.75) exactly as the reference path describes. The trace gives no basis for deciding why this produces 92.91 and 0.0 instead of 66.0 and 39.17, so no agent-side failure stage can be isolated."
     }
   },
   {
@@ -427,12 +427,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "After the unprinted check in Step 0, Step 1 treats the lack of visible output as a failed file lookup. That mistaken reading leads to the 'No data files found' messages in Steps 4 and 5."
     }
   },
   {
@@ -514,12 +514,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The CSV check produces no printed value, and Step 1 wrongly reads this as 'file missing'. The agent later discovers data.csv but uses up the run before reporting any island counts."
     }
   },
   {
@@ -601,12 +601,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 makes an unsupported jump from blank stdout to 'data.csv does not exist'. Although Step 3 proves the file is there, the trace stops during inspection and never gives the most frequent category."
     }
   },
   {
@@ -668,11 +668,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": true,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 3,
+      "unclassifiable": true,
+      "evidence": "Step 2 filters value > 69, counts rows by category, and uses idxmax(), matching the stated ground-truth path; its stdout is books 4 while the reference says toys 4. The trace does not show the full counts or any faulty operation that would resolve this discrepancy."
     }
   },
   {
@@ -744,12 +744,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The boolean in Step 0 is not printed, yet Step 1 treats the empty stdout as a negative result. The remaining steps therefore produce 'No data files found' instead of analyzing the messages."
     }
   },
   {
@@ -842,12 +842,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 interprets a blank display as evidence that the CSV is absent. Even a later read attempt is judged the same way, so Steps 4 and 5 openly give up instead of returning the value for the requested date."
     }
   },
   {
@@ -928,12 +928,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "An unprinted file check is mistaken for a missing CSV in Step 1. Step 3 later confirms the file exists, but the unnecessary detour leaves only time to inspect the columns, not calculate the survival rate."
     }
   },
   {
@@ -971,12 +971,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "code_generation",
+      "is_silent": true,
+      "originating_step": 0,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 0 searches for the largest individual click row with idxmax(). The task needs clicks summed by user_id first, which is why stdout ends at 0 1 rather than the user total."
     }
   },
   {
@@ -1059,12 +1059,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "runtime",
+      "is_silent": false,
+      "originating_step": 5,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The failure is visible in Step 5: grouping on total_value raises a KeyError because that column is not present in the data."
     }
   },
   {
@@ -1135,12 +1135,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "runtime",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 prints the available fields, including click, and then raises KeyError by asking for clicks. This is a direct execution failure."
     }
   },
   {
@@ -1179,11 +1179,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": true,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 3,
+      "unclassifiable": true,
+      "evidence": "Step 0 loads data.csv and correctly calls mean() and std() on value; the displayed frame contains only one row, which naturally yields 51.78 and nan. Nothing in the trace explains why that file differs from the data behind 51.2 and 10.89, so an agent failure stage cannot be assigned."
     }
   },
   {
@@ -1265,12 +1265,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "In Step 1 the agent mistakes an unprinted boolean for a missing file. Data.csv is found in Step 3, but the trace only reaches a preview of the data and never calculates the slope."
     }
   },
   {
@@ -1352,12 +1352,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "runtime",
+      "is_silent": false,
+      "originating_step": 0,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The first execution already fails: Step 0 contains a bare 'Action:' line, which Python parses as invalid syntax. Repeating the same code causes the same SyntaxError in the later steps."
     }
   },
   {
@@ -1439,12 +1439,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "runtime",
+      "is_silent": false,
+      "originating_step": 5,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "A curly Unicode quote is used in the answer expression at Step 5. Python rejects that character with a SyntaxError before any click total can be returned."
     }
   },
   {
@@ -1526,12 +1526,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "runtime",
+      "is_silent": false,
+      "originating_step": 2,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The grouping attempted in Step 2 asks for a clicks column that is not in the dataset. It immediately raises KeyError, while the later column print shows that the real name is click."
     }
   },
   {
@@ -1614,12 +1614,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 moves on to Excel because the CSV check showed no text, not because it returned false. Data.csv is eventually listed in Step 3, yet the run finishes at a data preview without calculating any category totals."
     }
   },
   {
@@ -1680,12 +1680,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "No value from the Step 0 file check was printed. Step 1 nevertheless declares the CSV absent, and the trace closes with 'No data file found' rather than counting users."
     }
   },
   {
@@ -1756,12 +1756,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The conditional in Step 0 can load data.csv, but its DataFrame is not printed. Step 1 mistakes that blank display for a missing file, which is why Steps 2 and 3 return a no-data message."
     }
   },
   {
@@ -1843,12 +1843,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Because the boolean result is never printed, Step 0 has empty stdout. Step 1 reads this as a failed lookup and the agent later says it cannot perform the item analysis."
     }
   },
   {
@@ -1930,12 +1930,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The Step 0 existence test gives no displayed value, but Step 1 treats that as confirmation that data.csv is missing. The correlation is never attempted and the answer simply says no files were found."
     }
   },
   {
@@ -1973,12 +1973,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "answer_error",
+      "is_silent": true,
+      "originating_step": 0,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Both stdout and the final response use 6.587999999999999 from Step 0. That is internally consistent, but it is not the required 6.59 value."
     }
   },
   {
@@ -2061,12 +2061,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": true,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "A blank file-check display is taken as proof of absence in Step 1. Instead of verifying the CSV, Step 3 invents a small example DataFrame, so the A 2 reported in Step 4 is based on made-up data."
     }
   },
   {
@@ -2138,12 +2138,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 assumes that no stdout means os.path.isfile returned false, even though the result was simply not printed. The agent then stops and reports that no data files are available."
     }
   },
   {
@@ -2224,12 +2224,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "runtime",
+      "is_silent": false,
+      "originating_step": 4,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The run breaks at Step 4 when it tries to sum bill_amount. That field does not exist, and the resulting KeyError prevents any bill total from being produced."
     }
   },
   {
@@ -2267,12 +2267,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "answer_error",
+      "is_silent": true,
+      "originating_step": 0,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The daily averages are calculated successfully in Step 0, and Sun 3.2551315789473683 is copied into the answer. The expected reported value is Sun 3.26, so the mismatch remains at the answer level."
     }
   },
   {
@@ -2354,12 +2354,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "answer_error",
+      "is_silent": true,
+      "originating_step": 4,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "There is no execution error in Step 4: it obtains virginica 6.587999999999999 and the final response repeats it. The supplied answer, however, requires virginica 6.59."
     }
   },
   {
@@ -2441,12 +2441,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 calls data.csv missing on the basis of an empty, unprinted check. No slope calculation follows, and the visible result is just 'No data file found'."
     }
   },
   {
@@ -2528,12 +2528,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "code_generation",
+      "is_silent": false,
+      "originating_step": 5,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The intended mode and count are correctly computed in Step 5, but the tuple is left as a bare expression. In this trace it produces no stdout, and the required ANSWER line is never given."
     }
   },
   {
@@ -2615,12 +2615,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The file-check value is not displayed in Step 0, yet Step 1 says the CSV does not exist. That unsupported conclusion carries through to the final data-not-found response."
     }
   },
   {
@@ -2702,12 +2702,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "runtime",
+      "is_silent": false,
+      "originating_step": 4,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 4 tries to use df without ever creating it. Python raises NameError at that point, so the maximum date cannot be evaluated."
     }
   },
   {
@@ -2757,12 +2757,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "runtime",
+      "is_silent": false,
+      "originating_step": 0,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The first code block includes several bare 'Action:' labels. Step 0 therefore ends with SyntaxError before the corrected version is run in Step 1."
     }
   },
   {
@@ -2845,11 +2845,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": false,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 2,
+      "unclassifiable": true,
+      "evidence": "By the end of Step 5, the agent has only printed a few sample log rows. There is no ERROR count, final response, exception, or clearly wrong calculation, so the trace does not support a specific stage label."
     }
   },
   {
@@ -2899,12 +2899,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "runtime",
+      "is_silent": false,
+      "originating_step": 0,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Python cannot parse the code in Step 0 because 'Action:' appears as an ordinary line of code. The SyntaxError is visible before the agent repairs the block in the next step."
     }
   },
   {
@@ -2944,11 +2944,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": true,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 3,
+      "unclassifiable": true,
+      "evidence": "Step 0 performs the requested median and quartile subtraction without an implementation error, and the loaded value column leads to 96.41 and 0.0. Since the trace contains no evidence for why the reference uses 52.4 and 42.06, the mismatch cannot be located in one of the five agent stages."
     }
   },
   {
@@ -3030,12 +3030,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The lack of a printed boolean after Step 0 is interpreted in Step 1 as possible file absence. Every later action stays on directory checks, so the requested value is never calculated or returned."
     }
   },
   {
@@ -3073,12 +3073,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "code_generation",
+      "is_silent": true,
+      "originating_step": 0,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The mistake is in Step 0's selection logic: it takes the row with the largest click value rather than adding clicks for each item_id. This produces the 1 1 seen in both stdout and the answer."
     }
   },
   {
@@ -3149,12 +3149,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "No false result is shown for the CSV check, only empty stdout. Still, Step 1 assumes the file may be absent, and Steps 2 and 3 turn that assumption into a 'No data file found' answer."
     }
   },
   {
@@ -3236,12 +3236,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Nothing in Step 0 stdout says that the CSV is missing; its boolean was just not printed. Step 1 treats it as missing anyway, and the final rate is replaced with 'Not Available'."
     }
   },
   {
@@ -3323,12 +3323,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The Step 0 boolean is never displayed, but Step 1 reads the silence as a missing CSV. The agent abandons the maximum-date task and returns 'Data file not found'."
     }
   },
   {
@@ -3421,12 +3421,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 infers file absence from a check whose result was not printed. Because of that reading, no log rows are loaded and the response becomes a no-data message instead of an ERROR count."
     }
   },
   {
@@ -3499,11 +3499,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": false,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 5,
+      "unclassifiable": true,
+      "evidence": "The computation in Step 3 returns hour 0 and count 1. That is the same result as '00', 1 apart from zero-padding, so there is no substantive failure to place in one of the five stages."
     }
   },
   {
@@ -3585,12 +3585,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Data.csv appears in the Step 3 directory listing, contradicting the absence assumed in Step 1 from blank stdout. The remaining steps only load and inspect the file, with no category total ever reported."
     }
   },
   {
@@ -3630,11 +3630,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": true,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 3,
+      "unclassifiable": true,
+      "evidence": "Step 0 reads the CSV and directly computes the median plus Q3-Q1, producing 92.91 and 0.0 without an exception. The supplied trace does not expose any wrong thought or operation that could account for the different reference pair, leaving the failure source unidentifiable."
     }
   },
   {
@@ -3716,12 +3716,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 says the CSV is missing merely because the check was not printed. Once Step 3 reveals data.csv, there is only enough progress to preview the tips dataset, not calculate the daily averages."
     }
   },
   {
@@ -3761,11 +3761,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": true,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 3,
+      "unclassifiable": true,
+      "evidence": "Both operations required by the path—median and Q3 minus Q1—are implemented in Step 0, and stdout consistently gives 91.89 and 0.0. Because the trace never shows a faulty plan, code branch, or output reading that explains the reference values, it is not possible to assign a stage reliably."
     }
   },
   {
@@ -3857,12 +3857,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "After Step 0 leaves its boolean undisplayed, Step 1 states outright that data.csv does not exist. The trace never tests the penguin column and finishes by saying the analysis is impossible."
     }
   },
   {
@@ -3933,12 +3933,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "In Step 1, blank stdout is treated as a negative answer to the file check. This sends the run straight to 'No data file found' without examining the log-level column."
     }
   },
   {
@@ -4019,12 +4019,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The CSV is described as not found in Step 1 even though no boolean was printed. Step 4 later lists data.csv, but the final action only loads it and never obtains the sepal-width median."
     }
   },
   {
@@ -4116,12 +4116,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "code_generation",
+      "is_silent": false,
+      "originating_step": 4,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The plan at Step 4 is to sum clicks, but the implementation looks for a column named clicks rather than click. Step 5 then prints 'Clicks column not found', making the coding mistake visible."
     }
   },
   {
@@ -4160,11 +4160,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": true,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 3,
+      "unclassifiable": true,
+      "evidence": "Step 0 uses pandas mean() and std() exactly as requested, but the loaded value column yields 49.23 and nan. The trace contains no evidence that distinguishes an agent mistake from a data/ground-truth mismatch, so the origin is not classifiable."
     }
   },
   {
@@ -4257,12 +4257,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 2,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Neither file check has a printed result, but Step 2 treats both as false. That unsupported conclusion is repeated in the no-file messages at Steps 4 and 5, so the amount column is never summed."
     }
   },
   {
@@ -4344,12 +4344,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The Step 0 boolean is not visible in stdout. Step 1 nevertheless decides that data.csv is absent, and the agent returns 'No data file found' without attempting the trend calculation."
     }
   },
   {
@@ -4431,12 +4431,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 2,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 2 says neither file seems to exist, yet Step 3 immediately prints a directory containing data.csv. After recovering, the agent only previews the car data and never computes average mpg by origin."
     }
   },
   {
@@ -4475,12 +4475,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "code_generation",
+      "is_silent": true,
+      "originating_step": 0,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The intended procedure in Step 0 is reasonable, but the heuristic assigns value to both cat_col and val_col. As a result, the code groups each number by itself and stdout gives the meaningless pair 338.0 338.0."
     }
   },
   {
@@ -4518,12 +4518,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "code_generation",
+      "is_silent": true,
+      "originating_step": 0,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "While scanning the columns in Step 0, user_col is first set to user_id and then overwritten by item_id. The subsequent groupby is therefore about items, not users, which explains the 2 6 output."
     }
   },
   {
@@ -4563,11 +4563,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": true,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 3,
+      "unclassifiable": true,
+      "evidence": "The DataFrame printed in Step 0 has a single value, 96.41, and the subsequent median and IQR calculations are correct for that visible data. Since the reference pair must come from different or additional data not shown here, none of the five agent failure stages is supported."
     }
   },
   {
@@ -4649,12 +4649,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 2,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "At Step 2, two blank displays are taken to mean that both candidate files are absent. No actual false value was printed, and this interpretation leads directly to the later 'No data files found' response."
     }
   },
   {
@@ -4694,11 +4694,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": true,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 3,
+      "unclassifiable": true,
+      "evidence": "Step 0 follows the entire reference procedure—load the CSV, take the median, compute Q1 and Q3, and subtract them—and obtains 92.91 and 0.0. With no faulty reasoning or operation visible, the different ground-truth numbers cannot be attributed to a specific agent stage."
     }
   },
   {
@@ -4780,12 +4780,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 labels data.csv nonexistent after an existence test whose value was never printed. The rest of the trace keeps probing the directory, and no step ever reads amount or produces a sum."
     }
   },
   {
@@ -4855,12 +4855,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 2,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Blank stdout is used as proof that both files are missing in Step 2. The agent then prints a no-data answer rather than opening data.csv and taking the maximum petal width."
     }
   },
   {
@@ -4943,12 +4943,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Because Step 0 does not print the boolean, Step 1 says the CSV likely is not there. A later directory listing finds it, but the run stops while checking columns and never counts users from the messages."
     }
   },
   {
@@ -5008,12 +5008,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 declares the CSV missing without seeing a false value; the earlier check simply has no printed output. The only result produced afterward is the visible 'No data files found' message."
     }
   },
   {
@@ -5095,12 +5095,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 2,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The file checks return no displayed text, and Step 2 converts that into a claim that both files are absent. This prevents any yearly passenger aggregation and ends in 'No data found'."
     }
   },
   {
@@ -5170,12 +5170,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "No boolean is printed in Step 0, but the next Thought treats data.csv as missing. The average fare is never evaluated, and Step 3 substitutes None as the answer."
     }
   },
   {
@@ -5257,12 +5257,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 2,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 2 assumes both expected files are absent from silent expression results. Although no failed lookup is shown, the agent eventually prints that no files exist and never sums amount."
     }
   },
   {
@@ -5345,12 +5345,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The empty display after Step 0 is interpreted as a missing CSV in Step 1. That mistaken reading is exposed in Step 3's ERROR message and the final no-data answer."
     }
   },
   {
@@ -5432,12 +5432,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 suspects the CSV is absent only because the file-check result was not printed. The later working-directory output does not establish absence either, yet the run still ends with 'No data file found'."
     }
   },
   {
@@ -5519,12 +5519,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "No printed value comes from the initial file test, but Step 1 treats this as a definite absence. The item-click analysis is skipped and the trace ends with a plain no-data answer."
     }
   },
   {
@@ -5616,12 +5616,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 says the output shows that data.csv is missing, although stdout contains nothing at all. This misreading sends the agent toward the final message that horsepower cannot be determined."
     }
   },
   {
@@ -5703,12 +5703,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The missing-file assumption in Step 1 is contradicted by the directory listing at Step 3. More importantly, Step 5 actually prints 126.02 beside 2024-01-05, yet the trace ends without turning that visible result into an answer."
     }
   },
   {
@@ -5746,12 +5746,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "code_generation",
+      "is_silent": true,
+      "originating_step": 0,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "After identifying item_id and click in Step 0, the code applies idxmax() to individual rows. It never sums clicks by item, so the resulting 0 1 is not the aggregate requested."
     }
   },
   {
@@ -5833,12 +5833,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 calls the CSV nonexistent after seeing no printed boolean, while Step 3 later lists the file. The group means are eventually calculated in Step 5, but they remain an unprinted expression and no final result is supplied."
     }
   },
   {
@@ -5877,11 +5877,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": true,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 3,
+      "unclassifiable": true,
+      "evidence": "Step 0 loads the value column and applies the requested mean and sample-standard-deviation functions, returning 41.37 and nan. The trace offers no agent-side error that explains the reference pair 49.41 and 10.06."
     }
   },
   {
@@ -5963,12 +5963,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "An undisplayed file-check result is read as 'CSV absent' in Step 1. By the time Step 4 reveals data.csv, the agent only manages to load it and inspect columns; the tip percentage is never worked out."
     }
   },
   {
@@ -6050,12 +6050,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The declaration in Step 1 that data.csv is missing is based on silence, not a printed false value. Step 3 finds the file, but the trace runs out while looking for the embarkation column and gives no count."
     }
   },
   {
@@ -6093,12 +6093,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "code_generation",
+      "is_silent": true,
+      "originating_step": 0,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The column loop in Step 0 matches both user_id and item_id, leaving item_id as user_col. Stdout even says 'Using user column: item_id', so the reported 1 8 comes from grouping the wrong identifier."
     }
   },
   {
@@ -6180,12 +6180,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "For this sample, Step 1 again assumes that an undisplayed boolean means the CSV is absent. No click data is loaded afterward, and the visible response is 'No data file found'."
     }
   },
   {
@@ -6267,12 +6267,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 2,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "By Step 2, the agent has declared both candidate files missing even though neither check printed its boolean. The trace then trails off without opening a dataset or producing category totals."
     }
   },
   {
@@ -6312,11 +6312,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": true,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 3,
+      "unclassifiable": true,
+      "evidence": "Step 0 implements median, the two quartiles, and Q3-Q1 exactly as the ground-truth path specifies, with stdout 94.11 and 0.0. The trace does not reveal why those internally consistent results differ from 53.52 and 52.65, so a failure stage cannot be determined."
     }
   },
   {
@@ -6388,12 +6388,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The agent never prints the result of the Step 0 existence test. Even so, Step 1 decides the CSV is unavailable and answers with a no-files message instead of summing values by category."
     }
   },
   {
@@ -6455,11 +6455,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": false,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 5,
+      "unclassifiable": true,
+      "evidence": "Step 2 finds one entry at hour 0. Writing that hour as 0 rather than 00 is only a display difference, so the result agrees with the reference and there is no genuine failure stage to assign."
     }
   },
   {
@@ -6541,12 +6541,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The CSV is called missing in Step 1 on the basis of blank stdout. Step 3 later prints 'CSV exists: True', but the remaining actions stop at a DataFrame preview and never calculate the mpg-weight correlation."
     }
   },
   {
@@ -6617,12 +6617,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 treats the lack of a displayed file-check value as a confirmed missing CSV. From there, the agent does no correlation work and simply prints that no data files were found."
     }
   },
   {
@@ -6693,12 +6693,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Nothing in Step 0 stdout establishes that the file is absent, but Step 1 says it is. The survival-rate calculation is abandoned, with Step 3 exposing the failure through a no-data message."
     }
   },
   {
@@ -6780,12 +6780,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 incorrectly turns an unprinted check into 'data.csv does not exist'. After the file is found at Step 3, the agent only prints its columns and never reaches the sepal-petal correlation."
     }
   },
   {
@@ -6823,12 +6823,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "code_generation",
+      "is_silent": true,
+      "originating_step": 0,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "In Step 0, the name-matching loop finishes with item_id stored in user_col, then selects a maximum row instead of a per-user sum. The 0 1 in stdout therefore does not represent total clicks for a user."
     }
   },
   {
@@ -6911,12 +6911,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 2,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The initial conclusion at Step 2 is that both files are absent, based only on blank expression output. Step 4 later reports data.csv among the files, but the agent reaches only the loading stage and never calculates the totals."
     }
   },
   {
@@ -6999,12 +6999,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": true,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "For Step 1, the undisplayed boolean is enough to label the CSV missing. The agent then constructs hypothetical categories and values in Step 3, meaning the A 2 printed at Step 4 is unrelated to the real dataset."
     }
   },
   {
@@ -7086,12 +7086,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "A silent file-check expression is taken as proof of absence in Step 1. Step 4 eventually lists data.csv, but the final action merely loads the file; no regression or slope result appears."
     }
   },
   {
@@ -7174,11 +7174,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": false,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 2,
+      "unclassifiable": true,
+      "evidence": "Step 4 confirms that data.csv loads successfully. The trace then ends at Step 5 with only an unprinted list of columns, so there is no completed count, final answer, exception, or other evidence that identifies one failure stage."
     }
   },
   {
@@ -7217,11 +7217,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": true,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 3,
+      "unclassifiable": true,
+      "evidence": "The only calculation in Step 0 is the requested mean() and std() on value, and it completes normally with 41.37 and nan. No incorrect plan, code operation, exception, or misreading appears in the trace to explain the conflicting reference values."
     }
   },
   {
@@ -7272,11 +7272,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": false,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 5,
+      "unclassifiable": true,
+      "evidence": "The count in Step 1 is one entry for hour 0. Since hour 0 and hour 00 denote the same time, the answer is correct apart from formatting and does not fit any of the failure categories."
     }
   },
   {
@@ -7304,12 +7304,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "code_generation",
+      "is_silent": false,
+      "originating_step": 0,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Only Step 0 is present. Its Thought describes the right filtering and grouping steps, but no code is generated; the action is already marked final_answer and the stored response is still an unexpanded placeholder."
     }
   },
   {
@@ -7391,12 +7391,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The check in Step 0 does not print its boolean, and Step 1 incorrectly takes this to mean the CSV is missing. Instead of calculating a click rate, Step 4 visibly returns the placeholder None."
     }
   },
   {
@@ -7466,12 +7466,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 calls data.csv nonexistent without seeing a false result. On that basis, Step 3 invents a total of zero clicks, which is an openly stated fallback rather than a sum from the file."
     }
   },
   {
@@ -7553,12 +7553,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 2,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Neither existence check prints its result, yet Step 2 concludes that both files are missing. The species counts are never attempted, and Step 4 merely announces that no data was found."
     }
   },
   {
@@ -7651,12 +7651,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 1 declares data.csv absent after an unprinted check. The trace keeps repeating directory operations without displaying their values and eventually answers 'No data files found' instead of averaging July passengers."
     }
   },
   {
@@ -7727,12 +7727,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 1,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The empty stdout at Step 0 is not a negative file result, but Step 1 treats it as one. Consequently, the user-level click rate is never computed and the response says the data file was not found."
     }
   },
   {
@@ -7783,11 +7783,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": true,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 3,
+      "unclassifiable": true,
+      "evidence": "Step 1 uses the specified threshold, groups by category, counts rows, and takes idxmax(); stdout reports books 4 while the reference reports toys 4. Because no full count table or contrary operation is shown, the trace cannot establish whether this is a tie/data issue or an agent failure."
     }
   },
   {
@@ -7880,12 +7880,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 2,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "By Step 2, blank outputs from the file checks have been interpreted as confirmation that no dataset exists. The run never recovers from that assumption and ends with an explicit 'No valid data files' response."
     }
   },
   {
@@ -7925,11 +7925,11 @@
     ],
     "annotation": {
       "failure_stage": "",
-      "is_silent": "",
+      "is_silent": false,
       "originating_step": "",
-      "confidence_1_to_5": "",
-      "unclassifiable": false,
-      "evidence": ""
+      "confidence_1_to_5": 5,
+      "unclassifiable": true,
+      "evidence": "Step 0 shows the full hourly count and selects 0 with one entry. This is the same hour and count as '00', 1, so the difference is cosmetic and there is no actual error to classify."
     }
   },
   {
@@ -7957,12 +7957,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "code_generation",
+      "is_silent": false,
+      "originating_step": 0,
+      "confidence_1_to_5": 5,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "The Thought in Step 0 gives a sensible plan for filtering and grouping, but execution never begins. With an empty code field and a literal template left as the answer, the failure occurs when code should have been produced."
     }
   },
   {
@@ -8044,12 +8044,12 @@
       }
     ],
     "annotation": {
-      "failure_stage": "",
-      "is_silent": "",
-      "originating_step": "",
-      "confidence_1_to_5": "",
+      "failure_stage": "output_mismatch",
+      "is_silent": false,
+      "originating_step": 2,
+      "confidence_1_to_5": 4,
       "unclassifiable": false,
-      "evidence": ""
+      "evidence": "Step 2 says neither file exists even though the checks were simply not printed. Step 4 later proves data.csv is present, but the last step only loads it and the requested category totals never appear."
     }
   }
 ]

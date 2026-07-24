@@ -1,0 +1,826 @@
+[
+  {
+    "trace_id": "new_001",
+    "provisional_stage": "code_generation",
+    "provisional_silent": true,
+    "provisional_originating_step": 0,
+    "stage_vote_count": 3,
+    "needs_adjudication": false
+  },
+  {
+    "trace_id": "new_002",
+    "provisional_stage": "code_generation",
+    "provisional_silent": true,
+    "provisional_originating_step": 0,
+    "stage_vote_count": 3,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_003",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 3,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_004",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_005",
+    "provisional_stage": "answer_error",
+    "provisional_silent": true,
+    "provisional_originating_step": 0,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_006",
+    "provisional_stage": "answer_error",
+    "provisional_silent": true,
+    "provisional_originating_step": 0,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_007",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 3,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_008",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_009",
+    "provisional_stage": "answer_error",
+    "provisional_silent": true,
+    "provisional_originating_step": 0,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_010",
+    "provisional_stage": "runtime",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 3,
+    "needs_adjudication": false
+  },
+  {
+    "trace_id": "new_011",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 3,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_012",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_013",
+    "provisional_stage": "runtime",
+    "provisional_silent": false,
+    "provisional_originating_step": 0,
+    "stage_vote_count": 3,
+    "needs_adjudication": false
+  },
+  {
+    "trace_id": "new_014",
+    "provisional_stage": "runtime",
+    "provisional_silent": false,
+    "provisional_originating_step": 0,
+    "stage_vote_count": 3,
+    "needs_adjudication": false
+  },
+  {
+    "trace_id": "new_015",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_016",
+    "provisional_stage": "code_generation",
+    "provisional_silent": true,
+    "provisional_originating_step": 0,
+    "stage_vote_count": 3,
+    "needs_adjudication": false
+  },
+  {
+    "trace_id": "new_017",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 3,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_018",
+    "provisional_stage": "code_generation",
+    "provisional_silent": true,
+    "provisional_originating_step": 0,
+    "stage_vote_count": 3,
+    "needs_adjudication": false
+  },
+  {
+    "trace_id": "new_019",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 3,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_020",
+    "provisional_stage": "runtime",
+    "provisional_silent": false,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 3,
+    "needs_adjudication": false
+  },
+  {
+    "trace_id": "new_021",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_022",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_023",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_024",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 3,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_025",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_026",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 3,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_027",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_028",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_029",
+    "provisional_stage": "code_generation",
+    "provisional_silent": true,
+    "provisional_originating_step": 5,
+    "stage_vote_count": 3,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_030",
+    "provisional_stage": "code_generation",
+    "provisional_silent": true,
+    "provisional_originating_step": 0,
+    "stage_vote_count": 3,
+    "needs_adjudication": false
+  },
+  {
+    "trace_id": "new_031",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 3,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_032",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_033",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_034",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_035",
+    "provisional_stage": "code_generation",
+    "provisional_silent": true,
+    "provisional_originating_step": 0,
+    "stage_vote_count": 3,
+    "needs_adjudication": false
+  },
+  {
+    "trace_id": "new_036",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 3,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_037",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_038",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_039",
+    "provisional_stage": "code_generation",
+    "provisional_silent": true,
+    "provisional_originating_step": 0,
+    "stage_vote_count": 3,
+    "needs_adjudication": false
+  },
+  {
+    "trace_id": "new_040",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 3,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_041",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_042",
+    "provisional_stage": "answer_error",
+    "provisional_silent": true,
+    "provisional_originating_step": 4,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_043",
+    "provisional_stage": "code_generation",
+    "provisional_silent": true,
+    "provisional_originating_step": 0,
+    "stage_vote_count": 3,
+    "needs_adjudication": false
+  },
+  {
+    "trace_id": "new_044",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_045",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_046",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_047",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_048",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_049",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_050",
+    "provisional_stage": "runtime",
+    "provisional_silent": false,
+    "provisional_originating_step": 5,
+    "stage_vote_count": 3,
+    "needs_adjudication": false
+  },
+  {
+    "trace_id": "new_051",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_052",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_053",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_054",
+    "provisional_stage": "output_mismatch",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_055",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_056",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_057",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_058",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_059",
+    "provisional_stage": "runtime",
+    "provisional_silent": false,
+    "provisional_originating_step": 4,
+    "stage_vote_count": 3,
+    "needs_adjudication": false
+  },
+  {
+    "trace_id": "new_060",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_061",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_062",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_063",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_064",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_065",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_066",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_067",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_068",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_069",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_070",
+    "provisional_stage": "runtime",
+    "provisional_silent": false,
+    "provisional_originating_step": 5,
+    "stage_vote_count": 3,
+    "needs_adjudication": false
+  },
+  {
+    "trace_id": "new_071",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_072",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_073",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_074",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_075",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_076",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_077",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_078",
+    "provisional_stage": "runtime",
+    "provisional_silent": false,
+    "provisional_originating_step": 4,
+    "stage_vote_count": 3,
+    "needs_adjudication": false
+  },
+  {
+    "trace_id": "new_079",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_080",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_081",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_082",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_083",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_084",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_085",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_086",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_087",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_088",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_089",
+    "provisional_stage": "code_generation",
+    "provisional_silent": false,
+    "provisional_originating_step": 4,
+    "stage_vote_count": 3,
+    "needs_adjudication": false
+  },
+  {
+    "trace_id": "new_090",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_091",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_092",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_093",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": true,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_094",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_095",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_096",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_097",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_098",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_099",
+    "provisional_stage": null,
+    "provisional_silent": true,
+    "provisional_originating_step": null,
+    "stage_vote_count": 1,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_100",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_101",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_102",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 2,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  },
+  {
+    "trace_id": "new_103",
+    "provisional_stage": "analytical_plan",
+    "provisional_silent": false,
+    "provisional_originating_step": 1,
+    "stage_vote_count": 2,
+    "needs_adjudication": true
+  }
+]
